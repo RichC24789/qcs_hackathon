@@ -1,0 +1,24 @@
+@qcs.hackathon.Api_HostAddress = http://localhost:5280
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/topics
+Accept: application/json
+
+###
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/topics/15
+Accept: application/json
+
+###
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/topics/by-slug/safeguarding-adults
+Accept: application/json
+
+###
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/themes
+Accept: application/json
+
+###
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/content/summary
+Accept: application/json
