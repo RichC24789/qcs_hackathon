@@ -12,6 +12,7 @@ import {
   getStoredEmail,
   setStoredEmail,
 } from "@/lib/auth-storage"
+import { logActivity } from "@/lib/api"
 
 type AuthContextValue = {
   email: string | null
@@ -29,6 +30,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const trimmed = nextEmail.trim()
     setStoredEmail(trimmed)
     setEmail(trimmed)
+    void logActivity(trimmed, "user_login").catch(() => undefined)
   }, [])
 
   const logout = useCallback(() => {

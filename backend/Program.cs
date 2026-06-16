@@ -1,10 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using qcs.hackathon.Api.Data;
 using qcs.hackathon.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddDbContext<HackathonDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("Hackathon")));
+
 builder.Services.AddSingleton<ITopicContentService, TopicContentService>();
+builder.Services.AddScoped<IUserIdentityService, UserIdentityService>();
+builder.Services.AddScoped<IActivityLogService, ActivityLogService>();
+builder.Services.AddScoped<ITopicLikeService, TopicLikeService>();
 
 builder.Services.AddCors(options =>
 {
@@ -18,6 +28,12 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<HackathonDbContext>();
+    await DatabaseSeeder.InitializeAsync(dbContext);
+}
 
 if (app.Environment.IsDevelopment())
 {

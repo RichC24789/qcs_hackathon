@@ -20,5 +20,39 @@ Accept: application/json
 
 ###
 
+GET {{qcs.hackathon.Api_HostAddress}}/api/users
+Accept: application/json
+
+###
+
 GET {{qcs.hackathon.Api_HostAddress}}/api/content/summary
 Accept: application/json
+
+###
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/topics/safeguarding-adults/likes
+Accept: application/json
+X-User-Email: demo@example.com
+
+###
+
+PUT {{qcs.hackathon.Api_HostAddress}}/api/topics/safeguarding-adults/likes
+Accept: application/json
+X-User-Email: demo@example.com
+
+###
+
+GET {{qcs.hackathon.Api_HostAddress}}/api/activity
+Accept: application/json
+X-User-Email: demo@example.com
+
+###
+
+POST {{qcs.hackathon.Api_HostAddress}}/api/activity
+Accept: application/json
+Content-Type: application/json
+X-User-Email: demo@example.com
+
+{
+  "activityType": "user_login"
+}
