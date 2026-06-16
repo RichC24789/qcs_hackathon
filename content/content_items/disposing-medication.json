@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-12",
+    "title": "Disposing of medication — procedure for unused or expired stock",
+    "subtitle": "Medication",
+    "slug": "disposing-medication",
+    "theme": "Medication"
+  },
+  "body": {
+    "summary": "Medication that is no longer needed must be disposed of correctly — you cannot just throw it in the bin or flush it away.",
+    "text": "## Key points\n\n- Unused or expired medication must be returned to a pharmacy for safe disposal — never put it in household waste\n- Controlled drugs require a witnessed disposal process — two people must sign to confirm disposal\n- Keep a record of all medication returned or disposed of, including the name, quantity, and date\n- Do not dispose of medication on behalf of a service user without their knowledge and consent where possible\n- If a service user dies, their medication must be stored securely and disposed of following your organisation's procedure\n\n## Quick decision prompt\n\n- **Service user has unused medication after a course ends?** → Return it to the pharmacy with a record of the quantity returned\n- **Controlled drug needs disposing of?** → Two staff members must be present — follow the controlled drugs disposal log process and contact your manager\n- **Service user has died and has medication in their home?** → Do not remove anything until you have followed your organisation's policy — contact your manager immediately\n\n## Common mistakes\n\n- Flushing medication down the toilet — this causes environmental harm and is not an acceptable disposal method\n- Disposing of a controlled drug without a witness or without completing the disposal record\n- Not keeping a record of what was returned to the pharmacy\n\n## Who to tell\n\n- **Your manager** — before disposing of any controlled drugs or medication belonging to a deceased service user\n- **Pharmacist** — to arrange safe return and disposal"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 12,
+    "status": "published",
+    "tags": [
+      "medication",
+      "disposing-medication"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

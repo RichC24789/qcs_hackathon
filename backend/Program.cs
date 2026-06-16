@@ -15,6 +15,7 @@ builder.Services.AddSingleton<ITopicContentService, TopicContentService>();
 builder.Services.AddScoped<IUserIdentityService, UserIdentityService>();
 builder.Services.AddScoped<IActivityLogService, ActivityLogService>();
 builder.Services.AddScoped<ITopicLikeService, TopicLikeService>();
+builder.Services.AddScoped<IContentFeedService, ContentFeedService>();
 
 builder.Services.AddCors(options =>
 {

@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-10",
+    "title": "Medication audits — how to conduct, frequency, forms",
+    "subtitle": "Medication",
+    "slug": "medication-audits",
+    "theme": "Medication"
+  },
+  "body": {
+    "summary": "Regular medication audits are not just a compliance exercise — they catch errors before they become serious incidents.",
+    "text": "## Key points\n\n- Medication audits should be completed at least monthly in most care settings\n- An audit checks that MAR charts are accurate and up to date, stock counts match records, storage conditions are correct, and competencies are current\n- Audits should be completed by a manager or designated senior staff member — not the person who administers the medication day to day\n- Any issues found in an audit should be actioned promptly and documented\n- Audit results should feed into supervision and team meetings — not just sit in a folder\n\n## Quick decision prompt\n\n- **MAR chart has unexplained gaps?** → Investigate before the audit is closed — speak to the staff member involved and record the outcome\n- **Stock count does not match the MAR chart?** → This is a serious finding — report to your manager immediately and follow controlled drugs procedures if relevant\n- **Audit reveals a pattern of the same type of error?** → This needs a systemic response — training, supervision, or a process change, not just a note on the audit form\n\n## Common mistakes\n\n- Treating the audit as a tick-box exercise without following up on findings\n- Only auditing when CQC is expected — audits should be routine and scheduled\n- Not dating and signing the completed audit form\n\n## Who to tell\n\n- **Your manager** — all audit findings, especially anything significant\n- **CQC** — serious findings may need to be notified as incidents\n- **Staff team** — learning from audits should be shared in team meetings"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 10,
+    "status": "published",
+    "tags": [
+      "medication",
+      "medication-audits"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

@@ -7,4 +7,6 @@ public interface IActivityLogService
     Task LogAsync(string userEmail, string activityType, string? topicSlug = null, string? details = null, CancellationToken cancellationToken = default);
 
     Task<IReadOnlyList<ActivityEntry>> GetForUserAsync(string userEmail, int? limit = null, CancellationToken cancellationToken = default);
+
+    Task<IReadOnlySet<string>> GetViewedTopicSlugsAsync(string userEmail, CancellationToken cancellationToken = default);
 }

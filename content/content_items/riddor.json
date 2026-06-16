@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-25",
+    "title": "RIDDOR reporting — what triggers a report, who submits it",
+    "subtitle": "Falls & incidents",
+    "slug": "riddor",
+    "theme": "Falls & incidents"
+  },
+  "body": {
+    "summary": "RIDDOR reports are a legal requirement — not reporting when you should is a criminal offence, not just an admin oversight.",
+    "text": "## Key points\n\n- RIDDOR stands for Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 2013\n- Reportable events include: deaths, specified injuries (fractures, amputations, loss of consciousness), over-7-day incapacitation of a worker, occupational diseases, and dangerous occurrences\n- Reports are made to the Health and Safety Executive (HSE) — your manager will usually do this\n- Deaths and specified injuries must be reported immediately by phone; over-7-day injuries within 15 days\n- RIDDOR applies to workers — incidents involving service users may be reported via other routes such as CQC\n\n## Quick decision prompt\n\n- **Staff member has a fracture after a workplace incident?** → This is a specified injury — your manager must report to HSE immediately\n- **Staff member is off work for more than 7 days following a workplace incident?** → Report to HSE within 15 days — the clock starts the day after the incident, not the first day of absence\n- **Service user has a serious injury?** → RIDDOR may not apply but CQC notification likely does — speak to your manager\n\n## Common mistakes\n\n- Assuming RIDDOR only applies to serious accidents — a fracture, even a minor one, is a specified injury\n- Not starting the clock on over-7-day absences from the day after the incident\n- Thinking that because a service user was involved rather than a worker, RIDDOR does not apply — it may still apply if a worker was also injured\n\n## Who to tell\n\n- **Your manager** — immediately for any workplace incident that may be reportable\n- **HSE** — via riddor.hse.gov.uk or 0345 300 9923\n- **Your insurance provider** — for serious incidents"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 25,
+    "status": "published",
+    "tags": [
+      "falls-incidents",
+      "riddor"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

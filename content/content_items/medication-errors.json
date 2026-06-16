@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-01",
+    "title": "Medication errors — what to do, reporting, root cause",
+    "subtitle": "Medication",
+    "slug": "medication-errors",
+    "theme": "Medication"
+  },
+  "body": {
+    "summary": "Making a medication mistake is stressful, but what you do in the next few minutes matters more than the mistake itself.",
+    "text": "## Key points\n\n- Do not try to correct the error quietly or hope it resolves itself — always report immediately\n- Check on the service user straight away and look for any signs of adverse reaction\n- Record exactly what happened, what was given, and at what time — be factual, not defensive\n- Contact your manager and, if clinically urgent, call 111 or 999 without waiting for permission\n- Complete an incident report before the end of your shift while details are fresh\n\n## Quick decision prompt\n\n- **Wrong medication given, or wrong dose?** → Call your manager immediately, monitor the service user, and call 999 if they show any adverse symptoms\n- **Correct medication given but recorded incorrectly?** → Inform your manager, correct the record with a note explaining the amendment, and document why the error occurred\n- **Medication given at the wrong time?** → Inform your manager and check with the GP or pharmacist whether any action is needed before the next dose\n\n## Common mistakes\n\n- Waiting to see if the service user is affected before reporting — always report first, monitor second\n- Crossing out or deleting the incorrect entry rather than drawing a single line through it, initialling it, and writing the correct information alongside\n- Assuming a near-miss doesn't need reporting — if the error was caught before administration it still needs to be recorded so patterns can be identified\n\n## Who to tell\n\n- **Your manager** — immediately\n- **GP or pharmacist** — if clinical advice is needed about the medication given\n- **111 or 999** — if the service user shows any sign of adverse reaction\n- **CQC** — if the error results in serious harm (your manager will lead on this)\n- **Family or next of kin** — your manager will advise on timing and what to say"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 1,
+    "status": "published",
+    "tags": [
+      "medication",
+      "medication-errors"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

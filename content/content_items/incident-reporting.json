@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-22",
+    "title": "Incident and accident reporting — what counts, how to record",
+    "subtitle": "Falls & incidents",
+    "slug": "incident-reporting",
+    "theme": "Falls & incidents"
+  },
+  "body": {
+    "summary": "An incident report is not an admission of failure — it is the evidence that your organisation takes safety seriously and learns from what goes wrong.",
+    "text": "## Key points\n\n- An incident is any unplanned event that has caused or could have caused harm — including near misses\n- Examples include falls, medication errors, aggressive behaviour, injuries, missing persons, and property damage\n- Reports should be factual, objective, and written in the first person — what you saw, heard, or did\n- Complete the report as soon as possible after the event while details are fresh\n- Near misses must be reported too — they are early warning signs of systemic problems\n\n## Quick decision prompt\n\n- **Unsure whether something needs an incident report?** → If in doubt, complete one — over-reporting is far safer than under-reporting\n- **Another staff member was involved but does not want to report?** → You still have an individual duty to report — you cannot be prevented from doing so\n- **Incident involves a service user's behaviour towards a staff member?** → This still needs a report — staff safety is as important as service user safety\n\n## Common mistakes\n\n- Writing opinions or speculation rather than factual observations — \"she seemed angry\" not \"she was angry\"\n- Waiting until the next day — memories fade and details are lost\n- Not reporting near misses because \"nothing actually happened\"\n\n## Who to tell\n\n- **Your manager** — for all incidents, immediately\n- **CQC** — for specified notifiable events (your manager will lead on this)\n- **Local authority safeguarding team** — if the incident involves potential abuse or neglect\n- **Police** — if a crime may have been committed"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 22,
+    "status": "published",
+    "tags": [
+      "falls-incidents",
+      "incident-reporting"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

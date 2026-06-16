@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-43",
+    "title": "Consent to care — how to obtain, when needed, documentation",
+    "subtitle": "Care planning",
+    "slug": "consent-to-care",
+    "theme": "Care planning"
+  },
+  "body": {
+    "summary": "Consent is not a signature on a form — it is an ongoing conversation that must happen before every care interaction.",
+    "text": "## Key points\n\n- Consent must be freely given, informed, and specific — a blanket consent signed on admission does not cover every future interaction\n- Before every care task, explain what you are going to do and wait for agreement — verbal consent is valid\n- People have the right to refuse care even if refusing carries risk — respect this and document it\n- If someone lacks capacity to consent, a best interest decision must be in place before care is given\n- Document consent and any refusals clearly in the care record\n\n## Quick decision prompt\n\n- **Service user refuses personal care?** → Do not proceed — note the refusal, record it, and inform your manager. Try again later and explore whether there is a reason for the refusal\n- **Service user has dementia and cannot give verbal consent?** → Look for non-verbal signs of agreement or distress — and ensure a best interest decision is in place for care tasks\n- **Family member says it is fine to proceed even though the service user is saying no?** → The service user's wishes take precedence unless a valid best interest decision has been made\n\n## Common mistakes\n\n- Proceeding with care because the service user \"always agrees\" without checking each time\n- Treating consent as a one-time administrative step rather than an ongoing conversation\n- Not documenting refusals because they feel like a failure\n\n## Who to tell\n\n- **Your manager** — whenever consent is refused or there is uncertainty about capacity"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 43,
+    "status": "published",
+    "tags": [
+      "care-planning",
+      "consent-to-care"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

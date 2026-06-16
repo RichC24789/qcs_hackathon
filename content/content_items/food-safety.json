@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-49",
+    "title": "Food safety and nutrition — hydration, dietary needs, kitchen hygiene",
+    "subtitle": "Health & safety",
+    "slug": "food-safety",
+    "theme": "Health & safety"
+  },
+  "body": {
+    "summary": "Poor nutrition and dehydration are among the most common but preventable causes of deterioration in care — food and drink are part of clinical care, not just hospitality.",
+    "text": "## Key points\n\n- An adult needs approximately 1.5–2 litres of fluid per day — more in hot weather or if unwell\n- Signs of dehydration include: dark urine, dry mouth, confusion, dizziness, and reduced urine output\n- Dietary needs must be recorded in the care plan — allergies, religious requirements, texture modifications, and preferences\n- Food must be stored, prepared, and served at safe temperatures — hot food above 63°C, cold food below 5°C\n- Kitchen hygiene basics: wash hands before handling food, separate raw and cooked food, clean surfaces before and after use\n\n## Quick decision prompt\n\n- **Service user seems confused and has not been drinking?** → Offer fluids, monitor, record intake, and report to your manager — this may indicate dehydration\n- **Service user requires a modified texture diet and you are unsure of the correct preparation?** → Check the care plan and speak to your manager before serving — incorrect texture food is a choking risk\n- **Food temperature is not within safe range?** → Do not serve it — reheat or discard following food safety guidelines\n\n## Common mistakes\n\n- Assuming a service user is drinking enough because they have not complained of thirst — thirst sensation reduces with age\n- Not checking the care plan for dietary requirements before preparing food\n- Serving food without checking the temperature\n\n## Who to tell\n\n- **Your manager** — for any concerns about a service user's nutrition or hydration\n- **GP or dietitian** — for significant weight loss or nutritional concerns"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 49,
+    "status": "published",
+    "tags": [
+      "health-safety",
+      "food-safety"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

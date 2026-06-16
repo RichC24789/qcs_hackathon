@@ -51,4 +51,21 @@ public sealed class ActivityLogService(HackathonDbContext dbContext) : IActivity
                 activity.CreatedAt))
             .ToListAsync(cancellationToken);
     }
+
+    public async Task<IReadOnlySet<string>> GetViewedTopicSlugsAsync(
+        string userEmail,
+        CancellationToken cancellationToken = default)
+    {
+        var slugs = await dbContext.UserActivities
+            .AsNoTracking()
+            .Where(activity =>
+                activity.UserEmail == userEmail &&
+                activity.ActivityType == ActivityTypes.TopicViewed &&
+                activity.TopicSlug != null)
+            .Select(activity => activity.TopicSlug!)
+            .Distinct()
+            .ToListAsync(cancellationToken);
+
+        return slugs.ToHashSet(StringComparer.OrdinalIgnoreCase);
+    }
 }

@@ -1,3 +1,5 @@
+using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using qcs.hackathon.Api.Models;
 
@@ -5,14 +7,19 @@ namespace qcs.hackathon.Api.Services;
 
 public sealed partial class TopicContentService : ITopicContentService
 {
+    private static readonly JsonSerializerOptions JsonOptions = new()
+    {
+        PropertyNameCaseInsensitive = true
+    };
+
     private readonly string _contentRoot;
     private readonly Lazy<IReadOnlyList<TopicDetail>> _topics;
 
     public TopicContentService(IWebHostEnvironment environment, IConfiguration configuration)
     {
-        var configuredPath = configuration["Content:TopicsPath"];
+        var configuredPath = configuration["Content:ItemsPath"];
         _contentRoot = string.IsNullOrWhiteSpace(configuredPath)
-            ? Path.GetFullPath(Path.Combine(environment.ContentRootPath, "..", "content", "topics"))
+            ? Path.GetFullPath(Path.Combine(environment.ContentRootPath, "..", "content", "content_items"))
             : Path.IsPathRooted(configuredPath)
                 ? configuredPath
                 : Path.GetFullPath(Path.Combine(environment.ContentRootPath, configuredPath));
@@ -56,63 +63,83 @@ public sealed partial class TopicContentService : ITopicContentService
         }
 
         return Directory
-            .EnumerateFiles(_contentRoot, "topic-*.md", SearchOption.TopDirectoryOnly)
-            .Select(ParseTopicFile)
+            .EnumerateFiles(_contentRoot, "*.json", SearchOption.TopDirectoryOnly)
+            .Select(ParseContentItemFile)
             .Where(topic => topic is not null)
             .Cast<TopicDetail>()
             .OrderBy(topic => topic.Number)
             .ToList();
     }
 
-    private TopicDetail? ParseTopicFile(string filePath)
+    private TopicDetail? ParseContentItemFile(string filePath)
     {
-        var fileName = Path.GetFileNameWithoutExtension(filePath);
-        var match = TopicFileNameRegex().Match(fileName);
-        if (!match.Success)
+        try
+        {
+            var json = File.ReadAllText(filePath);
+            var document = JsonSerializer.Deserialize<ContentItemDocument>(json, JsonOptions);
+            if (document is null ||
+                document.Metadata.TopicNumber <= 0 ||
+                string.IsNullOrWhiteSpace(document.Header.Slug))
+            {
+                return null;
+            }
+
+            var sections = BuildSections(document);
+            var rawMarkdown = BuildRawMarkdown(document, sections);
+
+            return new TopicDetail(
+                document.Metadata.TopicNumber,
+                document.Header.Slug,
+                document.Header.Title,
+                document.Header.Theme,
+                document.Metadata.Format,
+                document.Metadata.SecondaryFormat,
+                sections,
+                rawMarkdown);
+        }
+        catch (JsonException)
         {
             return null;
         }
-
-        var number = int.Parse(match.Groups["number"].Value);
-        var slug = match.Groups["slug"].Value;
-        var markdown = File.ReadAllText(filePath);
-        var lines = markdown.Replace("\r\n", "\n").Split('\n');
-
-        var title = ExtractTitle(lines);
-        var theme = ExtractMetadata(lines, "Theme");
-        var primaryFormat = ExtractMetadata(lines, "Primary format");
-        var secondaryFormat = ExtractMetadata(lines, "Secondary format");
-        var sections = ParseSections(markdown);
-
-        return new TopicDetail(
-            number,
-            slug,
-            title,
-            theme,
-            primaryFormat,
-            secondaryFormat,
-            sections,
-            markdown);
     }
 
-    private static string ExtractTitle(IReadOnlyList<string> lines)
+    private static Dictionary<string, string> BuildSections(ContentItemDocument document)
     {
-        var titleLine = lines.FirstOrDefault(line => line.StartsWith("# ", StringComparison.Ordinal));
-        if (titleLine is null)
+        var sections = new Dictionary<string, string>(ParseSections(document.Body.Text), StringComparer.OrdinalIgnoreCase);
+
+        if (!string.IsNullOrWhiteSpace(document.Body.Summary))
         {
-            return "Untitled topic";
+            sections["Hook"] = document.Body.Summary.Trim();
         }
 
-        var title = titleLine[2..].Trim();
-        var colonIndex = title.IndexOf(':');
-        return colonIndex >= 0 ? title[(colonIndex + 1)..].Trim() : title;
+        return sections;
     }
 
-    private static string ExtractMetadata(IReadOnlyList<string> lines, string key)
+    private static string BuildRawMarkdown(
+        ContentItemDocument document,
+        IReadOnlyDictionary<string, string> sections)
     {
-        var prefix = $"**{key}:**";
-        var line = lines.FirstOrDefault(value => value.StartsWith(prefix, StringComparison.OrdinalIgnoreCase));
-        return line is null ? string.Empty : line[prefix.Length..].Trim();
+        var builder = new StringBuilder();
+        builder.AppendLine($"# Topic {document.Metadata.TopicNumber}: {document.Header.Title}");
+        builder.AppendLine();
+        builder.AppendLine($"**Theme:** {document.Header.Theme}");
+        builder.AppendLine($"**Primary format:** {document.Metadata.Format}");
+        builder.AppendLine($"**Secondary format:** {document.Metadata.SecondaryFormat}");
+        builder.AppendLine();
+        builder.AppendLine("---");
+        builder.AppendLine();
+
+        foreach (var section in sections)
+        {
+            builder.AppendLine($"## {section.Key}");
+            builder.AppendLine();
+            builder.AppendLine(section.Value);
+            builder.AppendLine();
+            builder.AppendLine("---");
+            builder.AppendLine();
+        }
+
+        return builder.ToString().TrimEnd();
     }
 
     private static IReadOnlyDictionary<string, string> ParseSections(string markdown)
@@ -149,9 +176,6 @@ public sealed partial class TopicContentService : ITopicContentService
 
     private static TopicSummary ToSummary(TopicDetail topic) =>
         new(topic.Number, topic.Slug, topic.Title, topic.Theme, topic.PrimaryFormat, topic.SecondaryFormat);
-
-    [GeneratedRegex(@"^topic-(?<number>\d+)-(?<slug>.+)$", RegexOptions.IgnoreCase)]
-    private static partial Regex TopicFileNameRegex();
 
     [GeneratedRegex(@"^##\s+(?<heading>.+)$", RegexOptions.Multiline)]
     private static partial Regex SectionHeadingRegex();

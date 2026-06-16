@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-50",
+    "title": "Record keeping and documentation — what to record, accuracy, retention",
+    "subtitle": "Record keeping",
+    "slug": "record-keeping",
+    "theme": "Record keeping"
+  },
+  "body": {
+    "summary": "If it is not recorded, it did not happen — in care, records protect the service user, protect you, and tell the story of the care that was given.",
+    "text": "## Key points\n\n- Records must be accurate, factual, and written at the time of or immediately after care delivery — not reconstructed at the end of a shift\n- Use objective language — what you observed, not what you assumed. \"Service user appeared distressed and was crying\" not \"service user was upset about her family\"\n- Never alter a record after the fact without clearly noting that an amendment has been made, why, and by whom\n- Records are confidential — only share with people who have a legitimate need to see them\n- Data protection law gives service users the right to see their own records — requests must be handled promptly\n\n## Quick decision prompt\n\n- **Made an error in a written record?** → Draw a single line through it, initial it, write the correct information alongside, and note the date of amendment — never use correction fluid\n- **Unsure whether something is worth recording?** → If in doubt, record it — it is always easier to have information and not need it than to need it and not have it\n- **Asked to share a service user's record with a third party?** → Check with your manager before sharing — confirm the person requesting has a legitimate right to see the information\n\n## Common mistakes\n\n- Writing records at the end of a shift from memory — details are forgotten and timing is inaccurate\n- Using abbreviations that not everyone understands\n- Deleting or overwriting digital records rather than amending them properly\n\n## Who to tell\n\n- **Your manager** — for any request to share records, any record that has been altered improperly, or any suspected data breach\n- **Your data protection officer** — for subject access requests or data breach concerns"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 50,
+    "status": "published",
+    "tags": [
+      "record-keeping",
+      "record-keeping"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

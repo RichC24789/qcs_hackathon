@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-41",
+    "title": "Care plan content and reviews — what to include, how often",
+    "subtitle": "Care planning",
+    "slug": "care-plans",
+    "theme": "Care planning"
+  },
+  "body": {
+    "summary": "A good care plan is a living document — not something written on admission and forgotten about.",
+    "text": "## Key points\n\n- A care plan must cover: personal details, assessed needs, goals, how care will be delivered, risks, and the person's preferences and wishes\n- Care plans should be written with the service user, not just about them\n- They must be reviewed at least every 6 months — and immediately following any significant change in health or circumstances\n- Every staff member delivering care should read and follow the care plan — it is the instruction manual for that person's care\n- Care plans must be stored securely and accessible to those who need them\n\n## Quick decision prompt\n\n- **Care plan feels out of date?** → Raise with your manager — a review should be triggered\n- **Service user's needs have changed significantly?** → Do not wait for the scheduled review — request an immediate update\n- **Unsure how to carry out a task for a service user?** → Check the care plan first — if it does not cover the task, ask your manager before proceeding\n\n## Common mistakes\n\n- Writing care plans in professional jargon rather than plain language the service user can understand\n- Treating the care plan as a static document that only changes at formal reviews\n- Not involving the service user or their family in the review process\n\n## Who to tell\n\n- **Your manager** — whenever a care plan appears out of date or does not reflect current needs"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 41,
+    "status": "published",
+    "tags": [
+      "care-planning",
+      "care-plans"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

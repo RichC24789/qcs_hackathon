@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-38",
+    "title": "Probationary period — review process, extension, ending employment",
+    "subtitle": "HR & employment",
+    "slug": "probation",
+    "theme": "HR & employment"
+  },
+  "body": {
+    "summary": "Probation is a two-way process — it gives your employer time to assess your performance and gives you time to assess whether the role is right for you.",
+    "text": "## Key points\n\n- A typical probationary period in care is 3–6 months — check your contract for the specific length\n- During probation you should receive regular supervision and feedback — at least once a month\n- At the end of probation a formal review should be held — you should be told whether you have passed, whether it is being extended, or whether employment is ending\n- Probation can be extended if performance or conduct concerns have been identified — you should be told clearly what needs to improve and given support to do so\n- Employment can be ended during probation with shorter notice — the statutory minimum is one week if you have been employed for one month or more\n\n## Quick decision prompt\n\n- **Not received any supervision or feedback during probation?** → Raise this with your manager — you are entitled to support and feedback\n- **Probation is being extended?** → Ask for the concerns in writing and what specific improvements are expected\n- **Probation review has not been held at the end of the period?** → Chase your manager — a missed review does not automatically mean you have passed\n\n## Common mistakes\n\n- Assuming that if nothing is said during probation it means everything is fine\n- Not raising your own concerns or questions during probation supervision\n- Assuming dismissal during probation is unfair — notice periods are shorter and the process is less formal\n\n## Who to tell\n\n- **Your manager** — for any concerns during probation\n- **HR** — if probation is ending employment and you have questions about process or pay"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 38,
+    "status": "published",
+    "tags": [
+      "hr-employment",
+      "probation"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

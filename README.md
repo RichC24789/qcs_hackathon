@@ -16,6 +16,7 @@ API: http://localhost:5280
 - `GET /api/topics/{id}` — topic by number (logs view when `X-User-Email` sent)
 - `GET /api/topics/by-slug/{slug}` — topic by slug (logs view when `X-User-Email` sent)
 - `GET /api/themes` — topics grouped by theme
+- `GET /api/content` — personalized unseen feed ranked by likes (`X-User-Email` required, optional `?limit=`)
 - `GET /api/content/summary` — SUMMARY.md content
 - `GET /api/topics/{slug}/likes` — like count and whether current user liked
 - `PUT /api/topics/{slug}/likes` — like a topic (`X-User-Email` required)
@@ -51,4 +52,7 @@ Frontend API calls target `http://localhost:5280` (override with `VITE_API_BASE`
 
 ## Content
 
-Topic markdown lives in `content/topics/` at the repo root. The API reads from there via `backend/`.
+Topic JSON lives in `content/content_items/` at the repo root (one file per topic slug). The API reads from there via `backend/`.
+
+- `content/TOPICS.md` — human-readable index of all 50 topics (not read by the API)
+- `content/SUMMARY.md` — format map and overview; served by `GET /api/content/summary`

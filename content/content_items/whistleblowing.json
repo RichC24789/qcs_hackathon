@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-17",
+    "title": "Whistleblowing — when to use it, protections, process",
+    "subtitle": "Safeguarding",
+    "slug": "whistleblowing",
+    "theme": "Safeguarding"
+  },
+  "body": {
+    "summary": "Raising a concern about unsafe or unethical practice is not disloyalty — it is one of the most important things you can do to protect the people you care for.",
+    "text": "## Key points\n\n- Whistleblowing means raising a concern about wrongdoing, risk, or malpractice in the workplace\n- You are legally protected from dismissal or detriment if you raise a genuine concern in good faith\n- You can raise concerns internally with your manager, or externally with CQC, the local authority, or other bodies\n- You do not need proof — a reasonable belief that something is wrong is enough\n- Anonymous reporting is possible but named reports are easier to investigate\n\n## Quick decision prompt\n\n- **Concerned about a colleague's practice but worried about the consequences of reporting?** → You are legally protected — raise it with your manager or safeguarding lead\n- **Concerned about your manager's practice?** → Go above them — contact the registered manager, the safeguarding lead, or report directly to CQC\n- **Concern has been raised internally but nothing has happened?** → Escalate externally — CQC, the local authority, or the care worker's professional body\n\n## Common mistakes\n\n- Not reporting because \"it's probably nothing\" — if something feels wrong, it is worth raising\n- Raising a concern informally in conversation rather than making a documented report\n- Believing that being anonymous means you will not be protected — named reporters have stronger legal protection\n\n## Who to tell\n\n- **Your manager or safeguarding lead** — first step in most cases\n- **CQC** — can receive concerns directly at 03000 616161\n- **Local authority safeguarding team** — for concerns about adults at risk\n- **Protect (formerly Public Concern at Work)** — free whistleblowing advice at 020 3117 2520"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 17,
+    "status": "published",
+    "tags": [
+      "safeguarding",
+      "whistleblowing"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

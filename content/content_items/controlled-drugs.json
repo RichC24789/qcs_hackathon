@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-04",
+    "title": "Controlled drugs — storage, counting, handover, documentation",
+    "subtitle": "Medication",
+    "slug": "controlled-drugs",
+    "theme": "Medication"
+  },
+  "body": {
+    "summary": "Controlled drugs have stricter rules than other medications — and the consequences of getting those rules wrong are serious for you and the service user.",
+    "text": "## Key points\n\n- Controlled drugs must be stored in a locked, fixed cabinet — separate from other medications\n- Two people must check and sign for controlled drugs at every administration\n- A running stock count must be maintained and checked at every handover\n- Any discrepancy in the count must be reported to your manager immediately — do not wait\n- Controlled drugs cannot be disposed of by care staff alone — a witnessed disposal process must be followed\n\n## Quick decision prompt\n\n- **Stock count does not add up at handover?** → Do not proceed — report to your manager immediately and do not administer until the discrepancy is resolved\n- **Controlled drug has not been given but is signed for?** → This is a serious recording error — report to your manager immediately\n- **Service user no longer needs a controlled drug?** → Contact the GP and pharmacist — do not dispose of it yourself\n\n## Common mistakes\n\n- Only one person signing for a controlled drug administration — two signatures are always required\n- Leaving the controlled drugs cabinet unlocked even briefly\n- Not recording a refused dose in the controlled drugs register\n\n## Who to tell\n\n- **Your manager** — immediately for any discrepancy, error, or concern\n- **GP** — if a controlled drug needs to be stopped or reviewed\n- **Pharmacist** — for disposal or return of unused controlled drugs\n- **Police** — if theft is suspected (your manager will lead on this)\n- **CQC** — for serious incidents involving controlled drugs"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 4,
+    "status": "published",
+    "tags": [
+      "medication",
+      "controlled-drugs"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

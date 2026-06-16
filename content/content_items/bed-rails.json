@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-32",
+    "title": "Bed rails — risk assessment, consent, checking frequency",
+    "subtitle": "Moving & handling",
+    "slug": "bed-rails",
+    "theme": "Moving & handling"
+  },
+  "body": {
+    "summary": "Bed rails can increase safety for some people but increase risk for others — the decision to use them must always be based on an individual assessment, never routine practice.",
+    "text": "## Key points\n\n- A bed rail risk assessment must be completed before rails are used — this should be reviewed regularly and after any incident\n- Bed rails must never be used without the informed consent of the service user or, where they lack capacity, a best interest decision\n- Check bed rail condition regularly — look for gaps between the mattress and rail that could cause entrapment\n- Rails should not be used simply to prevent a service user from getting up — this may constitute a deprivation of liberty\n- Document the decision to use or not use bed rails clearly in the care plan\n\n## Quick decision prompt\n\n- **Service user requests bed rails?** → Complete a risk assessment, obtain consent, document the decision, and check regularly\n- **Concerned that bed rails are being used inappropriately?** → Raise with your manager — if someone is being prevented from getting up without a best interest decision this may require safeguarding or DoLS consideration\n- **Gap identified between mattress and bed rail?** → Take the rails out of use immediately and report to your manager — entrapment can be fatal\n\n## Common mistakes\n\n- Using bed rails as a default for every service user at risk of falling\n- Not reviewing the risk assessment when a service user's condition changes\n- Failing to check for gaps during daily checks\n\n## Who to tell\n\n- **Your manager** — for any concerns about bed rail use or condition\n- **Occupational therapist** — for complex assessments"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 32,
+    "status": "published",
+    "tags": [
+      "moving-handling",
+      "bed-rails"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

@@ -74,8 +74,18 @@ export type TopicLikeStatus = {
   likedByCurrentUser: boolean
 }
 
+export type ContentFeedItem = TopicSummary & {
+  hook: string
+  likeCount: number
+  likedByCurrentUser: boolean
+}
+
 export function getTopics() {
   return apiFetch<TopicSummary[]>("/api/topics")
+}
+
+export function getContentFeed(email: string, limit = 10) {
+  return apiFetch<ContentFeedItem[]>(`/api/content?limit=${limit}`, { email })
 }
 
 export function getTopicLikeStatus(slug: string, email: string | null) {

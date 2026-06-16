@@ -1,22 +1,41 @@
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Heart, Share2 } from "lucide-react"
 
-import { getTopicLikeStatus, likeTopic, unlikeTopic } from "@/lib/api"
+import { getTopicLikeStatus, likeTopic, logActivity, unlikeTopic } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
 export type ContentItemProps = {
   slug: string
   title: string
-  body: string
+  subtitle: string
+  hook: string
   userEmail: string | null
+  initialLikeCount?: number
+  initialLikedByCurrentUser?: boolean
 }
 
-export function ContentItem({ slug, title, body, userEmail }: ContentItemProps) {
-  const [isLiked, setIsLiked] = useState(false)
-  const [likeCount, setLikeCount] = useState(0)
+export function ContentItem({
+  slug,
+  title,
+  subtitle,
+  hook,
+  userEmail,
+  initialLikeCount,
+  initialLikedByCurrentUser,
+}: ContentItemProps) {
+  const articleRef = useRef<HTMLElement>(null)
+  const hasLoggedViewRef = useRef(false)
+  const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
+  const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
 
   useEffect(() => {
+    if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
+      setIsLiked(initialLikedByCurrentUser)
+      setLikeCount(initialLikeCount)
+      return
+    }
+
     let cancelled = false
 
     getTopicLikeStatus(slug, userEmail)
@@ -35,6 +54,35 @@ export function ContentItem({ slug, title, body, userEmail }: ContentItemProps) 
 
     return () => {
       cancelled = true
+    }
+  }, [slug, userEmail, initialLikeCount, initialLikedByCurrentUser])
+
+  useEffect(() => {
+    if (!userEmail || !articleRef.current) {
+      return
+    }
+
+    const element = articleRef.current
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const isVisible = entries.some((entry) => entry.isIntersecting)
+        if (!isVisible || hasLoggedViewRef.current) {
+          return
+        }
+
+        hasLoggedViewRef.current = true
+        logActivity(userEmail, "topic_viewed", slug).catch(() => {
+          hasLoggedViewRef.current = false
+        })
+      },
+      { threshold: 0.5 }
+    )
+
+    observer.observe(element)
+
+    return () => {
+      observer.disconnect()
     }
   }, [slug, userEmail])
 
@@ -58,9 +106,10 @@ export function ContentItem({ slug, title, body, userEmail }: ContentItemProps) 
   }
 
   return (
-    <article className="shrink-0 border-b px-4 py-4">
+    <article ref={articleRef} className="shrink-0 border-b px-4 py-4">
       <h2 className="text-base font-semibold">{title}</h2>
-      <p className="text-muted-foreground mt-1 text-sm">{body}</p>
+      <p className="text-muted-foreground mt-1 text-xs">{subtitle}</p>
+      <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
       <div className="mt-3 flex items-center gap-4">
         <button

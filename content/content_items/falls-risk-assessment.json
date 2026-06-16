@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-23",
+    "title": "Falls risk assessment — tools, frequency, post-fall monitoring",
+    "subtitle": "Falls & incidents",
+    "slug": "falls-risk-assessment",
+    "theme": "Falls & incidents"
+  },
+  "body": {
+    "summary": "A falls risk assessment does not prevent all falls — but it gives you the information to reduce risk and respond effectively when one happens.",
+    "text": "## Key points\n\n- Every service user should have a falls risk assessment completed on admission and reviewed at least every six months or after any fall\n- Common risk factors include: cognitive impairment, previous falls, mobility problems, certain medications, poor vision, and environmental hazards\n- The assessment should lead to a care plan that addresses identified risks — it is not just a form to complete\n- After a fall, a post-fall assessment should be completed and the care plan updated\n- Environmental checks are part of falls prevention — look for trip hazards, poor lighting, and unsuitable footwear\n\n## Quick decision prompt\n\n- **Service user has just had their first fall?** → Review the falls risk assessment immediately and update the care plan\n- **Service user is falling repeatedly?** → Escalate to the GP — there may be a medical cause such as a change in medication or a new health condition\n- **Environmental hazard identified?** → Remove it or report it immediately — document what action was taken\n\n## Common mistakes\n\n- Completing the risk assessment as a form-filling exercise without linking it to the care plan\n- Not reviewing the assessment after a fall — the fall itself is important new information\n- Focusing only on the service user and not on environmental factors\n\n## Who to tell\n\n- **Your manager** — after every fall and when risks are identified\n- **GP** — if falls are increasing in frequency or have a possible medical cause\n- **Family** — should be informed of falls, especially repeated ones"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 23,
+    "status": "published",
+    "tags": [
+      "falls-incidents",
+      "falls-risk-assessment"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

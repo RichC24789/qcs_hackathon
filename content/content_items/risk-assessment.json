@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-42",
+    "title": "Risk assessment — types, templates, when to update",
+    "subtitle": "Care planning",
+    "slug": "risk-assessment",
+    "theme": "Care planning"
+  },
+  "body": {
+    "summary": "A risk assessment is not about preventing people from doing things — it is about making sure they can do them as safely as possible.",
+    "text": "## Key points\n\n- Common risk assessments in care include: falls, moving and handling, skin integrity, nutrition, environmental, lone working, and COSHH\n- A risk assessment identifies hazards, assesses the likelihood and severity of harm, and puts controls in place to reduce risk\n- Risk assessments must be reviewed regularly — at least annually and whenever circumstances change\n- Positive risk taking — supporting someone to do something that carries risk because it matters to them — is valid and should be documented\n- Risk assessments should be completed with the service user where possible\n\n## Quick decision prompt\n\n- **New service user admitted?** → A full set of risk assessments should be completed within the first 48–72 hours\n- **Service user has had an incident?** → Review the relevant risk assessment immediately\n- **Service user wants to do something that carries risk?** → Do not simply refuse — complete or review a risk assessment and explore how to support them safely\n\n## Common mistakes\n\n- Completing a risk assessment once and never reviewing it\n- Using a risk assessment to justify refusing support rather than to find a way to provide it safely\n- Not involving the service user in the process\n\n## Who to tell\n\n- **Your manager** — whenever a new risk is identified or an existing assessment needs urgent review"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 42,
+    "status": "published",
+    "tags": [
+      "care-planning",
+      "risk-assessment"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-40",
+    "title": "Safer recruitment — DBS checks, references, right to work",
+    "subtitle": "HR & employment",
+    "slug": "safer-recruitment",
+    "theme": "HR & employment"
+  },
+  "body": {
+    "summary": "Safer recruitment is not just a legal requirement — it is the first line of defence in protecting vulnerable people from harm.",
+    "text": "## Key points\n\n- An enhanced DBS check is required for all staff working with vulnerable adults or children — this must be in place before unsupervised work begins\n- Two references should be obtained before employment starts — at least one from the most recent employer\n- Right to work checks must be completed for every new employee — this includes checking original documents\n- Gaps in employment history should be explored and documented at interview\n- DBS checks should be renewed every three years, or more frequently if your organisation's policy requires it\n\n## Quick decision prompt\n\n- **DBS check has not come back before a new starter's first day?** → They should be supervised at all times until the check is received and clear\n- **DBS check reveals a conviction?** → Follow your organisation's policy — not all convictions are automatically disqualifying; a risk assessment is required\n- **Reference raises a concern about a candidate?** → Do not proceed to employment without discussing with HR or your manager\n\n## Common mistakes\n\n- Allowing unsupervised work before a DBS check is received\n- Accepting a copy of a DBS certificate from a previous employer rather than applying for a new one\n- Not checking the DBS update service to see if a certificate is still current\n\n## Who to tell\n\n- **HR or your manager** — for any concerns arising from recruitment checks\n- **DBS (03000 200 190)** — for queries about the checking process"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 40,
+    "status": "published",
+    "tags": [
+      "hr-employment",
+      "safer-recruitment"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

@@ -11,4 +11,6 @@ public interface ITopicLikeService
     Task<TopicLikeStatus> UnlikeAsync(string topicSlug, string userEmail, CancellationToken cancellationToken = default);
 
     Task<IReadOnlyList<string>> GetLikedSlugsForUserAsync(string userEmail, CancellationToken cancellationToken = default);
+
+    Task<IReadOnlyDictionary<string, int>> GetLikeCountsAsync(CancellationToken cancellationToken = default);
 }

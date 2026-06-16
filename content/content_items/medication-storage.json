@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-05",
+    "title": "Medication storage — temperatures, fridge checks, room conditions",
+    "subtitle": "Medication",
+    "slug": "medication-storage",
+    "theme": "Medication"
+  },
+  "body": {
+    "summary": "Storing medication incorrectly can make it ineffective or dangerous — and it's one of the easiest things to get right.",
+    "text": "## Key points\n\n- Room temperature medications should be stored between 15°C and 25°C — check your medication room thermometer daily\n- Fridge medications must be kept between 2°C and 8°C — check and record the fridge temperature every day\n- If the fridge temperature goes outside range, contact your manager and the pharmacist before administering any fridge medication\n- Medications must be stored in their original packaging with the original label intact\n- Never store medication in a bathroom or near a heat source — humidity and heat degrade medication\n\n## Quick decision prompt\n\n- **Fridge temperature is outside 2–8°C?** → Do not administer fridge medication — record the reading, contact your manager and pharmacist immediately\n- **Medication room is too warm?** → Record it, move medications if safe to do so, contact your manager\n- **Medication has been left out of the fridge?** → Do not assume it is still safe — contact the pharmacist before administering\n\n## Common mistakes\n\n- Forgetting to record temperature checks — if it is not recorded it did not happen\n- Putting insulin or eye drops in the door of the fridge where temperature fluctuates most\n- Not checking the room thermometer because the room feels fine\n\n## Who to tell\n\n- **Your manager** — if any temperature is out of range\n- **Pharmacist** — before administering any medication that may have been compromised\n- **GP** — if a service user may have received degraded medication"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 5,
+    "status": "published",
+    "tags": [
+      "medication",
+      "medication-storage"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "header": {
+    "id": "topic-44",
+    "title": "Mental health and wellbeing of service users — policy, escalation",
+    "subtitle": "Care planning",
+    "slug": "mental-health-wellbeing",
+    "theme": "Care planning"
+  },
+  "body": {
+    "summary": "Mental health is as important as physical health — noticing a change in mood or behaviour and knowing what to do can make an enormous difference.",
+    "text": "## Key points\n\n- Changes in behaviour, mood, sleep, appetite, or social withdrawal can all be signs of deteriorating mental health\n- Record observations factually and report changes to your manager — do not wait for a scheduled review\n- Service users have the right to have their mental health needs addressed in their care plan\n- Crisis situations — where a service user may be at risk of harming themselves or others — require immediate escalation\n- Your own mental health matters too — speak to your manager if you are finding care work emotionally difficult\n\n## Quick decision prompt\n\n- **Service user seems significantly lower in mood than usual?** → Document your observations and report to your manager — a GP or mental health review may be needed\n- **Service user mentions thoughts of self-harm or suicide?** → Take it seriously — do not leave them alone, contact your manager immediately, and call 999 if you believe they are in immediate danger\n- **Service user is becoming increasingly agitated or presenting unusual behaviour?** → Document, report to your manager, and follow de-escalation guidance in the care plan\n\n## Common mistakes\n\n- Attributing behavioural changes to \"just having a bad day\" without documenting and reporting\n- Not knowing whether a service user has a mental health diagnosis or care plan in place\n- Feeling that mental health concerns are outside your scope — observing and reporting is always within your role\n\n## Who to tell\n\n- **Your manager** — for any concerns about a service user's mental health\n- **GP or community mental health team** — your manager will refer if needed\n- **999** — if there is immediate risk of harm"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicNumber": 44,
+    "status": "published",
+    "tags": [
+      "care-planning",
+      "mental-health-wellbeing"
+    ],
+    "locale": "en-GB",
+    "version": 1,
+    "sections": [
+      "Hook",
+      "Key points",
+      "Quick decision prompt",
+      "Common mistakes",
+      "Who to tell",
+      "Animation notes"
+    ]
+  }
+}

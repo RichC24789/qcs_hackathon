@@ -5,8 +5,24 @@ namespace qcs.hackathon.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public sealed class ContentController(ITopicContentService topicContentService) : ControllerBase
+public sealed class ContentController(
+    ITopicContentService topicContentService,
+    IContentFeedService contentFeedService,
+    IUserIdentityService userIdentityService) : ControllerBase
 {
+    [HttpGet]
+    public async Task<IActionResult> GetFeed([FromQuery] int? limit, CancellationToken cancellationToken)
+    {
+        var userEmail = userIdentityService.GetCurrentUserEmail();
+        if (userEmail is null)
+        {
+            return BadRequest("X-User-Email header is required.");
+        }
+
+        var feed = await contentFeedService.GetFeedAsync(userEmail, limit ?? 10, cancellationToken);
+        return Ok(feed);
+    }
+
     [HttpGet("summary")]
     public IActionResult GetSummary()
     {
