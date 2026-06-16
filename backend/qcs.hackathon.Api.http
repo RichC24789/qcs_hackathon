@@ -25,6 +25,26 @@ Accept: application/json
 
 ###
 
+POST {{qcs.hackathon.Api_HostAddress}}/api/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "alice.care@example.com"
+}
+
+###
+
+POST {{qcs.hackathon.Api_HostAddress}}/api/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email": "not-a-user@example.com"
+}
+
+###
+
 GET {{qcs.hackathon.Api_HostAddress}}/api/content/summary
 Accept: application/json
 

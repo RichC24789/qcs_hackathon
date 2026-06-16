@@ -1,9 +1,19 @@
-const API_BASE = import.meta.env.VITE_API_BASE ?? ""
+const API_BASE = import.meta.env.VITE_API_BASE ?? "http://localhost:5280"
 
 type ApiOptions = {
   method?: string
   email?: string | null
   body?: unknown
+}
+
+export class ApiError extends Error {
+  readonly status: number
+
+  constructor(status: number, path: string) {
+    super(`API ${status}: ${path}`)
+    this.name = "ApiError"
+    this.status = status
+  }
 }
 
 async function apiFetch<T>(path: string, options: ApiOptions = {}): Promise<T> {
@@ -26,7 +36,7 @@ async function apiFetch<T>(path: string, options: ApiOptions = {}): Promise<T> {
   })
 
   if (!response.ok) {
-    throw new Error(`API ${response.status}: ${path}`)
+    throw new ApiError(response.status, path)
   }
 
   if (response.status === 202) {
@@ -34,6 +44,19 @@ async function apiFetch<T>(path: string, options: ApiOptions = {}): Promise<T> {
   }
 
   return (await response.json()) as T
+}
+
+export type UserSummary = {
+  id: number
+  email: string
+  displayName: string
+}
+
+export function loginUser(email: string) {
+  return apiFetch<UserSummary>("/api/auth/login", {
+    method: "POST",
+    body: { email },
+  })
 }
 
 export type TopicSummary = {

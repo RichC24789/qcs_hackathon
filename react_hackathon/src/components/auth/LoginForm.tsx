@@ -2,13 +2,15 @@ import { useState, type FormEvent } from "react"
 
 import { Button } from "@/components/ui/button"
 import { useAuth } from "@/contexts/AuthContext"
+import { ApiError } from "@/lib/api"
 
 export function LoginForm() {
   const { login } = useAuth()
   const [email, setEmail] = useState("")
   const [error, setError] = useState<string | null>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
     const trimmed = email.trim()
@@ -23,14 +25,29 @@ export function LoginForm() {
     }
 
     setError(null)
-    login(trimmed)
+    setIsSubmitting(true)
+
+    try {
+      await login(trimmed)
+    } catch (caught) {
+      if (caught instanceof ApiError && caught.status === 401) {
+        setError(
+          "That email is not registered. Use one of the seeded demo accounts."
+        )
+      } else {
+        setError("Unable to log in right now. Please try again.")
+      }
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
     <>
       <h1 className="text-lg font-semibold">Log in</h1>
       <p className="text-muted-foreground mt-1 text-sm">
-        Enter your email to continue.
+        Enter a seeded demo email to continue, for example{" "}
+        <span className="font-medium">alice.care@example.com</span>.
       </p>
 
       <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
@@ -44,15 +61,16 @@ export function LoginForm() {
             autoComplete="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            placeholder="you@example.com"
-            className="border-input bg-background focus-visible:border-ring focus-visible:ring-ring/50 h-9 rounded-lg border px-3 text-sm outline-none focus-visible:ring-3"
+            placeholder="alice.care@example.com"
+            disabled={isSubmitting}
+            className="border-input bg-background focus-visible:border-ring focus-visible:ring-ring/50 h-9 rounded-lg border px-3 text-sm outline-none focus-visible:ring-3 disabled:opacity-50"
           />
         </div>
 
         {error ? <p className="text-destructive text-sm">{error}</p> : null}
 
-        <Button type="submit" className="w-full">
-          Log in
+        <Button type="submit" className="w-full" disabled={isSubmitting}>
+          {isSubmitting ? "Logging in…" : "Log in"}
         </Button>
       </form>
     </>

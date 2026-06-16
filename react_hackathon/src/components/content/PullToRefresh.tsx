@@ -18,12 +18,17 @@ type PullToRefreshProps = {
   className?: string
 }
 
+function isAtScrollTop(container: HTMLElement) {
+  return container.scrollTop <= 1
+}
+
 export function PullToRefresh({
   onRefresh,
   children,
   className,
 }: PullToRefreshProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const onRefreshRef = useRef(onRefresh)
   const [pullDistance, setPullDistance] = useState(0)
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
@@ -32,13 +37,28 @@ export function PullToRefresh({
   const pullDistanceRef = useRef(0)
   const isRefreshingRef = useRef(false)
 
+  onRefreshRef.current = onRefresh
   pullDistanceRef.current = pullDistance
   isRefreshingRef.current = isRefreshing
 
+  function resetPull() {
+    pullDistanceRef.current = 0
+    setPullDistance(0)
+  }
+
   function animateTo(distance: number) {
+    pullDistanceRef.current = distance
     setIsAnimating(true)
     setPullDistance(distance)
-    window.setTimeout(() => setIsAnimating(false), 250)
+    window.setTimeout(() => setIsAnimating(false), 220)
+  }
+
+  function scrollToTopAfterLayout(container: HTMLElement) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        container.scrollTop = 0
+      })
+    })
   }
 
   useEffect(() => {
@@ -48,7 +68,7 @@ export function PullToRefresh({
     }
 
     function handleTouchStart(event: TouchEvent) {
-      if (isRefreshingRef.current || container!.scrollTop > 1) {
+      if (isRefreshingRef.current || !isAtScrollTop(container!)) {
         isPullingRef.current = false
         return
       }
@@ -62,9 +82,9 @@ export function PullToRefresh({
         return
       }
 
-      if (container!.scrollTop > 1) {
+      if (!isAtScrollTop(container!)) {
         isPullingRef.current = false
-        setPullDistance(0)
+        resetPull()
         return
       }
 
@@ -76,8 +96,7 @@ export function PullToRefresh({
         setPullDistance(nextDistance)
       } else if (delta < 0) {
         isPullingRef.current = false
-        pullDistanceRef.current = 0
-        setPullDistance(0)
+        resetPull()
       }
     }
 
@@ -92,16 +111,18 @@ export function PullToRefresh({
         pullDistanceRef.current >= PULL_THRESHOLD &&
         !isRefreshingRef.current
       ) {
-        setIsRefreshing(true)
-        setPullDistance(REFRESH_HOLD)
         isRefreshingRef.current = true
+        setIsRefreshing(true)
+        pullDistanceRef.current = REFRESH_HOLD
+        setPullDistance(REFRESH_HOLD)
 
         try {
-          await onRefresh()
+          await onRefreshRef.current()
         } finally {
           isRefreshingRef.current = false
           setIsRefreshing(false)
           animateTo(0)
+          scrollToTopAfterLayout(container!)
         }
       } else {
         animateTo(0)
@@ -121,7 +142,7 @@ export function PullToRefresh({
       container.removeEventListener("touchend", handleTouchEnd)
       container.removeEventListener("touchcancel", handleTouchEnd)
     }
-  }, [onRefresh])
+  }, [])
 
   const spinnerOpacity = isRefreshing
     ? 1

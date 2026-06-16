@@ -2,9 +2,9 @@ import { LoginForm } from "@/components/auth/LoginForm"
 import { useAuth } from "@/contexts/AuthContext"
 
 export function LoginModal() {
-  const { isLoggedIn } = useAuth()
+  const { isLoggedIn, isLoading } = useAuth()
 
-  if (isLoggedIn) {
+  if (isLoading || isLoggedIn) {
     return null
   }
 

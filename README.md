@@ -5,7 +5,7 @@ Care micro-content hackathon project with topic markdown, a React frontend, and 
 ## ASP.NET API
 
 ```powershell
-dotnet run --project c:\dev\hackathon\backend\qcs.hackathon.Api.csproj
+dotnet run --project backend/qcs.hackathon.Api.csproj
 ```
 
 API: http://localhost:5280
@@ -23,6 +23,7 @@ API: http://localhost:5280
 - `GET /api/users/me/likes` — slugs liked by current user
 - `POST /api/activity` — log activity (`activityType`, optional `topicSlug`, `details`)
 - `GET /api/activity` — activity history for current user
+- `POST /api/auth/login` — validate email against seeded users; returns user profile or 401
 - `GET /api/users` — list seeded users
 - `GET /openapi/v1.json` — OpenAPI spec (development)
 
@@ -40,11 +41,13 @@ SQLite database file: `backend/hackathon.db` (created automatically on first run
 | dave.admin@example.com | Dave Mitchell |
 | eve.trainee@example.com | Eve Johnson |
 
-Use any of these emails to log in via the React app, or pass them in the `X-User-Email` header.
+Use one of the seeded emails below to log in via the React app. Unknown emails are rejected at login. After login, pass the same email in the `X-User-Email` header for authenticated API calls.
 
 ## React frontend
 
 See `react_hackathon/README.md`.
+
+Frontend API calls target `http://localhost:5280` (override with `VITE_API_BASE`).
 
 ## Content
 

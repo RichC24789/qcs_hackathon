@@ -7,14 +7,14 @@ import { useAuth } from "@/contexts/AuthContext"
 import { cn } from "@/lib/utils"
 
 export function AppLayout() {
-  const { isLoggedIn } = useAuth()
+  const { isLoggedIn, isLoading } = useAuth()
 
   return (
     <div className="h-svh bg-neutral-100">
       <div
         className={cn(
           "relative mx-auto flex h-svh w-full max-w-[430px] flex-col overflow-hidden bg-white shadow-sm",
-          !isLoggedIn && "pointer-events-none select-none"
+          !isLoading && !isLoggedIn && "pointer-events-none select-none"
         )}
       >
         <Header />
