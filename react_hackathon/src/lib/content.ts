@@ -275,3 +275,30 @@ export function getFeedItems(options?: { shuffle?: boolean }): FeedItem[] {
 
   return options?.shuffle ? shuffle(items) : items
 }
+
+export function simulateFeedRefresh(currentItems: FeedItem[]): FeedItem[] {
+  const hasNewItems = Math.random() > 0.25
+  if (!hasNewItems) {
+    return currentItems
+  }
+
+  const visibleIds = new Set(
+    currentItems.slice(0, 10).map((item) => item.id.split("-refresh-")[0])
+  )
+
+  const candidates = getFeedItems({ shuffle: true }).filter(
+    (item) => !visibleIds.has(item.id)
+  )
+
+  const newCount = 1 + Math.floor(Math.random() * 2)
+  const newItems = candidates.slice(0, newCount).map((item, index) => ({
+    ...item,
+    id: `${item.id}-refresh-${Date.now()}-${index}`,
+  }))
+
+  if (newItems.length === 0) {
+    return currentItems
+  }
+
+  return [...newItems, ...currentItems]
+}

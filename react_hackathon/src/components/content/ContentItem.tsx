@@ -13,7 +13,7 @@ export function ContentItem({ title, body }: ContentItemProps) {
   const [isLiked, setIsLiked] = useState(false)
 
   return (
-    <article className="border-b px-4 py-4">
+    <article className="shrink-0 border-b px-4 py-4">
       <h2 className="text-base font-semibold">{title}</h2>
       <p className="text-muted-foreground mt-1 text-sm">{body}</p>
 

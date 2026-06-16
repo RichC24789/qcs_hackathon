@@ -8,8 +8,9 @@ import {
 
 import { cn } from "@/lib/utils"
 
-const PULL_THRESHOLD = 72
-const MAX_PULL = 120
+const PULL_THRESHOLD = 64
+const REFRESH_HOLD = 52
+const MAX_PULL = 140
 
 type PullToRefreshProps = {
   onRefresh: () => Promise<void>
@@ -25,6 +26,7 @@ export function PullToRefresh({
   const containerRef = useRef<HTMLDivElement>(null)
   const [pullDistance, setPullDistance] = useState(0)
   const [isRefreshing, setIsRefreshing] = useState(false)
+  const [isAnimating, setIsAnimating] = useState(false)
   const startYRef = useRef(0)
   const isPullingRef = useRef(false)
   const pullDistanceRef = useRef(0)
@@ -33,6 +35,12 @@ export function PullToRefresh({
   pullDistanceRef.current = pullDistance
   isRefreshingRef.current = isRefreshing
 
+  function animateTo(distance: number) {
+    setIsAnimating(true)
+    setPullDistance(distance)
+    window.setTimeout(() => setIsAnimating(false), 250)
+  }
+
   useEffect(() => {
     const container = containerRef.current
     if (!container) {
@@ -40,7 +48,7 @@ export function PullToRefresh({
     }
 
     function handleTouchStart(event: TouchEvent) {
-      if (isRefreshingRef.current || container!.scrollTop > 0) {
+      if (isRefreshingRef.current || container!.scrollTop > 1) {
         isPullingRef.current = false
         return
       }
@@ -54,7 +62,7 @@ export function PullToRefresh({
         return
       }
 
-      if (container!.scrollTop > 0) {
+      if (container!.scrollTop > 1) {
         isPullingRef.current = false
         setPullDistance(0)
         return
@@ -63,9 +71,13 @@ export function PullToRefresh({
       const delta = event.touches[0].clientY - startYRef.current
       if (delta > 0) {
         event.preventDefault()
-        const nextDistance = Math.min(delta * 0.45, MAX_PULL)
+        const nextDistance = Math.min(delta * 0.55, MAX_PULL)
         pullDistanceRef.current = nextDistance
         setPullDistance(nextDistance)
+      } else if (delta < 0) {
+        isPullingRef.current = false
+        pullDistanceRef.current = 0
+        setPullDistance(0)
       }
     }
 
@@ -81,7 +93,7 @@ export function PullToRefresh({
         !isRefreshingRef.current
       ) {
         setIsRefreshing(true)
-        setPullDistance(48)
+        setPullDistance(REFRESH_HOLD)
         isRefreshingRef.current = true
 
         try {
@@ -89,10 +101,10 @@ export function PullToRefresh({
         } finally {
           isRefreshingRef.current = false
           setIsRefreshing(false)
-          setPullDistance(0)
+          animateTo(0)
         }
       } else {
-        setPullDistance(0)
+        animateTo(0)
       }
     }
 
@@ -111,35 +123,49 @@ export function PullToRefresh({
     }
   }, [onRefresh])
 
-  const showIndicator = isRefreshing || pullDistance > 0
-  const indicatorHeight = isRefreshing ? 48 : pullDistance
+  const spinnerOpacity = isRefreshing
+    ? 1
+    : Math.min(pullDistance / PULL_THRESHOLD, 1)
 
   return (
     <div
       ref={containerRef}
-      className={cn("min-h-0 flex-1 overflow-y-auto overscroll-y-contain", className)}
+      className={cn(
+        "min-h-0 flex-1 overflow-y-auto overscroll-y-contain",
+        className
+      )}
     >
       <div
-        className="flex items-end justify-center overflow-hidden transition-[height] duration-200 ease-out"
-        style={{ height: showIndicator ? indicatorHeight : 0 }}
-        aria-hidden={!showIndicator}
+        className={cn(
+          "relative will-change-transform",
+          isAnimating && "transition-transform duration-200 ease-out"
+        )}
+        style={{ transform: `translate3d(0, ${pullDistance}px, 0)` }}
       >
-        <Loader2
-          className={cn(
-            "text-muted-foreground mb-2 size-6",
-            isRefreshing && "animate-spin"
-          )}
+        <div
+          className="pointer-events-none absolute right-0 left-0 flex items-end justify-center"
           style={{
-            opacity: isRefreshing
-              ? 1
-              : Math.min(pullDistance / PULL_THRESHOLD, 1),
-            transform: isRefreshing
-              ? undefined
-              : `rotate(${pullDistance * 3}deg)`,
+            bottom: "100%",
+            height: REFRESH_HOLD,
+            paddingBottom: 8,
           }}
-        />
+          aria-hidden={pullDistance === 0 && !isRefreshing}
+        >
+          <Loader2
+            className={cn(
+              "text-muted-foreground size-6",
+              isRefreshing && "animate-spin"
+            )}
+            style={{
+              opacity: spinnerOpacity,
+              transform: isRefreshing
+                ? undefined
+                : `rotate(${pullDistance * 2.5}deg)`,
+            }}
+          />
+        </div>
+        {children}
       </div>
-      {children}
     </div>
   )
 }
