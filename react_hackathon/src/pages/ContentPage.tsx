@@ -1,29 +1,22 @@
-import { ContentItem, type ContentItemProps } from "@/components/content/ContentItem"
+import { useCallback, useState } from "react"
 
-const mockContentItems: ContentItemProps[] = [
-  {
-    id: "1",
-    title: "Welcome to QCS",
-    body: "Browse content and manage your profile.",
-  },
-  {
-    id: "2",
-    title: "Hackathon update",
-    body: "React layout with pages, components, and routing.",
-  },
-  {
-    id: "3",
-    title: "Getting started",
-    body: "Tap the heart to mark items you like.",
-  },
-]
+import { ContentItem } from "@/components/content/ContentItem"
+import { PullToRefresh } from "@/components/content/PullToRefresh"
+import { getFeedItems } from "@/lib/content"
 
 export function ContentPage() {
+  const [items, setItems] = useState(() => getFeedItems())
+
+  const handleRefresh = useCallback(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 1200))
+    setItems(getFeedItems({ shuffle: true }))
+  }, [])
+
   return (
-    <div className="flex flex-col">
-      {mockContentItems.map((item) => (
-        <ContentItem key={item.id} {...item} />
+    <PullToRefresh onRefresh={handleRefresh} className="pb-14">
+      {items.map((item) => (
+        <ContentItem key={item.id} id={item.id} title={item.title} body={item.body} />
       ))}
-    </div>
+    </PullToRefresh>
   )
 }
