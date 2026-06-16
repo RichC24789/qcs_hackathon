@@ -5,7 +5,7 @@ Care micro-content hackathon project with topic markdown, a React frontend, and 
 ## ASP.NET API
 
 ```powershell
-dotnet run --project c:\dev\hackathon\qcs.hackathon.Api.csproj
+dotnet run --project c:\dev\hackathon\backend\qcs.hackathon.Api.csproj
 ```
 
 API: http://localhost:5280
@@ -25,4 +25,4 @@ See `react_hackathon/README.md`.
 
 ## Content
 
-Topic markdown lives in `content/topics/` (also copied to `Content/topics/` for the API build).
+Topic markdown lives in `content/topics/` at the repo root. The API reads from there via `backend/`.

@@ -12,10 +12,10 @@ public sealed partial class TopicContentService : ITopicContentService
     {
         var configuredPath = configuration["Content:TopicsPath"];
         _contentRoot = string.IsNullOrWhiteSpace(configuredPath)
-            ? Path.Combine(environment.ContentRootPath, "Content", "topics")
+            ? Path.GetFullPath(Path.Combine(environment.ContentRootPath, "..", "content", "topics"))
             : Path.IsPathRooted(configuredPath)
                 ? configuredPath
-                : Path.Combine(environment.ContentRootPath, configuredPath);
+                : Path.GetFullPath(Path.Combine(environment.ContentRootPath, configuredPath));
 
         _topics = new Lazy<IReadOnlyList<TopicDetail>>(LoadTopics);
     }
