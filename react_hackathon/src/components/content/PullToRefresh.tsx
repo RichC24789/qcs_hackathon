@@ -152,7 +152,7 @@ export function PullToRefresh({
     <div
       ref={containerRef}
       className={cn(
-        "min-h-0 flex-1 overflow-y-auto overscroll-y-contain",
+        "scrollbar-hide min-h-0 flex-1 overflow-y-auto overscroll-y-contain",
         className
       )}
     >

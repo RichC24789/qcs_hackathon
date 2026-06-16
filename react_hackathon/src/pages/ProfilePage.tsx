@@ -13,7 +13,7 @@ export function ProfilePage() {
   }
 
   return (
-    <div className="flex-1 overflow-y-auto px-4 py-6 pb-14">
+    <div className="scrollbar-hide flex-1 overflow-y-auto px-4 py-6 pb-14">
       <p className="text-sm font-medium">Signed in as</p>
       <p className="mt-1 text-sm">{email}</p>
       <Button variant="outline" className="mt-6" onClick={logout}>

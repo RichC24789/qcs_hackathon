@@ -16,6 +16,9 @@ internal sealed class ContentItemDocument
 
 internal sealed class ContentItemHeader
 {
+    [JsonPropertyName("id")]
+    public string Id { get; init; } = string.Empty;
+
     [JsonPropertyName("title")]
     public string Title { get; init; } = string.Empty;
 
@@ -37,6 +40,9 @@ internal sealed class ContentItemBody
 
 internal sealed class ContentItemMetadata
 {
+    [JsonPropertyName("topicIDs")]
+    public string[] TopicIDs { get; init; } = [];
+
     [JsonPropertyName("format")]
     public string Format { get; init; } = string.Empty;
 

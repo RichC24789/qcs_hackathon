@@ -77,18 +77,19 @@ public sealed partial class TopicContentService : ITopicContentService
         {
             var json = File.ReadAllText(filePath);
             var document = JsonSerializer.Deserialize<ContentItemDocument>(json, JsonOptions);
+            var topicNumber = ResolveTopicNumber(document);
             if (document is null ||
-                document.Metadata.TopicNumber <= 0 ||
+                topicNumber <= 0 ||
                 string.IsNullOrWhiteSpace(document.Header.Slug))
             {
                 return null;
             }
 
             var sections = BuildSections(document);
-            var rawMarkdown = BuildRawMarkdown(document, sections);
+            var rawMarkdown = BuildRawMarkdown(document, sections, topicNumber);
 
             return new TopicDetail(
-                document.Metadata.TopicNumber,
+                topicNumber,
                 document.Header.Slug,
                 document.Header.Title,
                 document.Header.Theme,
@@ -101,6 +102,43 @@ public sealed partial class TopicContentService : ITopicContentService
         {
             return null;
         }
+    }
+
+    private static int ResolveTopicNumber(ContentItemDocument? document)
+    {
+        if (document is null)
+        {
+            return 0;
+        }
+
+        if (document.Metadata.TopicNumber > 0)
+        {
+            return document.Metadata.TopicNumber;
+        }
+
+        foreach (var topicId in document.Metadata.TopicIDs)
+        {
+            if (TryParseTopicNumber(topicId, out var number))
+            {
+                return number;
+            }
+        }
+
+        return TryParseTopicNumber(document.Header.Id, out var headerNumber)
+            ? headerNumber
+            : 0;
+    }
+
+    private static bool TryParseTopicNumber(string value, out int number)
+    {
+        number = 0;
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            return false;
+        }
+
+        var match = TopicNumberRegex().Match(value.Trim());
+        return match.Success && int.TryParse(match.Groups["number"].Value, out number);
     }
 
     private static Dictionary<string, string> BuildSections(ContentItemDocument document)
@@ -117,14 +155,27 @@ public sealed partial class TopicContentService : ITopicContentService
 
     private static string BuildRawMarkdown(
         ContentItemDocument document,
-        IReadOnlyDictionary<string, string> sections)
+        IReadOnlyDictionary<string, string> sections,
+        int topicNumber)
     {
         var builder = new StringBuilder();
-        builder.AppendLine($"# Topic {document.Metadata.TopicNumber}: {document.Header.Title}");
+        builder.AppendLine($"# Topic {topicNumber}: {document.Header.Title}");
         builder.AppendLine();
-        builder.AppendLine($"**Theme:** {document.Header.Theme}");
-        builder.AppendLine($"**Primary format:** {document.Metadata.Format}");
-        builder.AppendLine($"**Secondary format:** {document.Metadata.SecondaryFormat}");
+        if (!string.IsNullOrWhiteSpace(document.Header.Theme))
+        {
+            builder.AppendLine($"**Theme:** {document.Header.Theme}");
+        }
+
+        if (!string.IsNullOrWhiteSpace(document.Metadata.Format))
+        {
+            builder.AppendLine($"**Primary format:** {document.Metadata.Format}");
+        }
+
+        if (!string.IsNullOrWhiteSpace(document.Metadata.SecondaryFormat))
+        {
+            builder.AppendLine($"**Secondary format:** {document.Metadata.SecondaryFormat}");
+        }
+
         builder.AppendLine();
         builder.AppendLine("---");
         builder.AppendLine();
@@ -179,4 +230,7 @@ public sealed partial class TopicContentService : ITopicContentService
 
     [GeneratedRegex(@"^##\s+(?<heading>.+)$", RegexOptions.Multiline)]
     private static partial Regex SectionHeadingRegex();
+
+    [GeneratedRegex(@"(?<number>\d+)$")]
+    private static partial Regex TopicNumberRegex();
 }

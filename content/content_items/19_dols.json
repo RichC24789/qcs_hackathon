@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "19",
+    "slug": "dols",
+    "title": "DoLS — when to apply, process"
+  },
+  "body": {
+    "summary": "If you are restricting someone's freedom to keep them safe, and they lack capacity to consent to that restriction, a DoLS authorisation is likely required.",
+    "text": "## Key points\n\n- DoLS stands for Deprivation of Liberty Safeguards — it is the legal process for authorising restrictions on a person who lacks capacity\n- A deprivation of liberty occurs when someone is under continuous supervision and control and is not free to leave\n- DoLS applications are made by the care home or hospital to the local authority\n- An urgent authorisation can be self-granted for up to 7 days while a standard authorisation is sought\n- DoLS applies in care homes and hospitals — a different process (Court of Protection) applies in other settings\n\n## Quick decision prompt\n\n- **Service user lacks capacity and is being prevented from leaving for their own safety?** → Speak to your manager — a DoLS application may be needed\n- **DoLS authorisation is in place — what does it mean day to day?** → The restrictions in the authorisation are legally permitted — do not exceed them and review the person's care plan regularly\n- **Service user's condition has improved and they may now have capacity?** → Notify your manager — the DoLS may need to be reviewed or removed\n\n## Common mistakes\n\n- Not applying for DoLS because the restriction seems minor or is \"for their own good\" — the threshold is about the nature of the restriction, not the intention behind it\n- Exceeding the restrictions permitted in the authorisation\n- Not reviewing a DoLS regularly — they must be monitored throughout their duration\n\n## Who to tell\n\n- **Your manager** — whenever a potential deprivation of liberty is identified\n- **Local authority** — to apply for a standard authorisation\n- **CQC** — DoLS records may be checked during inspection"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "19"
+    ]
+  }
+}

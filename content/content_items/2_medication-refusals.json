@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "2",
+    "slug": "medication-refusals",
+    "title": "Medication refusals — process, documentation, escalation"
+  },
+  "body": {
+    "summary": "A service user has the right to refuse medication — your job is to respond safely, record it accurately, and know when to escalate.",
+    "text": "## Key points\n\n- Never force or coerce a service user to take medication — this could constitute abuse\n- Calmly explore the reason for refusal — they may be confused, in pain, or have a valid concern\n- Record the refusal clearly on the MAR chart, noting the reason given if one was provided\n- Inform your manager, especially if the medication is high risk or time-critical\n- Some refusals require a GP call — insulin, epilepsy medication, and blood thinners are examples\n\n## Quick decision prompt\n\n- **Service user refuses once but usually takes medication?** → Note it on the MAR chart, inform your manager, monitor for any change\n- **Service user refuses repeatedly over several days?** → Escalate to manager and GP — a medication review may be needed\n- **Service user lacks capacity and refuses?** → Do not administer without a best interest decision in place — contact your manager immediately\n\n## Common mistakes\n\n- Leaving the MAR chart blank rather than recording the refusal — a blank entry looks like a missed dose, not a refusal\n- Trying to hide medication in food or drink without a formal covert medication plan in place\n- Not informing the GP when a high-risk medication has been refused more than once\n\n## Who to tell\n\n- **Your manager** — same shift, sooner if medication is high risk\n- **GP or prescriber** — if refusal is repeated or medication is clinically critical\n- **Family or next of kin** — depending on the service user's wishes and capacity"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "2"
+    ]
+  }
+}

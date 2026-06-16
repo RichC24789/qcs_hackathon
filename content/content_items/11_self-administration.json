@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "11",
+    "slug": "self-administration",
+    "title": "Self-administration of medication — risk assessment, MAR charts"
+  },
+  "body": {
+    "summary": "Some service users can and should manage their own medication — but only with a risk assessment in place and the right support around them.",
+    "text": "## Key points\n\n- Self-administration means the service user manages their own medication independently or with minimal prompting\n- A self-administration risk assessment must be completed before a service user takes on this responsibility\n- The risk assessment should consider capacity, physical ability, understanding of the medication, and safe storage\n- A MAR chart is still required even when a service user self-administers — it documents what should be taken and when\n- The arrangement should be reviewed regularly and whenever the service user's health or circumstances change\n\n## Quick decision prompt\n\n- **Service user wants to self-administer but no risk assessment exists?** → Do not agree to it yet — speak to your manager to arrange an assessment\n- **Service user's health has declined and you are concerned about self-administration?** → Raise with your manager — a review of the risk assessment is needed\n- **Service user is self-administering but you notice medication is not being taken?** → Document your concern and report to your manager and GP\n\n## Common mistakes\n\n- Assuming a service user with capacity can automatically self-administer without a formal assessment\n- Failing to review the arrangement after a hospital admission or change in health\n- Not maintaining a MAR chart because \"they do it themselves\"\n\n## Who to tell\n\n- **Your manager** — before any self-administration arrangement begins and if any concerns arise\n- **GP** — if the arrangement needs to change or if medication is not being taken as prescribed"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "11"
+    ]
+  }
+}

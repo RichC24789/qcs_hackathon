@@ -69,7 +69,7 @@ export function ContentPage() {
           key={item.slug}
           slug={item.slug}
           title={item.title}
-          subtitle={`${item.theme} · ${item.primaryFormat}`}
+          subtitle={item.theme}
           hook={item.hook}
           userEmail={email}
           initialLikeCount={item.likeCount}

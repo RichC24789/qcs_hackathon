@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "8",
+    "slug": "prn-medication",
+    "title": "PRN (as required) medication — protocols, reviewing, recording"
+  },
+  "body": {
+    "summary": "PRN medication gives you flexibility — but only within a specific protocol. Without one, you should not be administering it.",
+    "text": "## Key points\n\n- PRN means \"as required\" — medication that is given when a specific symptom or condition occurs, not on a fixed schedule\n- A PRN protocol must be in place for every PRN medication — it specifies what the medication is for, when to give it, the dose, and the maximum frequency\n- Always check the MAR chart before giving a PRN medication — check when it was last given and whether the minimum interval has passed\n- Record every PRN administration immediately, including the reason it was given\n- PRN protocols should be reviewed regularly — at least every six months or when the service user's condition changes\n\n## Quick decision prompt\n\n- **No PRN protocol exists for a medication?** → Do not administer it — contact your manager and the GP to get a protocol in place first\n- **Unsure whether to give PRN medication?** → Check the protocol — if the symptom matches and the interval has passed, proceed. If unsure, contact your manager\n- **Service user is regularly needing PRN medication?** → This may indicate their regular medication needs reviewing — flag to your manager and GP\n\n## Common mistakes\n\n- Giving PRN medication without checking when it was last administered — this can lead to overdose\n- Not recording the reason for giving PRN medication — the record should show what symptom prompted the dose\n- Assuming a PRN protocol carries over automatically when a service user returns from hospital — always check it has been reauthorised\n\n## Who to tell\n\n- **Your manager** — if no protocol exists, if you are unsure, or if a service user is regularly needing PRN medication\n- **GP** — if the PRN medication appears to be needed more frequently than the protocol allows"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "8"
+    ]
+  }
+}

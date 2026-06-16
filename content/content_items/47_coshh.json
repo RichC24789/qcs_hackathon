@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "47",
+    "slug": "coshh",
+    "title": "COSHH — hazardous substances, safety data sheets, risk assessment"
+  },
+  "body": {
+    "summary": "Many everyday cleaning products are hazardous if used incorrectly — COSHH makes sure you know the risks before you open the bottle.",
+    "text": "## Key points\n\n- COSHH stands for Control of Substances Hazardous to Health — it covers chemicals, cleaning products, body fluids, and biological agents\n- Every hazardous substance used in your workplace should have a Safety Data Sheet (SDS) — this tells you what the risks are and what PPE is needed\n- Never mix cleaning products — some combinations produce toxic gases\n- Store hazardous substances in their original containers in a locked cupboard away from service users\n- Report any spillage of hazardous substances to your manager immediately\n\n## Quick decision prompt\n\n- **Exposed to a hazardous substance (splash in eyes, skin contact, inhalation)?** → Follow the first aid guidance on the SDS — flush eyes with water for at least 10 minutes; seek medical attention if needed\n- **Unsure what PPE to use for a cleaning task?** → Check the SDS — it will specify the required PPE\n- **Hazardous substance stored incorrectly?** → Report to your manager — it must be secured away from service users\n\n## Common mistakes\n\n- Decanting cleaning products into unmarked containers\n- Not checking the SDS before using a new product\n- Mixing bleach-based and ammonia-based products — this produces toxic chloramine gas\n\n## Who to tell\n\n- **Your manager** — for any COSHH incident, spillage, or storage concern"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "47"
+    ]
+  }
+}

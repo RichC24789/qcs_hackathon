@@ -108,7 +108,9 @@ export function ContentItem({
   return (
     <article ref={articleRef} className="shrink-0 border-b px-4 py-4">
       <h2 className="text-base font-semibold">{title}</h2>
-      <p className="text-muted-foreground mt-1 text-xs">{subtitle}</p>
+      {subtitle ? (
+        <p className="text-muted-foreground mt-1 text-xs">{subtitle}</p>
+      ) : null}
       <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
       <div className="mt-3 flex items-center gap-4">
@@ -122,13 +124,13 @@ export function ContentItem({
         >
           <Heart
             className={cn(
-              "size-6",
+              "size-6 shrink-0",
               isLiked && "fill-current text-red-500"
             )}
           />
-          <span className="text-sm">{likeCount}</span>
+          <span className="w-6 text-left text-sm tabular-nums">{likeCount}</span>
         </button>
-        <button type="button" aria-label="Share" className="p-1">
+        <button type="button" aria-label="Share" className="shrink-0 p-1">
           <Share2 className="size-6" />
         </button>
       </div>

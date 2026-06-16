@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "6",
+    "slug": "medication-competency",
+    "title": "Medication competency assessments — frequency, sign-off process"
+  },
+  "body": {
+    "summary": "Medication competency isn't a one-off tick box — it needs to be reassessed regularly and whenever something changes.",
+    "text": "## Key points\n\n- All staff who administer medication must complete a competency assessment before doing so independently\n- Competency should be reassessed at least annually — more frequently if errors have occurred\n- A competency assessment typically includes a written or verbal knowledge check and a supervised practical observation\n- Staff who fail a competency assessment should not administer medication until they have completed further training and been reassessed\n- New medications or new routes of administration may require an additional competency sign-off\n\n## Quick decision prompt\n\n- **Staff member's competency is overdue?** → They should not administer medication until reassessment is complete — arrange this as a priority\n- **Staff member has made a medication error?** → A competency reassessment should be part of the response, alongside the incident investigation\n- **New medication type introduced (e.g. a patch or injection)?** → Check whether a specific competency sign-off is required before the staff member administers it\n\n## Common mistakes\n\n- Treating competency as a one-time induction activity rather than an ongoing requirement\n- Not triggering a reassessment after a medication error\n- Allowing a competency to lapse because it is hard to schedule — lapsed competency is a serious governance risk\n\n## Who to tell\n\n- **Your manager** — if a competency is overdue or a staff member has not passed\n- **The staff member's supervisor** — to arrange training and reassessment\n- **CQC** — may ask to see competency records during inspection"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "6"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "3",
+    "slug": "medication-administration",
+    "title": "Medication administration — correct procedure, the six rights"
+  },
+  "body": {
+    "summary": "Getting medication administration right every time starts with six simple checks — skip one and you risk serious harm.",
+    "text": "## Key points\n\n- The six rights are: right person, right medication, right dose, right route, right time, right documentation\n- Always check the MAR chart before administering — never rely on memory\n- Check the expiry date on every medication before giving it\n- Never administer medication that is not in its original packaging or has no label\n- Wash hands before and after administering medication\n- Stay with the service user until you have confirmed they have taken the medication\n\n## Quick decision prompt\n\n- **Not sure if medication has already been given?** → Check the MAR chart — if it shows as given, do not administer again. Contact your manager if unclear\n- **Medication label does not match the MAR chart?** → Do not administer — contact your manager and the pharmacist before proceeding\n- **Service user cannot swallow a tablet?** → Do not crush without explicit written authorisation from the prescriber — contact the GP\n\n## Common mistakes\n\n- Signing the MAR chart before giving the medication rather than immediately after\n- Assuming a medication is the same because the box looks familiar — always read the label\n- Leaving prepared medication unattended even briefly\n\n## Who to tell\n\n- **Your manager** — if anything does not match or you are unsure about any step\n- **GP or pharmacist** — if there is a discrepancy between the label and the MAR chart\n- **Manager and GP** — if a service user cannot safely swallow their medication"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": [
+      "3"
+    ]
+  }
+}
