@@ -1,6 +1,6 @@
 # qcs_hackathon
 
-Care micro-content hackathon project with topic markdown, a React frontend, and an ASP.NET Core API.
+Care micro-content hackathon project with topic JSON content, a React frontend, and an ASP.NET Core API.
 
 ## ASP.NET API
 
@@ -52,7 +52,37 @@ Frontend API calls target `http://localhost:5280` (override with `VITE_API_BASE`
 
 ## Content
 
-Topic JSON lives in `content/content_items/` at the repo root (one file per topic slug). The API reads from there via `backend/`.
+Topic JSON lives in `content/content_items/` at the repo root. The API reads from there via `backend/`.
+
+Each topic is a single file named `{id}_{slug}.json` (e.g. `43_consent-to-care.json`). IDs are the topic numbers `1`–`50`.
+
+### Content item structure
+
+```json
+{
+  "header": {
+    "id": "43",
+    "slug": "consent-to-care",
+    "title": "Consent to care — how to obtain, when needed, documentation"
+  },
+  "body": {
+    "summary": "Short hook shown in the feed.",
+    "text": "## Key points\n\n- …\n\n## Quick decision prompt\n\n- …"
+  },
+  "metadata": {
+    "format": "text-card",
+    "topicIDs": ["43"]
+  }
+}
+```
+
+| Section | Fields | Notes |
+|---------|--------|-------|
+| `header` | `id`, `slug`, `title` | `id` is the topic number as a string (`"1"`–`"50"`). `slug` is the URL-safe identifier used by the API. |
+| `body` | `summary`, `text` | `summary` is the feed hook. `text` is markdown with `##` section headings (Key points, Quick decision prompt, etc.). |
+| `metadata` | `format`, `topicIDs` | `format` is the content type (currently `text-card`). `topicIDs` links this item to one or more topic numbers. |
+
+### Other content files
 
 - `content/TOPICS.md` — human-readable index of all 50 topics (not read by the API)
 - `content/SUMMARY.md` — format map and overview; served by `GET /api/content/summary`
