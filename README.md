@@ -1,8 +1,8 @@
-# QCS Hackathon API
+# qcs_hackathon
 
-ASP.NET Core Web API serving care micro-content topics from [qcs_hackathon](https://github.com/RichC24789/qcs_hackathon).
+Care micro-content hackathon project with topic markdown, a React frontend, and an ASP.NET Core API.
 
-## Run
+## ASP.NET API
 
 ```powershell
 dotnet run --project c:\dev\hackathon\qcs.hackathon.Api.csproj
@@ -10,7 +10,7 @@ dotnet run --project c:\dev\hackathon\qcs.hackathon.Api.csproj
 
 API: http://localhost:5280
 
-## Endpoints
+### Endpoints
 
 - `GET /api/topics` — list topics (optional `?theme=Safeguarding`)
 - `GET /api/topics/{id}` — topic by number
@@ -18,3 +18,11 @@ API: http://localhost:5280
 - `GET /api/themes` — topics grouped by theme
 - `GET /api/content/summary` — SUMMARY.md content
 - `GET /openapi/v1.json` — OpenAPI spec (development)
+
+## React frontend
+
+See `react_hackathon/README.md`.
+
+## Content
+
+Topic markdown lives in `content/topics/` (also copied to `Content/topics/` for the API build).
