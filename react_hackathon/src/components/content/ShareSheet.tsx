@@ -56,7 +56,7 @@ export function ShareSheet({
 
   useEffect(() => {
     if (isOpen) {
-      setIsVisible(true)
+      const visibilityTimer = window.setTimeout(() => setIsVisible(true), 0)
       const previousOverflow = document.body.style.overflow
       document.body.style.overflow = "hidden"
 
@@ -69,6 +69,7 @@ export function ShareSheet({
       window.addEventListener("keydown", handleKeyDown)
 
       return () => {
+        window.clearTimeout(visibilityTimer)
         document.body.style.overflow = previousOverflow
         window.removeEventListener("keydown", handleKeyDown)
       }
