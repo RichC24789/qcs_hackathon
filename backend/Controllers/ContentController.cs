@@ -30,8 +30,31 @@ public sealed class ContentController(
     public async Task<IActionResult> GetByTheme(string theme, CancellationToken cancellationToken)
     {
         var userEmail = userIdentityService.GetCurrentUserEmail();
-        var content = await contentFeedService.GetByThemeAsync(userEmail, theme, cancellationToken);
-        return Ok(content);
+        if (userEmail is null)
+        {
+            return BadRequest("X-User-Email header is required.");
+        }
+
+        if (string.IsNullOrWhiteSpace(theme))
+        {
+            return BadRequest("A theme is required.");
+        }
+
+        var items = await contentFeedService.GetByThemeAsync(userEmail, theme, cancellationToken);
+        return Ok(items);
+    }
+
+    [HttpGet("liked")]
+    public async Task<IActionResult> GetLiked(CancellationToken cancellationToken)
+    {
+        var userEmail = userIdentityService.GetCurrentUserEmail();
+        if (userEmail is null)
+        {
+            return BadRequest("X-User-Email header is required.");
+        }
+
+        var items = await contentFeedService.GetLikedAsync(userEmail, cancellationToken);
+        return Ok(items);
     }
 
     [HttpGet("summary")]
