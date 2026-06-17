@@ -12,6 +12,12 @@
     "format": "poster",
     "topicIDs": [
       "05"
+    ],
+    "themes": [
+      "Medication safety",
+      "Record keeping and documentation",
+      "Regulatory compliance",
+      "Equipment safety"
     ]
   }
 }

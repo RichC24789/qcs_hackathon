@@ -6,12 +6,18 @@
   },
   "body": {
     "summary": "Medication competency isn't a one-off tick box — it needs to be reassessed regularly and whenever something changes.",
-     "text": "./quick_references/medication-competency-quick-reference.pdf"
+    "text": "./quick_references/medication-competency-quick-reference.pdf"
   },
   "metadata": {
     "format": "quick_reference",
     "topicIDs": [
       "06"
+    ],
+    "themes": [
+      "Medication safety",
+      "Training and competency",
+      "Record keeping and documentation",
+      "Regulatory compliance"
     ]
   }
 }

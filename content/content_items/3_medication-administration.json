@@ -12,6 +12,11 @@
     "format": "text-card",
     "topicIDs": [
       "3"
+    ],
+    "themes": [
+      "Medication safety",
+      "Record keeping and documentation",
+      "Training and competency"
     ]
   }
 }

@@ -12,6 +12,13 @@
     "format": "text-card",
     "topicIDs": [
       "26"
+    ],
+    "themes": [
+      "Infection prevention and control",
+      "Personal protective equipment",
+      "Risk assessment",
+      "Regulatory compliance",
+      "Escalation and raising concerns"
     ]
   }
 }

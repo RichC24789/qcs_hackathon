@@ -49,6 +49,9 @@ internal sealed class ContentItemMetadata
     [JsonPropertyName("url")]
     public string Url { get; init; } = string.Empty;
 
+    [JsonPropertyName("themes")]
+    public string[] Themes { get; init; } = [];
+
     [JsonPropertyName("topicNumber")]
     public int TopicNumber { get; init; }
 }

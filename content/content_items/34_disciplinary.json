@@ -13,6 +13,12 @@
     "url": "/api/content/audio/topic-34-disciplinary.mp3",
     "topicIDs": [
       "34"
+    ],
+    "themes": [
+      "Disciplinary and grievance",
+      "Employment rights",
+      "Professional conduct and boundaries",
+      "Regulatory compliance"
     ]
   }
 }

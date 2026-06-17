@@ -12,6 +12,13 @@
     "format": "poster",
     "topicIDs": [
       "24"
+    ],
+    "themes": [
+      "Falls and incidents",
+      "Emergency response",
+      "Escalation and raising concerns",
+      "Record keeping and documentation",
+      "Incident reporting"
     ]
   }
 }

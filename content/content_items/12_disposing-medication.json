@@ -12,6 +12,12 @@
     "format": "text-card",
     "topicIDs": [
       "12"
+    ],
+    "themes": [
+      "Medication safety",
+      "Controlled drugs",
+      "Record keeping and documentation",
+      "Regulatory compliance"
     ]
   }
 }

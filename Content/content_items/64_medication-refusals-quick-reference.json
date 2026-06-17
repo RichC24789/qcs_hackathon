@@ -6,12 +6,19 @@
   },
   "body": {
     "summary": "A service user has the right to refuse medication — your job is to respond safely, record it accurately, and know when to escalate.",
-     "text": "./quick_references/medication-refusals-quick-reference.pdf"
+    "text": "./quick_references/medication-refusals-quick-reference.pdf"
   },
   "metadata": {
     "format": "quick_reference",
     "topicIDs": [
       "02"
+    ],
+    "themes": [
+      "Medication safety",
+      "Mental capacity and consent",
+      "Escalation and raising concerns",
+      "Record keeping and documentation",
+      "Dignity and person-centred care"
     ]
   }
 }

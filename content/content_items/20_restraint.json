@@ -13,6 +13,15 @@
     "url": "/api/content/audio/topic-20-restraint.mp3",
     "topicIDs": [
       "20"
+    ],
+    "themes": [
+      "Restrictive practice and restraint",
+      "Safeguarding",
+      "Mental capacity and consent",
+      "Dignity and person-centred care",
+      "Record keeping and documentation",
+      "Regulatory compliance",
+      "Incident reporting"
     ]
   }
 }

@@ -6,12 +6,18 @@
   },
   "body": {
     "summary": "In a fire, every second counts — knowing the evacuation procedure before an emergency means you act rather than freeze.",
-     "text": "./posters/fire-safety-poster.png"
+    "text": "./posters/fire-safety-poster.png"
   },
   "metadata": {
     "format": "poster",
     "topicIDs": [
       "46"
+    ],
+    "themes": [
+      "Fire safety",
+      "Emergency response",
+      "Risk assessment",
+      "Training and competency"
     ]
   }
 }

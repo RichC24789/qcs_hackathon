@@ -12,6 +12,12 @@
     "format": "text-card",
     "topicIDs": [
       "8"
+    ],
+    "themes": [
+      "Medication safety",
+      "Care planning",
+      "Record keeping and documentation",
+      "Escalation and raising concerns"
     ]
   }
 }

@@ -12,6 +12,11 @@
     "format": "scenario-quiz",
     "topicIDs": [
       "03"
+    ],
+    "themes": [
+      "Medication safety",
+      "Record keeping and documentation",
+      "Training and competency"
     ]
   }
 }

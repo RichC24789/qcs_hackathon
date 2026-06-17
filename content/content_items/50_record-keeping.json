@@ -13,6 +13,13 @@
     "url": "/api/content/audio/topic-50-record-keeping.mp3",
     "topicIDs": [
       "50"
+    ],
+    "themes": [
+      "Record keeping and documentation",
+      "Data protection and confidentiality",
+      "Regulatory compliance",
+      "Professional conduct and boundaries",
+      "Communication"
     ]
   }
 }

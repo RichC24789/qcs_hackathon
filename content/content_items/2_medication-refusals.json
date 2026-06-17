@@ -12,6 +12,13 @@
     "format": "text-card",
     "topicIDs": [
       "2"
+    ],
+    "themes": [
+      "Medication safety",
+      "Mental capacity and consent",
+      "Escalation and raising concerns",
+      "Record keeping and documentation",
+      "Dignity and person-centred care"
     ]
   }
 }

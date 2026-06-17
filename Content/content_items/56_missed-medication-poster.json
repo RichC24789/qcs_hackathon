@@ -12,6 +12,12 @@
     "format": "poster",
     "topicIDs": [
       "56"
+    ],
+    "themes": [
+      "Medication safety",
+      "Incident reporting",
+      "Escalation and raising concerns",
+      "Record keeping and documentation"
     ]
   }
 }

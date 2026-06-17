@@ -12,6 +12,13 @@
     "format": "text-card",
     "topicIDs": [
       "22"
+    ],
+    "themes": [
+      "Incident reporting",
+      "Record keeping and documentation",
+      "Regulatory compliance",
+      "Escalation and raising concerns",
+      "Risk assessment"
     ]
   }
 }

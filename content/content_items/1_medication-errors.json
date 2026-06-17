@@ -12,6 +12,14 @@
     "format": "text-card",
     "topicIDs": [
       "1"
+    ],
+    "themes": [
+      "Medication safety",
+      "Incident reporting",
+      "Escalation and raising concerns",
+      "Record keeping and documentation",
+      "Regulatory compliance",
+      "Emergency response"
     ]
   }
 }
