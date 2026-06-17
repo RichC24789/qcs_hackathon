@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Heart, Share2 } from "lucide-react"
 
+import { AudioBlobPlayer } from "@/components/content/AudioBlobPlayer"
 import { ContentText } from "@/components/content/ContentText"
 import { QcsLink } from "@/components/content/QcsLink"
 import { ShareSheet } from "@/components/content/ShareSheet"
@@ -14,8 +15,6 @@ import {
 } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
-const TEXT_CARD_FORMAT = "text-card"
-
 const actionButtonClass =
   "text-muted-foreground hover:text-foreground cursor-pointer rounded-full transition-colors hover:bg-[#0F4146]/10 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F4146]/40 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:active:scale-100"
 
@@ -27,7 +26,6 @@ export type ContentItemProps = {
   contentUrl?: string
   hook: string
   text: string
-  format: string
   userEmail: string | null
   initialLikeCount?: number
   initialLikedByCurrentUser?: boolean
@@ -42,27 +40,24 @@ export function ContentItem({
   contentUrl,
   hook,
   text,
-  format,
   userEmail,
   initialLikeCount,
   initialLikedByCurrentUser,
-  otherUsersLikeCount: _otherUsersLikeCount = 0,
 }: ContentItemProps) {
   const articleRef = useRef<HTMLElement>(null)
   const hasLoggedViewRef = useRef(false)
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
   const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
-  const [isDetailOpen, setIsDetailOpen] = useState(false)
   const isPodcast = contentType.toLowerCase() === "podcast"
   const audioUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
   const [isExpanded, setIsExpanded] = useState(false)
-  const [fetchedText, setFetchedText] = useState("")
-  const [isLoadingDetail, setIsLoadingDetail] = useState(false)
   const [isShareOpen, setIsShareOpen] = useState(false)
 
-  const isTextCard = format === TEXT_CARD_FORMAT
-  const bodyText = text || fetchedText
+  const normalizedContentType = contentType.toLowerCase()
+  const isTextContent =
+    normalizedContentType === "text" || normalizedContentType === "text-card"
+  const bodyText = text
 
   useEffect(() => {
     if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
@@ -119,35 +114,33 @@ export function ContentItem({
     }
   }, [slug, userEmail])
 
-  async function loadBodyText() {
-    if (bodyText) {
+  useEffect(() => {
+    if (!isTextContent || !isExpanded) {
       return
     }
 
-    setIsLoadingDetail(true)
+    function handlePointerDown(event: PointerEvent) {
+      const article = articleRef.current
+      if (!article || article.contains(event.target as Node)) {
+        return
+      }
 
-    try {
-      const topic = await getTopicBySlug(slug, userEmail)
-      setFetchedText(topic.text ?? "")
-    } catch {
-      setFetchedText("")
-    } finally {
-      setIsLoadingDetail(false)
-    }
-  }
-
-  async function toggleExpanded() {
-    if (!isTextCard) {
-      return
-    }
-
-    if (isExpanded) {
       setIsExpanded(false)
+    }
+
+    document.addEventListener("pointerdown", handlePointerDown)
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown)
+    }
+  }, [isExpanded, isTextContent])
+
+  function toggleExpanded() {
+    if (!isTextContent) {
       return
     }
 
     setIsExpanded(true)
-    await loadBodyText()
   }
 
   async function toggleLike() {
@@ -185,52 +178,40 @@ export function ContentItem({
       </div>
       <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
-        {isPodcast ? (
-          <audio controls preload="none" className="mt-3 w-full">
-            <source src={audioUrl} type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        ) : (
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            className="mt-3"
-            onClick={() => setIsDetailOpen(true)}
-          >
-            Read more
-          </Button>
-        )}
-      {isTextCard ? (
+      {isPodcast ? (
+        <AudioBlobPlayer src={audioUrl} title={title} />
+      ) : null}
+
+      {isTextContent && !isExpanded ? (
         <Button
           type="button"
           variant="outline"
           size="sm"
-          className="mt-3"
+          className="mt-3 gap-1.5 rounded-full"
           aria-expanded={isExpanded}
-          onClick={() => void toggleExpanded()}
+          onClick={toggleExpanded}
         >
-          {isExpanded ? "Read less" : "Read more"}
+          Read more
         </Button>
       ) : null}
 
-      {isTextCard ? (
+      {isTextContent ? (
         <div
           className={cn(
-            "grid transition-[grid-template-rows] duration-300 ease-in-out",
+            "grid transition-[grid-template-rows] duration-300 ease-out",
             isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
           )}
         >
           <div className="min-h-0 overflow-hidden">
             <div
               className={cn(
-                "border-t pt-4 transition-opacity duration-300 ease-in-out",
-                isExpanded ? "mt-3 opacity-100" : "opacity-0"
+                "transition-[opacity,transform,margin-top] duration-300 ease-out",
+                isExpanded
+                  ? "mt-3 translate-y-0 opacity-100"
+                  : "-translate-y-1 opacity-0"
               )}
             >
-              {isLoadingDetail ? (
-                <p className="text-muted-foreground text-sm">Loading…</p>
-              ) : bodyText ? (
+              {bodyText ? (
                 <ContentText text={bodyText} showSummary={false} />
               ) : (
                 <p className="text-muted-foreground text-sm">
@@ -240,15 +221,6 @@ export function ContentItem({
             </div>
           </div>
         </div>
-      </article>
-
-      {isDetailOpen && !isPodcast ? (
-        <ContentDetailDialog
-          title={title}
-          summary={hook}
-          text={text}
-          onClose={() => setIsDetailOpen(false)}
-        />
       ) : null}
 
       <div className="mt-3 flex items-center gap-4">

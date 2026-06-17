@@ -127,7 +127,6 @@ export function ContentPage() {
           contentUrl={item.contentUrl}
           hook={item.hook}
           text={item.text ?? ""}
-          format={item.primaryFormat}
           userEmail={email}
           initialLikeCount={item.likeCount}
           initialLikedByCurrentUser={item.likedByCurrentUser}
