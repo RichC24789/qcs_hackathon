@@ -105,6 +105,13 @@ export function getContentFeed(email: string, limit = 10) {
   return apiFetch<ContentFeedItem[]>(`/api/content?limit=${limit}`, { email })
 }
 
+export function getContentByTheme(theme: string, email: string | null = null) {
+  return apiFetch<ContentFeedItem[]>(
+    `/api/content/by-theme/${encodeURIComponent(theme)}`,
+    { email }
+  )
+}
+
 export function getTopicLikeStatus(slug: string, email: string | null) {
   return apiFetch<TopicLikeStatus>(`/api/topics/${slug}/likes`, { email })
 }
