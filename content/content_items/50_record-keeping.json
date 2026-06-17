@@ -10,6 +10,15 @@
   },
   "metadata": {
     "format": "scenario-quiz",
+    "type": "multiple_choice",
+      "question": "What must always be recorded in care documentation?",
+      "options": [
+        "Opinions only",
+        "Facts and accurate details",
+        "Only serious incidents",
+        "Only daily notes"
+      ],
+      "correctAnswer": "Facts and accurate details",
     "topicIDs": [
       "50"
     ],
