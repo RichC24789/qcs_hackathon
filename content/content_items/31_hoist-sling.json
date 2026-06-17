@@ -12,6 +12,13 @@
     "format": "scenario-quiz",
     "topicIDs": [
       "31"
+    ],
+    "themes": [
+      "Moving and handling",
+      "Equipment safety",
+      "Training and competency",
+      "Risk assessment",
+      "Regulatory compliance"
     ]
   }
 }

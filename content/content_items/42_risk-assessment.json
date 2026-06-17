@@ -12,6 +12,12 @@
     "format": "text-card",
     "topicIDs": [
       "42"
+    ],
+    "themes": [
+      "Risk assessment",
+      "Care planning",
+      "Record keeping and documentation",
+      "Regulatory compliance"
     ]
   }
 }

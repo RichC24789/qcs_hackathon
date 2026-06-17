@@ -12,6 +12,14 @@
     "format": "text-card",
     "topicIDs": [
       "28"
+    ],
+    "themes": [
+      "Infection prevention and control",
+      "Emergency response",
+      "Escalation and raising concerns",
+      "Regulatory compliance",
+      "Risk assessment",
+      "Record keeping and documentation"
     ]
   }
 }

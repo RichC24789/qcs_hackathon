@@ -5,6 +5,7 @@ public sealed record ContentFeedItem(
     string Slug,
     string Title,
     string Theme,
+    IReadOnlyList<string> Themes,
     string ContentType,
     string ContentUrl,
     string Hook,

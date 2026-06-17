@@ -12,6 +12,13 @@
     "format": "text-card",
     "topicIDs": [
       "48"
+    ],
+    "themes": [
+      "Lone working",
+      "Risk assessment",
+      "Staff wellbeing",
+      "Emergency response",
+      "Communication"
     ]
   }
 }

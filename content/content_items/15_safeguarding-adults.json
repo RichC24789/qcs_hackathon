@@ -13,6 +13,14 @@
     "url": "/api/content/audio/topic-15-safeguarding-adults.mp3",
     "topicIDs": [
       "15"
+    ],
+    "themes": [
+      "Safeguarding",
+      "Abuse awareness",
+      "Regulatory compliance",
+      "Escalation and raising concerns",
+      "Dignity and person-centred care",
+      "Risk assessment"
     ]
   }
 }

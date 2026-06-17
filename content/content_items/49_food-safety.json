@@ -13,6 +13,12 @@
      "url": "/api/content/posters/food-safety-poster.png",
     "topicIDs": [
       "49"
+    ],
+    "themes": [
+      "Nutrition and hydration",
+      "Infection prevention and control",
+      "Risk assessment",
+      "Care planning"
     ]
   }
 }

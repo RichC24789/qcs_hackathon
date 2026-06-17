@@ -115,6 +115,7 @@ public sealed partial class TopicContentService : ITopicContentService
                 document.Header.Slug,
                 document.Header.Title,
                 document.Header.Theme,
+                document.Metadata.Themes,
                 document.Metadata.Format,
                 document.Metadata.Url,
                 sections,

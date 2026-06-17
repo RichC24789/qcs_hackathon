@@ -13,6 +13,12 @@
     "url": "/api/content/audio/topic-37-maternity-leave.mp3",
     "topicIDs": [
       "37"
+    ],
+    "themes": [
+      "Employment rights",
+      "Risk assessment",
+      "Staff wellbeing",
+      "Record keeping and documentation"
     ]
   }
 }

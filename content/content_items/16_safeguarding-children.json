@@ -13,6 +13,14 @@
     "url": "/api/content/audio/topic-16-safeguarding-children.mp3",
     "topicIDs": [
       "16"
+    ],
+    "themes": [
+      "Safeguarding",
+      "Abuse awareness",
+      "Escalation and raising concerns",
+      "Regulatory compliance",
+      "Communication",
+      "Emergency response"
     ]
   }
 }

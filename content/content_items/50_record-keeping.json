@@ -12,6 +12,13 @@
     "format": "scenario-quiz",
     "topicIDs": [
       "50"
+    ],
+    "themes": [
+      "Record keeping and documentation",
+      "Data protection and confidentiality",
+      "Regulatory compliance",
+      "Professional conduct and boundaries",
+      "Communication"
     ]
   }
 }

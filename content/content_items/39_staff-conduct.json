@@ -13,6 +13,13 @@
     "url": "/api/content/audio/topic-39-staff-conduct.mp3",
     "topicIDs": [
       "39"
+    ],
+    "themes": [
+      "Professional conduct and boundaries",
+      "Safeguarding",
+      "Dignity and person-centred care",
+      "Data protection and confidentiality",
+      "Escalation and raising concerns"
     ]
   }
 }

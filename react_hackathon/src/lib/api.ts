@@ -84,6 +84,7 @@ export type ContentFeedItem = TopicSummary & {
   likeCount: number
   likedByCurrentUser: boolean
   otherUsersLikeCount: number
+  themes: string[]
 }
 
 export type TopicDetail = TopicSummary & {

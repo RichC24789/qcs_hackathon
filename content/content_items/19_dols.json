@@ -13,6 +13,14 @@
     "url": "/api/content/quick_references/dols-quick-reference.pdf",
     "topicIDs": [
       "19"
+    ],
+    "themes": [
+      "Mental capacity and consent",
+      "Restrictive practice and restraint",
+      "Safeguarding",
+      "Regulatory compliance",
+      "Care planning",
+      "Record keeping and documentation"
     ]
   }
 }
