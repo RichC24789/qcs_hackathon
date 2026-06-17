@@ -22,35 +22,40 @@ public sealed class ContentFeedService(
 
         var viewedSlugs = await activityLogService.GetViewedTopicSlugsAsync(userEmail, cancellationToken);
         var likeCounts = await topicLikeService.GetLikeCountsAsync(cancellationToken);
+        var otherUsersLikeCounts = await topicLikeService.GetLikeCountsFromOtherUsersAsync(userEmail, cancellationToken);
         var likedSlugs = await topicLikeService.GetLikedSlugsForUserAsync(userEmail, cancellationToken);
         var likedSlugSet = likedSlugs.ToHashSet(StringComparer.OrdinalIgnoreCase);
 
-        var candidates = topicDetails
+        var unseenTopics = topicDetails
             .Where(topic => !viewedSlugs.Contains(topic.Slug))
             .ToList();
 
-        if (candidates.Count == 0)
-        {
-            candidates = topicDetails;
-        }
+        var candidates = unseenTopics.Count > 0 ? unseenTopics : topicDetails;
 
         return candidates
             .Select(topic => new
             {
                 Topic = topic,
                 LikeCount = likeCounts.GetValueOrDefault(topic.Slug),
+                OtherUsersLikeCount = otherUsersLikeCounts.GetValueOrDefault(topic.Slug),
                 RandomKey = Random.Shared.Next()
             })
-            .OrderByDescending(entry => entry.LikeCount)
+            .OrderByDescending(entry => entry.OtherUsersLikeCount)
+            .ThenByDescending(entry => entry.LikeCount)
             .ThenBy(entry => entry.RandomKey)
             .Take(clampedLimit)
-            .Select(entry => ToFeedItem(entry.Topic, entry.LikeCount, likedSlugSet))
+            .Select(entry => ToFeedItem(
+                entry.Topic,
+                entry.LikeCount,
+                entry.OtherUsersLikeCount,
+                likedSlugSet))
             .ToList();
     }
 
     private static ContentFeedItem ToFeedItem(
         TopicDetail topic,
         int likeCount,
+        int otherUsersLikeCount,
         IReadOnlySet<string> likedSlugSet)
     {
         topic.Sections.TryGetValue("Hook", out var hook);
@@ -65,6 +70,7 @@ public sealed class ContentFeedService(
             hook ?? string.Empty,
             topic.Text,
             likeCount,
-            likedSlugSet.Contains(topic.Slug));
+            likedSlugSet.Contains(topic.Slug),
+            otherUsersLikeCount);
     }
 }

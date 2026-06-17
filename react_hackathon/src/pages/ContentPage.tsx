@@ -83,6 +83,7 @@ export function ContentPage() {
           userEmail={email}
           initialLikeCount={item.likeCount}
           initialLikedByCurrentUser={item.likedByCurrentUser}
+          otherUsersLikeCount={item.otherUsersLikeCount}
         />
       ))}
     </PullToRefresh>
