@@ -49,12 +49,13 @@ export function ContentItem({
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
   const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
-  const isPodcast = contentType.toLowerCase() === "podcast"
-  const audioUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
   const [isExpanded, setIsExpanded] = useState(false)
   const [isShareOpen, setIsShareOpen] = useState(false)
 
   const normalizedContentType = contentType.toLowerCase()
+  const isPodcast = normalizedContentType === "podcast"
+  const isPoster = normalizedContentType === "poster"
+  const resolvedContentUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
   const isTextContent =
     normalizedContentType === "text" || normalizedContentType === "text-card"
   const bodyText = text
@@ -179,7 +180,16 @@ export function ContentItem({
       <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
       {isPodcast ? (
-        <AudioBlobPlayer src={audioUrl} title={title} />
+        <AudioBlobPlayer src={resolvedContentUrl} title={title} />
+      ) : null}
+
+      {isPoster && resolvedContentUrl ? (
+        <img
+          src={resolvedContentUrl}
+          alt={title}
+          loading="lazy"
+          className="mt-3 w-full rounded-lg border object-contain"
+        />
       ) : null}
 
       {isTextContent && !isExpanded ? (
