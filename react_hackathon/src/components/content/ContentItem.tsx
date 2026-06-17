@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { ExternalLink, FileText, Heart, Share2 } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 import { AudioBlobPlayer } from "@/components/content/AudioBlobPlayer"
 import { ContentText } from "@/components/content/ContentText"
@@ -26,6 +27,7 @@ export type ContentItemProps = {
   contentUrl?: string
   hook: string
   text: string
+  themes?: string[]
   userEmail: string | null
   initialLikeCount?: number
   initialLikedByCurrentUser?: boolean
@@ -40,10 +42,12 @@ export function ContentItem({
   contentUrl,
   hook,
   text,
+  themes = [],
   userEmail,
   initialLikeCount,
   initialLikedByCurrentUser,
 }: ContentItemProps) {
+  const navigate = useNavigate()
   const articleRef = useRef<HTMLElement>(null)
   const hasLoggedViewRef = useRef(false)
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
@@ -63,6 +67,12 @@ export function ContentItem({
   const isTextContent =
     normalizedContentType === "text" || normalizedContentType === "text-card"
   const bodyText = text
+  const hashtags = themes
+    .map((theme) => ({
+      theme,
+      label: theme.replace(/\s+/g, "").toLowerCase(),
+    }))
+    .filter(({ label }) => label)
 
   useEffect(() => {
     if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
@@ -265,6 +275,23 @@ export function ContentItem({
               )}
             </div>
           </div>
+        </div>
+      ) : null}
+
+      {hashtags.length > 0 ? (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {hashtags.map(({ theme, label }) => (
+            <button
+              key={theme}
+              type="button"
+              className="cursor-pointer rounded-full bg-[#0F4146]/10 px-2.5 py-1 text-xs font-medium text-[#0F4146] transition-colors hover:bg-[#0F4146]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F4146]/40 focus-visible:ring-offset-2 active:scale-95"
+              onClick={() => {
+                navigate(`/search?theme=${encodeURIComponent(theme)}`)
+              }}
+            >
+              #{label}
+            </button>
+          ))}
         </div>
       ) : null}
 

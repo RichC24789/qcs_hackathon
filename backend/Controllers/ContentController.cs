@@ -26,6 +26,14 @@ public sealed class ContentController(
         return Ok(feed);
     }
 
+    [HttpGet("by-theme/{theme}")]
+    public async Task<IActionResult> GetByTheme(string theme, CancellationToken cancellationToken)
+    {
+        var userEmail = userIdentityService.GetCurrentUserEmail();
+        var content = await contentFeedService.GetByThemeAsync(userEmail, theme, cancellationToken);
+        return Ok(content);
+    }
+
     [HttpGet("summary")]
     public IActionResult GetSummary()
     {

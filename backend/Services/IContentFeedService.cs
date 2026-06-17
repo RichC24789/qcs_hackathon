@@ -8,4 +8,9 @@ public interface IContentFeedService
         string userEmail,
         int limit,
         CancellationToken cancellationToken = default);
+
+    Task<IReadOnlyList<ContentFeedItem>> GetByThemeAsync(
+        string? userEmail,
+        string theme,
+        CancellationToken cancellationToken = default);
 }

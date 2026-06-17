@@ -15,16 +15,7 @@ public sealed class ContentFeedService(
         CancellationToken cancellationToken = default)
     {
         var clampedLimit = Math.Clamp(limit, 1, 50);
-        var allTopics = topicContentService.GetAllTopics();
-        var topicDetails = allTopics
-            .Select(summary => topicContentService.GetTopicBySlug(summary.Slug))
-            .Where(topic => topic is not null)
-            .Cast<TopicDetail>()
-            .Where(topic => !string.Equals(
-                topic.ContentType,
-                IgnoredContentType,
-                StringComparison.OrdinalIgnoreCase))
-            .ToList();
+        var topicDetails = GetContentTopics();
 
         var viewedSlugs = await activityLogService.GetViewedTopicSlugsAsync(userEmail, cancellationToken);
         var likeCounts = await topicLikeService.GetLikeCountsAsync(cancellationToken);
@@ -57,6 +48,58 @@ public sealed class ContentFeedService(
                 likedSlugSet))
             .ToList();
     }
+
+    public async Task<IReadOnlyList<ContentFeedItem>> GetByThemeAsync(
+        string? userEmail,
+        string theme,
+        CancellationToken cancellationToken = default)
+    {
+        if (string.IsNullOrWhiteSpace(theme))
+        {
+            return [];
+        }
+
+        var topicDetails = GetContentTopics()
+            .Where(topic => ThemeMatches(topic, theme))
+            .OrderBy(topic => topic.Number)
+            .ThenBy(topic => topic.Title)
+            .ToList();
+        var likeCounts = await topicLikeService.GetLikeCountsAsync(cancellationToken);
+        var otherUsersLikeCounts = string.IsNullOrWhiteSpace(userEmail)
+            ? new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)
+            : await topicLikeService.GetLikeCountsFromOtherUsersAsync(userEmail, cancellationToken);
+        var likedSlugSet = string.IsNullOrWhiteSpace(userEmail)
+            ? new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+            : (await topicLikeService.GetLikedSlugsForUserAsync(userEmail, cancellationToken))
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        return topicDetails
+            .Select(topic => ToFeedItem(
+                topic,
+                likeCounts.GetValueOrDefault(topic.Slug),
+                otherUsersLikeCounts.GetValueOrDefault(topic.Slug),
+                likedSlugSet))
+            .ToList();
+    }
+
+    private IReadOnlyList<TopicDetail> GetContentTopics()
+    {
+        var allTopics = topicContentService.GetAllTopics();
+
+        return allTopics
+            .Select(summary => topicContentService.GetTopicBySlug(summary.Slug))
+            .Where(topic => topic is not null)
+            .Cast<TopicDetail>()
+            .Where(topic => !string.Equals(
+                topic.ContentType,
+                IgnoredContentType,
+                StringComparison.OrdinalIgnoreCase))
+            .ToList();
+    }
+
+    private static bool ThemeMatches(TopicDetail topic, string theme) =>
+        string.Equals(topic.Theme, theme, StringComparison.OrdinalIgnoreCase) ||
+        topic.Themes.Any(topicTheme => string.Equals(topicTheme, theme, StringComparison.OrdinalIgnoreCase));
 
     private static ContentFeedItem ToFeedItem(
         TopicDetail topic,
