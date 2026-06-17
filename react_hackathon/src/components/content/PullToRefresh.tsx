@@ -58,6 +58,10 @@ export function PullToRefresh({
   }, [onRefresh])
 
   useEffect(() => {
+    onReachEndRef.current = onReachEnd
+  }, [onReachEnd])
+
+  useEffect(() => {
     pullDistanceRef.current = pullDistance
   }, [pullDistance])
 
@@ -85,8 +89,7 @@ export function PullToRefresh({
     })
   }, [])
 
-  const finishPull = useCallback((container: HTMLElement) => {
-  function applyPullDelta(delta: number) {
+  const applyPullDelta = useCallback((delta: number) => {
     if (delta > 0) {
       const nextDistance = Math.min(delta * 0.55, MAX_PULL)
       pullDistanceRef.current = nextDistance
@@ -99,9 +102,9 @@ export function PullToRefresh({
     }
 
     return false
-  }
+  }, [resetPull])
 
-  function finishPull(container: HTMLElement) {
+  const finishPull = useCallback((container: HTMLElement) => {
     if (
       pullDistanceRef.current >= PULL_THRESHOLD &&
       !isRefreshingRef.current
@@ -239,7 +242,7 @@ export function PullToRefresh({
       window.removeEventListener("mousemove", handleMouseMove)
       window.removeEventListener("mouseup", handleMouseUp)
     }
-  }, [finishPull, resetPull])
+  }, [applyPullDelta, finishPull, resetPull])
 
   useEffect(() => {
     const container = containerRef.current

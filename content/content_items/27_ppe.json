@@ -9,7 +9,9 @@
     "text": "## Key points\n\n- Donning order: apron → gloves (hands should be clean before donning)\n- Doffing order: gloves → apron → hand hygiene (this order prevents self-contamination)\n- Face masks are required for aerosol-generating procedures or when caring for someone with a respiratory infection — follow current guidance\n- Dispose of used PPE immediately in the correct waste stream — never leave used PPE on surfaces\n- PPE is single-use — never wash or reuse disposable gloves or aprons\n\n## Quick decision prompt\n\n- **Glove tears during a task?** → Remove it immediately, wash hands, and put on a fresh glove before continuing\n- **Unsure which level of PPE is needed?** → Refer to the care plan and your organisation's PPE guidance — when in doubt use the higher level\n- **PPE is uncomfortable or you find it hard to work in?** → Raise this with your manager — there may be alternative products available, but PPE cannot be omitted\n\n## Common mistakes\n\n- Touching the front of a used apron when removing it — roll it inward to contain contamination\n- Snapping gloves off without controlling where they go\n- Disposing of PPE in the general waste rather than the clinical waste stream\n\n## Who to tell\n\n- **Your manager** — if PPE is unavailable, damaged, or if you have any concerns about PPE guidance"
   },
   "metadata": {
-    "format": "text-card",
+     "format": "poster",
+     "url": "/api/content/posters/ppe-poster.png",
+
     "topicIDs": [
       "27"
     ],
