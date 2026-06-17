@@ -93,6 +93,16 @@ public sealed class TopicLikeService(
             .Select(group => new { group.Key, Count = group.Count() })
             .ToDictionaryAsync(entry => entry.Key, entry => entry.Count, cancellationToken);
 
+    public async Task<IReadOnlyDictionary<string, int>> GetLikeCountsFromOtherUsersAsync(
+        string userEmail,
+        CancellationToken cancellationToken = default) =>
+        await dbContext.TopicLikes
+            .AsNoTracking()
+            .Where(like => like.UserEmail != userEmail)
+            .GroupBy(like => like.TopicSlug)
+            .Select(group => new { group.Key, Count = group.Count() })
+            .ToDictionaryAsync(entry => entry.Key, entry => entry.Count, cancellationToken);
+
     private void EnsureTopicExists(string topicSlug)
     {
         if (topicContentService.GetTopicBySlug(topicSlug) is null)

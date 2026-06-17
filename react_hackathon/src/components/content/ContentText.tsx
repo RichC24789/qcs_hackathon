@@ -15,16 +15,21 @@ function renderInlineMarkdown(line: string) {
 }
 
 type ContentTextProps = {
-  summary: string
+  summary?: string
   text: string
+  showSummary?: boolean
 }
 
-export function ContentText({ summary, text }: ContentTextProps) {
-  const blocks = text.split(/\n(?=## )/)
+export function ContentText({
+  summary = "",
+  text,
+  showSummary = true,
+}: ContentTextProps) {
+  const blocks = (text ?? "").split(/\n(?=## )/)
 
   return (
     <div className="space-y-4 text-sm leading-relaxed">
-      {summary ? <p>{summary}</p> : null}
+      {showSummary && summary ? <p>{summary}</p> : null}
 
       {blocks.map((block, index) => {
         const trimmed = block.trim()

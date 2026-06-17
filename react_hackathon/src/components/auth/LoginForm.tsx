@@ -31,7 +31,7 @@ export function LoginForm() {
 
     try {
       await login(trimmed)
-      navigate("/")
+      navigate("/", { replace: true })
     } catch (caught) {
       if (caught instanceof ApiError && caught.status === 401) {
         setError(

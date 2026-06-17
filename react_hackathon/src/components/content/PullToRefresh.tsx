@@ -12,9 +12,12 @@ import { cn } from "@/lib/utils"
 const PULL_THRESHOLD = 64
 const REFRESH_HOLD = 52
 const MAX_PULL = 140
+const PULL_SPIN_START = 8
+const SCROLL_END_THRESHOLD = 120
 
 type PullToRefreshProps = {
   onRefresh: () => Promise<void>
+  onReachEnd?: () => Promise<void>
   children: ReactNode
   className?: string
 }
@@ -33,11 +36,13 @@ function isInteractiveTarget(target: EventTarget | null) {
 
 export function PullToRefresh({
   onRefresh,
+  onReachEnd,
   children,
   className,
 }: PullToRefreshProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const onRefreshRef = useRef(onRefresh)
+  const onReachEndRef = useRef(onReachEnd)
   const [pullDistance, setPullDistance] = useState(0)
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
@@ -45,7 +50,8 @@ export function PullToRefresh({
   const isPullingRef = useRef(false)
   const pullDistanceRef = useRef(0)
   const isRefreshingRef = useRef(false)
-  const activePointerIdRef = useRef<number | null>(null)
+  const isMousePullRef = useRef(false)
+  const isLoadingMoreRef = useRef(false)
 
   useEffect(() => {
     onRefreshRef.current = onRefresh
@@ -80,6 +86,22 @@ export function PullToRefresh({
   }, [])
 
   const finishPull = useCallback((container: HTMLElement) => {
+  function applyPullDelta(delta: number) {
+    if (delta > 0) {
+      const nextDistance = Math.min(delta * 0.55, MAX_PULL)
+      pullDistanceRef.current = nextDistance
+      setPullDistance(nextDistance)
+      return true
+    }
+
+    if (delta < 0) {
+      resetPull()
+    }
+
+    return false
+  }
+
+  function finishPull(container: HTMLElement) {
     if (
       pullDistanceRef.current >= PULL_THRESHOLD &&
       !isRefreshingRef.current
@@ -108,94 +130,171 @@ export function PullToRefresh({
       return
     }
 
-    function handlePointerDown(event: PointerEvent) {
-      if (
-        isRefreshingRef.current ||
-        !isAtScrollTop(container!) ||
-        isInteractiveTarget(event.target) ||
-        activePointerIdRef.current !== null
-      ) {
-        isPullingRef.current = false
+    function canStartPull(target: EventTarget | null) {
+      return (
+        !isRefreshingRef.current &&
+        !isInteractiveTarget(target) &&
+        isAtScrollTop(container!)
+      )
+    }
+
+    function stopPull() {
+      isPullingRef.current = false
+      isMousePullRef.current = false
+    }
+
+    function handleTouchStart(event: TouchEvent) {
+      if (!canStartPull(event.target)) {
+        stopPull()
         return
       }
 
-      activePointerIdRef.current = event.pointerId
-      startYRef.current = event.clientY
+      startYRef.current = event.touches[0].clientY
       isPullingRef.current = true
-      container!.setPointerCapture(event.pointerId)
     }
 
-    function handlePointerMove(event: PointerEvent) {
-      if (
-        !isPullingRef.current ||
-        isRefreshingRef.current ||
-        event.pointerId !== activePointerIdRef.current
-      ) {
+    function handleTouchMove(event: TouchEvent) {
+      if (!isPullingRef.current || isRefreshingRef.current) {
         return
       }
 
       if (!isAtScrollTop(container!)) {
-        isPullingRef.current = false
+        stopPull()
+        resetPull()
+        return
+      }
+
+      const delta = event.touches[0].clientY - startYRef.current
+      if (applyPullDelta(delta)) {
+        event.preventDefault()
+      }
+    }
+
+    function handleTouchEnd() {
+      if (!isPullingRef.current) {
+        return
+      }
+
+      stopPull()
+      finishPull(container!)
+    }
+
+    function handleMouseDown(event: MouseEvent) {
+      if (event.button !== 0 || !canStartPull(event.target)) {
+        stopPull()
+        return
+      }
+
+      startYRef.current = event.clientY
+      isPullingRef.current = true
+      isMousePullRef.current = true
+    }
+
+    function handleMouseMove(event: MouseEvent) {
+      if (!isMousePullRef.current || !isPullingRef.current || isRefreshingRef.current) {
+        return
+      }
+
+      if (!isAtScrollTop(container!)) {
+        stopPull()
         resetPull()
         return
       }
 
       const delta = event.clientY - startYRef.current
-      if (delta > 0) {
+      if (applyPullDelta(delta)) {
         event.preventDefault()
-        const nextDistance = Math.min(delta * 0.55, MAX_PULL)
-        pullDistanceRef.current = nextDistance
-        setPullDistance(nextDistance)
-      } else if (delta < 0) {
-        isPullingRef.current = false
-        resetPull()
       }
     }
 
-    function handlePointerEnd(event: PointerEvent) {
-      if (event.pointerId !== activePointerIdRef.current) {
+    function handleMouseUp() {
+      if (!isMousePullRef.current) {
         return
       }
 
-      activePointerIdRef.current = null
-      if (container!.hasPointerCapture(event.pointerId)) {
-        container!.releasePointerCapture(event.pointerId)
-      }
+      const wasPulling = isPullingRef.current
+      stopPull()
 
-      if (!isPullingRef.current) {
-        return
+      if (wasPulling) {
+        finishPull(container!)
       }
-
-      isPullingRef.current = false
-      finishPull(container!)
     }
 
-    container.addEventListener("pointerdown", handlePointerDown)
-    container.addEventListener("pointermove", handlePointerMove, {
-      passive: false,
+    container.addEventListener("touchstart", handleTouchStart, {
+      passive: true,
     })
-    container.addEventListener("pointerup", handlePointerEnd)
-    container.addEventListener("pointercancel", handlePointerEnd)
+    container.addEventListener("touchmove", handleTouchMove, { passive: false })
+    container.addEventListener("touchend", handleTouchEnd)
+    container.addEventListener("touchcancel", handleTouchEnd)
+    container.addEventListener("mousedown", handleMouseDown)
+    window.addEventListener("mousemove", handleMouseMove)
+    window.addEventListener("mouseup", handleMouseUp)
 
     return () => {
-      container.removeEventListener("pointerdown", handlePointerDown)
-      container.removeEventListener("pointermove", handlePointerMove)
-      container.removeEventListener("pointerup", handlePointerEnd)
-      container.removeEventListener("pointercancel", handlePointerEnd)
+      container.removeEventListener("touchstart", handleTouchStart)
+      container.removeEventListener("touchmove", handleTouchMove)
+      container.removeEventListener("touchend", handleTouchEnd)
+      container.removeEventListener("touchcancel", handleTouchEnd)
+      container.removeEventListener("mousedown", handleMouseDown)
+      window.removeEventListener("mousemove", handleMouseMove)
+      window.removeEventListener("mouseup", handleMouseUp)
     }
   }, [finishPull, resetPull])
+
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container || !onReachEnd) {
+      return
+    }
+
+    function isNearBottom() {
+      const distanceFromBottom =
+        container!.scrollHeight - container!.scrollTop - container!.clientHeight
+      return distanceFromBottom <= SCROLL_END_THRESHOLD
+    }
+
+    async function handleScroll() {
+      if (
+        !onReachEndRef.current ||
+        isLoadingMoreRef.current ||
+        isRefreshingRef.current ||
+        !isNearBottom()
+      ) {
+        return
+      }
+
+      isLoadingMoreRef.current = true
+
+      try {
+        await onReachEndRef.current()
+      } finally {
+        isLoadingMoreRef.current = false
+      }
+    }
+
+    container.addEventListener("scroll", handleScroll, { passive: true })
+
+    return () => {
+      container.removeEventListener("scroll", handleScroll)
+    }
+  }, [onReachEnd])
 
   const spinnerOpacity = isRefreshing
     ? 1
     : Math.min(pullDistance / PULL_THRESHOLD, 1)
 
+  const shouldSpin =
+    isRefreshing || pullDistance >= PULL_SPIN_START
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scrollbar-hide min-h-0 flex-1 touch-pan-y overflow-y-auto overscroll-y-contain",
+        "scrollbar-hide min-h-0 flex-1 overflow-y-auto overscroll-y-none",
+        pullDistance > 0 && "touch-none",
         className
       )}
+      style={{ WebkitOverflowScrolling: "touch" }}
     >
       <div
         className={cn(
@@ -217,14 +316,9 @@ export function PullToRefresh({
           <Loader2
             className={cn(
               "text-muted-foreground size-6",
-              isRefreshing && "animate-spin"
+              shouldSpin && "animate-spin"
             )}
-            style={{
-              opacity: spinnerOpacity,
-              transform: isRefreshing
-                ? undefined
-                : `rotate(${pullDistance * 2.5}deg)`,
-            }}
+            style={{ opacity: spinnerOpacity }}
           />
         </div>
         {children}

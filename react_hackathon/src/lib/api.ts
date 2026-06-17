@@ -83,10 +83,21 @@ export type ContentFeedItem = TopicSummary & {
   text: string
   likeCount: number
   likedByCurrentUser: boolean
+  otherUsersLikeCount: number
+}
+
+export type TopicDetail = TopicSummary & {
+  sections: Record<string, string>
+  text: string
+  rawMarkdown: string
 }
 
 export function getTopics() {
   return apiFetch<TopicSummary[]>("/api/topics")
+}
+
+export function getTopicBySlug(slug: string, email: string | null = null) {
+  return apiFetch<TopicDetail>(`/api/topics/by-slug/${slug}`, { email })
 }
 
 export function getContentFeed(email: string, limit = 10) {

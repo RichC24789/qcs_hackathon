@@ -43,25 +43,70 @@ public static class DatabaseSeeder
             cancellationToken);
     }
 
+    private static readonly (string Email, string TopicSlug)[] SeedTopicLikes =
+    [
+        ("alice.care@example.com", "safeguarding-adults"),
+        ("bob.manager@example.com", "safeguarding-adults"),
+        ("carol.nurse@example.com", "safeguarding-adults"),
+        ("dave.admin@example.com", "safeguarding-adults"),
+        ("bob.manager@example.com", "medication-errors"),
+        ("carol.nurse@example.com", "medication-errors"),
+        ("dave.admin@example.com", "medication-errors"),
+        ("alice.care@example.com", "record-keeping"),
+        ("bob.manager@example.com", "record-keeping"),
+        ("carol.nurse@example.com", "prn-medication"),
+        ("dave.admin@example.com", "prn-medication"),
+        ("alice.care@example.com", "controlled-drugs"),
+        ("bob.manager@example.com", "controlled-drugs-podcast"),
+        ("carol.nurse@example.com", "controlled-drugs-podcast"),
+    ];
+
     public static async Task SeedAsync(HackathonDbContext dbContext, CancellationToken cancellationToken = default)
     {
-        if (await dbContext.Users.AnyAsync(cancellationToken))
+        if (!await dbContext.Users.AnyAsync(cancellationToken))
         {
-            return;
-        }
+            var createdAt = DateTime.UtcNow;
 
-        var createdAt = DateTime.UtcNow;
-
-        foreach (var (email, displayName) in SeedUsers)
-        {
-            dbContext.Users.Add(new User
+            foreach (var (email, displayName) in SeedUsers)
             {
-                Email = email,
-                DisplayName = displayName,
-                CreatedAt = createdAt
-            });
+                dbContext.Users.Add(new User
+                {
+                    Email = email,
+                    DisplayName = displayName,
+                    CreatedAt = createdAt
+                });
+            }
+
+            await dbContext.SaveChangesAsync(cancellationToken);
         }
 
-        await dbContext.SaveChangesAsync(cancellationToken);
+        var likedAt = DateTime.UtcNow;
+        var likesAdded = false;
+
+        foreach (var (email, topicSlug) in SeedTopicLikes)
+        {
+            var alreadyLiked = await dbContext.TopicLikes
+                .AnyAsync(
+                    like => like.UserEmail == email && like.TopicSlug == topicSlug,
+                    cancellationToken);
+
+            if (alreadyLiked)
+            {
+                continue;
+            }
+
+            dbContext.TopicLikes.Add(new TopicLike
+            {
+                UserEmail = email,
+                TopicSlug = topicSlug,
+                CreatedAt = likedAt
+            });
+            likesAdded = true;
+        }
+
+        if (likesAdded)
+        {
+            await dbContext.SaveChangesAsync(cancellationToken);
+        }
     }
 }
