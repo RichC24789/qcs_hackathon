@@ -26,6 +26,24 @@ public sealed class ContentController(
         return Ok(feed);
     }
 
+    [HttpGet("by-theme/{theme}")]
+    public async Task<IActionResult> GetByTheme(string theme, CancellationToken cancellationToken)
+    {
+        var userEmail = userIdentityService.GetCurrentUserEmail();
+        if (userEmail is null)
+        {
+            return BadRequest("X-User-Email header is required.");
+        }
+
+        if (string.IsNullOrWhiteSpace(theme))
+        {
+            return BadRequest("A theme is required.");
+        }
+
+        var items = await contentFeedService.GetByThemeAsync(userEmail, theme, cancellationToken);
+        return Ok(items);
+    }
+
     [HttpGet("summary")]
     public IActionResult GetSummary()
     {
