@@ -13,7 +13,7 @@ export function AppLayout() {
     <div className="h-svh bg-[#EEF7F1]">
       <div
         className={cn(
-          "relative mx-auto flex h-svh w-full max-w-[430px] flex-col overflow-hidden bg-[#EEF7F1] shadow-sm",
+          "relative mx-auto flex h-svh w-full max-w-[480px] flex-col overflow-hidden bg-[#EEF7F1] shadow-sm",
           !isLoading && !isLoggedIn && "pointer-events-none select-none"
         )}
       >

@@ -3,6 +3,7 @@ import { Heart, Share2 } from "lucide-react"
 
 import { ContentText } from "@/components/content/ContentText"
 import { QcsLink } from "@/components/content/QcsLink"
+import { ShareSheet } from "@/components/content/ShareSheet"
 import { Button } from "@/components/ui/button"
 import {
   getTopicBySlug,
@@ -14,6 +15,9 @@ import {
 import { cn } from "@/lib/utils"
 
 const TEXT_CARD_FORMAT = "text-card"
+
+const actionButtonClass =
+  "text-muted-foreground hover:text-foreground cursor-pointer rounded-full transition-colors hover:bg-[#0F4146]/10 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F4146]/40 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:active:scale-100"
 
 export type ContentItemProps = {
   slug: string
@@ -38,7 +42,7 @@ export function ContentItem({
   userEmail,
   initialLikeCount,
   initialLikedByCurrentUser,
-  otherUsersLikeCount = 0,
+  otherUsersLikeCount: _otherUsersLikeCount = 0,
 }: ContentItemProps) {
   const articleRef = useRef<HTMLElement>(null)
   const hasLoggedViewRef = useRef(false)
@@ -48,6 +52,7 @@ export function ContentItem({
   const [isExpanded, setIsExpanded] = useState(false)
   const [fetchedText, setFetchedText] = useState("")
   const [isLoadingDetail, setIsLoadingDetail] = useState(false)
+  const [isShareOpen, setIsShareOpen] = useState(false)
 
   const isTextCard = format === TEXT_CARD_FORMAT
   const bodyText = text || fetchedText
@@ -162,7 +167,7 @@ export function ContentItem({
   return (
     <article
       ref={articleRef}
-      className="mx-3 my-3 shrink-0 rounded-xl border bg-card px-4 py-4 shadow-sm"
+      className="mx-1.5 my-1.5 shrink-0 rounded-xl border bg-card px-4 py-4 shadow-sm"
     >
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
@@ -223,7 +228,7 @@ export function ContentItem({
           aria-pressed={isLiked}
           disabled={!userEmail || isUpdating}
           onClick={toggleLike}
-          className="flex items-center gap-1 p-1 disabled:opacity-50"
+          className={cn("flex items-center gap-1 p-1.5", actionButtonClass)}
         >
           <Heart
             className={cn(
@@ -233,10 +238,23 @@ export function ContentItem({
           />
           <span className="w-6 text-left text-sm tabular-nums">{likeCount}</span>
         </button>
-        <button type="button" aria-label="Share" className="shrink-0 p-1">
+        <button
+          type="button"
+          aria-label="Share"
+          className={cn("shrink-0 p-1.5", actionButtonClass)}
+          onClick={() => setIsShareOpen(true)}
+        >
           <Share2 className="size-6" />
         </button>
       </div>
+
+      <ShareSheet
+        title={title}
+        description={hook}
+        slug={slug}
+        isOpen={isShareOpen}
+        onClose={() => setIsShareOpen(false)}
+      />
     </article>
   )
 }

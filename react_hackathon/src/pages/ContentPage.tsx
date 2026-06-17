@@ -83,7 +83,7 @@ export function ContentPage() {
     <PullToRefresh
       onRefresh={handleRefresh}
       onReachEnd={loadMore}
-      className="px-1 pb-14 pt-1"
+      className="pb-14"
     >
       {error ? (
         <p className="text-muted-foreground px-4 py-4 text-sm">{error}</p>

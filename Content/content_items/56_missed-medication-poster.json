@@ -1,17 +1,17 @@
 {
   "header": {
     "id": "56",
-    "slug": "missed-medication",
+    "slug": "missed-medication-poster",
     "title": "Missed medication — what to do, reporting"
   },
   "body": {
-    "summary": "A missed dose is not always a crisis — but how you respond and record it makes all the difference.",  
-     "text": "./posters/missed-medication-poster.png"
+    "summary": "A missed dose is not always a crisis — but how you respond and record it makes all the difference.",
+    "text": "./posters/missed-medication-poster.png"
   },
   "metadata": {
     "format": "poster",
     "topicIDs": [
-      "09"
+      "56"
     ]
   }
 }
