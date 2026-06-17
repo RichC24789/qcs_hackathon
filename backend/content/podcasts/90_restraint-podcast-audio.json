@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "90",
+    "slug": "restraint-podcast-audio",
+    "title": "Restraint and restrictive practices — policy, legislation, documentation"
+  },
+  "body": {
+    "summary": "Any restriction on a person's movement or freedom — even a gentle hand on the arm — needs to be justified, proportionate, and documented.",
+    "text": "./audio/restraint-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "20"
+    ]
+  }
+}

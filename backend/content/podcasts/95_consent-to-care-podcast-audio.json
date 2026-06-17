@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "95",
+    "slug": "consent-to-care-podcast-audio",
+    "title": "Consent to care — how to obtain, when needed, documentation"
+  },
+  "body": {
+    "summary": "Consent is not a signature on a form — it is an ongoing conversation that must happen before every care interaction.",
+    "text": "./audio/consent-to-care-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "43"
+    ]
+  }
+}

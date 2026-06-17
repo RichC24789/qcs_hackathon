@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "96",
+    "slug": "mental-health-wellbeing-podcast-audio",
+    "title": "Mental health and wellbeing of service users — policy, escalation"
+  },
+  "body": {
+    "summary": "Mental health is as important as physical health — noticing a change in mood or behaviour and knowing what to do can make an enormous difference.",
+    "text": "./audio/mental-health-wellbeing-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "44"
+    ]
+  }
+}

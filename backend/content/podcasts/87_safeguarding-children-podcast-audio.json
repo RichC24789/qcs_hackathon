@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "87",
+    "slug": "safeguarding-children-podcast-audio",
+    "title": "Safeguarding children — reporting, thresholds, local contacts"
+  },
+  "body": {
+    "summary": "If you work with or around children, even occasionally, you need to know what to do if you have a concern — the threshold for reporting is lower than most people think.",
+    "text": "./audio/safeguarding-children-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "16"
+    ]
+  }
+}

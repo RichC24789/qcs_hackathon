@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "88",
+    "slug": "whistleblowing-podcast-audio",
+    "title": "Whistleblowing — when to use it, protections, process"
+  },
+  "body": {
+    "summary": "Raising a concern about unsafe or unethical practice is not disloyalty — it is one of the most important things you can do to protect the people you care for.",
+    "text": "./audio/whistleblowing-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "17"
+    ]
+  }
+}

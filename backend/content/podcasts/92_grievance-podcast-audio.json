@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "92",
+    "slug": "grievance-podcast-audio",
+    "title": "Grievance procedure — how to raise, timescales, outcomes"
+  },
+  "body": {
+    "summary": "A grievance is a formal way of raising a concern about your treatment at work — knowing how to use it means you do not have to suffer in silence.",
+    "text": "./audio/grievance-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "35"
+    ]
+  }
+}

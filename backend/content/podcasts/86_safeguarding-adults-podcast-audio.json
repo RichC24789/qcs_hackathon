@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "86",
+    "slug": "safeguarding-adults-podcast-audio",
+    "title": "Safeguarding adults — policy overview, principles, legislation"
+  },
+  "body": {
+    "summary": "Safeguarding is everyone's responsibility — understanding the principles helps you act confidently when something doesn't feel right.",
+    "text": "./audio/safeguarding-adults-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "15"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "93",
+    "slug": "maternity-leave-podcast-audio",
+    "title": "Maternity leave — entitlement, pay, risk assessment, return to work"
+  },
+  "body": {
+    "summary": "Maternity rights are more extensive than most people realise — knowing them early means you can plan properly and protect yourself.",
+    "text": "./audio/maternity-leave-podcast.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "37"
+    ]
+  }
+}
