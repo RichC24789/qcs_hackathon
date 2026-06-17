@@ -13,4 +13,8 @@ public interface ITopicLikeService
     Task<IReadOnlyList<string>> GetLikedSlugsForUserAsync(string userEmail, CancellationToken cancellationToken = default);
 
     Task<IReadOnlyDictionary<string, int>> GetLikeCountsAsync(CancellationToken cancellationToken = default);
+
+    Task<IReadOnlyDictionary<string, int>> GetLikeCountsFromOtherUsersAsync(
+        string userEmail,
+        CancellationToken cancellationToken = default);
 }

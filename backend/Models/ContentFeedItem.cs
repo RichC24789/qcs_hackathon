@@ -10,4 +10,5 @@ public sealed record ContentFeedItem(
     string Hook,
     string Text,
     int LikeCount,
-    bool LikedByCurrentUser);
+    bool LikedByCurrentUser,
+    int OtherUsersLikeCount);

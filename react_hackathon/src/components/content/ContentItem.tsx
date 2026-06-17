@@ -25,6 +25,7 @@ export type ContentItemProps = {
   userEmail: string | null
   initialLikeCount?: number
   initialLikedByCurrentUser?: boolean
+  otherUsersLikeCount?: number
 }
 
 export function ContentItem({
@@ -37,6 +38,7 @@ export function ContentItem({
   userEmail,
   initialLikeCount,
   initialLikedByCurrentUser,
+  otherUsersLikeCount = 0,
 }: ContentItemProps) {
   const articleRef = useRef<HTMLElement>(null)
   const hasLoggedViewRef = useRef(false)
