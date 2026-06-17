@@ -22,7 +22,7 @@ export function Footer() {
   const { pathname } = useLocation()
 
   return (
-    <footer className="fixed bottom-0 left-1/2 z-10 w-full max-w-[430px] -translate-x-1/2 border-t bg-white">
+    <footer className="fixed bottom-0 left-1/2 z-10 w-full max-w-[430px] -translate-x-1/2 border-t border-[#0c3539] bg-[#0F4146]">
       <nav className="flex h-[49px] items-center justify-around px-2">
         {tabs.map(({ label, to, icon: Icon, match }) => {
           const isActive = match(pathname)
@@ -34,7 +34,7 @@ export function Footer() {
               aria-label={label}
               className={cn(
                 "flex flex-col items-center justify-center gap-0.5 px-6 py-1",
-                isActive ? "text-foreground" : "text-muted-foreground"
+                isActive ? "text-white" : "text-white/60"
               )}
             >
               <Icon className={cn("size-5", isActive && "stroke-[2.5]")} />
