@@ -4,14 +4,18 @@ const QCS_URL = "https://www.qcs.co.uk/what-we-do/"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-10 border-b border-[#D8E9DF] bg-[#EEF7F1]">
+    <header className="sticky top-0 z-10 border-b border-[#E5E7EB] bg-white">
       <div className="flex h-16 items-center justify-between gap-3 px-4">
         <Link
           to="/"
           aria-label="QCS Pulse home"
-          className="text-lg font-semibold tracking-tight text-[#006165]"
+          className="flex items-center"
         >
-          QCS Pulse
+          <img
+            src="/qcs-pulse-logo.png"
+            alt="QCS Pulse"
+            className="h-11 w-auto"
+          />
         </Link>
         <a
           href={QCS_URL}
