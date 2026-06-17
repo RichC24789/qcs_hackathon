@@ -81,6 +81,37 @@ public sealed class ContentFeedService(
             .ToList();
     }
 
+    public async Task<IReadOnlyList<ContentFeedItem>> GetLikedAsync(
+        string userEmail,
+        CancellationToken cancellationToken = default)
+    {
+        var likedSlugs = await topicLikeService.GetLikedSlugsForUserAsync(userEmail, cancellationToken);
+        var likedSlugSet = likedSlugs.ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        var likedTopics = GetUsableTopicDetails()
+            .Where(topic => likedSlugSet.Contains(topic.Slug))
+            .ToList();
+
+        if (likedTopics.Count == 0)
+        {
+            return [];
+        }
+
+        var likeCounts = await topicLikeService.GetLikeCountsAsync(cancellationToken);
+        var otherUsersLikeCounts = await topicLikeService.GetLikeCountsFromOtherUsersAsync(userEmail, cancellationToken);
+
+        return likedTopics
+            .OrderByDescending(topic => otherUsersLikeCounts.GetValueOrDefault(topic.Slug))
+            .ThenByDescending(topic => likeCounts.GetValueOrDefault(topic.Slug))
+            .ThenBy(topic => topic.Number)
+            .Select(topic => ToFeedItem(
+                topic,
+                likeCounts.GetValueOrDefault(topic.Slug),
+                otherUsersLikeCounts.GetValueOrDefault(topic.Slug),
+                likedSlugSet))
+            .ToList();
+    }
+
     private IReadOnlyList<TopicDetail> GetUsableTopicDetails() =>
         topicContentService.GetAllTopics()
             .Select(summary => topicContentService.GetTopicBySlug(summary.Slug))

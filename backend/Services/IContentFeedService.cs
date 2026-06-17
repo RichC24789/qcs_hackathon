@@ -13,4 +13,8 @@ public interface IContentFeedService
         string userEmail,
         string theme,
         CancellationToken cancellationToken = default);
+
+    Task<IReadOnlyList<ContentFeedItem>> GetLikedAsync(
+        string userEmail,
+        CancellationToken cancellationToken = default);
 }
