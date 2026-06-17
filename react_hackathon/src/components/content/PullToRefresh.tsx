@@ -1,5 +1,6 @@
 import { Loader2 } from "lucide-react"
 import {
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -46,31 +47,39 @@ export function PullToRefresh({
   const isRefreshingRef = useRef(false)
   const activePointerIdRef = useRef<number | null>(null)
 
-  onRefreshRef.current = onRefresh
-  pullDistanceRef.current = pullDistance
-  isRefreshingRef.current = isRefreshing
+  useEffect(() => {
+    onRefreshRef.current = onRefresh
+  }, [onRefresh])
 
-  function resetPull() {
+  useEffect(() => {
+    pullDistanceRef.current = pullDistance
+  }, [pullDistance])
+
+  useEffect(() => {
+    isRefreshingRef.current = isRefreshing
+  }, [isRefreshing])
+
+  const resetPull = useCallback(() => {
     pullDistanceRef.current = 0
     setPullDistance(0)
-  }
+  }, [])
 
-  function animateTo(distance: number) {
+  const animateTo = useCallback((distance: number) => {
     pullDistanceRef.current = distance
     setIsAnimating(true)
     setPullDistance(distance)
     window.setTimeout(() => setIsAnimating(false), 220)
-  }
+  }, [])
 
-  function scrollToTopAfterLayout(container: HTMLElement) {
+  const scrollToTopAfterLayout = useCallback((container: HTMLElement) => {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         container.scrollTop = 0
       })
     })
-  }
+  }, [])
 
-  function finishPull(container: HTMLElement) {
+  const finishPull = useCallback((container: HTMLElement) => {
     if (
       pullDistanceRef.current >= PULL_THRESHOLD &&
       !isRefreshingRef.current
@@ -91,7 +100,7 @@ export function PullToRefresh({
     } else {
       animateTo(0)
     }
-  }
+  }, [animateTo, scrollToTopAfterLayout])
 
   useEffect(() => {
     const container = containerRef.current
@@ -174,7 +183,7 @@ export function PullToRefresh({
       container.removeEventListener("pointerup", handlePointerEnd)
       container.removeEventListener("pointercancel", handlePointerEnd)
     }
-  }, [])
+  }, [finishPull, resetPull])
 
   const spinnerOpacity = isRefreshing
     ? 1

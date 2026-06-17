@@ -3,13 +3,21 @@ import { Heart, Share2 } from "lucide-react"
 
 import { ContentDetailDialog } from "@/components/content/ContentDetailDialog"
 import { Button } from "@/components/ui/button"
-import { getTopicLikeStatus, likeTopic, logActivity, unlikeTopic } from "@/lib/api"
+import {
+  getTopicLikeStatus,
+  likeTopic,
+  logActivity,
+  resolveBackendUrl,
+  unlikeTopic,
+} from "@/lib/api"
 import { cn } from "@/lib/utils"
 
 export type ContentItemProps = {
   slug: string
   title: string
   subtitle: string
+  contentType: string
+  contentUrl?: string
   hook: string
   text: string
   userEmail: string | null
@@ -21,6 +29,8 @@ export function ContentItem({
   slug,
   title,
   subtitle,
+  contentType,
+  contentUrl,
   hook,
   text,
   userEmail,
@@ -33,11 +43,11 @@ export function ContentItem({
   const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
   const [isDetailOpen, setIsDetailOpen] = useState(false)
+  const isPodcast = contentType.toLowerCase() === "podcast"
+  const audioUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
 
   useEffect(() => {
     if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
-      setIsLiked(initialLikedByCurrentUser)
-      setLikeCount(initialLikeCount)
       return
     }
 
@@ -122,15 +132,22 @@ export function ContentItem({
         ) : null}
         <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
-        <Button
-          type="button"
-          variant="outline"
-          size="sm"
-          className="mt-3"
-          onClick={() => setIsDetailOpen(true)}
-        >
-          Read more
-        </Button>
+        {isPodcast ? (
+          <audio controls preload="none" className="mt-3 w-full">
+            <source src={audioUrl} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        ) : (
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="mt-3"
+            onClick={() => setIsDetailOpen(true)}
+          >
+            Read more
+          </Button>
+        )}
 
         <div className="mt-3 flex items-center gap-4">
           <button
@@ -155,7 +172,7 @@ export function ContentItem({
         </div>
       </article>
 
-      {isDetailOpen ? (
+      {isDetailOpen && !isPodcast ? (
         <ContentDetailDialog
           title={title}
           summary={hook}

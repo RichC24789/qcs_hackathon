@@ -1,5 +1,9 @@
 const API_BASE = import.meta.env.VITE_API_BASE ?? "http://localhost:5280"
 
+export function resolveBackendUrl(path: string) {
+  return new URL(path, API_BASE.endsWith("/") ? API_BASE : `${API_BASE}/`).toString()
+}
+
 type ApiOptions = {
   method?: string
   email?: string | null
