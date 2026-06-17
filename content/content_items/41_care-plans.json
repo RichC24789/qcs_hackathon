@@ -12,6 +12,13 @@
     "format": "text-card",
     "topicIDs": [
       "41"
+    ],
+    "themes": [
+      "Care planning",
+      "Risk assessment",
+      "Record keeping and documentation",
+      "Dignity and person-centred care",
+      "Communication"
     ]
   }
 }

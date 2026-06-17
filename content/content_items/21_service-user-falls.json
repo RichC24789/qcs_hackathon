@@ -13,6 +13,13 @@
      "url": "/api/content/posters/service-user-falls-poster.png",
     "topicIDs": [
       "21"
+    ],
+    "themes": [
+      "Falls and incidents",
+      "Incident reporting",
+      "Escalation and raising concerns",
+      "Emergency response",
+      "Record keeping and documentation"
     ]
   }
 }

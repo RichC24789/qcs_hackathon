@@ -12,6 +12,14 @@
     "format": "text-card",
     "topicIDs": [
       "30"
+    ],
+    "themes": [
+      "Moving and handling",
+      "Risk assessment",
+      "Equipment safety",
+      "Training and competency",
+      "Care planning",
+      "Regulatory compliance"
     ]
   }
 }

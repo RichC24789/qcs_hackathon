@@ -13,6 +13,11 @@
      "url": "/api/content/posters/medication-administration-poster.png",
     "topicIDs": [
       "3"
+    ],
+    "themes": [
+      "Medication safety",
+      "Record keeping and documentation",
+      "Training and competency"
     ]
   }
 }

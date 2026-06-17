@@ -13,6 +13,15 @@
     "url": "/api/content/audio/topic-45-end-of-life.mp3",
     "topicIDs": [
       "45"
+    ],
+    "themes": [
+      "End of life care",
+      "Dignity and person-centred care",
+      "Mental capacity and consent",
+      "Care planning",
+      "Record keeping and documentation",
+      "Communication",
+      "Staff wellbeing"
     ]
   }
 }

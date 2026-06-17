@@ -13,6 +13,14 @@
     "url": "/api/content/audio/topic-17-whistleblowing.mp3",
     "topicIDs": [
       "17"
+    ],
+    "themes": [
+      "Whistleblowing",
+      "Safeguarding",
+      "Escalation and raising concerns",
+      "Regulatory compliance",
+      "Staff wellbeing",
+      "Professional conduct and boundaries"
     ]
   }
 }

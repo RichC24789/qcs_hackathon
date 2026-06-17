@@ -12,6 +12,12 @@
     "format": "text-card",
     "topicIDs": [
       "25"
+    ],
+    "themes": [
+      "Incident reporting",
+      "Regulatory compliance",
+      "Record keeping and documentation",
+      "Falls and incidents"
     ]
   }
 }

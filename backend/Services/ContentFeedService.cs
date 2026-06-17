@@ -71,6 +71,7 @@ public sealed class ContentFeedService(
             topic.Slug,
             topic.Title,
             topic.Theme,
+            topic.Themes,
             topic.ContentType,
             topic.ContentUrl,
             hook ?? string.Empty,

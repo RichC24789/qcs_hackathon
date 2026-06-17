@@ -13,6 +13,13 @@
      "url": "/api/content/posters/infection-control-poster.png",
     "topicIDs": [
       "26"
+    ],
+    "themes": [
+      "Infection prevention and control",
+      "Personal protective equipment",
+      "Risk assessment",
+      "Regulatory compliance",
+      "Escalation and raising concerns"
     ]
   }
 }

@@ -13,6 +13,15 @@
     "url": "/api/content/audio/topic-44-mental-health-wellbeing.mp3",
     "topicIDs": [
       "44"
+    ],
+    "themes": [
+      "Mental health and wellbeing",
+      "Escalation and raising concerns",
+      "Care planning",
+      "Emergency response",
+      "Record keeping and documentation",
+      "Communication",
+      "Staff wellbeing"
     ]
   }
 }

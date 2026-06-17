@@ -13,6 +13,12 @@
     "url": "/api/content/audio/topic-35-grievance.mp3",
     "topicIDs": [
       "35"
+    ],
+    "themes": [
+      "Disciplinary and grievance",
+      "Employment rights",
+      "Staff wellbeing",
+      "Escalation and raising concerns"
     ]
   }
 }

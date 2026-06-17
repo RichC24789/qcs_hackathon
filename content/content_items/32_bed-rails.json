@@ -12,6 +12,15 @@
     "format": "text-card",
     "topicIDs": [
       "32"
+    ],
+    "themes": [
+      "Moving and handling",
+      "Equipment safety",
+      "Restrictive practice and restraint",
+      "Mental capacity and consent",
+      "Risk assessment",
+      "Safeguarding",
+      "Care planning"
     ]
   }
 }

@@ -13,6 +13,12 @@
      "url": "/api/content/posters/fire-safety-poster.png",
     "topicIDs": [
       "46"
+    ],
+    "themes": [
+      "Fire safety",
+      "Emergency response",
+      "Risk assessment",
+      "Training and competency"
     ]
   }
 }
