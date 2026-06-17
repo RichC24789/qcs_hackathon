@@ -14,7 +14,10 @@ public sealed class ContentController(
     private static readonly FileExtensionContentTypeProvider ContentTypeProvider = new();
 
     [HttpGet]
-    public async Task<IActionResult> GetFeed([FromQuery] int? limit, CancellationToken cancellationToken)
+    public async Task<IActionResult> GetFeed(
+        [FromQuery] int? limit,
+        [FromQuery] string[] excludeSlugs,
+        CancellationToken cancellationToken)
     {
         var userEmail = userIdentityService.GetCurrentUserEmail();
         if (userEmail is null)
@@ -22,7 +25,7 @@ public sealed class ContentController(
             return BadRequest("X-User-Email header is required.");
         }
 
-        var feed = await contentFeedService.GetFeedAsync(userEmail, limit ?? 10, cancellationToken);
+        var feed = await contentFeedService.GetFeedAsync(userEmail, limit ?? 10, excludeSlugs, cancellationToken);
         return Ok(feed);
     }
 

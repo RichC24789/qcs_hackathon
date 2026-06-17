@@ -11,25 +11,21 @@ export function SearchPage() {
   const { email, isLoggedIn } = useAuth()
   const [searchParams, setSearchParams] = useSearchParams()
   const selectedTheme = searchParams.get("theme") ?? ""
-  const [draftTheme, setDraftTheme] = useState(selectedTheme)
   const [items, setItems] = useState<ContentFeedItem[]>([])
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
-    setDraftTheme(selectedTheme)
-  }, [selectedTheme])
-
-  useEffect(() => {
     if (!isLoggedIn || !selectedTheme) {
-      setItems([])
-      setError(null)
-      setIsLoading(false)
       return
     }
 
     let cancelled = false
-    setIsLoading(true)
+    queueMicrotask(() => {
+      if (!cancelled) {
+        setIsLoading(true)
+      }
+    })
 
     getContentByTheme(selectedTheme, email)
       .then((nextItems) => {
@@ -58,7 +54,8 @@ export function SearchPage() {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
-    const nextTheme = draftTheme.trim()
+    const formData = new FormData(event.currentTarget)
+    const nextTheme = String(formData.get("theme") ?? "").trim()
     if (nextTheme) {
       setSearchParams({ theme: nextTheme })
     } else {
@@ -77,11 +74,12 @@ export function SearchPage() {
           aria-hidden
         />
         <input
+          key={selectedTheme}
           id="search"
+          name="theme"
           type="search"
           placeholder="Search topics…"
-          value={draftTheme}
-          onChange={(event) => setDraftTheme(event.target.value)}
+          defaultValue={selectedTheme}
           className="border-input bg-card focus-visible:ring-ring w-full rounded-xl border py-2.5 pr-4 pl-10 text-sm shadow-sm focus-visible:ring-2 focus-visible:outline-none"
         />
       </form>
@@ -125,6 +123,10 @@ export function SearchPage() {
               hook={item.hook}
               text={item.text ?? ""}
               themes={item.themes ?? []}
+              quizType={item.type}
+              quizQuestion={item.question}
+              quizOptions={item.options}
+              quizCorrectAnswer={item.correctAnswer}
               userEmail={email}
               initialLikeCount={item.likeCount}
               initialLikedByCurrentUser={item.likedByCurrentUser}

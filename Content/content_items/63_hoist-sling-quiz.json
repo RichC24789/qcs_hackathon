@@ -6,21 +6,19 @@
   },
   "body": {
     "summary": "A hoist is only as safe as the person using it — never use one without training, and always check the equipment before you start.",
-    "text": {
-      "id": 1,
-      "type": "multiple_choice",
-      "question": "What is the FIRST step before using a hoist?",
-      "options": [
-        "Move the resident immediately",
-        "Check the equipment",
-        "Call the manager",
-        "Record the transfer"
-      ],
-      "correctAnswer": "Check the equipment"
-    }
+    "text": ""
   },
   "metadata": {
     "format": "scenario-quiz",
+    "type": "multiple_choice",
+    "question": "What is the FIRST step before using a hoist?",
+    "options": [
+      "Move the resident immediately",
+      "Check the equipment",
+      "Call the manager",
+      "Record the transfer"
+    ],
+    "correctAnswer": "Check the equipment",
     "topicIDs": [
       "31"
     ],

@@ -6,21 +6,19 @@
   },
   "body": {
     "summary": "Making a medication mistake is stressful, but what you do in the next few minutes matters more than the mistake itself.",
-    "text": {
-      "id": 1,
-      "type": "multiple_choice",
-      "question": "What is the FIRST priority when a medication error occurs?",
-      "options": [
-        "Complete documentation",
-        "Check the resident’s safety",
-        "Call the pharmacist",
-        "Report to CQC"
-      ],
-      "correctAnswer": "Check the resident’s safety"
-    }
+    "text": ""
   },
   "metadata": {
     "format": "scenario-quiz",
+    "type": "multiple_choice",
+    "question": "What is the FIRST priority when a medication error occurs?",
+    "options": [
+      "Complete documentation",
+      "Check the resident’s safety",
+      "Call the pharmacist",
+      "Report to CQC"
+    ],
+    "correctAnswer": "Check the resident’s safety",
     "topicIDs": [
       "01"
     ],

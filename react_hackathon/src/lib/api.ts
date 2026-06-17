@@ -81,6 +81,10 @@ export type TopicLikeStatus = {
 export type ContentFeedItem = TopicSummary & {
   hook: string
   text: string
+  type?: string
+  question?: string
+  options?: string[]
+  correctAnswer?: string
   likeCount: number
   likedByCurrentUser: boolean
   otherUsersLikeCount: number
@@ -101,8 +105,20 @@ export function getTopicBySlug(slug: string, email: string | null = null) {
   return apiFetch<TopicDetail>(`/api/topics/by-slug/${slug}`, { email })
 }
 
-export function getContentFeed(email: string, limit = 10) {
-  return apiFetch<ContentFeedItem[]>(`/api/content?limit=${limit}`, { email })
+export function getContentFeed(
+  email: string,
+  limit = 10,
+  excludeSlugs: string[] = []
+) {
+  const params = new URLSearchParams({ limit: String(limit) })
+
+  for (const slug of excludeSlugs) {
+    params.append("excludeSlugs", slug)
+  }
+
+  return apiFetch<ContentFeedItem[]>(`/api/content?${params.toString()}`, {
+    email,
+  })
 }
 
 export function getContentByTheme(theme: string, email: string | null = null) {
@@ -110,6 +126,10 @@ export function getContentByTheme(theme: string, email: string | null = null) {
     `/api/content/by-theme/${encodeURIComponent(theme)}`,
     { email }
   )
+}
+
+export function getLikedContent(email: string) {
+  return apiFetch<ContentFeedItem[]>("/api/content/liked", { email })
 }
 
 export function getTopicLikeStatus(slug: string, email: string | null) {

@@ -12,10 +12,14 @@ public sealed class ContentFeedService(
     public async Task<IReadOnlyList<ContentFeedItem>> GetFeedAsync(
         string userEmail,
         int limit,
+        IReadOnlyCollection<string>? excludeSlugs = null,
         CancellationToken cancellationToken = default)
     {
         var clampedLimit = Math.Clamp(limit, 1, 50);
         var topicDetails = GetUsableTopicDetails();
+        var excludedSlugSet = (excludeSlugs ?? [])
+            .Where(slug => !string.IsNullOrWhiteSpace(slug))
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
 
         var viewedSlugs = await activityLogService.GetViewedTopicSlugsAsync(userEmail, cancellationToken);
         var likeCounts = await topicLikeService.GetLikeCountsAsync(cancellationToken);
@@ -24,10 +28,13 @@ public sealed class ContentFeedService(
         var likedSlugSet = likedSlugs.ToHashSet(StringComparer.OrdinalIgnoreCase);
 
         var unseenTopics = topicDetails
+            .Where(topic => !excludedSlugSet.Contains(topic.Slug))
             .Where(topic => !viewedSlugs.Contains(topic.Slug))
             .ToList();
 
-        var candidates = unseenTopics.Count > 0 ? unseenTopics : topicDetails;
+        var candidates = unseenTopics.Count > 0
+            ? unseenTopics
+            : topicDetails.Where(topic => !excludedSlugSet.Contains(topic.Slug)).ToList();
 
         return candidates
             .Select(topic => new
@@ -151,6 +158,10 @@ public sealed class ContentFeedService(
             topic.ContentUrl,
             hook ?? string.Empty,
             topic.Text,
+            topic.Type,
+            topic.Question,
+            topic.Options,
+            topic.CorrectAnswer,
             likeCount,
             likedSlugSet.Contains(topic.Slug),
             otherUsersLikeCount);
