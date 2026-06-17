@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "60",
+    "slug": "infection-control",
+    "title": "Infection control procedures — standard precautions, hand hygiene"
+  },
+  "body": {
+    "summary": "Standard precautions apply with every service user, every time — not just when someone is known to have an infection.",
+     "text": "./posters/infection-control-poster.png"
+  },
+  "metadata": {
+    "format": "poster",
+    "topicIDs": [
+      "26"
+    ]
+  }
+}

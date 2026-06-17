@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "98",
+    "slug": "record-keeping-podcast-audio",
+    "title": "Record keeping and documentation — what to record, accuracy, retention"
+  },
+  "body": {
+    "summary": "If it is not recorded, it did not happen — in care, records protect the service user, protect you, and tell the story of the care that was given.",
+    "text": "./podcasts/audio/topic-50-record-keeping.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "50"
+    ]
+  }
+}

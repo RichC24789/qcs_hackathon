@@ -1,0 +1,29 @@
+{
+  "header": {
+    "id": "63",
+    "slug": "hoist-sling",
+    "title": "Hoist and sling use — safe use, checks, competency"
+  },
+  "body": {
+    "summary": "A hoist is only as safe as the person using it — never use one without training, and always check the equipment before you start.",
+    "text": 
+      {
+        "id": 1,
+        "type": "multiple_choice",
+        "question": "What is the FIRST step before using a hoist?",
+        "options": [
+            "Move the resident immediately",
+            "Check the equipment",
+            "Call the manager",
+            "Record the transfer"
+          ],
+        "correctAnswer": "Check the equipment"
+      }
+  },
+  "metadata": {
+    "format": "scenario-quiz",
+    "topicIDs": [
+      "31"
+    ]
+  }
+}

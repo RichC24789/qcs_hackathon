@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "84",
+    "slug": "covert-medication-podcast-audio",
+    "title": "Covert medication — policy, best interest, documentation"
+  },
+  "body": {
+    "summary": "Giving medication without a person's knowledge is only ever legal in very specific circumstances — and every step must be documented and agreed in advance.",
+    "text": "./podcasts/audio/topic-07-covert-medication.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "7"
+    ]
+  }
+}

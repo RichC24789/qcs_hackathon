@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "97",
+    "slug": "end-of-life-podcast-audio",
+    "title": "End of life care — documentation, DNAR, palliative care pathway"
+  },
+  "body": {
+    "summary": "Good end of life care is about making sure someone's final days or weeks reflect their wishes — that starts with good documentation and clear communication.",
+    "text": "./podcasts/audio/topic-45-end-of-life.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "45"
+    ]
+  }
+}

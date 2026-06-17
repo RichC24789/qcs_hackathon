@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "54",
+    "slug": "head-injuries",
+    "title": "Head injuries following a fall — observation, escalation"
+  },
+  "body": {
+    "summary": "All about managing head injuries following a fall — observation, escalation",
+    "text": "./posters/head-injuries-poster.png"
+  },
+  "metadata": {
+    "format": "poster",
+    "topicIDs": [
+      "24"
+    ]
+  }
+}

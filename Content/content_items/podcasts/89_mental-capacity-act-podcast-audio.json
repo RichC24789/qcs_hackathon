@@ -1,0 +1,17 @@
+{
+  "header": {
+    "id": "89",
+    "slug": "mental-capacity-act-podcast-audio",
+    "title": "Mental Capacity Act — principles, assessment, best interest decisions"
+  },
+  "body": {
+    "summary": "The Mental Capacity Act protects people's right to make their own decisions — including decisions you might disagree with.",
+    "text": "./podcasts/audio/topic-18-mental-capacity-act.mp3"
+  },
+  "metadata": {
+    "format": "micro-podcast-audio",
+    "topicIDs": [
+      "18"
+    ]
+  }
+}

@@ -63,7 +63,7 @@ public sealed partial class TopicContentService : ITopicContentService
         }
 
         return Directory
-            .EnumerateFiles(_contentRoot, "*.json", SearchOption.TopDirectoryOnly)
+            .EnumerateFiles(_contentRoot, "*.json", SearchOption.AllDirectories)
             .Select(ParseContentItemFile)
             .Where(topic => topic is not null)
             .Cast<TopicDetail>()
