@@ -10,7 +10,7 @@
   },
   "metadata": {
     "format": "podcast",
-    "url": "content/content_items/podcasts/audio/topic-44-mental-health-wellbeing.mp3",
+    "url": "/api/content/audio/topic-44-mental-health-wellbeing.mp3",
     "topicIDs": [
       "44"
     ]

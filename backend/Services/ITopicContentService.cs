@@ -13,4 +13,11 @@ public interface ITopicContentService
     IReadOnlyList<ThemeSummary> GetThemes();
 
     string? GetSummaryMarkdown();
+
+    /// <summary>
+    /// Resolves a bare audio file name (e.g. <c>topic-20-restraint.mp3</c>) to its full
+    /// path under <c>content_items/podcasts/audio</c>, or <c>null</c> if it is not a valid,
+    /// existing <c>.mp3</c> in that folder.
+    /// </summary>
+    string? ResolveAudioFilePath(string fileName);
 }

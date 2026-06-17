@@ -10,7 +10,7 @@
   },
   "metadata": {
     "format": "podcast",
-    "url": "content/content_items/podcasts/audio/topic-16-safeguarding-children.mp3",
+    "url": "/api/content/audio/topic-16-safeguarding-children.mp3",
     "topicIDs": [
       "16"
     ]

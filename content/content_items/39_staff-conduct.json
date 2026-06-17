@@ -10,7 +10,7 @@
   },
   "metadata": {
     "format": "podcast",
-    "url": "content/content_items/podcasts/audio/topic-39-staff-conduct.mp3",
+    "url": "/api/content/audio/topic-39-staff-conduct.mp3",
     "topicIDs": [
       "39"
     ]

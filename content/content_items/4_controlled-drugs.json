@@ -10,7 +10,7 @@
   },
   "metadata": {
     "format": "podcast",
-    "url": "content/content_items/podcasts/audio/topic-04-controlled-drugs.mp3",
+    "url": "/api/content/audio/topic-04-controlled-drugs.mp3",
     "topicIDs": [
       "4"
     ]

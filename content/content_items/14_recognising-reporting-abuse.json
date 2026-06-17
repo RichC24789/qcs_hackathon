@@ -10,7 +10,7 @@
   },
   "metadata": {
     "format": "podcast",
-    "url": "content/content_items/podcasts/audio/topic-14-recognising-reporting-abuse.mp3",
+    "url": "/api/content/audio/topic-14-recognising-reporting-abuse.mp3",
     "topicIDs": [
       "14"
     ]

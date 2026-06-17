@@ -10,7 +10,7 @@
   },
   "metadata": {
     "format": "podcast",
-    "url": "content/content_items/podcasts/audio/topic-07-covert-medication.mp3",
+    "url": "/api/content/audio/topic-07-covert-medication.mp3",
     "topicIDs": [
       "7"
     ]
