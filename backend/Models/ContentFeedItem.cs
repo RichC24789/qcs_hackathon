@@ -8,5 +8,6 @@ public sealed record ContentFeedItem(
     string PrimaryFormat,
     string SecondaryFormat,
     string Hook,
+    string Text,
     int LikeCount,
     bool LikedByCurrentUser);

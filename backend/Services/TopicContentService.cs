@@ -96,6 +96,7 @@ public sealed partial class TopicContentService : ITopicContentService
                 document.Metadata.Format,
                 document.Metadata.SecondaryFormat,
                 sections,
+                document.Body.Text,
                 rawMarkdown);
         }
         catch (JsonException)

@@ -8,4 +8,5 @@ public sealed record TopicDetail(
     string PrimaryFormat,
     string SecondaryFormat,
     IReadOnlyDictionary<string, string> Sections,
+    string Text,
     string RawMarkdown);

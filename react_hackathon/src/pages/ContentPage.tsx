@@ -34,9 +34,19 @@ export function ContentPage() {
   }, [email, isLoggedIn, loadFeed])
 
   const handleRefresh = useCallback(async () => {
-    await new Promise((resolve) => setTimeout(resolve, 650))
-    await loadFeed()
-  }, [loadFeed])
+    if (!email) {
+      return
+    }
+
+    setIsLoading(true)
+    try {
+      await loadFeed()
+    } catch {
+      setError("Could not load your feed from the API.")
+    } finally {
+      setIsLoading(false)
+    }
+  }, [email, loadFeed])
 
   if (!isLoggedIn) {
     return (
@@ -46,24 +56,22 @@ export function ContentPage() {
     )
   }
 
-  if (error) {
-    return <p className="text-muted-foreground px-4 py-4 text-sm">{error}</p>
-  }
-
-  if (isLoading) {
-    return <p className="text-muted-foreground px-4 py-4 text-sm">Loading feed…</p>
-  }
-
-  if (items.length === 0) {
-    return (
-      <p className="text-muted-foreground px-4 py-4 text-sm">
-        No content available right now. Pull down to refresh.
-      </p>
-    )
-  }
-
   return (
-    <PullToRefresh onRefresh={handleRefresh} className="pb-14">
+    <PullToRefresh onRefresh={handleRefresh} className="px-1 pb-14 pt-1">
+      {error ? (
+        <p className="text-muted-foreground px-4 py-4 text-sm">{error}</p>
+      ) : null}
+
+      {isLoading && items.length === 0 ? (
+        <p className="text-muted-foreground px-4 py-4 text-sm">Loading feed…</p>
+      ) : null}
+
+      {!isLoading && !error && items.length === 0 ? (
+        <p className="text-muted-foreground px-4 py-4 text-sm">
+          No content available right now. Pull down to refresh.
+        </p>
+      ) : null}
+
       {items.map((item) => (
         <ContentItem
           key={item.slug}
@@ -71,6 +79,7 @@ export function ContentPage() {
           title={item.title}
           subtitle={item.theme}
           hook={item.hook}
+          text={item.text}
           userEmail={email}
           initialLikeCount={item.likeCount}
           initialLikedByCurrentUser={item.likedByCurrentUser}

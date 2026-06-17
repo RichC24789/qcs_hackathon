@@ -22,6 +22,14 @@ function isAtScrollTop(container: HTMLElement) {
   return container.scrollTop <= 1
 }
 
+function isInteractiveTarget(target: EventTarget | null) {
+  if (!(target instanceof Element)) {
+    return false
+  }
+
+  return target.closest("button, a, input, textarea, select, label") !== null
+}
+
 export function PullToRefresh({
   onRefresh,
   children,
@@ -36,6 +44,7 @@ export function PullToRefresh({
   const isPullingRef = useRef(false)
   const pullDistanceRef = useRef(0)
   const isRefreshingRef = useRef(false)
+  const activePointerIdRef = useRef<number | null>(null)
 
   onRefreshRef.current = onRefresh
   pullDistanceRef.current = pullDistance
@@ -61,24 +70,58 @@ export function PullToRefresh({
     })
   }
 
+  function finishPull(container: HTMLElement) {
+    if (
+      pullDistanceRef.current >= PULL_THRESHOLD &&
+      !isRefreshingRef.current
+    ) {
+      isRefreshingRef.current = true
+      setIsRefreshing(true)
+      pullDistanceRef.current = REFRESH_HOLD
+      setPullDistance(REFRESH_HOLD)
+
+      void onRefreshRef
+        .current()
+        .finally(() => {
+          isRefreshingRef.current = false
+          setIsRefreshing(false)
+          animateTo(0)
+          scrollToTopAfterLayout(container)
+        })
+    } else {
+      animateTo(0)
+    }
+  }
+
   useEffect(() => {
     const container = containerRef.current
     if (!container) {
       return
     }
 
-    function handleTouchStart(event: TouchEvent) {
-      if (isRefreshingRef.current || !isAtScrollTop(container!)) {
+    function handlePointerDown(event: PointerEvent) {
+      if (
+        isRefreshingRef.current ||
+        !isAtScrollTop(container!) ||
+        isInteractiveTarget(event.target) ||
+        activePointerIdRef.current !== null
+      ) {
         isPullingRef.current = false
         return
       }
 
-      startYRef.current = event.touches[0].clientY
+      activePointerIdRef.current = event.pointerId
+      startYRef.current = event.clientY
       isPullingRef.current = true
+      container!.setPointerCapture(event.pointerId)
     }
 
-    function handleTouchMove(event: TouchEvent) {
-      if (!isPullingRef.current || isRefreshingRef.current) {
+    function handlePointerMove(event: PointerEvent) {
+      if (
+        !isPullingRef.current ||
+        isRefreshingRef.current ||
+        event.pointerId !== activePointerIdRef.current
+      ) {
         return
       }
 
@@ -88,7 +131,7 @@ export function PullToRefresh({
         return
       }
 
-      const delta = event.touches[0].clientY - startYRef.current
+      const delta = event.clientY - startYRef.current
       if (delta > 0) {
         event.preventDefault()
         const nextDistance = Math.min(delta * 0.55, MAX_PULL)
@@ -100,47 +143,36 @@ export function PullToRefresh({
       }
     }
 
-    async function handleTouchEnd() {
+    function handlePointerEnd(event: PointerEvent) {
+      if (event.pointerId !== activePointerIdRef.current) {
+        return
+      }
+
+      activePointerIdRef.current = null
+      if (container!.hasPointerCapture(event.pointerId)) {
+        container!.releasePointerCapture(event.pointerId)
+      }
+
       if (!isPullingRef.current) {
         return
       }
 
       isPullingRef.current = false
-
-      if (
-        pullDistanceRef.current >= PULL_THRESHOLD &&
-        !isRefreshingRef.current
-      ) {
-        isRefreshingRef.current = true
-        setIsRefreshing(true)
-        pullDistanceRef.current = REFRESH_HOLD
-        setPullDistance(REFRESH_HOLD)
-
-        try {
-          await onRefreshRef.current()
-        } finally {
-          isRefreshingRef.current = false
-          setIsRefreshing(false)
-          animateTo(0)
-          scrollToTopAfterLayout(container!)
-        }
-      } else {
-        animateTo(0)
-      }
+      finishPull(container!)
     }
 
-    container.addEventListener("touchstart", handleTouchStart, {
-      passive: true,
+    container.addEventListener("pointerdown", handlePointerDown)
+    container.addEventListener("pointermove", handlePointerMove, {
+      passive: false,
     })
-    container.addEventListener("touchmove", handleTouchMove, { passive: false })
-    container.addEventListener("touchend", handleTouchEnd)
-    container.addEventListener("touchcancel", handleTouchEnd)
+    container.addEventListener("pointerup", handlePointerEnd)
+    container.addEventListener("pointercancel", handlePointerEnd)
 
     return () => {
-      container.removeEventListener("touchstart", handleTouchStart)
-      container.removeEventListener("touchmove", handleTouchMove)
-      container.removeEventListener("touchend", handleTouchEnd)
-      container.removeEventListener("touchcancel", handleTouchEnd)
+      container.removeEventListener("pointerdown", handlePointerDown)
+      container.removeEventListener("pointermove", handlePointerMove)
+      container.removeEventListener("pointerup", handlePointerEnd)
+      container.removeEventListener("pointercancel", handlePointerEnd)
     }
   }, [])
 
@@ -152,14 +184,15 @@ export function PullToRefresh({
     <div
       ref={containerRef}
       className={cn(
-        "scrollbar-hide min-h-0 flex-1 overflow-y-auto overscroll-y-contain",
+        "scrollbar-hide min-h-0 flex-1 touch-pan-y overflow-y-auto overscroll-y-contain",
         className
       )}
     >
       <div
         className={cn(
           "relative will-change-transform",
-          isAnimating && "transition-transform duration-200 ease-out"
+          isAnimating && "transition-transform duration-200 ease-out",
+          pullDistance > 0 && "select-none"
         )}
         style={{ transform: `translate3d(0, ${pullDistance}px, 0)` }}
       >

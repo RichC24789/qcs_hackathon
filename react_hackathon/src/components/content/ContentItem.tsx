@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react"
 import { Heart, Share2 } from "lucide-react"
 
+import { ContentDetailDialog } from "@/components/content/ContentDetailDialog"
+import { Button } from "@/components/ui/button"
 import { getTopicLikeStatus, likeTopic, logActivity, unlikeTopic } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
@@ -9,6 +11,7 @@ export type ContentItemProps = {
   title: string
   subtitle: string
   hook: string
+  text: string
   userEmail: string | null
   initialLikeCount?: number
   initialLikedByCurrentUser?: boolean
@@ -19,6 +22,7 @@ export function ContentItem({
   title,
   subtitle,
   hook,
+  text,
   userEmail,
   initialLikeCount,
   initialLikedByCurrentUser,
@@ -28,6 +32,7 @@ export function ContentItem({
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
   const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
+  const [isDetailOpen, setIsDetailOpen] = useState(false)
 
   useEffect(() => {
     if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
@@ -106,34 +111,58 @@ export function ContentItem({
   }
 
   return (
-    <article ref={articleRef} className="shrink-0 border-b px-4 py-4">
-      <h2 className="text-base font-semibold">{title}</h2>
-      {subtitle ? (
-        <p className="text-muted-foreground mt-1 text-xs">{subtitle}</p>
-      ) : null}
-      <p className="mt-2 text-sm leading-relaxed">{hook}</p>
+    <>
+      <article
+        ref={articleRef}
+        className="mx-3 my-3 shrink-0 rounded-xl border bg-card px-4 py-4 shadow-sm"
+      >
+        <h2 className="text-base font-semibold">{title}</h2>
+        {subtitle ? (
+          <p className="text-muted-foreground mt-1 text-xs">{subtitle}</p>
+        ) : null}
+        <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
-      <div className="mt-3 flex items-center gap-4">
-        <button
+        <Button
           type="button"
-          aria-label={isLiked ? "Unlike" : "Like"}
-          aria-pressed={isLiked}
-          disabled={!userEmail || isUpdating}
-          onClick={toggleLike}
-          className="flex items-center gap-1 p-1 disabled:opacity-50"
+          variant="outline"
+          size="sm"
+          className="mt-3"
+          onClick={() => setIsDetailOpen(true)}
         >
-          <Heart
-            className={cn(
-              "size-6 shrink-0",
-              isLiked && "fill-current text-red-500"
-            )}
-          />
-          <span className="w-6 text-left text-sm tabular-nums">{likeCount}</span>
-        </button>
-        <button type="button" aria-label="Share" className="shrink-0 p-1">
-          <Share2 className="size-6" />
-        </button>
-      </div>
-    </article>
+          Read more
+        </Button>
+
+        <div className="mt-3 flex items-center gap-4">
+          <button
+            type="button"
+            aria-label={isLiked ? "Unlike" : "Like"}
+            aria-pressed={isLiked}
+            disabled={!userEmail || isUpdating}
+            onClick={toggleLike}
+            className="flex items-center gap-1 p-1 disabled:opacity-50"
+          >
+            <Heart
+              className={cn(
+                "size-6 shrink-0",
+                isLiked && "fill-current text-red-500"
+              )}
+            />
+            <span className="w-6 text-left text-sm tabular-nums">{likeCount}</span>
+          </button>
+          <button type="button" aria-label="Share" className="shrink-0 p-1">
+            <Share2 className="size-6" />
+          </button>
+        </div>
+      </article>
+
+      {isDetailOpen ? (
+        <ContentDetailDialog
+          title={title}
+          summary={hook}
+          text={text}
+          onClose={() => setIsDetailOpen(false)}
+        />
+      ) : null}
+    </>
   )
 }

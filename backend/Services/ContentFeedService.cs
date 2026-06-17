@@ -63,6 +63,7 @@ public sealed class ContentFeedService(
             topic.PrimaryFormat,
             topic.SecondaryFormat,
             hook ?? string.Empty,
+            topic.Text,
             likeCount,
             likedSlugSet.Contains(topic.Slug));
     }

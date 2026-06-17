@@ -76,6 +76,7 @@ export type TopicLikeStatus = {
 
 export type ContentFeedItem = TopicSummary & {
   hook: string
+  text: string
   likeCount: number
   likedByCurrentUser: boolean
 }
