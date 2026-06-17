@@ -7,6 +7,8 @@ public sealed class ContentFeedService(
     IActivityLogService activityLogService,
     ITopicLikeService topicLikeService) : IContentFeedService
 {
+    private const string IgnoredContentType = "micro-podcast";
+
     public async Task<IReadOnlyList<ContentFeedItem>> GetFeedAsync(
         string userEmail,
         int limit,
@@ -18,6 +20,10 @@ public sealed class ContentFeedService(
             .Select(summary => topicContentService.GetTopicBySlug(summary.Slug))
             .Where(topic => topic is not null)
             .Cast<TopicDetail>()
+            .Where(topic => !string.Equals(
+                topic.ContentType,
+                IgnoredContentType,
+                StringComparison.OrdinalIgnoreCase))
             .ToList();
 
         var viewedSlugs = await activityLogService.GetViewedTopicSlugsAsync(userEmail, cancellationToken);
