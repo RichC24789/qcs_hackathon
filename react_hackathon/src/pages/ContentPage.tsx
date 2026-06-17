@@ -11,6 +11,7 @@ export function ContentPage() {
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [isLoadingMore, setIsLoadingMore] = useState(false)
+  const [hasMore, setHasMore] = useState(true)
   const isLoadingMoreRef = useRef(false)
 
   const fetchFeed = useCallback(async () => {
@@ -22,7 +23,7 @@ export function ContentPage() {
   }, [email])
 
   const loadMore = useCallback(async () => {
-    if (!email || isLoadingMoreRef.current) {
+    if (!email || isLoadingMoreRef.current || !hasMore) {
       return
     }
 
@@ -30,12 +31,16 @@ export function ContentPage() {
     setIsLoadingMore(true)
 
     try {
-      const nextItems = await getContentFeed(email, 10)
+      const currentSlugs = items.map((item) => item.slug)
+      const nextItems = await getContentFeed(email, 10, currentSlugs)
+      const nextSlugs = new Set(nextItems.map((item) => item.slug))
+
       setItems((current) => {
         const seen = new Set(current.map((item) => item.slug))
         const newItems = nextItems.filter((item) => !seen.has(item.slug))
         return newItems.length > 0 ? [...current, ...newItems] : current
       })
+      setHasMore(nextSlugs.size === nextItems.length && nextItems.length === 10)
       setError(null)
     } catch {
       setError("Could not load your feed from the API.")
@@ -43,7 +48,7 @@ export function ContentPage() {
       isLoadingMoreRef.current = false
       setIsLoadingMore(false)
     }
-  }, [email])
+  }, [email, hasMore, items])
 
   useEffect(() => {
     if (!isLoggedIn || !email) {
@@ -56,6 +61,7 @@ export function ContentPage() {
       .then((nextItems) => {
         if (!cancelled) {
           setItems(nextItems)
+          setHasMore(nextItems.length === 10)
           setError(null)
         }
       })
@@ -83,6 +89,7 @@ export function ContentPage() {
     try {
       const nextItems = await fetchFeed()
       setItems(nextItems)
+      setHasMore(nextItems.length === 10)
       setError(null)
     } catch {
       setError("Could not load your feed from the API.")
@@ -127,6 +134,11 @@ export function ContentPage() {
           contentUrl={item.contentUrl}
           hook={item.hook}
           text={item.text ?? ""}
+          themes={item.themes ?? []}
+          quizType={item.type}
+          quizQuestion={item.question}
+          quizOptions={item.options}
+          quizCorrectAnswer={item.correctAnswer}
           userEmail={email}
           initialLikeCount={item.likeCount}
           initialLikedByCurrentUser={item.likedByCurrentUser}

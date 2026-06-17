@@ -10,6 +10,10 @@ public sealed record ContentFeedItem(
     string ContentUrl,
     string Hook,
     string Text,
+    string Type,
+    string Question,
+    IReadOnlyList<string> Options,
+    string CorrectAnswer,
     int LikeCount,
     bool LikedByCurrentUser,
     int OtherUsersLikeCount);

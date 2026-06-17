@@ -8,6 +8,10 @@ public sealed record TopicDetail(
     IReadOnlyList<string> Themes,
     string ContentType,
     string ContentUrl,
+    string Type,
+    string Question,
+    IReadOnlyList<string> Options,
+    string CorrectAnswer,
     IReadOnlyDictionary<string, string> Sections,
     string Text,
     string RawMarkdown);

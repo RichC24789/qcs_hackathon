@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { ExternalLink, FileText, Heart, Share2 } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 import { AudioBlobPlayer } from "@/components/content/AudioBlobPlayer"
 import { ContentText } from "@/components/content/ContentText"
@@ -26,6 +27,11 @@ export type ContentItemProps = {
   contentUrl?: string
   hook: string
   text: string
+  themes?: string[]
+  quizType?: string
+  quizQuestion?: string
+  quizOptions?: string[]
+  quizCorrectAnswer?: string
   userEmail: string | null
   initialLikeCount?: number
   initialLikedByCurrentUser?: boolean
@@ -40,10 +46,16 @@ export function ContentItem({
   contentUrl,
   hook,
   text,
+  themes = [],
+  quizType,
+  quizQuestion,
+  quizOptions = [],
+  quizCorrectAnswer,
   userEmail,
   initialLikeCount,
   initialLikedByCurrentUser,
 }: ContentItemProps) {
+  const navigate = useNavigate()
   const articleRef = useRef<HTMLElement>(null)
   const hasLoggedViewRef = useRef(false)
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
@@ -53,16 +65,30 @@ export function ContentItem({
   const isPodcast = normalizedContentType === "podcast"
   const isPoster = normalizedContentType === "poster"
   const isAnimation = normalizedContentType === "animation"
+  const isScenarioQuiz = normalizedContentType === "scenario-quiz"
   const isQuickReference =
     normalizedContentType === "quick_reference" ||
     normalizedContentType === "quick-reference"
   const mediaUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
   const [isExpanded, setIsExpanded] = useState(false)
   const [isShareOpen, setIsShareOpen] = useState(false)
+  const [selectedQuizAnswer, setSelectedQuizAnswer] = useState<string | null>(null)
 
   const isTextContent =
     normalizedContentType === "text" || normalizedContentType === "text-card"
   const bodyText = text
+  const hasQuizPayload =
+    isScenarioQuiz &&
+    quizType === "multiple_choice" &&
+    Boolean(quizQuestion) &&
+    quizOptions.length > 0 &&
+    Boolean(quizCorrectAnswer)
+  const hashtags = themes
+    .map((theme) => ({
+      theme,
+      label: theme.replace(/\s+/g, "").toLowerCase(),
+    }))
+    .filter(({ label }) => label)
 
   useEffect(() => {
     if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
@@ -148,6 +174,22 @@ export function ContentItem({
     setIsExpanded(true)
   }
 
+  function getQuizOptionClass(option: string) {
+    const hasAnswered = selectedQuizAnswer !== null
+    const isCorrectOption = option === quizCorrectAnswer
+    const isSelectedOption = option === selectedQuizAnswer
+
+    if (hasAnswered && isCorrectOption) {
+      return "border-green-600 bg-green-50 text-green-800"
+    }
+
+    if (hasAnswered && isSelectedOption && !isCorrectOption) {
+      return "border-red-600 bg-red-50 text-red-800"
+    }
+
+    return "border-border bg-background text-foreground hover:border-[#0F4146]/40 hover:bg-[#0F4146]/5"
+  }
+
   async function toggleLike() {
     if (!userEmail || isUpdating) {
       return
@@ -227,6 +269,38 @@ export function ContentItem({
         </a>
       ) : null}
 
+      {isScenarioQuiz ? (
+        <div className="mt-3 rounded-xl border border-[#0F4146]/15 bg-[#0F4146]/5 p-3">
+          {hasQuizPayload ? (
+            <>
+              <p className="text-sm font-semibold leading-relaxed">
+                {quizQuestion}
+              </p>
+              <div className="mt-3 space-y-2">
+                {quizOptions.map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    disabled={selectedQuizAnswer !== null}
+                    onClick={() => setSelectedQuizAnswer(option)}
+                    className={cn(
+                      "w-full rounded-lg border px-3 py-2 text-left text-sm transition-colors disabled:cursor-default",
+                      getQuizOptionClass(option)
+                    )}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : (
+            <p className="text-muted-foreground text-sm">
+              Quiz options are not available for this item.
+            </p>
+          )}
+        </div>
+      ) : null}
+
       {isTextContent && !isExpanded ? (
         <Button
           type="button"
@@ -265,6 +339,23 @@ export function ContentItem({
               )}
             </div>
           </div>
+        </div>
+      ) : null}
+
+      {hashtags.length > 0 ? (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {hashtags.map(({ theme, label }) => (
+            <button
+              key={theme}
+              type="button"
+              className="cursor-pointer rounded-full bg-[#0F4146]/10 px-2.5 py-1 text-xs font-medium text-[#0F4146] transition-colors hover:bg-[#0F4146]/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F4146]/40 focus-visible:ring-offset-2 active:scale-95"
+              onClick={() => {
+                navigate(`/search?theme=${encodeURIComponent(theme)}`)
+              }}
+            >
+              #{label}
+            </button>
+          ))}
         </div>
       ) : null}
 

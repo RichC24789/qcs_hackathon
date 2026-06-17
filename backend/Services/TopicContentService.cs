@@ -124,6 +124,10 @@ public sealed partial class TopicContentService : ITopicContentService
                 document.Metadata.Themes,
                 document.Metadata.Format,
                 document.Metadata.Url,
+                document.Metadata.Type,
+                document.Metadata.Question,
+                document.Metadata.Options,
+                document.Metadata.CorrectAnswer,
                 sections,
                 document.Body.Text,
                 rawMarkdown);

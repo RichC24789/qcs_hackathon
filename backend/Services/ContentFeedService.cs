@@ -21,10 +21,14 @@ public sealed class ContentFeedService(
     public async Task<IReadOnlyList<ContentFeedItem>> GetFeedAsync(
         string userEmail,
         int limit,
+        IReadOnlyCollection<string>? excludeSlugs = null,
         CancellationToken cancellationToken = default)
     {
         var clampedLimit = Math.Clamp(limit, 1, 50);
         var topicDetails = GetUsableTopicDetails();
+        var excludedSlugSet = (excludeSlugs ?? [])
+            .Where(slug => !string.IsNullOrWhiteSpace(slug))
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
 
         var viewedSlugs = await activityLogService.GetViewedTopicSlugsAsync(userEmail, cancellationToken);
         var likeCounts = await topicLikeService.GetLikeCountsAsync(cancellationToken);
@@ -38,9 +42,11 @@ public sealed class ContentFeedService(
             .SelectMany(topic => topic.Themes)
             .ToHashSet(StringComparer.OrdinalIgnoreCase);
 
-        // Soft weighting: every usable item is a candidate (already-seen items are not excluded,
-        // just scored lower), ranked by the composite score with the like signals as tie-breaks.
+        // Soft weighting: every usable item is a candidate — except any the caller explicitly asked
+        // to exclude — and already-seen items are scored lower rather than removed, ranked by the
+        // composite score with the like signals as tie-breaks.
         return topicDetails
+            .Where(topic => !excludedSlugSet.Contains(topic.Slug))
             .Select(topic => new
             {
                 Topic = topic,
@@ -96,9 +102,15 @@ public sealed class ContentFeedService(
         string theme,
         CancellationToken cancellationToken = default)
     {
+        if (string.IsNullOrWhiteSpace(theme))
+        {
+            return [];
+        }
+
         var matchingTopics = GetUsableTopicDetails()
-            .Where(topic => topic.Themes.Any(t =>
-                string.Equals(t, theme, StringComparison.OrdinalIgnoreCase)))
+            .Where(topic => ThemeMatches(topic, theme))
+            .OrderBy(topic => topic.Number)
+            .ThenBy(topic => topic.Title)
             .ToList();
 
         if (matchingTopics.Count == 0)
@@ -165,6 +177,10 @@ public sealed class ContentFeedService(
                 StringComparison.OrdinalIgnoreCase))
             .ToList();
 
+    private static bool ThemeMatches(TopicDetail topic, string theme) =>
+        string.Equals(topic.Theme, theme, StringComparison.OrdinalIgnoreCase) ||
+        topic.Themes.Any(topicTheme => string.Equals(topicTheme, theme, StringComparison.OrdinalIgnoreCase));
+
     private static ContentFeedItem ToFeedItem(
         TopicDetail topic,
         int likeCount,
@@ -183,6 +199,10 @@ public sealed class ContentFeedService(
             topic.ContentUrl,
             hook ?? string.Empty,
             topic.Text,
+            topic.Type,
+            topic.Question,
+            topic.Options,
+            topic.CorrectAnswer,
             likeCount,
             likedSlugSet.Contains(topic.Slug),
             otherUsersLikeCount);

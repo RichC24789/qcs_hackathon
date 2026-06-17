@@ -10,6 +10,15 @@
   },
   "metadata": {
      "format": "scenario-quiz",
+     "type": "multiple_choice",
+      "question": "What is the FIRST priority when a medication error occurs?",
+      "options": [
+        "Complete documentation",
+        "Check the resident’s safety",
+        "Call the pharmacist",
+        "Report to CQC"
+      ],
+      "correctAnswer": "Check the resident’s safety",
     "topicIDs": [
       "1"
     ],
