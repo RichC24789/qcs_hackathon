@@ -1,0 +1,40 @@
+{
+  "id": 46,
+  "slug": "fire-safety",
+  "title": "Fire safety — what to do when you discover a fire",
+  "durationSeconds": 75,
+  "source": "MR04 Fire Safety Policy and Procedure",
+  "scopeNote": "Follows the policy's 'on discovering a fire' sequence. 999 is called at the moment of discovery, alongside the alarm — not last at the assembly point.",
+  "lottieSuggestion": "fire alarm, evacuation, exit sign",
+  "steps": [
+    {
+      "label": "Raise the alarm and call 999",
+      "caption": "The moment you find a fire, set off the alarm and call 999."
+    },
+    {
+      "label": "Don't tackle large fires",
+      "caption": "Only use an extinguisher on a small fire if you are trained and it is safe."
+    },
+    {
+      "label": "Leave by the nearest exit",
+      "caption": "Use your nearest escape route and never use the lift."
+    },
+    {
+      "label": "Follow each person's PEEP",
+      "caption": "People who need help have a Personal Emergency Evacuation Plan — follow it."
+    },
+    {
+      "label": "Close doors behind you",
+      "caption": "Closing doors slows the spread of fire and smoke."
+    },
+    {
+      "label": "Go to the assembly point",
+      "caption": "Gather at the assembly point so everyone can be accounted for."
+    },
+    {
+      "label": "Check everyone is out",
+      "caption": "The person in charge checks who is out and who is still inside."
+    }
+  ],
+  "endFrame": "Out fast, stay out, and account for everyone."
+}

@@ -94,7 +94,7 @@ public sealed partial class TopicContentService : ITopicContentService
                 document.Header.Title,
                 document.Header.Theme,
                 document.Metadata.Format,
-                document.Metadata.SecondaryFormat,
+                document.Metadata.Url,
                 sections,
                 document.Body.Text,
                 rawMarkdown);
@@ -169,12 +169,12 @@ public sealed partial class TopicContentService : ITopicContentService
 
         if (!string.IsNullOrWhiteSpace(document.Metadata.Format))
         {
-            builder.AppendLine($"**Primary format:** {document.Metadata.Format}");
+            builder.AppendLine($"**Format:** {document.Metadata.Format}");
         }
 
-        if (!string.IsNullOrWhiteSpace(document.Metadata.SecondaryFormat))
+        if (!string.IsNullOrWhiteSpace(document.Metadata.Url))
         {
-            builder.AppendLine($"**Secondary format:** {document.Metadata.SecondaryFormat}");
+            builder.AppendLine($"**Content URL:** {document.Metadata.Url}");
         }
 
         builder.AppendLine();
@@ -227,7 +227,7 @@ public sealed partial class TopicContentService : ITopicContentService
     }
 
     private static TopicSummary ToSummary(TopicDetail topic) =>
-        new(topic.Number, topic.Slug, topic.Title, topic.Theme, topic.PrimaryFormat, topic.SecondaryFormat);
+        new(topic.Number, topic.Slug, topic.Title, topic.Theme, topic.ContentType, topic.ContentUrl);
 
     [GeneratedRegex(@"^##\s+(?<heading>.+)$", RegexOptions.Multiline)]
     private static partial Regex SectionHeadingRegex();

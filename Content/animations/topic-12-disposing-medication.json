@@ -1,0 +1,38 @@
+{
+  "id": 12,
+  "slug": "disposing-medication",
+  "title": "Disposing of medication — returning unused stock to the pharmacy",
+  "durationSeconds": 75,
+  "source": "CM08 Safe Disposal of Medication Policy and Procedure",
+  "scopeNote": "Standard pharmacy return only. Controlled drug disposal is a separate process (Controlled Drugs Policy) and is not shown in this animation.",
+  "lottieSuggestion": "medication, pill bottle, pharmacy",
+  "steps": [
+    {
+      "label": "Get the person's consent",
+      "caption": "The medication belongs to the person, so ask before you return it."
+    },
+    {
+      "label": "Write down what you're returning",
+      "caption": "Record the date, the person's name, the medicine, and the quantity."
+    },
+    {
+      "label": "Remove or cross out the label",
+      "caption": "Take off the pharmacy label and shred it, or black out the details.",
+      "visualNote": "Show the label being obscured to protect personal information."
+    },
+    {
+      "label": "Put it in the pharmacy box",
+      "caption": "Use the disposal container the pharmacy gave you — never the bin or toilet.",
+      "visualNote": "Contrast the labelled pharmacy container with a crossed-out bin and toilet."
+    },
+    {
+      "label": "Lock it away, separate from in-use meds",
+      "caption": "Keep the container locked and apart from medication you are still giving."
+    },
+    {
+      "label": "Return to pharmacy and sign",
+      "caption": "The pharmacy collects it, and you both sign to confirm the handover."
+    }
+  ],
+  "endFrame": "Never bin it, never flush it — always back to the pharmacy with a record."
+}

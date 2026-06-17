@@ -64,8 +64,8 @@ export type TopicSummary = {
   slug: string
   title: string
   theme: string
-  primaryFormat: string
-  secondaryFormat: string
+  contentType: string
+  contentUrl: string
 }
 
 export type TopicLikeStatus = {

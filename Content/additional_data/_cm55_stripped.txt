@@ -1,0 +1,150 @@
+
+ CM55 Covert Medication Policy and Procedure - Preview 
+ Policy preview 
+ Policy Id: 
+ Region: 
+ England 
+ Wales 
+ Scotland 
+ Ireland 
+ Customer Id: 
+ Location Id: 
+ Update preview 
+ Preview pdf 
+ Medication CM55 - Covert Medication Policy and Procedure 
+ All policy 
+ Review Sheet 
+ Purpose 
+ Scope 
+ Objectives 
+ Policy 
+ Procedure 
+ Definitions 
+ Key Facts - Professionals 
+ Key Facts - People Affected by The Service 
+ Further Reading 
+ Outstanding Practice 
+ Review Sheet 
+ Last Reviewed 08 Apr 26 Last Amended 08 Apr 26 This policy will be reviewed as needs require or at the following interval: Annual Business Impact: Low Low Minimal action required. Circulate information amongst relevant parties. Reason for this Review: Scheduled review Changes Made: No Summary: This policy sets out how {{{Client_Name_Official}}} will manage situations where covert medication administration is considered to ensure {{{Service_user_text}}}s receive necessary medication safely and legally. It has been reviewed with no significant changes. Underpinning Knowledge references have been checked to ensure they remain current. Relevant Legislation: The Care Act 2014 Human Rights Act 1998 Medicines Act 1968 Mental Capacity Act 2005 Mental Capacity Act Code of Practice Safeguarding Vulnerable Groups Act 2006 The Health and Social Care Act 2008 (Regulated Activities) (Amendment) Regulations 2012 UK GDPR Underpinning Knowledge: Author: National Institute for Health and Care Excellence, ( 2017), Managing Medicines for Adults Receiving Social Care in the Community [Online] Available from: https://www.nice.org.uk/guidance/NG67/chapter/Recommendations#giving-medicines-to-people-without-their-knowledge-covert-administration [Accessed: 08/04/2026] Author: Care Quality Commission, ( 2022), Covert Administration of Medicines [Online] Available from: https://www.cqc.org.uk/guidance-providers/adult-social-care/covert-administration-medicines [Accessed: 08/04/2026] Author: CQC, ( 2023), Medicines Information for Adult Social Care Services [Online] Available from: https://www.cqc.org.uk/guidance-providers/adult-social-care/medicines-information-adult-social-care-services [Accessed: 08/04/2026] Author: National Institute for Health and Care Excellence, ( 2017), Giving Medicines to People Without Their Knowledge (Covert Administration) [Online] Available from: https://www.nice.org.uk/guidance/NG67/chapter/Recommendations#giving-medicines-to-people-without-their-knowledge-covert-administration [Accessed: 08/04/2026] Author: Specialist Pharmacy Service, ( 2025), Covert Administration of Medicines in Adults: Legal Issues [Online] Available from: https://www.sps.nhs.uk/articles/covert-administration-of-medicines-in-adults-legal-issues/ [Accessed: 08/04/2026] Author: Royal College of Pharmacy, ( 2018), Professional Guidance on the Safe and Secure Handling of Medicines [Online] Available from: https://www.rcpharm.org/professional-standards/professional-guidance-on-the-safe-and-secure-handling-of-medicines/ [Accessed: 08/04/2026] Author: NICE, ( 2015), Quality Statement 6: Covert Medicines Administration [Online] Available from: https://www.nice.org.uk/guidance/qs85/chapter/quality-statement-6-covert-medicines-administration [Accessed: 08/04/2026] Suggested Action: Encourage sharing the policy through the use of the QCS App Equality Impact Assessment: QCS have undertaken an equality analysis during the review of this policy. This statement is a written record that demonstrates that we have shown due regard to the need to eliminate unlawful discrimination, advance equality of opportunity and foster good relations with respect to the characteristics protected by equality law. 
+ 1. Purpose 
+ 1. 1 To ensure that medication is only given covertly to {{{Service_user_text}}}s assessed as lacking capacity and after a best interests meeting has decided that it is appropriate for the {{{Service_user_text}}}. 
+ 1. 2 This policy should be read with the Overarching Medication Policy and Procedure. 
+ 1. 3 To support {{{client_name_official}}} in meeting the following Quality Statements: Key Question Quality Statements Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS8: Medicines optimisation Key Question Safe Quality Statements QSS8: Medicines optimisation Key Question Safe Quality Statements QSS8: Medicines optimisation Key Question Safe Quality Statements QSS8: Medicines optimisation Key Question Safe Quality Statements QSS8: Medicines optimisation Key Question Safe Quality Statements QSS8: Medicines optimisation Key Question Safe Quality Statements QSS8: Medicines optimisation 1. 4 Relevant Legislation The Care Act 2014 Human Rights Act 1998 Medicines Act 1968 Mental Capacity Act 2005 Mental Capacity Act Code of Practice Safeguarding Vulnerable Groups Act 2006 The Health and Social Care Act 2008 (Regulated Activities) (Amendment) Regulations 2012 UK GDPR 
+ 2. Scope 
+ 2.1 Roles Affected: All Staff 2.2 People Affected: {{{Service_user_text}}}s 2.3 Stakeholders Affected: Family Advocates Representatives Commissioners External health professionals Local Authority NHS 
+ 3. Objectives 
+ 3. 1 The practice of offering medication in food or drink is only allowed in certain circumstances and could be open to abuse. 
+ The objective of this policy is to provide guidance as to when this practice is lawful; and to ensure that if it happens at {{{Client_Name_Official}}}, it has been properly considered, thorough consultations have been made and the practice is transparent and open to public scrutiny and audit. 
+ 3. 2 To support staff to distinguish between the concealing of medication in food or drink, and a co-operative process where consenting {{{Service_user_text}}}s who find taking medication difficult have the medication delivered in food or drink for ease of ingestion/swallowing (in which case it is not necessary to consider that the medication has been given covertly). 
+ 4. Policy 
+ 4. 1 Covert administration can only occur where the {{{Service_user_text}}} has been assessed under the Mental Capacity Act 2005 as lacking capacity to make an informed decision, and there has been careful assessment of the {{{Service_user_text}}}'s needs. 
+ Written agreement of the "Best Interest" decision, the action taken and the names of all parties concerned (including the {{{Service_user_text}}}'s GP or prescriber, legal representative and relatives/advocate) must be obtained and documented in the {{{Service_user_text}}}'s {{{Care_plan_name}}}. 
+ 4. 2 Covert medication, giving medication without the person’s knowledge (and perhaps their consent), must not be confused with forcible medication, where it is given with their full knowledge, but not their consent. 
+ 4. 3 The Mental Capacity Act sets out the need for a multidisciplinary approach in decision-making. The Pharmacist's role is to advise on the appropriate methods of covert administration where this is necessary. This is likely to be undertaken by the dispensing pharmacy that dispenses for the {{{Service_user_text}}}. 
+ 4. 4 Crushing medicines and mixing medicines with food or drink, following written authorisation from the GP and pharmacist, to make it more palatable or easier to swallow when the {{{Service_user_text}}} has the capacity to do so and has given consent to this, does not constitute covert administration. 
+ {{{Client_Name_Official}}} will ensure discussion takes place with the GP and pharmacist to explore other forms of the medication (such as liquids) before agreeing to crush or mix medication. 
+ 4. 5 The refusal of medicine by {{{Service_user_text}}}s who have capacity must be respected. 
+ 4. 6 The decision to administer medication covertly must not be considered routine. 
+ 4. 7 The administration of medicines inappropriately, whether by design or accident, may be abuse and must be reported immediately to {{{Reg_Manager_Name}}}, and the formal safeguarding process must be initiated. 
+ 4. 8 Information Sharing 
+ Where sharing of information is required under the Best Interest process, this will be done in line with UK GDPR and the Data Protection Policies and Procedures at {{{Client_Name_Official}}}. 
+ 5. Procedure 
+ 5. 1 {{{Client_Name_Official}}} recognises that there may be certain exceptional circumstances in which covert administration may be considered to prevent {{{Service_user_text}}}s from missing out on essential treatment. In such circumstances and in the absence of informed consent, the following considerations may apply: 
+ The best interests of the {{{Service_user_text}}} must be considered at all times 
+ The medication must be considered essential for the {{{Service_user_text}}}'s health and wellbeing, or for the safety of others 
+ The {{{Service_user_text}}}'s GP or prescriber must authorise the covert medication 
+ A pharmacist must review the medicine's suitability to be given covertly 
+ The decision to administer medication covertly must not be considered routine, and will be a contingency measure 
+ Any decision to do so must be reached after assessing the {{{Support_or_care}}} needs of the {{{Service_user_text}}} individually 
+ Each medicine must be considered separately for covert administration, as must any new medicines or changes to existing medicines 
+ 5. 2 Establish the {{{Service_user_text}}} 's Ability to Give Informed Consent 
+ This will be done via a discussion directly with the {{{Service_user_text}}} about their medication. If the {{{Service_user_text}}} consents, then covert medication will not be used. If the {{{Service_user_text}}} consents but there is doubt about their capacity, then the principles of the MCA must be followed and medication will not be given covertly prior to any formal decision on capacity and subsequent best interests. 
+ It must be noted that no one, not even a family member, can consent on behalf of someone else when the person concerned is an adult. 
+ 5. 3 Establish the Reason Why the {{{Service_user_text}}} Does Not Wish to Take the Medication 
+ Consideration will be given as to whether this reflects a concern about medication, whether an Advance Directive regarding refusal of medication exists or whether there is a religious or cultural belief. 
+ All are valid reasons for declining medication and must be respected. The {{{Service_user_text}}}'s reasons for refusal will be recorded in their records. 
+ 5. 4 Ensure that Alternatives Have Been Explored 
+ Alternative preparations must be offered, and flexibility given where possible. Research shows that medication acceptance is improved when the {{{Service_user_text}}} has been involved in the decision-making process and has been enabled to have some control over what is prescribed. 
+ 5. 5 Establish that the Medication is Essential 
+ If consideration is being given to covert administration of medication, then the medication that the {{{Service_user_text}}} is declining must be deemed to be essential for their health and wellbeing or for the safety of themselves or others, and this must be documented in the {{{Service_user_text}}}'s {{{Support_or_care}}} records. 
+ 5. 6 Establish that the Person Lacks the Mental Capacity to Make the Decision Themselves 
+ The principles of the Mental Capacity Act (MCA) must be followed. A capacity assessment will take place directly with the {{{Service_user_text}}} where a conversation will be had about their medication. It must be determined that the {{{Service_user_text}}} is unable to: 
+ Understand information relevant to the decision, e.g. the risks associated with not taking it 
+ Retain this information (if only briefly) 
+ Weigh up the information/risks involved 
+ Communicate their decision 
+ As detailed in the MCA (2005), all reasonable efforts must be made to help the {{{Service_user_text}}} understand. It must be recognised that capacity may fluctuate during the day and so the best time of day will be chosen. In some cases, several attempts may be required. A record must be made of methods used to help overcome any communication issues, including the use of accessible information formats or an interpreter. 
+ If the {{{Service_user_text}}} successfully passes these four tests, then they will be assumed to possess the mental capacity to make the decision themselves, even if their decision appears unwise. In these circumstances, the decision must be respected and covert medication cannot be given. 
+ 5. 7 Discussion About Best Interests 
+ Having established that the {{{Service_user_text}}} lacks capacity, a decision about whether covert medication is in their best interest must therefore be taken in an open and inclusive way, ensuring that all factors are considered. 
+ The views of people involved in the {{{Service_user_text}}}'s {{{Support_or_care}}} will be sought, as it is important that the decision to administer covert medication is not an isolated one. Members of the multidisciplinary team, the {{{Service_user_text}}}'s family (unless it is clear that the {{{Service_user_text}}} would not wish for them to be involved), people closest to them, and (if applicable) their GP, {{{Reg_Manager_Name}}}, legal representatives, Advocate, or Independent Mental Capacity Advocate (IMCA) will all be invited to express a view. 
+ It is crucial that a decision is reached which is based on what the {{{Service_user_text}}} would want, not necessarily what is best for their physical or mental health. If an Advance Directive exists, the {{{Service_user_text}}}'s wishes stated within it must be respected as they are legally binding. 
+ Where consensus cannot be reached, or there is concern about the restriction of liberty, a DoLS (Deprivation of Liberty Safeguard) application and/or a second opinion may be useful. 
+ Staff must document the agreed management plan in the {{{Service_user_text}}}'s {{{Care_plan_name}}} after the best interest meeting. 
+ 5. 8 Involvement of the Pharmacist 
+ Advice must be sought from the pharmacist when mixing any medication with food or drink. This is to ensure that the medications that the {{{Service_user_text}}} takes are safe to be given in this way and that recommendations can be made about the use of alternative formulations or medications as necessary. 
+ Any changes to the {{{Service_user_text}}}’s medication after a plan for covert medication is put in place will also be discussed with the dispensing pharmacy. 
+ 5. 9 Documentation 
+ In order to be transparent and to provide a clear audit trail, all people receiving covert medication at {{{Client_Name_Official}}} will have a {{{Care_plan_name}}} which contains information about why it has been decided that the person will receive their medication covertly. 
+ A clear record of which medicines are being administered covertly (and when) must also be maintained. 
+ The {{{Care_plan_name}}} must also include: 
+ What actions staff will take to give the {{{Service_user_text}}} their medication in the usual way 
+ If this is not successful, how medicines will be administered covertly 
+ Pharmacy instruction on the best way to administer covertly 
+ Specialist input to show suitability of the method chosen (for example, crushed or mixed with certain and specific foods. This must include foods that should not be used) 
+ Whether the medicine is palatable 
+ Adverse effects (actual or perceived) 
+ Swallowing difficulties 
+ Lack of understanding about what the medicine is used for 
+ Lack of understanding of the consequences of refusing to take the medicine 
+ Ethical, religious or personal beliefs about treatment 
+ What to do if the {{{Service_user_text}}} refuses food or drinks containing the medication 
+ 5. 10 Review 
+ Ongoing attempts to encourage compliance are essential. As far as possible, a reason for refusal must be sought and documented within an appropriate {{{Care_plan_name}}}. Once taken, the decision to administer covert medication must be reviewed in respect of each {{{Service_user_text}}} on a regular basis, ideally weekly. {{{Client_Name_Official}}} understands that covert medication is not a long-term solution. 
+ 5. 11 General Principles of Covert Medication 
+ Where covert medication is used, the following principles will be seen as good practice: 
+ Last resort: Covert medication must only be used when all other options have been tried 
+ Time limited: It must be used for as short a time as possible 
+ Regularly reviewed: The necessity of a covert medication plan will be regularly reviewed 
+ Transparent: The decision-making process must be easy-to-follow and clearly documented 
+ Inclusive: The decision must be a team one and will not be taken by one person in isolation. People closest to the {{{Service_user_text}}} will be involved in the decision 
+ Best interests: All decisions will be made in the {{{Service_user_text}}}’s best interests, having undertaken a holistic assessment of the impact of covert medication on the {{{Service_user_text}}} 
+ 5. 12 Covert Medication and Restraint 
+ Covert medication is different to medication given under restraint. Covert medication is medication given without the person’s consent or knowledge, whereas covert medication given when a person is being restrained is given with their full knowledge but not their consent. Covert medication given when being restrained will need to be formally authorised under DoLS or the Mental Health Act. Similar authorisation must be sought if any medication given covertly is likely to sedate the person or otherwise cause them to be deprived of their liberty. 
+ 5. 13 Governance 
+ {{{Reg_Manager_Name}}} is responsible for ensuring that the practice of covert medication at {{{Client_Name_Official}}} is regularly audited as part of the medication audit process. 
+ Staff should refer to the Auditing and Monitoring of Medication Policy and Procedure at {{{Client_Name_Official}}}. 
+ 6. Definitions 
+ 6.1 Best Interest Decision Meeting 
+ When covert administration of medicines is being considered, there must be a 'best interest' meeting. The purpose of this meeting is to agree whether administering medicines without the {Service_user_text} knowing (covertly) is in the {Service_user_text}'s best interest 
+ A best interest meeting must be attended by staff, relevant health professionals (including the prescriber and pharmacist) and a person who can communicate the views and interests of the {Service_user_text} (this could be a family member, friend or Independent Mental Capacity Advocate (IMCA) depending on the {Service_user_text}'s previously stated wishes and individual circumstances) 
+ If the {Service_user_text} has an attorney appointed under the Mental Capacity Act for health and welfare decisions, then this person will be present at the meeting 
+ 6.2 Covert Administration 
+ When medicines are administered in a disguised format without the knowledge or consent of the person receiving them, for example, in food or in a drink 
+ 6.3 Chemical Restraint 
+ This involves the administration of medication designed purely to control or moderate a person's movement or behaviour 
+ 7. Key Facts - Professionals 
+ The refusal of medicine by {{{Service_user_text}}}s who have capacity will be respected 
+ Covert medication must be agreed by the {{{Service_user_text}}}'s GP or prescriber and reviewed by a pharmacist as suitable to be given covertly 
+ If the {{{Service_user_text}}} wishes their medication to be disguised to make it easier for them to take, this is not covert administration, as it is done with their consent and agreement 
+ Covert administration can only occur where the {{{Service_user_text}}} has been assessed under the Mental Capacity Act 2005 and there has been careful assessment of the {{{Service_user_text}}}'s needs 
+ If covert administration of medicines are being considered for {{{Service_user_text}}}s who lack capacity, there will be a 'best interest' meeting 
+ 8. Key Facts - People Affected by The Service 
+ You have the right, if you have the capacity, to refuse medication. This right to refuse will be respected by {{{Client_Name_Official}}} 
+ If you have trouble swallowing medication or if you dislike the taste and ask for the staff to administer your medication in food or drink, and you have the capacity to make a decision, this is not covert administration. If the medication is not altered by administering it with food or drink and your pharmacist and GP agree, staff can support you with medication this way 
+ Further Reading 
+ As well as the information in the 'Underpinning Knowledge' section of the review sheet, we recommend that you add to your understanding in this policy area by considering the following materials. 
+ Specialist Pharmacy Service - Checking if Medicines can be Given with Food: 
+ https://www.sps.nhs.uk/articles/checking-if-medicines-can-be-given-with-food/ 
+ Specialist Pharmacy Service - Checking if Tablets can be Crushed or Capsules Opened: 
+ https://www.sps.nhs.uk/articles/checking-if-tablets-can-be-crushed-or-capsules-opened/ 
+ NICE - Managing Medicines in Care Homes (Although tailored to care homes, it is a useful resource to review): 
+ https://www.nice.org.uk/guidance/sc1 
+ Outstanding Practice 
+ To be "outstanding" in this policy area you could provide evidence that: 
+ Where medication is administered covertly, it is regularly reviewed and there is evidence that fluctuating capacity is recognised, and practice is altered accordingly 
+ The wide understanding of the policy is enabled by proactive use of the QCS App 
+ There is evidence that {{{Service_user_text}}}s' wishes are recorded and respected 
+ Where a {{{Service_user_text}}} refuses medication, it is documented correctly and any actions taken are in line with agreed policy 
+ There is evidence that best interest decisions have been taken and staff understand the Mental Capacity Act in relation to medication management 
+ 

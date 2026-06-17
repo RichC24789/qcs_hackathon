@@ -1,0 +1,378 @@
+
+ PA04 Maternity Leave Policy and Procedure - Preview 
+ Policy preview 
+ Policy Id: 
+ Region: 
+ England 
+ Wales 
+ Scotland 
+ Ireland 
+ Customer Id: 
+ Location Id: 
+ Update preview 
+ Preview pdf 
+ Inspection Compliance Audit Equality PA04 - Maternity Leave Policy and Procedure 
+ All policy 
+ Review Sheet 
+ Purpose 
+ Scope 
+ Objectives 
+ Policy 
+ Procedure 
+ Definitions 
+ Key Facts - Professionals 
+ Key Facts - People Affected by The Service 
+ Further Reading 
+ Outstanding Practice 
+ Forms 
+ Review Sheet 
+ Last Reviewed 11 Mar 26 Last Amended 11 Mar 26 This policy will be reviewed as needs require or at the following interval: 2 years Business Impact: Medium Medium Changes are important, but urgent implementation is not required, incorporate into your existing workflow. Reason for this Review: Scheduled review Changes Made: Yes Summary: This policy has been reviewed and updated to refer to neonatal care leave. References have also been checked to ensure they remain current. Relevant Legislation: Equality Act 2010 Health and Safety at Work etc. Act 1974 Data Protection Act 2018 UK GDPR The Maternity Leave, Adoption Leave and Shared Parental Leave (Amendment) Regulations 2024 The Protection from Redundancy (Pregnancy and Family Leave) Act 2023 Maternity and Parental Leave Regulations 1999 Statutory Maternity Pay (Medical Evidence) Regulations 1987 Statutory Maternity Pay (General) Regulations 1986 Employment Act 2002 Employment Relations Act 1999 Underpinning Knowledge: Author: Legislation, ( 1999), The Maternity and Parental Leave etc. Regulations 1999 [Online] Available from: https://www.legislation.gov.uk/uksi/1999/3312/contents/made [Accessed: 11/03/2026] Author: Legislation, ( 1987), The Statutory Maternity Pay (Medical Evidence) Regulations 1987 [Online] Available from: https://www.legislation.gov.uk/uksi/1987/235/made [Accessed: 11/03/2026] Author: Legislation, ( 1986), The Statutory Maternity Pay (General) Regulations 1986 [Online] Available from: https://www.legislation.gov.uk/uksi/1986/1960/part/II/made [Accessed: 11/03/2026] Author: Legislation, ( 2002), Employment Act 2002 [Online] Available from: https://www.legislation.gov.uk/ukpga/2002/22/contents [Accessed: 11/03/2026] Author: Legislation, ( 1999), Employment Relations Act 1999 [Online] Available from: https://www.legislation.gov.uk/ukpga/1999/26/contents [Accessed: 11/03/2026] Author: Legislation, ( 2010), Equality Act 2010 [Online] Available from: https://www.legislation.gov.uk/ukpga/2010/15/contents [Accessed: 11/03/2026] Author: Government, ( 2020), Maternity Pay and Leave [Online] Available from: https://www.gov.uk/maternity-pay-leave/leave [Accessed: 11/03/2026] Author: Health and Safety Executive, ( 2022), Protecting Pregnant Workers and New Mothers [Online] Available from: https://www.hse.gov.uk/mothers/employer/index.htm [Accessed: 11/03/2026] Author: Government, ( 2024), Protection from Redundancy (Pregnancy and Family Leave) Act 2023 [Online] Available from: https://www.legislation.gov.uk/ukpga/2023/17/enacted [Accessed: 11/03/2026] Suggested Action: Encourage sharing the policy through the use of the QCS App Equality Impact Assessment: QCS have undertaken an equality analysis during the review of this policy. This statement is a written record that demonstrates that we have shown due regard to the need to eliminate unlawful discrimination, advance equality of opportunity and foster good relations with respect to the characteristics protected by equality law. 
+ 1. Purpose 
+ 1. 1 To ensure that all staff members who are eligible are aware of their entitlements and the notification process under the pregnancy and maternity legislation. 
+ 1. 2 To support {{{client_name_official}}} in meeting the following Quality Statements: Key Question Quality Statements Key Question Safe Quality Statements QSS6: Safe and effective staffing Key Question Safe Quality Statements QSS6: Safe and effective staffing Key Question Safe Quality Statements QSS6: Safe and effective staffing Key Question Well-led Quality Statements QSW2: Capable, compassionate and inclusive leaders QSW4: Workforce equality, diversity and inclusion Key Question Well-led Quality Statements QSW2: Capable, compassionate and inclusive leaders QSW4: Workforce equality, diversity and inclusion Key Question Well-led Quality Statements QSW2: Capable, compassionate and inclusive leaders QSW4: Workforce equality, diversity and inclusion Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability 1. 3 Relevant Legislation Equality Act 2010 Health and Safety at Work etc. Act 1974 Data Protection Act 2018 UK GDPR The Maternity Leave, Adoption Leave and Shared Parental Leave (Amendment) Regulations 2024 The Protection from Redundancy (Pregnancy and Family Leave) Act 2023 Maternity and Parental Leave Regulations 1999 Statutory Maternity Pay (Medical Evidence) Regulations 1987 Statutory Maternity Pay (General) Regulations 1986 Employment Act 2002 Employment Relations Act 1999 
+ 2. Scope 
+ 2.1 Roles Affected: All Staff 2.2 People Affected: {{{Service_user_text}}}s 2.3 Stakeholders Affected: Family Commissioners NHS 
+ 3. Objectives 
+ 3. 1 That all eligible staff are aware of their eligibility to take maternity leave. 
+ 3. 2 That all eligible staff are aware of the process for notification of pregnancy and maternity leave to their employer. 
+ 4. Policy 
+ 4. 1 This policy outlines the statutory rights and responsibilities of employees relating to pregnancy and sets out the arrangements for pregnancy-related sickness, health and safety, and maternity leave. The statutory provisions are complex and, in the event of any discrepancy, will override the terms of this policy. 
+ 4. 2 In some cases, an employee and their spouse/partner may be eligible to opt into shared parental leave ('SPL'). For more information about SPL, please refer to the Shared Parental Leave Policy and Procedure of {{{Client_Name_Official}}}. 
+ 4. 3 Any data collected as part of this policy will be processed in accordance with current data protection legislation, the Privacy Notice issued to staff and the Data Security and Data Retention Policy and Procedure at {{{Client_Name_Official}}}. {{{Client_Name_Official}}} appreciates that certain health data and medical reports will be special category data and {{{Client_Name_Official}}} will process this data accordingly. 
+ 5. Procedure 
+ 5. 1 Summary of Employment Rights in Relation to Pregnancy and Maternity 
+ An employee is entitled to:
+ Paid time off for antenatal care 
+ 52 weeks' maternity leave, consisting of 26 weeks' ordinary maternity leave (OML) and 26 weeks' additional maternity leave (AML), regardless of the length of employment 
+ Statutory maternity pay for 39 weeks, provided the employee has worked for {{{Client_Name_Official}}} for 26 weeks by the 15th week before their baby is due. The employee may qualify for maternity allowance if they do not qualify for SMP 
+ With the exception of terms relating to pay, an employee's terms and conditions of their employment contract remain in force during OML and AML 
+ Return to the same employment after ordinary maternity leave. After AML, an employee is entitled to return to the same job unless it is not reasonably practicable for them to do so. In such circumstances, they will be entitled to return to a different job which is suitable and appropriate for them. If they return to a different job, their remuneration, seniority and status will be maintained 
+ Protection from detrimental treatment or dismissal, including redundancy, on any grounds partly or wholly related to pregnancy 
+ 18 weeks' unpaid parental leave until the child’s 18th birthday; and 
+ Dependants’ leave, where appropriate 
+ In some cases, an employee or their spouse/partner may be eligible to opt into the Shared Parental Leave (SPL) scheme which gives them more flexibility to share the leave and pay available in the first year after birth. An employee's spouse/partner should check with their employer if they are eligible 
+ An employee will need to give {{{Client_Name_Official}}} at least eight weeks' written notice to end their maternity leave and opt in to SPL. An employee can give this notice before or after the birth, but they must remain on maternity leave until at least two weeks after the birth. An employee would then be able to share any remaining leave with their spouse/partner 
+ 5. 2 Notice of Maternity Leave 
+ The employee must notify {{{Client_Name_Official}}} of the pregnancy and of their intention to take ordinary maternity leave by the end of the 15th week before the child is due, or as soon as reasonably practicable, and the employee must give {{{Client_Name_Official}}} the information in writing if requested. The employee may choose to notify {{{Client_Name_Official}}} earlier than this, and may find it helpful to do so in order to ensure that their health and safety rights are observed, and that they have time off for antenatal care 
+ The employee's notice must state:
+ Confirmation of the pregnancy; 
+ The expected week of childbirth; and 
+ The date on which they wish for their ordinary maternity leave to start 
+ {{{Client_Name_Official}}} can request that the employee provides a copy of the MAT B1 certificate which will be given by either the GP or midwife at around 20 weeks of pregnancy and which will state the week that the child is due. This is required as medical evidence of the expected week of childbirth as well as evidence of the employee's entitlement to SMP. {{{Client_Name_Official}}} can request that all notice is given in writing 
+ 5. 3 Time off Work to Attend Antenatal Classes 
+ If an employee is pregnant, they are entitled to take reasonable time off during working hours in order to receive antenatal care. This includes appointments with their GP, midwife or health visitor. There will be no deduction from their salary for attendance at authorised appointments 
+ The employee has the right to reasonable paid time off for antenatal appointments, and this includes the time spent travelling to an appointment and waiting. It does not include entitlement to pay for time where the individual could reasonably attend work beforehand or return to work afterwards 
+ The employee must try to give as much notice as possible of the appointment. {{{Client_Name_Official}}} may ask the individual to provide the following, unless it is the first appointment:
+ A certificate from the doctor, midwife or health visitor stating that they are pregnant; and 
+ An appointment card 
+ The employee is not under any obligation to make up their time spent at the antenatal appointment at a later date 
+ There is no qualifying period that an employee is required to have worked for {{{Client_Name_Official}}} in order to be eligible to claim time off for antenatal care. However, if the employee is an agency worker, they must have worked for {{{Client_Name_Official}}} for a period of at least 12 weeks in order to be eligible 
+ 5. 4 Antenatal Rights for Fathers and Partners 
+ Fathers and partners are entitled to unpaid leave to accompany an expectant mother to antenatal care appointments irrespective of length of service 
+ In order to be eligible to take this leave, the father or partner must have a qualifying relationship with the expectant mother. They must be one of the following:
+ The baby's father 
+ The expectant mother's spouse or civil partner 
+ Living with the expectant mother in an enduring family relationship and not a relative of the expectant mother 
+ Expecting or are entitled to apply for a parental order in respect of the child; or 
+ In a same sex relationship and are to be treated as the child's other parent under assisted reproduction provisions 
+ Fathers and partners can take unpaid time off work to accompany a pregnant woman to see a midwife or obstetrician 
+ The right is to take time off on up to two occasions for a maximum of 6.5 hours each 
+ Fathers and partners must complete the antenatal appointment request form if they are an expectant father or the partner of the expectant mother and plan to accompany the mother to an antenatal appointment 
+ 5. 5 Starting Maternity Leave 
+ The earliest that an individual can start the maternity leave is 11 weeks before the expected week of childbirth, at around 29 weeks pregnant. To ensure that their rights are upheld, they should use the due date given on the MAT B1 pregnancy certificate that the midwife or GP will provide 
+ In order to work out when the 11th week before the expected week of childbirth falls, the individual should find the Sunday before the date which the certificate states the baby is due, or the due date if it is a Sunday, and count back 11 Sundays from that date. The earliest date on which an employee can start the leave is that Sunday. As long as it does not fall before the 11 weeks before the baby is due, it is generally up to them as to when their maternity leave begins 
+ An employee can even choose to work right up to the date that the baby is born 
+ An employee should note that the start of the maternity leave might be triggered automatically if:
+ They have a pregnancy related illness or absence in the last four weeks of their pregnancy. In this case, they must inform {{{Client_Name_Official}}} that they have an illness that relates to the pregnancy and {{{Client_Name_Official}}} can insist that they start their maternity leave even if they are off sick for only one day. However, {{{Client_Name_Official}}} may allow them to carry on working until they had planned to start their leave, especially if they have only been away for a short time; or 
+ Their baby is born before the day on which they were planning to start the maternity leave. In this situation, their leave starts automatically on the day after the day of the birth. The employee must notify {{{Client_Name_Official}}} as soon as is reasonably practicable that they have given birth, as well as noting the date of the birth 
+ If an employee wishes to change the commencement date of their maternity leave, they must provide {{{Client_Name_Official}}} with 28 days' prior notice as soon as possible, unless this is not reasonably practicable 
+ Having been notified of an employee's intention to take maternity leave and the date on which it will begin, {{{Client_Name_Official}}} will give them notice of the date that their maternity leave period shall end. {{{Client_Name_Official}}} will provide the individual with this information within 28 days of them informing {{{Client_Name_Official}}} of the date on which the maternity leave period will start, or on which it has started 
+ 5. 6 Additional Maternity Leave 
+ The second 26 weeks of maternity leave are deemed additional maternity leave. This leave starts on the day after the ordinary maternity leave period finishes. An employee's employment contract continues during additional maternity leave 
+ An employee is entitled to return to the same job on the same terms and conditions. If, exceptionally, this is not possible (for example, if the job no longer exists), they are entitled to suitable alternative employment on terms that are not substantially less favourable 
+ The contractual rights of women on additional maternity leave are maintained, except those rights related to pay, as they are during ordinary maternity leave 
+ The only difference between ordinary maternity leave and additional maternity leave is in relation to pension rights. {{{Client_Name_Official}}} will maintain an employee's contributions to the pension scheme, if such applies, throughout ordinary maternity leave and throughout a period of paid additional maternity leave (based on the salary they would have received if they were not on leave). {{{Client_Name_Official}}} is not obliged to maintain its contributions for any period of unpaid maternity leave. This means, if an employee is paid for 39 weeks of maternity leave and they take the full 52 weeks' entitlement to leave, the employer contributions may not be made for the final 13 weeks. If this is any different, it will be shown in the employee's contract 
+ Employee contributions to the pension scheme, if applicable, will be based on an employee's actual pay for the period of the maternity pay period (39 weeks) 
+ 5. 7 Entitlement to Statutory Maternity Pay 
+ The employee must meet the following three conditions in order to be entitled to SMP:
+ The employee must have worked for {{{Client_Name_Official}}} for at least 26 weeks by the end of the qualifying week (i.e. by the end of the 15th week before the week the baby is due) 
+ The employee must still be in the job in the qualifying week; and 
+ The employee must have been paid at least the lower earnings limit on average in the 8 weeks (if they are paid weekly) or the two months (if they are paid monthly) up to the last payday before the end of the qualifying week. The lower earnings limit is set by the Government each year 
+ SMP is payable for 39 weeks provided an employee meets the eligibility criteria. The first six weeks of SMP are paid at 90% of the employee's average earnings and the remaining 33 weeks are at a rate set by the Government each year 
+ To receive SMP, the employee must give {{{Client_Name_Official}}} 28 days’ notice of the date on which they want the pay to start and this date cannot be changed 
+ The employee's SMP can start on any day of the week that they choose and, in most cases, will start on the same day as the maternity leave period starts 
+ To claim SMP, the employee must give {{{Client_Name_Official}}} a copy of the MAT B1 form, the maternity certificate which states the expected week of childbirth which the midwife or GP will provide when the employee is around 20 weeks pregnant. The employee may find it easier to give the notice for the leave and pay together in the 15th week before the baby is due. However, if the employee decides to do this, then they must remember that they cannot change the date on which the pay starts, even if they decide to vary the date on which the leave begins 
+ SMP shall be paid in the same way as the employee's salary and shall be subject to the usual deductions for tax and national insurance contributions 
+ 5. 8 Compulsory Maternity Leave 
+ It is compulsory for an individual to take 2 weeks of maternity leave following the birth of their baby. This is for health and safety reasons 
+ All employment entitlements and conditions that apply during the maternity leave period will also apply during the period of compulsory maternity leave 
+ 5. 9 Maternity Leave and the Employment Contract 
+ All the terms and conditions of an employee's employment remain in force during OML and AML except for the terms relating to pay, in particular:
+ Benefits in kind shall continue 
+ Annual leave entitlement under an employee's contract shall continue to accrue; and 
+ Pension benefits shall continue 
+ Additionally, as an employer, {{{Client_Name_Official}}} must not discriminate against an individual while they are on any part of the maternity leave 
+ 5. 10 Keeping in Touch (KiT) Days 
+ To enable the employee to keep in touch with {{{Client_Name_Official}}}, the employee may agree with {{{Client_Name_Official}}} that they may undertake work, training or activities for a limited number of up to ten days during their leave period, without bringing that leave period to an end or losing their entitlement to SMP or maternity allowance 
+ 5. 11 Notice of Return to Work 
+ The employee does not need to give any notice that they are returning to work at the end of their maternity leave. However, the employee may find it helpful to contact {{{Client_Name_Official}}} just to make sure that {{{Client_Name_Official}}} knows they are coming back and the contact would be appreciated. The employee will be entitled to return to the same job on the same terms and conditions which applied before they commenced maternity leave 
+ On the other hand, if the employee wishes to return to work earlier than the 52 weeks' entitlement, the employee must give {{{Client_Name_Official}}} 8 weeks’ notice of the intention to return early. If the employee fails to do so, {{{Client_Name_Official}}} reserves the right to postpone their return 
+ 5. 12 Workers 
+ A worker rather than an employee (e.g. because they obtained work through an agency, or are a freelancer), will not get the full set of maternity rights, but they will still receive protection, such as health and safety risk assessments that {{{Client_Name_Official}}} must carry out, and the right to claim sex discrimination or pregnancy/maternity discrimination if they are subject to any detriment as a result of their pregnancy 
+ A worker may qualify for maternity allowance, which is paid by the Government through their local Jobcentre Plus office, rather than through {{{Client_Name_Official}}} 
+ 5. 13 Benefits for Those not Entitled to SMP 
+ If a person is not entitled to receive SMP because they are a worker or because they do not satisfy the eligibility criteria, they may qualify for Maternity Allowance (MA) and they must seek advice from the local Jobcentre Plus office or Citizens Advice Bureau about their eligibility 
+ 5. 14 Sickness During Pregnancy, Maternity Leave, or when the Employee is due to Return to Work 
+ If the employee is absent through sickness during pregnancy, this will not automatically trigger their maternity leave and the employee will be treated as every other member of staff who is off sick. The employee will usually be paid sick pay in the same way as other staff. However, if the employee is sick during the last four weeks of their pregnancy, then {{{Client_Name_Official}}} can insist that the maternity leave starts, although it may overlook occasional days of absence 
+ Once the maternity leave has started, the employee cannot claim sick pay from {{{Client_Name_Official}}} if they become ill. If the employee is sick when the maternity leave is due to end, the usual sickness procedures at {{{Client_Name_Official}}} will apply 
+ 5. 15 Termination of Employment and SMP 
+ As long as the employee is employed in the ‘Qualifying Week’, then they are still entitled to receive SMP, provided they meet all of the other conditions outlined above. It does not matter if the employee is off sick or on holiday in the Qualifying Week 
+ Once the employee has qualified for SMP, they are entitled to receive it for the full 39 weeks. This is the case even if the employee is made redundant, leave the job, or a fixed-term contract comes to an end at any time after the 15th week before the baby is due or during the maternity leave 
+ 5. 16 Part-time Working 
+ The maternity rights of part-time employees are the same as those of a full-time employee 
+ 5. 17 More than one Part-time Job and SMP 
+ If the employee works for a second employer, they are allowed to exercise their rights regarding maternity pay and leave with both employers, on a pro rata basis for each job. However, the employee must ensure that they have worked for each employer for 26 weeks by the Qualifying Week (15th week before the baby is due), and that they give the correct notification of when the maternity leave will start to both employers 
+ In total the employee is entitled to receive the same amount of maternity pay as someone who works in a full-time job. However, if the employee has not worked for {{{Client_Name_Official}}} for 26 weeks by the qualifying week, then the employee will not be entitled to receive maternity pay from us 
+ 5. 18 Health and Safety Considerations 
+ {{{Client_Name_Official}}} will consider any specific workplace risks within its general risk assessment in relation to employees who are of childbearing age and who are pregnant, have been pregnant within the last six months or are breastfeeding. 
+ An individual's line manager will meet with the member of staff and undertake a risk assessment. The individual must ensure that they advise {{{Client_Name_Official}}} of any specific health and safety advice received from their doctor or midwife. Thereafter, the individual's line manager will regularly review the worker's individual risk assessment and make any necessary adjustments as the pregnancy progresses and if there are any significant changes to the worker's activity or the workplace. 
+ Pregnant workers and breastfeeding mothers are also entitled to more frequent rest breaks. 
+ 5. 19 Switching to Shared Parental Leave (SPL) 
+ In some cases, an employee and their spouse/partner may be eligible to opt into the SPL scheme, which gives the employee more flexibility to share the leave and pay available in the first year after the birth of a child. The spouse/partner must check with their employer to check if they are eligible. 
+ The employee must provide eight weeks' written notice to end their maternity leave and opt into SPL. The employee can give this notice before or after the birth of a child, but the employee must remain on maternity leave until at least two weeks after birth. The employee will then be able to share any remaining leave with their spouse/partner. For further information, please refer to our Shared Parental Leave Policy and Procedure. 
+ 5. 20 Stillbirths and Miscarriages 
+ Where a member of staff suffers a miscarriage or a stillbirth before 24 weeks of pregnancy, providing the individual feels comfortable to do so, they should speak with their line manager to discuss any support {{{Client_Name_Official}}} can provide. At the absolute discretion of {{{Client_Name_Official}}}, {{{Client_Name_Official}}} may offer a period of compassionate leave in accordance with its Compassionate Leave Policy and Procedure. If the individual feels too unwell to attend work, they should report their absence by following the usual reporting procedures at {{{Client_Name_Official}}}, in accordance with the Sickness Absence Policy and Procedure, and such sickness absence will be recorded as 'pregnancy-related illness'. 
+ Where a member of staff suffers a stillbirth after 24 weeks of pregnancy or if the baby is born alive at any stage of the pregnancy but does not survive (neonatal loss), the employee is entitled to take statutory maternity leave. In addition to this, providing the individual meets the eligibility requirements, they may also be entitled to take parental bereavement leave before or after any period of maternity leave. For further details, please refer to the Parental Bereavement Leave Policy and Procedure. 
+ 5. 21 Neonatal Care Leave 
+ If a member of staff has a baby that is premature or sick and needs neonatal care, the member of staff may be eligible to take Neonatal Care Leave. Further details can be found within the Neonatal Care Leave Policy and Procedure. 
+ 5. 22 Redundancies During or After Pregnancy and Maternity Leave 
+ If an employee's role is affected by a redundancy situation occurring during their leave, {{{Client_Name_Official}}} will write to inform them of any proposals and shall invite them to a meeting before any final decision is reached as to redundancies. 
+ If an employee's role is affected by a redundancy situation and they have notified {{{Client_Name_Official}}} of their pregnancy, are on maternity leave, or have returned to work from maternity leave and are within an additional protected period of 18 months from the first day of the EWC or the actual date of birth (where notified to us), the employee shall be given first refusal on any suitable alternative vacancies that are appropriate to their skills. 
+ 6. Definitions 
+ 6.1 OML 
+ Ordinary Maternity Leave 
+ 6.2 AML 
+ Additional Maternity Leave 
+ 6.3 SMP 
+ Statutory Maternity Pay 
+ 6.4 Special Category Data 
+ Special category data is a category of data which is more sensitive than normal personal data. This includes data which relates to:
+ Race 
+ Ethnic origin 
+ Politics 
+ Religion 
+ Trade union membership 
+ Genetics 
+ Biometrics (where used for ID purposes) 
+ Health 
+ Sex life 
+ Sexual orientation 
+ 6.5 SPL 
+ Shared Parental Leave 
+ 7. Key Facts - Professionals 
+ All pregnant employees and some qualifying workers are entitled to take maternity leave 
+ Those entitled to take maternity leave may be entitled to Statutory Maternity Pay if they meet the qualifying criteria 
+ Maternity leave is for a maximum of 52 weeks split into 26 weeks' Ordinary Maternity Leave and 26 weeks' Additional Maternity Leave 
+ Statutory Maternity Pay is for a maximum of 39 weeks with the first 6 weeks' pay at 90% of the staff member's average weekly earnings over the relevant period, and the remaining 33 weeks being at the standard rate set by the government each year 
+ It is automatically unfair and unlawful pregnancy/maternity discrimination to terminate the employment of any pregnant member of staff because they are pregnant, due to take maternity leave, or on maternity leave. Likewise, it is unlawful pregnancy/maternity discrimination to subject any staff member to any detriment because they are pregnant or on maternity leave 
+ 8. Key Facts - People Affected by The Service 
+ {{{Client_Name_Official}}} appreciates that you may be used to dealing with a member of staff who subsequently takes maternity leave. {{{Client_Name_Official}}} will ensure that this is communicated to you and your family at the earliest opportunity taking into account the view of the employee and that steps are taken to ensure consistency of care throughout the period of maternity leave 
+ Further Reading 
+ As well as the information in the 'Underpinning Knowledge' section of the review sheet, we recommend that you add to your understanding in this policy area by considering the following materials. 
+ GOV.UK - Maternity, Adoption and Paternity Calculator for Employers: 
+ https://www.gov.uk/maternity-paternity-calculator 
+ ACAS - Maternity, Paternity and Adoption Leave and Pay: 
+ https://www.acas.org.uk/maternity-paternity-and-adoption-leave-and-pay 
+ NHS - Maternity and Paternity Benefits and Leave: 
+ https://www.nhs.uk/conditions/pregnancy-and-baby/maternity-paternity-leave-benefits/ 
+ ACAS - Time off Work for Bereavement: 
+ https://www.acas.org.uk/time-off-for-bereavement/stillbirth-or-miscarriage 
+ People Management - What are the upcoming rules around enhanced redundancy protection for new parents? 
+ https://www.peoplemanagement.co.uk/article/1862960/upcoming-rules-around-enhanced-redundancy-protection-new-parents 
+ Outstanding Practice 
+ To be "outstanding" in this policy area you could provide evidence that: 
+ Staff report that they have been treated very well through their pregnancy and after giving birth 
+ {{{Client_Name_Official}}} goes beyond the minimum legal requirements with regard to maternity leave 
+ All relevant parties have been exceptionally well treated during the maternity period 
+ Staff report that they have felt included and part of {{{Client_Name_Official}}} during maternity leave 
+ The wide understanding of the policy is enabled by proactive use of the QCS App 
+ Forms 
+ The following forms are included as part of this policy: Title of form When would the form be used? Created by Title of form Maternity Leave Letter - PA04 When would the form be used? Letter to confirm receipt of maternity certificate and other details Created by QCS Title of form Confirmation of Return to Work Following Maternity Leave - PA04 When would the form be used? Letter to confirm return to work details Created by QCS Title of form Maternity Leave Commencement - PA04 When would the form be used? To confirm the date of the commencement of maternity leave Created by QCS Title of form Maternity Leave – Confirming Return - PA04 When would the form be used? To confirm date of return from maternity leave Created by QCS Title of form Antenatal Appointment Request Form - PA04 When would the form be used? For expectant fathers or the partners of the expectant mother who plan to accompany the mother to an antenatal appointment Created by QCS Title of form Pregnancy Risk Assessment Guidance - PA04 When would the form be used? To assess risks in the workplace for pregnant workers Created by QCS Title of form Pregnant Worker's Risk Assessment - PA04 When would the form be used? To undertake a risk assessment for a pregnant worker Created by QCS Maternity Leave Letter - PA04 [insert name]  
+ [address]  
+[date]  
+ Dear [insert name]  
+ Re: Acknowledgment of EWC and maternity leave notification  
+Congratulations, and thank you for telling us about your pregnancy and the date on which your baby is due. I am writing to you to outline your entitlement to maternity leave and pay.  
+ [As we have discussed], you are eligible for 52 weeks’ maternity leave. This consists of 26 weeks’ ordinary maternity leave (OML) plus 26 weeks’ additional maternity leave (AML). [outline details of any company maternity leave arrangements].  
+ [Given your chosen start date of [insert date], your 52 weeks’ maternity leave entitlement will end on [insert date]].  
+ OR  
+ [Please can you let us know as soon as possible on which date you would like your maternity leave to commence. We will then confirm the date on which you should return to work.]  
+ If you need to change the date on which your maternity leave starts you must, if at all possible, notify us at least 28 days before your proposed new start date or 28 days before [insert date on which leave starts] (your original start date), whichever is sooner.  
+ If you are absent from work for a pregnancy-related reason (other than to attend scheduled antenatal appointments) after the start of the fourth week before your EWC, your OML will automatically commence on the day following that absence. You must tell us in writing as soon as possible that you are absent from work because of pregnancy.  
+ If your baby is born before the date on which you have chosen to start maternity leave, then your OML will start on the day following the birth. You must tell the company in writing that you have given birth as soon as you can. We will then write to tell you of the date your maternity leave entitlement will end.  
+ As discussed, you are [eligible for 39 weeks’ statutory maternity pay (SMP) OR not eligible for statutory maternity pay (SMP)]. [Outline details of any company maternity pay].  
+ [Your maternity pay will be £[insert amount] from [insert date] to [insert date] and £[insert amount] from [insert date] to [insert date]].  
+ OR  
+ [The form SMP1 (enclosed) explains why you do not qualify for SMP. You may however be entitled to maternity allowance (MA). If you take this form to the Jobcentre Plus or your local social security office, they will be able to tell you more about MA.]  
+ Health and safety  
+ As your employer, we want to make sure that your health and safety is protected while you are working during your pregnancy and that you are not exposed to avoidable risks. We carried out a [generic] risk assessment to identify hazards in our workplace that could be a risk to any new, expectant, or breastfeeding mothers on [insert date]. [We enclose a copy of this risk assessment] or [please contact [insert name of relevant officer] if you wish to see a copy of the assessment]. 
+ [Now you have told us you are pregnant, we will arrange for a specific risk assessment of your duties and working environment and we will discuss with you what actions to take should any potential risks be identified].  
+ [If you have any concerns about your health and safety and your ability to perform any of your normal tasks at any time in the coming months, please let [insert name of relevant officer] know immediately.]  
+ Antenatal care  
+ You are entitled to take reasonable paid time off during working hours for antenatal care. We would be grateful if you could give [your line manager or [insert name of relevant officer]] as much notice as possible of your appointments. Unless it is your first appointment you may be required to produce evidence of an appointment, such as your appointment card.  
+ Maternity cover and other practical arrangements 
+ At least [insert specific time period] before your maternity leave starts we will arrange a meeting with you to discuss arrangements for covering your work and the opportunities for you to remain in contact with the office, should you wish to do so, during your leave.  
+ [Unless you request otherwise, you will remain on circulation lists for internal news, job vacancies, training and work-related social events.]  
+ Whilst you are on maternity leave you may, by agreement with [your line manager or [insert name of relevant officer]] work for up to 10 "keeping in touch" days without bringing your maternity leave or pay to an end. We will discuss any opportunities and arrangements for attending work or training before you go on leave.  
+ Return to work  
+ If you decide to return to work early, you must give us at least eight weeks’ notice.  
+ Shortly before you are due to return to work, we will invite you to have a discussion (whether in person or by telephone) about the arrangements for your return to work.  
+ If you decide not to return to work at the end of your maternity leave, you must resign by giving written notice of [number] weeks/months in accordance with your contract of employment. Your decision will not affect your entitlement to SMP. [Insert details of any return to work requirements for keeping company maternity pay or any return to work bonus].  
+ If you wish to request a change to your hours or any other working arrangements on return to work, you should put the request in writing under the Company's flexible working procedure. If you would like these changes to take effect immediately on your return you should make the request at least 8 weeks before your return date.  
+ If you have any questions about any aspect of your maternity entitlements, please do not hesitate to contact me.  
+ We wish you well and congratulations!  
+ Yours sincerely  
+ [NAME] 
+ For and on behalf of {{{Client_Name_Official}}} 
+ Confirmation of Return to Work Following Maternity Leave - PA04 [Insert Name] 
+ [Address] 
+ Date: 
+ Dear …………………… 
+ Congratulations on the birth of your baby boy/girl*. [NB - offer congratulations or concern depending on the circumstances] 
+ When you began your maternity leave, you stated that you intended to return to work with us on………………….. 
+ I would be grateful if you would confirm that this is still your intention, so that we can make the necessary arrangements for your return. 
+ I look forward to hearing from you. 
+ Yours sincerely, 
+ For and on behalf of {{{Client_Name_Official}}} 
+ * delete as appropriate 
+ Maternity Leave Commencement - PA04 
+ Name: 
+ Thank you for notifying us that you intend to take maternity leave and of your intention to return to work after the birth of your baby. We understand that you will return by the following date: ____/____/____ (DD/MM/YY) 
+ If you wish to return to work early you must give 56 days’ notice in writing to your manager. We will write to you again no earlier than the end of the 15th week after your maternity leave has commenced in order to check whether you still wish to return to work on the date stated. 
+ Signature: 
+ Date :  
+ ____/____/____ DD/MM/YY 
+ Maternity Leave – Confirming Return - PA04 
+ Name : 
+ This document confirms your date of return from Maternity Leave. 
+ The following is the date on which you will return to work following maternity leave: ____/____/____ (DD/MM/YY) 
+ Signature: 
+ Date : 
+ ____/____/____ DD/MM/YY 
+ Antenatal Appointment Request Form - PA04 This form should be completed if you are an expectant father or the partner of the expectant mother and plan to accompany the mother to an antenatal appointment. Time off to attend an antenatal appointment is time off without pay. Employee Name:   Job Title:   Department:   Date of Antenatal Appointment:   Time of Antenatal appointment:   Purpose of Antenatal appointment:   The name of the nurse, doctor or midwife who has advised this appointment:   I confirm that I am having a qualifying relationship with a woman or their expected child (please tick the appropriate boxes) I am the pregnant woman's husband or civil partner.   I live with the woman, whether in a heterosexual or same sex relationship, in an enduring family relationship.   I am not a relative of the woman.   I am the expected child’s father.   I am in a same sex relationship and I will be treated as the child’s other parent under the assisted reproduction provisions in the Human Fertilisation Act 2008.   I am a potential applicant for a Parental Order in relation to a child who is expected to be a surrogate mother.   Please also tick the appropriate box below: This is my first appointment to attend an antenatal appointment for this baby.   This is my second appointment to attend an antenatal appointment for this baby.   Note: employers are entitled to ask for an employee to provide a declaration that they are in a qualifying relationship, the date and time of the appointment, it’s purpose and that an appointment is on the advice of a nurse, doctor or midwife. Employee signature:_______________________________________________  Employee name (print):_____________________________________________   Date:____/____/____ (DD/MM/YY) Pregnancy Risk Assessment Guidance - PA04 Risk Assessment and the Pregnant Worker 
+ All pregnant women are entitled to special health and safety protection at work to ensure that {{{Client_Name_Official}}} working conditions do not put them or their baby at risk. 
+ This also applies up to six months after the birth of the child, or if the mother is breastfeeding. 
+ A pregnant worker who has any concerns about their working conditions has a right to ask for a risk assessment. However, the legal duty to carry out a risk assessment does not arise when a pregnant worker asks for it. It arises whenever women of childbearing age are employed in a workplace and where the work could involve risks. {{{Client_Name_Official}}} is only required to alter working conditions, offer suitable alternative work or suspend on full pay if informed in writing of the pregnancy by the pregnant worker. They will normally be advised by their midwife about things to avoid at work. {{{Client_Name_Official}}} then has a duty to carry out a risk assessment and, if a significant risk is found, {{{Client_Name_Official}}} will take the following steps: 
+ Do all that is reasonable to remove or prevent exposure to the risks. There is also a duty to give the employee information on the risk and what action will be taken 
+ The pregnant worker may need to consider a temporary change of working conditions or hours of work 
+ If a risk remains, {{{Client_Name_Official}}} must offer suitable alternative work or, if there is no suitable alternative, suspend on full pay for as long as necessary to avoid the risk. {{{Client_Name_Official}}} can force the start of maternity leave at 34 weeks if the pregnant worker is suspended on health and safety grounds 
+ Practicalities for Managers  
+ The key hazards in the workplace should have already been identified. Some of them will hold an increased risk for a pregnant worker and this is what {{{Client_Name_Official}}} should try and identify. {{{Client_Name_Official}}} will talk to the employee about carrying out a risk assessment as soon as they inform {{{Client_Name_Official}}} that they are pregnant. It is important not to wait for them to ask. 
+ {{{Client_Name_Official}}} will do the risk assessment in conjunction with the pregnant worker. Examine the working environment and the tasks they perform. Review the risk assessment procedure of {{{Client_Name_Official}}} and review the 5 Steps to Risk Assessment on the Health and Safety Executive website https://www.hse.gov.uk/ . 
+ Consider the risks involved if the pregnant worker's job requires them to be: 
+ Standing for long periods 
+ Lifting and carrying (the pregnant worker will normally be instructed not to lift significant weights, or lift in difficult circumstances) 
+ Travelling for long periods, particularly if they are driving 
+ Exposed to chemicals or smoke 
+ Exposed to harmful biological agents 
+ Operating machinery that may cause shocks or vibrations 
+ Exposed to extreme temperatures and pressures 
+ This is not an exhaustive list but should give an indication of the risks that {{{Client_Name_Official}}} should focus on. 
+ {{{Client_Name_Official}}} should remove the risk as much as is reasonable and in relation to how hazardous the nature of the work is. {{{Client_Name_Official}}} may need to take advice on specific areas, e.g. work with chemicals, biological agents etc. 
+ {{{Client_Name_Official}}} will often need to look at simple ways in which to reduce the risk, e.g. if the pregnant worker's work involves standing for long periods, {{{Client_Name_Official}}} must provide a chair to enable them to sit. If they would normally drive, they must rather travel by train, etc. 
+ In many environments, the risk can be dramatically reduced by ensuring that other staff members are aware of what has been found in the risk assessment. For example, to reduce the risk of lifting of heavy items, other staff members should be aware of the situation as they may be taking on this work. Other staff are likely to be supportive of the pregnant worker and take steps to assist where necessary to ensure that the pregnant worker is not placing herself at risk. 
+ Before requesting the pregnant worker to sign the risk assessment, it is advisable to give them the opportunity to get another opinion if preferred (this may be by their midwife, trade union, safety official, etc.). In unionised environments, it can be useful to involve a safety representative at the risk assessment stage. 
+ {{{Client_Name_Official}}} has a responsibility to ensure that the outcomes of the risk assessment are enforced and reviewed as necessary. 
+ Pregnant Worker's Risk Assessment - PA04 
+ Name of Expectant Mother 
+ Date of Notification of Pregnancy 
+ Date of Assessment 
+ Signed (Employee and Assessor) 
+ Date of Assessment 
+ Signed (Employee and Assessor) 
+ Date of Assessment 
+ Assessor Name 
+ Signature of Pregnant worker confirming initial risk assessment 
+ Task/premises: (this risk assessment will apply to new mothers as long as they continue to breast feed) 
+ This risk assessment should be signed by the expectant mother when it is reviewed each trimester 
+ (Continued on next page)  
+ Hazard / Risk 
+ Who is at Risk? 
+ How can the hazards cause harm? 
+ Normal Control Measures 
+ Are Normal Control Measures 
+ In Place 
+ Yes/No 
+ Adequate 
+ Yes/No 
+ Effects of pregnancy that may occur: 
+ Morning sickness/nausea, backache, varicose veins, haemorrhoids, frequent visits to the toilet, balance, comfort, increasing body size, tiredness, history of miscarriage, high blood pressure hypertension. 
+ Pregnant worker 
+ Unborn child 
+ Nausea/vomiting, aches and pains, bleeding, restricted movement. Risk of stress, slips, trips and falls, tiredness. 
+ Existing risk assessments. (For employed duties). 
+ GP/Midwife advice and treatment. Pregnant workers own knowledge, experience and training of employed duties. 
+ Facilities: Adequate resting facilities available (requirement under the regulations for employers to provide a quiet rest area to put feet up or lie down if required in the future). 
+ Hygiene facilities: There are enough toilets and associated hygiene facilities available. 
+ Adequate onsite arrangements for nutrition and liquid refreshments. Also, that they are able to take breaks as and when required. 
+ Previous medical history : 
+ History of miscarriage, high blood pressure hypertension. 
+ Pregnant worker 
+ Unborn child 
+ Miscarriage, stress, medical complications. 
+ As above. 
+ (Continued on next page)  
+ Hazard / Risk 
+ Who is at Risk? 
+ How can the hazards cause harm? 
+ Normal Control Measures 
+ Are Normal Control Measures 
+ In Place 
+ Yes/No 
+ Adequate 
+ Yes/No 
+ {{{Service_user_text}}}s Group: 
+ Unpredictable/behaviour that challenges, level of care needs. 
+ Pregnant worker 
+ Unborn child 
+ Physical/verbal assault, communicable disease infection, miscarriage, stress, vulnerability. 
+ Contact with {{{service_user_text}}}s known to be violent or aggressive should be prevented wherever possible for the duration of pregnancy. 
+ Mental/physical fatigue and working hours: currently able to cope with their workload and working hours, this will be reviewed with pregnant employee and manager as pregnancy develops. 
+ Employee duties: 
+ Consider if the following are significant manual handling, driving, poor or prolonged working postures, lone working, administration of medication, night work, shift work. 
+ Physical injury, vulnerability, poisoning causing foetal lesions i.e. injury or disease to foetus, tiredness, stress, miscarriage. 
+ No significant manual handling of loads to be undertaken for duration of pregnancy. Member of staff to request assistance/support available. 
+ Display Screen Equipment (DSE): if a DSE user, review DSE Risk Assessment on workstation. 
+ Working Alone: provide adequate training and access to communications, mobile phone, personal alarms etc. Ensure that support is available. If the risk cannot be significantly reduced offer alternative work. 
+ (Continued on next page)  
+ Hazard / Risk 
+ Who is at Risk? 
+ How can the hazards cause harm? 
+ Normal Control Measures 
+ Are Normal Control Measures 
+ In Place 
+ Yes/No 
+ Adequate 
+ Yes/No 
+ Environment: 
+ Small/limited workspace, exposure to excessive temperatures, lack of rest facilities. Exposure to hazardous substances, body fluid spillages. 
+ Slips, trips and falls, miscarriage, fainting, foetal lesions, inability to take adequate breaks/rest, communicable disease infection. 
+ Adequate resting facilities available. 
+ Condition of premises regularly checked. 
+ Prompt maintenance of defects. 
+ Immediate cleaning up of spillages. 
+ Good housekeeping maintained. 
+ Exposure to Communicable Diseases : Hepatitis B, TB, HIV, Chickenpox etc. 
+ Infection, foetal lesions, miscarriage. 
+ Awareness of policy and procedures on infection control. 
+ Good hygiene practice followed (universal infection control procedures). 
+ Pregnant staff in direct contact with someone with a potentially infectious rash (e.g. chicken pox, measles, rubella etc.) to seek advice from their GP/midwife. 
+ If you have answered 'No' to any of the control measures, please explain below what actions need to be taken, by whom and when. 
+ Control Measure 
+ Actions to be Taken 
+ By Whom 
+ Date Due 
+     Completed 
+ The nature and degree of risk will change as the pregnancy develops. Risk assessments must be reviewed on a regular basis in agreement with the pregnant worker, or sooner if there is any significant change. 
+ Pregnant workers should inform their Line Manager of any changes in their condition that may be relevant to their pregnancy and their safety at work. 
+ 

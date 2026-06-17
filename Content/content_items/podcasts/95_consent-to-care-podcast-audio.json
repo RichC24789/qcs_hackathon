@@ -9,7 +9,8 @@
     "text": "./podcasts/audio/topic-43-consent-to-care.mp3"
   },
   "metadata": {
-    "format": "micro-podcast-audio",
+    "format": "podcast",
+    "url": "content/content_items/podcasts/audio/topic-43-consent-to-care.mp3",
     "topicIDs": [
       "43"
     ]

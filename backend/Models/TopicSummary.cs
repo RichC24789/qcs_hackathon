@@ -5,5 +5,5 @@ public sealed record TopicSummary(
     string Slug,
     string Title,
     string Theme,
-    string PrimaryFormat,
-    string SecondaryFormat);
+    string ContentType,
+    string ContentUrl);
