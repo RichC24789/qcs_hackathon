@@ -52,6 +52,7 @@ export function ContentItem({
   const normalizedContentType = contentType.toLowerCase()
   const isPodcast = normalizedContentType === "podcast"
   const isPoster = normalizedContentType === "poster"
+  const isAnimation = normalizedContentType === "animation"
   const isQuickReference =
     normalizedContentType === "quick_reference" ||
     normalizedContentType === "quick-reference"
@@ -193,6 +194,17 @@ export function ContentItem({
           className="mt-3 w-full rounded-xl border bg-muted object-contain"
           loading="lazy"
         />
+      ) : null}
+
+      {isAnimation && mediaUrl ? (
+        <video
+          controls
+          preload="metadata"
+          className="mt-3 w-full rounded-xl border bg-black"
+        >
+          <source src={mediaUrl} type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
       ) : null}
 
       {isQuickReference && mediaUrl ? (
