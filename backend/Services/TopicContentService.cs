@@ -55,21 +55,19 @@ public sealed partial class TopicContentService : ITopicContentService
         return File.Exists(summaryPath) ? File.ReadAllText(summaryPath) : null;
     }
 
-    public string? ResolveAudioFilePath(string fileName)
+    public string? ResolveContentFilePath(string relativeFolder, string fileName)
     {
-        // Only ever serve a bare .mp3 file name; reject anything that could traverse paths.
-        if (string.IsNullOrWhiteSpace(fileName) ||
-            !fileName.EndsWith(".mp3", StringComparison.OrdinalIgnoreCase) ||
-            fileName != Path.GetFileName(fileName))
+        // Only ever serve a bare file name; reject anything that could traverse paths.
+        if (string.IsNullOrWhiteSpace(fileName) || fileName != Path.GetFileName(fileName))
         {
             return null;
         }
 
-        var audioRoot = Path.GetFullPath(Path.Combine(_contentRoot, "podcasts", "audio"));
-        var fullPath = Path.GetFullPath(Path.Combine(audioRoot, fileName));
+        var folderRoot = Path.GetFullPath(Path.Combine(_contentRoot, relativeFolder));
+        var fullPath = Path.GetFullPath(Path.Combine(folderRoot, fileName));
 
-        // Defence in depth: ensure the resolved path is still inside the audio folder.
-        if (!fullPath.StartsWith(audioRoot + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
+        // Defence in depth: ensure the resolved path is still inside the requested folder.
+        if (!fullPath.StartsWith(folderRoot + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
         {
             return null;
         }
