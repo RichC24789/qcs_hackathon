@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { Heart, Share2 } from "lucide-react"
+import { ExternalLink, FileText, Heart, Share2 } from "lucide-react"
 
 import { AudioBlobPlayer } from "@/components/content/AudioBlobPlayer"
 import { ContentText } from "@/components/content/ContentText"
@@ -49,13 +49,16 @@ export function ContentItem({
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
   const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
-  const [isExpanded, setIsExpanded] = useState(false)
-  const [isShareOpen, setIsShareOpen] = useState(false)
-
   const normalizedContentType = contentType.toLowerCase()
   const isPodcast = normalizedContentType === "podcast"
   const isPoster = normalizedContentType === "poster"
-  const resolvedContentUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
+  const isQuickReference =
+    normalizedContentType === "quick_reference" ||
+    normalizedContentType === "quick-reference"
+  const mediaUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
+  const [isExpanded, setIsExpanded] = useState(false)
+  const [isShareOpen, setIsShareOpen] = useState(false)
+
   const isTextContent =
     normalizedContentType === "text" || normalizedContentType === "text-card"
   const bodyText = text
@@ -180,16 +183,36 @@ export function ContentItem({
       <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
       {isPodcast ? (
-        <AudioBlobPlayer src={resolvedContentUrl} title={title} />
+        <AudioBlobPlayer src={mediaUrl} title={title} />
       ) : null}
 
-      {isPoster && resolvedContentUrl ? (
+      {isPoster && mediaUrl ? (
         <img
-          src={resolvedContentUrl}
+          src={mediaUrl}
           alt={title}
+          className="mt-3 w-full rounded-xl border bg-muted object-contain"
           loading="lazy"
-          className="mt-3 w-full rounded-lg border object-contain"
         />
+      ) : null}
+
+      {isQuickReference && mediaUrl ? (
+        <a
+          href={mediaUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 flex items-center gap-3 rounded-xl border border-[#0F4146]/20 bg-[#0F4146]/5 px-3 py-3 text-sm transition-colors hover:bg-[#0F4146]/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0F4146]/40 focus-visible:ring-offset-2"
+        >
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[#0F4146] text-white">
+            <FileText className="size-5" />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-medium">Open quick reference</span>
+            <span className="text-muted-foreground block text-xs">
+              View the PDF guide
+            </span>
+          </span>
+          <ExternalLink className="text-muted-foreground size-4 shrink-0" />
+        </a>
       ) : null}
 
       {isTextContent && !isExpanded ? (
