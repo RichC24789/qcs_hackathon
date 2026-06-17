@@ -15,9 +15,9 @@ public interface ITopicContentService
     string? GetSummaryMarkdown();
 
     /// <summary>
-    /// Resolves a bare audio file name (e.g. <c>topic-20-restraint.mp3</c>) to its full
-    /// path under <c>content_items/podcasts/audio</c>, or <c>null</c> if it is not a valid,
-    /// existing <c>.mp3</c> in that folder.
+    /// Resolves a bare file name to its full path under the given folder beneath
+    /// <c>content_items</c> (e.g. <c>posters</c> + <c>1.png</c>), or <c>null</c> if it is not an
+    /// existing file inside that folder. Path traversal outside the folder is rejected.
     /// </summary>
-    string? ResolveAudioFilePath(string fileName);
+    string? ResolveContentFilePath(string relativeFolder, string fileName);
 }

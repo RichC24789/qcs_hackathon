@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using qcs.hackathon.Api.Services;
 
 namespace qcs.hackathon.Api.Controllers;
@@ -10,6 +11,8 @@ public sealed class ContentController(
     IContentFeedService contentFeedService,
     IUserIdentityService userIdentityService) : ControllerBase
 {
+    private static readonly FileExtensionContentTypeProvider ContentTypeProvider = new();
+
     [HttpGet]
     public async Task<IActionResult> GetFeed([FromQuery] int? limit, CancellationToken cancellationToken)
     {
@@ -31,14 +34,30 @@ public sealed class ContentController(
     }
 
     [HttpGet("audio/{fileName}")]
-    public IActionResult GetAudio(string fileName)
+    public IActionResult GetAudio(string fileName) => ServeContentFile("podcasts/audio", fileName);
+
+    [HttpGet("posters/{fileName}")]
+    public IActionResult GetPoster(string fileName) => ServeContentFile("posters", fileName);
+
+    [HttpGet("quick_references/{fileName}")]
+    public IActionResult GetQuickReference(string fileName) => ServeContentFile("quick_references", fileName);
+
+    [HttpGet("animations/{fileName}")]
+    public IActionResult GetAnimation(string fileName) => ServeContentFile("animations", fileName);
+
+    private IActionResult ServeContentFile(string folder, string fileName)
     {
-        var path = topicContentService.ResolveAudioFilePath(fileName);
+        var path = topicContentService.ResolveContentFilePath(folder, fileName);
         if (path is null)
         {
             return NotFound();
         }
 
-        return PhysicalFile(path, "audio/mpeg", enableRangeProcessing: true);
+        if (!ContentTypeProvider.TryGetContentType(path, out var contentType))
+        {
+            contentType = "application/octet-stream";
+        }
+
+        return PhysicalFile(path, contentType, enableRangeProcessing: true);
     }
 }
