@@ -12,6 +12,9 @@ public interface ITopicContentService
 
     IReadOnlyList<ThemeSummary> GetThemes();
 
+    /// <summary>The distinct set of <c>metadata.themes</c> values across all content, sorted.</summary>
+    IReadOnlyList<string> GetDistinctThemes();
+
     string? GetSummaryMarkdown();
 
     /// <summary>

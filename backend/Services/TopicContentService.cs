@@ -49,6 +49,14 @@ public sealed partial class TopicContentService : ITopicContentService
                 group.Select(ToSummary).OrderBy(topic => topic.Number).ToList()))
             .ToList();
 
+    public IReadOnlyList<string> GetDistinctThemes() =>
+        _topics.Value
+            .SelectMany(topic => topic.Themes)
+            .Where(theme => !string.IsNullOrWhiteSpace(theme))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .OrderBy(theme => theme, StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
     public string? GetSummaryMarkdown()
     {
         var summaryPath = Path.Combine(Path.GetDirectoryName(_contentRoot)!, "SUMMARY.md");

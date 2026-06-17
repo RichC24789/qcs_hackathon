@@ -12,6 +12,7 @@ builder.Services.AddDbContext<HackathonDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Hackathon")));
 
 builder.Services.AddSingleton<ITopicContentService, TopicContentService>();
+builder.Services.AddSingleton<IThemeWeightService, ThemeWeightService>();
 builder.Services.AddScoped<IUserIdentityService, UserIdentityService>();
 builder.Services.AddScoped<IActivityLogService, ActivityLogService>();
 builder.Services.AddScoped<ITopicLikeService, TopicLikeService>();
