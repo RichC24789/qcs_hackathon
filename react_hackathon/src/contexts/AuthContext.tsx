@@ -1,7 +1,5 @@
 import {
-  createContext,
   useCallback,
-  useContext,
   useEffect,
   useMemo,
   useState,
@@ -14,20 +12,11 @@ import {
   setStoredEmail,
 } from "@/lib/auth-storage"
 import { ApiError, logActivity, loginUser } from "@/lib/api"
-
-type AuthContextValue = {
-  email: string | null
-  isLoggedIn: boolean
-  isLoading: boolean
-  login: (email: string) => Promise<void>
-  logout: () => void
-}
-
-const AuthContext = createContext<AuthContextValue | null>(null)
+import { AuthContext } from "@/contexts/auth-context"
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [email, setEmail] = useState<string | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(() => getStoredEmail() !== null)
 
   const login = useCallback(async (nextEmail: string) => {
     const trimmed = nextEmail.trim()
@@ -45,7 +34,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const storedEmail = getStoredEmail()
     if (!storedEmail) {
-      setIsLoading(false)
       return
     }
 
@@ -80,12 +68,4 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   )
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
-}
-
-export function useAuth() {
-  const context = useContext(AuthContext)
-  if (!context) {
-    throw new Error("useAuth must be used within an AuthProvider")
-  }
-  return context
 }

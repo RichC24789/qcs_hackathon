@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { useAuth } from "@/contexts/AuthContext"
+import { useAuth } from "@/contexts/useAuth"
 
 export function ProfilePage() {
   const { email, isLoggedIn, logout } = useAuth()

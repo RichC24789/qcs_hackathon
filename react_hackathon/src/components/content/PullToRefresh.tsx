@@ -1,5 +1,6 @@
 import { Loader2 } from "lucide-react"
 import {
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -52,29 +53,39 @@ export function PullToRefresh({
   const isMousePullRef = useRef(false)
   const isLoadingMoreRef = useRef(false)
 
-  onRefreshRef.current = onRefresh
-  onReachEndRef.current = onReachEnd
+  useEffect(() => {
+    onRefreshRef.current = onRefresh
+  }, [onRefresh])
 
-  function resetPull() {
+  useEffect(() => {
+    pullDistanceRef.current = pullDistance
+  }, [pullDistance])
+
+  useEffect(() => {
+    isRefreshingRef.current = isRefreshing
+  }, [isRefreshing])
+
+  const resetPull = useCallback(() => {
     pullDistanceRef.current = 0
     setPullDistance(0)
-  }
+  }, [])
 
-  function animateTo(distance: number) {
+  const animateTo = useCallback((distance: number) => {
     pullDistanceRef.current = distance
     setIsAnimating(true)
     setPullDistance(distance)
     window.setTimeout(() => setIsAnimating(false), 220)
-  }
+  }, [])
 
-  function scrollToTopAfterLayout(container: HTMLElement) {
+  const scrollToTopAfterLayout = useCallback((container: HTMLElement) => {
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         container.scrollTop = 0
       })
     })
-  }
+  }, [])
 
+  const finishPull = useCallback((container: HTMLElement) => {
   function applyPullDelta(delta: number) {
     if (delta > 0) {
       const nextDistance = Math.min(delta * 0.55, MAX_PULL)
@@ -111,7 +122,7 @@ export function PullToRefresh({
     } else {
       animateTo(0)
     }
-  }
+  }, [animateTo, scrollToTopAfterLayout])
 
   useEffect(() => {
     const container = containerRef.current
@@ -228,7 +239,7 @@ export function PullToRefresh({
       window.removeEventListener("mousemove", handleMouseMove)
       window.removeEventListener("mouseup", handleMouseUp)
     }
-  }, [])
+  }, [finishPull, resetPull])
 
   useEffect(() => {
     const container = containerRef.current

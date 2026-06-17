@@ -1,5 +1,5 @@
 import { LoginForm } from "@/components/auth/LoginForm"
-import { useAuth } from "@/contexts/AuthContext"
+import { useAuth } from "@/contexts/useAuth"
 
 export function LoginModal() {
   const { isLoggedIn, isLoading } = useAuth()

@@ -52,6 +52,30 @@ public sealed class TopicsController(
         return Ok(topic);
     }
 
+    [HttpPost("{id:int}/view")]
+    public async Task<IActionResult> MarkViewed(int id, CancellationToken cancellationToken)
+    {
+        var userEmail = userIdentityService.GetCurrentUserEmail();
+        if (userEmail is null)
+        {
+            return BadRequest("X-User-Email header is required.");
+        }
+
+        var topic = topicContentService.GetTopicByNumber(id);
+        if (topic is null)
+        {
+            return NotFound();
+        }
+
+        await activityLogService.LogAsync(
+            userEmail,
+            ActivityTypes.TopicViewed,
+            topic.Slug,
+            cancellationToken: cancellationToken);
+
+        return Accepted();
+    }
+
     private async Task LogTopicViewAsync(string slug, CancellationToken cancellationToken)
     {
         var userEmail = userIdentityService.GetCurrentUserEmail();

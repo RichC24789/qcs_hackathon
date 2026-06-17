@@ -1,0 +1,40 @@
+{
+  "id": 30,
+  "slug": "moving-handling",
+  "title": "Safe moving and handling — the safe-handling sequence",
+  "durationSeconds": 90,
+  "source": "CC79 Moving and Handling Policy and Procedure",
+  "scopeNote": "Shows the general safe-handling sequence that applies to any manual task. Hoist transfer mechanics are covered separately under the hoists topic.",
+  "lottieSuggestion": "manual handling, back safety, care worker",
+  "steps": [
+    {
+      "label": "Check the care plan first",
+      "caption": "Read the person's moving and handling plan before you start."
+    },
+    {
+      "label": "Clear the route",
+      "caption": "Make sure the path is clear and you have somewhere to set down."
+    },
+    {
+      "label": "Tell the person, let them help",
+      "caption": "Explain the move and let the person help where they can."
+    },
+    {
+      "label": "Stand close, feet shoulder-width",
+      "caption": "Stand close to the person and place your feet shoulder-width apart."
+    },
+    {
+      "label": "Bend your knees, not your back",
+      "caption": "Bend your knees and keep your back in its natural upright position."
+    },
+    {
+      "label": "Agree one signal to move",
+      "caption": "One person calls it — ready, move, stop — and you move together."
+    },
+    {
+      "label": "Move smoothly, turn your feet",
+      "caption": "Keep the person close, and turn your feet instead of twisting your back."
+    }
+  ],
+  "endFrame": "Two staff means two. Faulty equipment or changed needs? Stop and tell your manager."
+}

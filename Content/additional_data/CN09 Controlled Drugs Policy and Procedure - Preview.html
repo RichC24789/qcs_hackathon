@@ -1,0 +1,926 @@
+
+<!-- saved from url=(0110)https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="./CN09 Controlled Drugs Policy and Procedure - Preview_files/policy-viewer-style.css">
+        <script type="text/javascript" src="./CN09 Controlled Drugs Policy and Procedure - Preview_files/policy-viewer.js.download"></script>
+        <title>CN09 Controlled Drugs Policy and Procedure - Preview</title>
+
+        <style>
+            .preview-controls {
+                font-family: "Roboto";
+                padding: var(--spacing) var(--spacing);
+            }
+
+            .preview-controls__panel {
+                padding-inline: 30px;
+                padding-block: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: white;
+                border-radius: var(--border-radius);
+                border: 1px solid var(--color__border);
+            }
+
+            .preview-controls__panel > h1 {
+                color: white;
+                background-color: var(--color__primary--dark);
+                padding: 10px 20px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+            .preview-controls input[type="text"] {
+                padding: 5px;
+            }
+
+            .preview-controls select {
+                min-height: 29px;
+            }
+
+            .preview-controls__inputs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--spacing);
+            }
+
+            .preview-controls__group {
+                display: grid;
+                grid-template-columns: 150px 300px;
+                align-items: center;
+            }
+
+            .preview-controls__buttons {
+                display: flex;
+                gap: var(--spacing);
+            }
+
+            .preview-controls__buttons button, .preview-controls__buttons a {
+                font-family: "Roboto";
+                font-size: var(--font__size)
+                border: none;
+                color: white;
+                background-color: var(--color__primary--dark);
+                cursor: pointer;
+                padding: 10px 15px;
+                border: none;
+                text-decoration: none;
+            }
+
+                .preview-controls__buttons button:active, .preview-controls__buttons a:active {
+                background-color: #2F70C1;
+            }
+
+            .error {
+                color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form class="preview-controls" id="form">
+            <div class="preview-controls__panel">
+                <h1>Policy preview</h1>
+
+                <div class="preview-controls__inputs">
+                    <div class="preview-controls__group">
+                        <label for="policy-id">Policy Id:</label>
+                        <input class="js-input" type="text" name="policy id" id="policy-id" value="6a0cd7a5-8d97-5848-8aaa-92784eb649ea">
+                    </div>
+
+                    <div class="preview-controls__group">
+                        <label for="region">Region:</label>
+                        <select name="region" id="region" class="js-input">
+                            <option value="england">England</option>
+                            <option value="wales">Wales</option>
+                            <option value="scotland">Scotland</option>
+                            <option value="ireland">Ireland</option>
+                        </select>
+                    </div>
+
+                    <div class="preview-controls__group">
+                        <label for="customer-id">Customer Id:</label>
+                        <input class="js-input" type="text" name="customer id" id="customer-id">
+                    </div>
+
+                    <div class="preview-controls__group">
+                        <label for="location-id">Location Id:</label>
+                        <input class="js-input" type="text" name="location id" id="location-id">
+                    </div>
+                </div>
+
+                <div class="preview-controls__buttons">
+                    <button type="submit" class="preview-controls__update" id="update">Update preview</button>
+                    <a id="pdf-preview" class="preview-controls__pdf" target="_blank" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/previewpdf/6a0cd7a5-8d97-5848-8aaa-92784eb649ea?region=england">Preview pdf</a>
+                </div>
+
+                    <span id="error" class="error"></span>
+            </div>
+        </form>
+
+            <qcs-policy-viewer policy="{&quot;id&quot;:&quot;6a0cd7a5-8d97-5848-8aaa-92784eb649ea&quot;,&quot;type&quot;:&quot;policy&quot;,&quot;regions&quot;:[&quot;england&quot;],&quot;businessImpact&quot;:{&quot;id&quot;:&quot;7a35303c-5e4e-554a-adbf-1cdcc0a1a95c&quot;,&quot;type&quot;:&quot;business_impact&quot;,&quot;label&quot;:&quot;Medium&quot;,&quot;value&quot;:&quot;medium&quot;,&quot;explanatoryText&quot;:&quot;Changes are important, but urgent implementation is not required, incorporate into your existing workflow.&quot;},&quot;reviewReason&quot;:&quot;Best practice&quot;,&quot;reviewSummary&quot;:&quot;\u003Cp\u003EThis policy details processes that need to be followed for the safe management of controlled drugs. It has been reviewed with changes to sections 5.2, 5.4, 5.5 and 5.9. References have also been checked and updated.\u003C/p\u003E&quot;,&quot;reviewInterval&quot;:{&quot;codename&quot;:&quot;months_12&quot;,&quot;name&quot;:&quot;Annual&quot;},&quot;wereChangesMade&quot;:&quot;Yes&quot;,&quot;relevantLegislations&quot;:[{&quot;id&quot;:&quot;61fcc503-218e-557a-a8f7-e56e283c8929&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;The Controlled Drugs (Supervision of Management and Use) Regulations 2013&quot;,&quot;regions&quot;:[&quot;england&quot;]},{&quot;id&quot;:&quot;e9ac9676-5019-506f-a159-fa03ae0d0f8b&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;Medical Act 1983&quot;,&quot;regions&quot;:[&quot;england&quot;]},{&quot;id&quot;:&quot;c1585688-26dd-528c-9087-b99a237cea76&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;Medicines Act 1968&quot;,&quot;regions&quot;:[&quot;england&quot;,&quot;wales&quot;,&quot;scotland&quot;]},{&quot;id&quot;:&quot;726034b5-18dd-5023-a391-090fc82f69e1&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;The Human Medicines Regulations 2012&quot;,&quot;regions&quot;:[&quot;england&quot;]},{&quot;id&quot;:&quot;96f3ec8e-dea3-5d2c-87e1-ec8153ffc37a&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;Misuse of Drugs Act 1971&quot;,&quot;regions&quot;:[&quot;england&quot;,&quot;wales&quot;,&quot;scotland&quot;]},{&quot;id&quot;:&quot;063b6d0a-2da5-5e27-826c-ea0e496580b2&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;The Misuse of Drugs (Safe Custody) Regulations 1973&quot;,&quot;regions&quot;:[&quot;england&quot;]},{&quot;id&quot;:&quot;8f3aaa9d-4ad2-52b8-ad6a-4ecc90d2107f&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;The Misuse of Drugs and Misuse of Drugs (Safe Custody) (Amendment) Regulations 2007&quot;,&quot;regions&quot;:[&quot;england&quot;]},{&quot;id&quot;:&quot;089f4fa4-4abd-5a80-97a4-c0da3a74b1b3&quot;,&quot;type&quot;:&quot;legislation&quot;,&quot;legislation&quot;:&quot;The Health Act 2006&quot;,&quot;regions&quot;:[&quot;england&quot;]}],&quot;communicationActions&quot;:[&quot;Encourage sharing the policy through the use of the QCS App&quot;],&quot;references&quot;:[{&quot;id&quot;:&quot;a46a7fc4-4e67-01aa-0d2f-9303e2f24e60&quot;,&quot;type&quot;:&quot;website_reference&quot;,&quot;referenceTitle&quot;:&quot;Resolution: Access to controlled drugs in care homes&quot;,&quot;referenceAuthor&quot;:&quot;RCN&quot;,&quot;referenceYear&quot;:2024,&quot;onlineReferenceUrl&quot;:&quot;https://www.rcn.org.uk/congress/congress-events/access-to-controlled-drugs-in-care-homes-2024&quot;},{&quot;id&quot;:&quot;3e5f09e5-3744-0128-d553-2f0e601e1a80&quot;,&quot;type&quot;:&quot;website_reference&quot;,&quot;referenceTitle&quot;:&quot;Guideline - Managing medicines in care homes&quot;,&quot;referenceAuthor&quot;:&quot;NICE&quot;,&quot;referenceYear&quot;:2014,&quot;onlineReferenceUrl&quot;:&quot;https://www.nice.org.uk/guidance/sc1&quot;},{&quot;id&quot;:&quot;31f9b947-f66e-01ec-a6f0-0551a9d8ec7b&quot;,&quot;type&quot;:&quot;website_reference&quot;,&quot;referenceTitle&quot;:&quot;Safe and secure handling of medicines&quot;,&quot;referenceAuthor&quot;:&quot;Royal Pharmaceutical Society&quot;,&quot;referenceYear&quot;:2024,&quot;onlineReferenceUrl&quot;:&quot;https://www.rpharms.com/recognition/setting-professional-standards/safe-and-secure-handling-of-medicines/professional-guidance-on-the-safe-and-secure-handling-of-medicinessegregated&quot;},{&quot;id&quot;:&quot;71209bc2-51a4-01d0-8a45-d5ff2a7bcd5a&quot;,&quot;type&quot;:&quot;website_reference&quot;,&quot;referenceTitle&quot;:&quot;Controlled drugs in care homes&quot;,&quot;referenceAuthor&quot;:&quot;CQC&quot;,&quot;referenceYear&quot;:2025,&quot;onlineReferenceUrl&quot;:&quot;https://www.cqc.org.uk/guidance-providers/adult-social-care/controlled-drugs-care-homes&quot;},{&quot;id&quot;:&quot;141e3454-54e6-4cb1-9927-20ad99fe8b6a&quot;,&quot;type&quot;:&quot;website_reference&quot;,&quot;referenceTitle&quot;:&quot;Professional Guidance on the Safe and Secure Handling of Medicines&quot;,&quot;referenceAuthor&quot;:&quot;Royal College of Pharmacy&quot;,&quot;referenceYear&quot;:2018,&quot;onlineReferenceUrl&quot;:&quot;https://www.rcpharm.org/professional-standards/professional-guidance-on-the-safe-and-secure-handling-of-medicines/&quot;},{&quot;id&quot;:&quot;816a3c44-fd9b-0130-e096-29c5502e3710&quot;,&quot;type&quot;:&quot;website_reference&quot;,&quot;referenceTitle&quot;:&quot;The Safer Management of Controlled Drugs: Annual update 2024&quot;,&quot;referenceAuthor&quot;:&quot;CQC&quot;,&quot;referenceYear&quot;:2025,&quot;onlineReferenceUrl&quot;:&quot;https://www.cqc.org.uk/publications/controlled-drugs/2024&quot;}],&quot;tags&quot;:[&quot;Medication&quot;,&quot;Safety&quot;,&quot;Risk &quot;],&quot;referenceNumber&quot;:&quot;CN09&quot;,&quot;name&quot;:&quot;Controlled Drugs Policy and Procedure&quot;,&quot;lastReviewed&quot;:&quot;2026-02-26T13:00:00\u002B00:00&quot;,&quot;lastAmended&quot;:&quot;2026-02-26T14:00:00\u002B00:00&quot;,&quot;category&quot;:{&quot;categoryName&quot;:&quot;Medications Management&quot;,&quot;subCategoryName&quot;:&quot;Medications Management&quot;,&quot;categoryId&quot;:31,&quot;subCategoryId&quot;:13},&quot;products&quot;:[&quot;21&quot;,&quot;3&quot;,&quot;32&quot;],&quot;coreVariation&quot;:[&quot;variation&quot;],&quot;purposeSections&quot;:[{&quot;id&quot;:&quot;ac2e2374-494f-01d8-93fb-57ab9c5066fc&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003ETo ensure that {{{Service_user_text}}}s are safeguarded by the systems put in place regarding the management of controlled drugs (CDs) at {{{Client_Name_Official}}}, in line with specific legal requirements.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;ca1ad7a0-dbe2-0185-47ab-a4a84712cfdd&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003EThis policy should be read with the Overarching Medicines Management Policy and Procedure.\u003C/p\u003E&quot;}],&quot;kloeQualityStatements&quot;:[{&quot;id&quot;:&quot;54b1eb7b-da6a-5619-b11a-b0b7093dc1d2&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;caring&quot;,&quot;name&quot;:&quot;Caring&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;4c209c6c-0ac0-53c8-8e18-8daef16b3d4e&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;C3&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How are people\u0027s privacy, dignity and independence respected and promoted?&quot;,&quot;typesOfCare&quot;:[&quot;care_home_with_nursing&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;57ebc6f9-6033-52c2-9f33-41a6428957d0&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSC1&quot;,&quot;qualityStatement&quot;:&quot;Kindness, compassion and dignity&quot;},{&quot;id&quot;:&quot;19dc357b-54b1-5b6c-99c0-34d956a12bda&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSC3&quot;,&quot;qualityStatement&quot;:&quot;Independence, choice and control&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Care Home with Nursing&quot;]},{&quot;id&quot;:&quot;e41e0899-7a7b-53d3-95c9-febbf70d7716&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;caring&quot;,&quot;name&quot;:&quot;Caring&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;74e8eb62-3c82-5991-b72b-b2b84594b771&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;C3&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How are people\u0027s privacy, dignity and independence respected and promoted?&quot;,&quot;typesOfCare&quot;:[&quot;dementia_centre&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;9128118c-ddfc-5199-9b30-06e59a5ff63f&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSC1&quot;,&quot;qualityStatement&quot;:&quot;Kindness, compassion and dignity&quot;},{&quot;id&quot;:&quot;5e305ca0-f92d-5266-a9e3-d4eda3507074&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSC3&quot;,&quot;qualityStatement&quot;:&quot;Independence, choice and control&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Dementia Centre&quot;]},{&quot;id&quot;:&quot;78654749-abbe-55e8-90b6-b869de8fb58f&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;safe&quot;,&quot;name&quot;:&quot;Safe&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;aaa26c13-9167-5313-9e7b-bae7bc7eb69a&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;S4&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How does the provider ensure the proper and safe use of medicines?&quot;,&quot;typesOfCare&quot;:[&quot;care_home_with_nursing&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;51f18609-4157-5383-8874-5d928d1a9b9c&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSS8&quot;,&quot;qualityStatement&quot;:&quot;Medicines optimisation&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Care Home with Nursing&quot;]},{&quot;id&quot;:&quot;5edc70e3-f65d-5697-a540-866f8340eacb&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;safe&quot;,&quot;name&quot;:&quot;Safe&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;4a8f277d-ec30-5eed-a363-742c6ac19f43&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;S4&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How does the provider ensure the proper and safe use of medicines?&quot;,&quot;typesOfCare&quot;:[&quot;dementia_centre&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;51f18609-4157-5383-8874-5d928d1a9b9c&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSS8&quot;,&quot;qualityStatement&quot;:&quot;Medicines optimisation&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Dementia Centre&quot;]},{&quot;id&quot;:&quot;5a4495f8-9714-5f48-a1a7-0943e07473b8&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;well_led&quot;,&quot;name&quot;:&quot;Well-led&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;d1d1d357-9a7f-5ad0-a689-fb30890490b6&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;W3&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How are the people who use the service, the public and staff engaged and involved?&quot;,&quot;typesOfCare&quot;:[&quot;care_home_with_nursing&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;58cba6de-51fa-59b3-ad19-f828a3197c1a&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSW3&quot;,&quot;qualityStatement&quot;:&quot;Freedom to speak up&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Care Home with Nursing&quot;]},{&quot;id&quot;:&quot;6ac42498-43a2-5685-855d-3a62336fb23d&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;well_led&quot;,&quot;name&quot;:&quot;Well-led&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;1ed212ce-501a-5892-8f97-f37b0fc035bf&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;W3&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How are the people who use the service, the public and staff engaged and involved?&quot;,&quot;typesOfCare&quot;:[&quot;dementia_centre&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;58cba6de-51fa-59b3-ad19-f828a3197c1a&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSW3&quot;,&quot;qualityStatement&quot;:&quot;Freedom to speak up&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Dementia Centre&quot;]},{&quot;id&quot;:&quot;bf978086-a9ac-5a85-9929-48fa475dfe5e&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;well_led&quot;,&quot;name&quot;:&quot;Well-led&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;d5460130-9147-503f-b20d-93535772be2a&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;W4&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How does the service continuously learn, improve, innovate and ensure sustainability?&quot;,&quot;typesOfCare&quot;:[&quot;care_home_with_nursing&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;f0d79b2c-e13f-57ed-b819-0e5d31c70123&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSW7&quot;,&quot;qualityStatement&quot;:&quot;Learning, improvement and innovation&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Care Home with Nursing&quot;]},{&quot;id&quot;:&quot;5abd723d-ed04-599b-affa-7f43a2ffb49e&quot;,&quot;type&quot;:&quot;purpose_question&quot;,&quot;keyQuestion&quot;:{&quot;codename&quot;:&quot;well_led&quot;,&quot;name&quot;:&quot;Well-led&quot;},&quot;keyLineOfEnquiry&quot;:{&quot;id&quot;:&quot;0379c8ab-efae-5cd7-84dc-49944a5e9bf2&quot;,&quot;type&quot;:&quot;kloe&quot;,&quot;code&quot;:&quot;W4&quot;,&quot;keyLineOfEnquiry&quot;:&quot;How does the service continuously learn, improve, innovate and ensure sustainability?&quot;,&quot;typesOfCare&quot;:[&quot;dementia_centre&quot;],&quot;regions&quot;:[&quot;england&quot;]},&quot;qualityStatements&quot;:[{&quot;id&quot;:&quot;f0d79b2c-e13f-57ed-b819-0e5d31c70123&quot;,&quot;type&quot;:&quot;quality_statement&quot;,&quot;code&quot;:&quot;QSW7&quot;,&quot;qualityStatement&quot;:&quot;Learning, improvement and innovation&quot;}],&quot;regions&quot;:[&quot;england&quot;],&quot;typesOfCare&quot;:[&quot;Dementia Centre&quot;]}],&quot;rolesThatMightBeAffected&quot;:[&quot;{{{Registered_Manager_JobTitle}}}&quot;,&quot;Nurse&quot;,&quot;Care staff&quot;],&quot;peopleThatMayBeAffected&quot;:[&quot;{{{Service_user_text}}}s&quot;],&quot;stakeholdersThatMayBeAffected&quot;:[&quot;Commissioners&quot;,&quot;External health professionals&quot;,&quot;Local Authority&quot;,&quot;NHS&quot;],&quot;objectivesSections&quot;:[{&quot;id&quot;:&quot;97822a93-0491-01a2-722e-f492f6e2f80a&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003ETo ensure that the supply, receipt, storage, administration and disposal of controlled drugs (CDs) meets all regulatory requirements.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;0caaf507-0fb2-0170-8205-bcd685ae8dba&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003EAll staff involved in the administration of controlled drugs follow the \u00276 Rights of Medication Administration\u0027.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;9f65fa32-8d91-01f4-7fa6-639ced98d89f&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003ETo ensure that there are procedures in place for identifying, reporting and reviewing incidents, errors and near misses involving CDs as well as sharing concerns about the mishandling of CDs.\u003C/p\u003E&quot;}],&quot;policySections&quot;:[{&quot;id&quot;:&quot;f96153ad-cdbe-01ba-44a2-0d28ba9d4c11&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003EThe Misuse of Drugs Act 1971 places controls on certain medicines. These are referred to as controlled drugs (CDs).\u003C/p\u003E\n\u003Cp\u003EThe Misuse of Drugs Regulations 2001 splits controlled drugs into 5 schedules, which specify the requirements that apply to them.\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003ESchedule 1 - includes drugs not used medicinally\u003C/li\u003E\n  \u003Cli\u003ESchedule 2 - are subject to storage and recording conditions (e.g. morphine, diamorphine, methadone, oxycodone, fentanyl)\u003C/li\u003E\n  \u003Cli\u003ESchedule 3 - some are subject to storage conditions (e.g. gabapentin, midazolam, pregabalin, temazepam, tramadol)\u003C/li\u003E\n  \u003Cli\u003ESchedule 4 and 5 - no conditions (e.g. schedule 4 - zopiclone, diazepam, schedule 5 - codeine)\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EA list of commonly used controlled drugs can be found at GOV.UK guidance \u0027List of most commonly encountered drugs currently controlled under the misuse of drugs legislation\u0027 (a link can be found in the further reading section).\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;9d2aee2a-2f3f-01da-e773-2d1aba875c45&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E{{{Client_Name_Official}}} will ensure that all medication trained staff are aware of, and follow, the policy and associated procedures relating to the safe and secure handling and storage of controlled drugs in accordance with legal, regulatory and good practice guidance specified by the Department of Health, the {{{reg_authority_name_long}}} and the Royal Pharmaceutical Society.\u003C/p\u003E\n\u003Cp\u003E{{{Client_Name_Official}}} will ensure, through the use of this policy and procedure, that:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EStaff are clear on the standards that are expected of them in relation to the handling and storage of controlled drugs\u003C/li\u003E\n  \u003Cli\u003EStaff and visitors are not put at risk as a result of the incorrect handling of controlled drug medicines\u003C/li\u003E\n  \u003Cli\u003EAll legislation and guidance are adhered to with respect to controlled drugs\u003C/li\u003E\n  \u003Cli\u003ERisks associated with the incorrect handling and storage of controlled drugs are reduced to a minimum\u003C/li\u003E\n  \u003Cli\u003EThere are robust systems for ordering, storing, transporting, administering, recording and disposing of CDs safely\u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;efe53920-e5d2-01c4-c10b-2bd4fcf667dc&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EControlled Drug Lead\u0026nbsp;\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EDesignated bodies are required under the Controlled Drug 2013 regulations to have a Controlled Drugs Accountable Officer\u0026nbsp;(CDAO).\u0026nbsp;\u003C/p\u003E\n\u003Cp\u003EThese organisations include:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003ENHS trusts\u003C/li\u003E\n  \u003Cli\u003EIndependent hospitals in England\u003C/li\u003E\n  \u003Cli\u003ENHS England Local Area Teams\u003C/li\u003E\n  \u003Cli\u003EHeadquarters in England of the regular or reserved Armed Forces\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EHowever, a wide range of organisations still prescribe and/or handle controlled drugs in their day-to-day work, but do not meet the definition of a designated body.\u003C/p\u003E\n\u003Cp\u003EThese organisations should ensure they have a nominated person as a lead for controlled drugs to enable relevant focus on governance and oversight, ultimately helping to ensure safe care for {{{Service_user_text}}} (CQC 2025).\u003C/p\u003E\n\u003Cp\u003E{{{Reg_Manager_Name}}} will nominate a lead for controlled drugs at {{{Client_Name_Official}}}.\u003C/p\u003E&quot;}],&quot;procedureSections&quot;:[{&quot;id&quot;:&quot;d2a42fb9-c4b1-01f2-e28c-692964b34b79&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003ESelf-Administration\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E{{{Service_user_text}}}s who wish to self-administer controlled drugs must have a risk assessment in place to consider their safe storage.\u003C/p\u003E\n\u003Cp\u003EStaff should refer to the Overarching Medicines Management Policy and Procedure at {{{Client_Name_Official}}} for guidance on self-administration.\u003C/p\u003E\n\u003Cp\u003ESensible precautions are important to make sure that controlled drugs are kept safely when with the {{{Service_user_text}}}. {{{Client_Name_Official}}} does not need a CD cupboard in each bedroom. However, a lockable cupboard or drawer is essential.\u003C/p\u003E\n\u003Cp\u003EThe risk assessment process places responsibility on the {{{Service_user_text}}} who keeps the controlled drug. Through monitoring and review of the risk factors, {{{Client_Name_Official}}} should identify that controlled drugs are not left lying around where they could be taken by someone else. There is no need to keep a record in the CD Register when the {{{Service_user_text}}} is wholly independent; that is, they are responsible for requesting a prescription and collecting the controlled drugs personally from the pharmacy.\u003C/p\u003E\n\u003Cp\u003EIf the {{{Service_user_text}}} does not arrange the supply and collection of controlled drugs but relies on {{{Client_Name_Official}}} to do so, there should be clear records in the CD Register, including:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EReceipt from the pharmacy\u003C/li\u003E\n  \u003Cli\u003ESupply to the {{{Service_user_text}}}\u003C/li\u003E\n  \u003Cli\u003EAny subsequent disposal of unwanted controlled drugs\u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;076f3ffc-f34c-0116-2074-36cfa2297856&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EOrdering and Receipt\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EThe quantity of controlled drugs supplied should not exceed 30 days.\u003C/p\u003E\n\u003Cp\u003E{{{Reg_Manager_Name}}} must ensure there is a clear process for the safe handling of controlled drugs when they are being delivered to {{{Client_Name_Official}}}.\u003C/p\u003E\n\u003Cp\u003ECDs should be delivered separately from the main delivery of medicines and the package must be clearly marked that it contains a CD.\u003C/p\u003E\n\u003Cp\u003EMedication trained staff should sign for the CDs from the delivery driver and must ensure:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003ECDs are in a separate package on delivery and clearly marked\u003C/li\u003E\n  \u003Cli\u003ECDs are checked, signed for and witnessed by two staff members who are trained and competent\u003C/li\u003E\n  \u003Cli\u003ECDs are entered into the CD Register immediately\u003C/li\u003E\n  \u003Cli\u003EThey are not left out on the side or in the cupboard to be entered later\u003C/li\u003E\n  \u003Cli\u003ECDs received are correct against copies of the original request or prescription. This check includes:\n    \u003Cul\u003E\n      \u003Cli\u003EDrug name\u003C/li\u003E\n      \u003Cli\u003EQuantity - Staff should physically count tablets, capsules, ampoules, prefilled syringes and patches ensuring that the quantity received matches the quantity on the label and on the Medicines Administration Chart (MAR). For liquids, check that the seal has not been tampered with\u003C/li\u003E\n      \u003Cli\u003EFormulation \u2013 Tablets, capsules, patches, injections, liquids, etc.\u003C/li\u003E\n      \u003Cli\u003EStrength \u2013 milligram per unit dose or volume\u003C/li\u003E\n      \u003Cli\u003EExpiry date of preparation\u0026nbsp;\u003C/li\u003E\n      \u003Cli\u003EPreparation fit for use i.e., no damage\u0026nbsp;\u003C/li\u003E\n      \u003Cli\u003EClear dose instructions\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003EDiscrepancies are dealt with as per policy\u003C/li\u003E\n  \u003Cli\u003EAfter the checks have been performed and are correct, the MAR can be signed identifying the quantity received and dated by the receiving member of staff\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EWhen staff sign the CDs in from the delivery driver, they are taking responsibility for those medicines.\u003C/p\u003E\n\u003Cp\u003EIf a discrepancy is identified between what is expected and the supply received, then staff should:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EReport immediately to {{{Reg_Manager_Name}}}\u0026nbsp;\u0026nbsp;\u003C/li\u003E\n  \u003Cli\u003ERecord the stock received into the CD Register\u003C/li\u003E\n  \u003Cli\u003EStore the incorrect CD stock received separately in the CD cabinet until the discrepancy can be resolved\u003C/li\u003E\n  \u003Cli\u003EContact the supplier of the CD to report the discrepancy\u003C/li\u003E\n  \u003Cli\u003EArrange for the supplier to collect the incorrect CD\u003C/li\u003E\n  \u003Cli\u003EWhen the incorrect CD supply is collected by the supplier:\n    \u003Cul\u003E\n      \u003Cli\u003EObtain a signed receipt\u003C/li\u003E\n      \u003Cli\u003EMake an entry in the CD Register to record this\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;8da0a522-1f55-015c-32e3-b3fc4a7cac96&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EStock of Controlled Drugs\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EAll CDs in {{{Client_Name_Official}}} must be prescribed for individual {{{Service_user_text}}}s by an appropriately qualified healthcare professional and dispensed by a pharmacy or dispensing practice.\u003C/p\u003E\n\u003Cp\u003ECare homes that provide nursing care may hold stocks of CDs in schedules 3, 4 and 5 without the need to have a Home Office licence. For example, for {{{Service_user_text}}}s nearing the end of their lives.\u003C/p\u003E\n\u003Cp\u003EStock of controlled drugs in schedule 2 can be held in care homes with nursing where the home is wholly or mainly maintained (50% or more) by a public authority, out of public funds, by charity, or voluntary subscriptions (Home Office 2014). Otherwise care homes with nursing\u0026nbsp;must apply for a UK Home Office Controlled Drugs licence (RCN 2024).\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;0eddc2a6-d50d-0173-6622-9a5a6c0b887e&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EStorage\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E{{{Client_Name_Official}}} is required to comply with the CD safe custody arrangements.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ESchedule 2:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EMust be stored in a controlled drugs cupboard\u003C/li\u003E\n  \u003Cli\u003EMust keep records in a Controlled Drug Register\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003ESchedule 3:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EDo not need to be recorded in the Controlled Drug Register\n    \u003Cul\u003E\n      \u003Cli\u003ESome care homes may choose to do so, which is good practice\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003ESome need to be stored in the controlled drug cupboard\n    \u003Cul\u003E\n      \u003Cli\u003ETemazepam, buprenorphine\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003ESome do not need to be stored in the controlled drug cupboard\n    \u003Cul\u003E\n      \u003Cli\u003EPregabalin, gabapentin, tramadol, midazolam\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003ELocal policies will need to be adhered to in relation to the storage and recording of Schedule 3 CDs exempt from secure storage and recording under the legislation.\u003C/p\u003E\n\u003Cp\u003EIf staff are unsure what the legal requirements are, then they should contact the pharmacy.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ESchedule 4 and 5:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EDo not need to be recorded in the Controlled Drug Register\u003C/li\u003E\n  \u003Cli\u003EDo not need to be stored in the controlled drug cupboard\u003C/li\u003E\n  \u003Cli\u003ESome services may choose to do so:\n    \u003Cul\u003E\n      \u003Cli\u003EOramorph\u00AE oral solution 10mg/5ml is not a schedule 2 CD\u003C/li\u003E\n      \u003Cli\u003EIt is good practice to store it in a CD cabinet and complete CD records\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003EThe CD Cupboard:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EMust comply with the requirements laid out in the Misuse of Drugs (Safe Custody) Regulations, including:\n    \u003Cul\u003E\n      \u003Cli\u003ELocked non-portable cabinet\u0026nbsp;\u003C/li\u003E\n      \u003Cli\u003EMetal construction of specified gauge\u0026nbsp;\u003C/li\u003E\n      \u003Cli\u003EBeing fixed securely to a solid wall or floor with the specified bolts\u003C/li\u003E\n      \u003Cli\u003EFitted with a robust lock and strong hinges\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003ESuppliers of CD cabinets can confirm that a cupboard meets the legal requirements. {{{Client_Name_Official}}} will request formal confirmation when purchasing a CD cabinet\u003C/li\u003E\n  \u003Cli\u003EA label should be fitted to the inside of the door displaying manufacturer name and other specific information\u003C/li\u003E\n  \u003Cli\u003EIt is a commonly held belief that a CD cupboard must be a \u2018cupboard within a cupboard\u2019 but this is not the case\u003C/li\u003E\n  \u003Cli\u003ENothing should be displayed outside a safe or cabinet to indicate that drugs are kept inside it\u003C/li\u003E\n  \u003Cli\u003EFor safe practice, the controlled drug cupboards should only be used for the storage of controlled drugs\n    \u003Cul\u003E\n      \u003Cli\u003EItems such as jewellery or money should not be placed in the cabinet\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003EIf medication is provided in a monitored dosage system (MDS), the MDS should be stored in the CD cabinet\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003EKey Management:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EOnly those with authorised access should hold keys to the controlled drug cupboard and a log should be kept of keyholders\u003C/li\u003E\n  \u003Cli\u003EThe Nurse in charge for each shift is responsible for the keys to the CD cupboard\u003C/li\u003E\n  \u003Cli\u003EThe keys must be kept on the person of the Nurse in charge\u003C/li\u003E\n  \u003Cli\u003EKey-holding may be delegated to other suitably-trained Nurses or medication trained staff, but the responsibility rests with the Nurse in charge\u003C/li\u003E\n  \u003Cli\u003EAt the end of each shift the Nurse in Charge for the shift is responsible for handing the controlled drug keys over to the incoming Nurse in charge\u003C/li\u003E\n  \u003Cli\u003EStaff requiring access to the controlled drug cupboard must return the keys to the nurse in charge when they have finished with the keys\u003C/li\u003E\n  \u003Cli\u003E{{{Client_Name_Official}}} should consider maintaining a register for the keys with time, date and signature\u003C/li\u003E\n  \u003Cli\u003ESpare keys should be stored securely\u003C/li\u003E\n  \u003Cli\u003EIf the CD keys cannot be found, every effort must be made to find them as soon as possible . If there are doubts about the security of controlled drugs, {{{Reg_Manager_Name}}} should risk assess if the locks need to be changed\n    \u003Cul\u003E\n      \u003Cli\u003ESpare key must only be issued in an emergency in order to access the CD cupboard for {{{Service_user_text}}} care\u003C/li\u003E\n      \u003Cli\u003EIf the location of the missing key is not established by the end of the appropriate shift then the locks must be changed\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003ERefrigerating Controlled Drugs:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EIf a CD needs to be stored in the fridge, then it should be stored in a locked medicines fridge. The CD should be stored separately to other medications in a lockable box within the fridge.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EMedicinal and Food Grade Cannabis Products\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003ECannabis based products for medicinal use (CBPMs) are Schedule 2 controlled drugs.\u003C/p\u003E\n\u003Cp\u003EOver the counter food grade cannabis products as food supplements are not medicines and if purchased for their own (or a relative\u0027s) use, a risk assessment must be in place.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;612b055e-859a-0129-197e-04dafd09c68c&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003ERecording of Named \u003C/strong\u003E\u003Cstrong\u003E{{{Service_user_text}}}\u003C/strong\u003E\u003Cstrong\u003Es\u0027 Controlled Drugs\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EFor medicines that are controlled drugs, and subject to CD recording requirements, {{{Client_Name_Official}}} must keep a separate CD Register in addition to the record on the {{{MAR_Chart}}}\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EThe CD Register:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EThe CD register must be a bound book with numbered pages\u003C/li\u003E\n  \u003Cli\u003EThere must be a separate page for each form and strength of each controlled drug for each {{{Service_user_text}}}\u003C/li\u003E\n  \u003Cli\u003EThe name, form and strength of the drug is specified at the top of each page\u003C/li\u003E\n  \u003Cli\u003EAn index page should be maintained in the CD register, indicating for individual {{{Service_user_text}}}s on which page of the CD register each CD can be found\u003C/li\u003E\n  \u003Cli\u003EAll entries must be in ink or made using an indelible ballpoint pen\u003C/li\u003E\n  \u003Cli\u003EEntries must be in chronological order\u003C/li\u003E\n  \u003Cli\u003EThe member of staff making the entry must sign and date it\u003C/li\u003E\n  \u003Cli\u003EWhenever possible, all entries should also be witnessed by a suitably trained member of staff who should also sign the entry\u003C/li\u003E\n  \u003Cli\u003EA running balance must be kept and checked for every entry\u003C/li\u003E\n  \u003Cli\u003EAn electronic register which complies with the current guidance may be kept. {{{Client_Name_Official}}} will seek advice before using an electronic CD Register\u003C/li\u003E\n  \u003Cli\u003EThe CD Register must be used to record the receipt, administration, transfer or disposal of CDs\u003C/li\u003E\n  \u003Cli\u003EThe entry must be made as soon as possible\u003C/li\u003E\n  \u003Cli\u003EThe CD Register should be kept for two years from the last entry\u003C/li\u003E\n  \u003Cli\u003EGood practice would be to keep the CD Register for longer, as cases can take several years to come to light or before they go to court\u003C/li\u003E\n  \u003Cli\u003EWhen transferring a CD to a new page in the CD Register:\n    \u003Cul\u003E\n      \u003Cli\u003EState the page it is carried forward to at the bottom of the page\u003C/li\u003E\n      \u003Cli\u003EState the page it has been carried over from at the top of the new page, with \u2018carried forward from page\u2026\u2019\u003C/li\u003E\n      \u003Cli\u003EUpdate the index at the front of the register including page numbers when CDs are carried forward\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003EErrors made in the CD Register must never be altered or crossed out\u003C/li\u003E\n  \u003Cli\u003EIf an error is made in the CD Register, the incorrect entry should be put in brackets with a note made:\n    \u003Cul\u003E\n      \u003Cli\u003EAt the bottom of the page with the phrase \u2018entered in error\u2019, or\u003C/li\u003E\n      \u003Cli\u003E\u2018Entered in error\u2019 can be written on a new line below the incorrect entry\u003C/li\u003E\n      \u003Cli\u003EThe incorrect entry should be signed, witnessed, and dated\u003C/li\u003E\n      \u003Cli\u003EThe correct entry should be made using a new line\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003EThe register should not be used for any other purpose\u003C/li\u003E\n  \u003Cli\u003EThe register must be kept in a secure place when not in use\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EElectronic registers are permitted as an alternative to a bound book, legislation requires that computerised entries must:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EBe attributable to the person who created the record\u003C/li\u003E\n  \u003Cli\u003EBe secure\u003C/li\u003E\n  \u003Cli\u003ENot be cancelled or altered\u003C/li\u003E\n  \u003Cli\u003EBe able to be corrected and dated when the correction is made\u003C/li\u003E\n  \u003Cli\u003EBe able to be audited\u003C/li\u003E\n  \u003Cli\u003EComply with best practice\u003C/li\u003E\n  \u003Cli\u003EBe accessible from {{{Client_Name_Official}}} and capable of being printed\u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;0fd4a41a-d085-0150-8567-58e3fce3317f&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EThe Following Details Should be Recorded on the Correct Page in the Register:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EAll entries in the Controlled Drug Register should be made by 2 staff members:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EThe registered nurse and\u003C/li\u003E\n  \u003Cli\u003EWitnessed by a second medication trained and competent staff member. Where possible, this should be a second registered nurse\n    \u003Cul\u003E\n      \u003Cli\u003EIf not, a medication trained and competent {{{SupportWorkerOrCarer}}} can witness\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003EReceipt:\u003C/strong\u003E On the day of receipt, record the date of receipt, where the medication was received from and the quantity received. A running balance should be kept and updated.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EDisposal\u003C/strong\u003E: Record the date of disposal, the quantity disposed of, how the medication was disposed of and the reason for disposal. Update the running balance.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ETransfers\u003C/strong\u003E: Record the date of transfer, the quantity transferred and to whom (or where) the medication was transferred. Update the running balance.\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003ERoutine checks:\u003C/strong\u003E The balance of all controlled drugs recorded in the CD Register/Record Book must be checked and reconciled with the stock amounts in the cupboard, and recorded. The frequency of such checks is determined by risk assessment and ensures that discrepancies are identified promptly. Balance checks should be carried out at least weekly.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;dce4bec9-f931-0184-eee7-02f7b8c46094&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EDealing with Discrepancies\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E{{{Client_Name_Official}}} must ensure that any discrepancies are investigated without delay and a local incident form completed.\u003C/p\u003E\n\u003Cp\u003EIf a discrepancy is identified between calculated stock figures (running balances) and actual stock, staff should:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EInform {{{Reg_Manager_Name}}} who should investigate immediately\u003C/li\u003E\n  \u003Cli\u003ECheck back through the entries in the CD Register to ensure that there has not been an administrative error such as a missed or incorrect entry or a calculation error\u003C/li\u003E\n  \u003Cli\u003ECheck the {{{MAR_Chart}}} and records of disposed medicines\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EIf the discrepancy can be identified, record the outcome:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EDO NOT cancel, cross out or through, obliterate and/or alter any entry in the CD Register\u003C/li\u003E\n  \u003Cli\u003EUnder the last entry, details of the following should be made:\n    \u003Cul\u003E\n      \u003Cli\u003EThe date\u003C/li\u003E\n      \u003Cli\u003EThe error in subtraction/addition (indicated with an asterisk)\u003C/li\u003E\n      \u003Cli\u003EThe correct balance\u003C/li\u003E\n      \u003Cli\u003EThe signature of the registered nurse and the witnessing staff member\u003C/li\u003E\n      \u003Cli\u003EReference to any supporting documentation that was used to resolve the discrepancy\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EUnresolved discrepancies must be reported; this should include the regional NHS Controlled Drugs Accountable Officer (CDAO) at NHS England or the police, depending on the circumstances, and the {{{reg_authority}}} if the incident meets the criteria of a statutory notification.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;01962ed5-b292-0180-1cb1-a28470f1064c&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EAdministration of Controlled Drugs\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EIn addition to the procedures relating to the administration and recording of other medicines outlined in the \u003Cstrong\u003EAdministration of Medicines Policy and Procedure\u003C/strong\u003E, the following procedures \u003Cstrong\u003Emust \u003C/strong\u003Ebe carried out when administering controlled drugs:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EThe administration of a controlled drug should be by a registered nurse\u003C/li\u003E\n  \u003Cli\u003EIt must be witnessed by a second staff member and where possible, this should be a second registered nurse\u003C/li\u003E\n  \u003Cli\u003EIf not, a medication trained and competent {{{SupportWorkerOrCarer}}} can witness\u003C/li\u003E\n  \u003Cli\u003EThey must witness the whole procedure\u003C/li\u003E\n  \u003Cli\u003EThe stock balance should be confirmed prior to proceeding with administration\u003C/li\u003E\n  \u003Cli\u003EIf incorrect, the {{{Registered_Manager_JobTitle}}} must be informed\u003C/li\u003E\n  \u003Cli\u003ESee above for discrepancies\u003C/li\u003E\n  \u003Cli\u003EThere should not be unnecessary delay in the {{{Service_user_text}}} receiving their medication\u003C/li\u003E\n  \u003Cli\u003EThe stock balance, if different, should be clearly documented in the register before proceeding with administration\u003C/li\u003E\n  \u003Cli\u003ERecord the time and date of administration and the dose to be administered\u003C/li\u003E\n  \u003Cli\u003EAfter administration, the Register must be signed by the registered nurse administering the medication and the witness, and the running balance updated\u003C/li\u003E\n  \u003Cli\u003EThe {{{Service_user_text}}}\u2019s {{{MAR_Chart}}} must be signed by the member of staff who administered the medication. It is good practice for this to be countersigned by the staff member who witnessed the medication administration\u003C/li\u003E\n  \u003Cli\u003EWhere part of an injectable CD is administered, the CD Register/Record Book details the amount given and the amount denatured/disposed of\u003C/li\u003E\n  \u003Cli\u003EWhen administering topical controlled drugs, records should include the site of application and the frequency of rotation of the site\u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;9fc5a879-aefa-01bc-bad9-2ee14fd969c4&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EDisposal of Controlled Drugs\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EDisposal of Named \u003C/strong\u003E\u003Cstrong\u003E{{{Service_user_text}}}\u003C/strong\u003E\u003Cstrong\u003Es\u0027 CDs:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EWhen controlled drugs have passed their expiry date, the need for prescription has ceased, or the {{{Service_user_text}}} has died, the controlled drugs should be denatured using a recognised CD denaturing kit before consigning to a licensed waste company. (Some pharmacies are also willing to take back medication from nursing homes, but the home must ensure that the pharmacy has appropriate arrangements in place)\n    \u003Cul\u003E\n      \u003Cli\u003EAdvice on using denaturing kits can be found in the Further Reading Section\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003EEven when still in date, such drugs should not be reused for other {{{Service_user_text}}}s\u003C/li\u003E\n  \u003Cli\u003E{{{Client_Name_Official}}} must have a T28 exemption from the Environment Agency in place for the denaturing of CDs on site, a link can be found in the Further Reading section of this policy\u003C/li\u003E\n  \u003Cli\u003E{{{Client_Name_Official}}} must keep a copy of the Waste Transfer Note and make a record in its usual record of \u0027disposed of\u0027 medication\u003C/li\u003E\n  \u003Cli\u003EDenaturing should be performed by the registered nurse and witnessed\u003C/li\u003E\n  \u003Cli\u003E{{{Reg_Manager_Name}}} must ensure that unwanted CDs are denatured promptly and correctly, and collected as required\u003C/li\u003E\n  \u003Cli\u003ERelevant details of any such disposal should be entered into the \u2018CD Register\u2019 and signed by the authorised member of staff denaturing the drug and the witness\u003C/li\u003E\n  \u003Cli\u003EAppropriate records should also show:\n    \u003Cul\u003E\n      \u003Cli\u003EThe date\u003C/li\u003E\n      \u003Cli\u003EThe controlled drug name and strength\u003C/li\u003E\n      \u003Cli\u003EThe number or volume of tablets, liquid or patches\u003C/li\u003E\n      \u003Cli\u003EThe signature of the authorised staff member\u003C/li\u003E\n      \u003Cli\u003EThe signature of the witness\u003C/li\u003E\n    \u003C/ul\u003E\n  \u003C/li\u003E\n  \u003Cli\u003EIndividual doses of CDs which have been prepared but not administered are denatured and witnessed (in accordance with local risk assessment/procedures), and the reason documented\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003EDisposal of CD Patches:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EUsed controlled drug patches, such as Fentanyl, still contain controlled drugs even after use and therefore should be folded in half and denatured as above\u003C/li\u003E\n  \u003Cli\u003EUnused CD patches should also be denatured as above\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003E\u003Cstrong\u003EStock Controlled Drugs:\u003C/strong\u003E\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EStaff must denature out-of-date stocks of controlled drugs in Schedules 2, 3 and 4 (Part I) before handing to the waste disposal company\u003C/li\u003E\n  \u003Cli\u003EStaff must destroy Schedule 2 stock in the presence of an authorised witness. This includes a police constable or inspectors of the General Pharmaceutical Council. The lead NHS England controlled drugs accountable officer may also appoint authorised witnesses (CQC 2025)\u003C/li\u003E\n  \u003Cli\u003EStaff need to record details of the destruction in the controlled drugs register. It is good practice for another member of staff to witness the denaturing of stock in Schedules 3 and 4 (Part I)\u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;39d2b428-b23a-0198-d157-876204cf491a&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EBooking Out Named \u003C/strong\u003E\u003Cstrong\u003E{{{Service_user_text}}}\u003C/strong\u003E\u003Cstrong\u003E Controlled Drugs\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EAppropriate entries MUST BE RECORDED in the Controlled Drugs Register at {{{Client_Name_Official}}}. Records should indicate the date of discharge of the {{{Service_user_text}}} and the details of the medicines the {{{Service_user_text}}} has taken out of {{{Client_Name_Official}}}.\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EThere should always be two medication trained staff booking out the medicines\u003C/li\u003E\n  \u003Cli\u003EThe controlled drugs for booking out must be checked and counted against the {{{Service_user_text}}}\u0027s {{{MAR_Chart}}} and checked for quantity left against instructions on the label on the medicine\u0027s original container\u003C/li\u003E\n  \u003Cli\u003EThe balance of controlled drugs being booked out must be recorded in the Controlled Drugs Register and signed and dated by each authorised person\u003C/li\u003E\n  \u003Cli\u003E{{{Service_user_text}}}s or their representative should sign to say that they have taken the medicines out of {{{Client_Name_Official}}}\u003C/li\u003E\n  \u003Cli\u003EMedicines for self-administering {{{Service_user_text}}}s do not have to be booked out; this includes controlled drugs\u003C/li\u003E\n  \u003Cli\u003EAny discrepancies must be brought to the notice of the {{{Registered_Manager_JobTitle}}}\u003C/li\u003E\n\u003C/ul\u003E&quot;},{&quot;id&quot;:&quot;a3874879-56a3-0105-9a95-608d705b1fc5&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EEnd Of Life Care\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EThere should be appropriate access to controlled drugs at {{{Client_Name_Official}}} for {{{Service_user_text}}}s who require them, especially at the end of their lives.\u003C/p\u003E\n\u003Cp\u003E\u003Cbr\u003E\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;c1f52a20-bb6d-0143-4dc8-34ac55512e14&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EStatutory Notifications\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003EThere is no requirement to notify CQC about medicines errors, but you must notify them if a medicines error has caused:\u003C/p\u003E\n\u003Cul\u003E\n  \u003Cli\u003EA death\u003C/li\u003E\n  \u003Cli\u003EAn injury\u003C/li\u003E\n  \u003Cli\u003EAbuse, or an allegation of abuse\u003C/li\u003E\n  \u003Cli\u003EAn incident reported to or investigated by the police\u003C/li\u003E\n\u003C/ul\u003E\n\u003Cp\u003EThis includes where any of these have been caused by a controlled drug.\u0026nbsp;\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;f06bbf5f-3d36-0165-15fb-77fecfed1acb&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003ECQC Self-Assessment Tool\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003ECQC now provides a self-assessment tool for care homes to support staff to safely manage controlled drugs.\u003C/p\u003E\n\u003Cp\u003EStaff can download the tool from the CQC website - a link can be found in the Further Reading section of this policy. The tool is used anonymously and CQC do not have access to user details.\u003C/p\u003E&quot;},{&quot;id&quot;:&quot;0bff562e-8d29-011f-5750-bede282c8f87&quot;,&quot;type&quot;:&quot;rich_text_section&quot;,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003EGovernance\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E{{{Reg_Manager_Name}}} is responsible for ensuring that all aspects relating to the supply, administration, storage, recording and disposal of controlled drugs at {{{Client_Name_Official}}}, is regularly audited as part of the medication audit process.\u003C/p\u003E\n\u003Cp\u003EStaff should refer to the Auditing and Monitoring of Medication Policy and Procedure at {{{Client_Name_Official}}}.\u003C/p\u003E&quot;}],&quot;definitions&quot;:[{&quot;id&quot;:&quot;0f5113c4-d30c-5f77-ac4b-fbf51f477b14&quot;,&quot;type&quot;:&quot;definition&quot;,&quot;term&quot;:&quot;Denaturing&quot;,&quot;definition&quot;:&quot;\u003Cul\u003E\n  \u003Cli\u003EOut of date or unwanted controlled drugs must be denatured prior to disposal so they cannot be retrieved, recovered or reused\u003C/li\u003E\n  \u003Cli\u003EControlled drug denaturing kits will render unwanted medicines irretrievable and unfit for use, ready to be disposed of\u003C/li\u003E\n\u003C/ul\u003E&quot;}],&quot;keyFactsProfessionals&quot;:&quot;\u003Cul\u003E\n  \u003Cli\u003ECDs prescribed by medical practitioners must comply with specific legal requirements\u003C/li\u003E\n  \u003Cli\u003EStaff must ensure that any administration, receipt or return to pharmacy of controlled drugs is logged in the Controlled Drug Register at {{{Client_Name_Official}}}\u003C/li\u003E\n  \u003Cli\u003EProviders must have a CD cabinet that complies with the requirements laid out in the Misuse of Drugs (Safe Custody) Regulations and this includes being fixed securely to a solid wall or floor with specified fixings\u003C/li\u003E\n  \u003Cli\u003ECD audits that check stock and expiry dates are necessary and must be evidenced within the Controlled Drug Book\u003C/li\u003E\n  \u003Cli\u003EAll controlled drugs, when no longer required, will be denatured and disposed of by a licensed waste disposal company\u003C/li\u003E\n\u003C/ul\u003E&quot;,&quot;keyFactsPeopleAffected&quot;:&quot;\u003Cul\u003E\n  \u003Cli\u003E{{{Service_user_text}}}s may self-administer controlled drugs\u003C/li\u003E\n\u003C/ul\u003E&quot;,&quot;furtherReadingText&quot;:&quot;\u003Cp\u003E\u003Cstrong\u003ECQC - Controlled Drug Self-Assessment Tool for Care Homes:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022https://www.cqc.org.uk/publications/controlled-drugs/2024/issues\u0022\u003Ehttps://www.cqc.org.uk/publications/controlled-drugs/2024/issues\u003C/a\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EGOV.UK - Guidance - List of most commonly encountered drugs currently under the misuse of drugs legislation:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022https://www.gov.uk/government/publications/controlled-drugs-list--2/list-of-most-commonly-encountered-drugs-currently-controlled-under-the-misuse-of-drugs-legislation\u0022\u003Ehttps://www.gov.uk/government/publications/controlled-drugs-list--2/list-of-most-commonly-encountered-drugs-currently-controlled-under-the-misuse-of-drugs-legislation\u003C/a\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Cstrong\u003EGOV.UK - T28 Waste Exemption: Sort and denature controlled drugs for disposal:\u003C/strong\u003E\u003C/p\u003E\n\u003Cp\u003E\u003Ca href=\u0022https://www.gov.uk/guidance/waste-exemption-t28-sort-and-denature-controlled-drugs-for-disposal\u0022\u003Ehttps://www.gov.uk/guidance/waste-exemption-t28-sort-and-denature-controlled-drugs-for-disposal\u003C/a\u003E\u003C/p\u003E&quot;,&quot;outstandingPractice&quot;:&quot;\u003Cul\u003E\n  \u003Cli\u003EThe wide understanding of the policy is enabled by proactive use of the QCS App\u003C/li\u003E\n  \u003Cli\u003EThere is evidence of working with the multidisciplinary team to ensure that {{{Service_user_text}}}s\u0027 needs and wishes are met\u003C/li\u003E\n  \u003Cli\u003EProviders support {{{Service_user_text}}}s who wish to be self-managing with medication and robust procedures are in place to manage any risks\u003C/li\u003E\n  \u003Cli\u003EThere is a training programme in place and competency is assessed, with staff given the opportunity to develop their skills and knowledge\u003C/li\u003E\n  \u003Cli\u003EAudits are undertaken as per local agreement and demonstrate compliance with this policy and safe practice\u003C/li\u003E\n\u003C/ul\u003E&quot;,&quot;_system&quot;:{&quot;type&quot;:&quot;policy&quot;,&quot;partition&quot;:&quot;6a0cd7a5-8d97-5848-8aaa-92784eb649ea&quot;,&quot;key&quot;:&quot;n3529_cn09_732a22768e904e9688eff7844c969dd7&quot;,&quot;locale&quot;:&quot;en&quot;},&quot;_ts&quot;:1781616233,&quot;noCustomFieldValues&quot;:true,&quot;viewConfig&quot;:{&quot;allPolicyLabel&quot;:&quot;All policy&quot;,&quot;previousLabel&quot;:&quot;Previous&quot;,&quot;nextLabel&quot;:&quot;Next&quot;,&quot;downloadSectionLabel&quot;:&quot;Share this section&quot;,&quot;downloadSectionAsPdfLabel&quot;:&quot;Download as PDF&quot;,&quot;downloadSectionAsWordLabel&quot;:&quot;Download as Word&quot;,&quot;emailLabel&quot;:&quot;Email&quot;,&quot;printLabel&quot;:&quot;Print&quot;,&quot;systemDetailsCloseMessage&quot;:&quot;Close message&quot;,&quot;systemDetailsComplete&quot;:&quot;Complete&quot;,&quot;reviewSheetLabel&quot;:&quot;Review Sheet&quot;,&quot;lastReviewedLabel&quot;:&quot;Last Reviewed&quot;,&quot;lastModifiedLabel&quot;:&quot;Last Updated&quot;,&quot;lastAmendedLabel&quot;:&quot;Last Amended&quot;,&quot;reviewIntervalLabel&quot;:&quot;This policy will be reviewed as needs require or at the following interval:&quot;,&quot;businessImpactLabel&quot;:&quot;Business Impact&quot;,&quot;reviewReasonLabel&quot;:&quot;Reason for this Review&quot;,&quot;changesMadeLabel&quot;:&quot;Changes Made&quot;,&quot;summaryLabel&quot;:&quot;Summary&quot;,&quot;relevantLegislationLabel&quot;:&quot;Relevant Legislation&quot;,&quot;underpinningKnowledgeLabel&quot;:&quot;Underpinning Knowledge&quot;,&quot;suggestedActionLabel&quot;:&quot;Suggested Action&quot;,&quot;equalityImpactAssessmentLabel&quot;:&quot;Equality Impact Assessment&quot;,&quot;equalityImpactAssessmentValue&quot;:&quot;\u003Cp\u003EQCS have undertaken an equality analysis during the review of this policy. This statement is a written record that demonstrates that we have shown due regard to the need to eliminate unlawful discrimination, advance equality of opportunity and foster good relations with respect to the characteristics protected by equality law.\u003C/p\u003E&quot;,&quot;policyReviewLabel&quot;:&quot;Policy Reviewed By&quot;,&quot;purposeLabel&quot;:&quot;Purpose&quot;,&quot;defaultKloeTitle&quot;:&quot;To support {{{client_name_official}}} in meeting the following Quality Statements:&quot;,&quot;keyQuestionLabel&quot;:&quot;Key Question&quot;,&quot;kloeLabel&quot;:&quot;Key Line of Enquiry&quot;,&quot;qsLabel&quot;:&quot;Quality Statements&quot;,&quot;scopeLabel&quot;:&quot;Scope&quot;,&quot;rolesAffectedLabel&quot;:&quot;Roles Affected&quot;,&quot;peopleAffectedLabel&quot;:&quot;People Affected&quot;,&quot;stakeholdersAffectedLabel&quot;:&quot;Stakeholders Affected&quot;,&quot;objectivesLabel&quot;:&quot;Objectives&quot;,&quot;policyLabel&quot;:&quot;Policy&quot;,&quot;procedureLabel&quot;:&quot;Procedure&quot;,&quot;definitionLabel&quot;:&quot;Definitions&quot;,&quot;keyFactsProfessionalsLabel&quot;:&quot;Key Facts - Professionals&quot;,&quot;professionalsStandardText&quot;:&quot;Professionals providing this service should be aware of the following:&quot;,&quot;keyFactsPeopleLabel&quot;:&quot;Key Facts - People Affected by The Service&quot;,&quot;peopleStandardText&quot;:&quot;People affected by this service should be aware of the following:&quot;,&quot;furtherReadingLabel&quot;:&quot;Further Reading&quot;,&quot;furtherReadingStandardText&quot;:&quot;As well as the information in the \u0027Underpinning Knowledge\u0027 section of the review sheet, we recommend that you add to your understanding in this policy area by considering the following materials.&quot;,&quot;noFurtherReadingStandardText&quot;:&quot;There is no further reading for this policy, but we recommend the \u0027Underpinning Knowledge\u0027 section of the review sheet to increase your knowledge and understanding.&quot;,&quot;outstandingPracticeLabel&quot;:&quot;Outstanding Practice&quot;,&quot;outstandingPracticeStandardText&quot;:&quot;To be \u0022outstanding\u0022 in this policy area you could provide evidence that:&quot;,&quot;formsLabel&quot;:&quot;Forms&quot;,&quot;includedFormsLabel&quot;:&quot;The following forms are included as part of this policy:&quot;,&quot;titleOfFormLabel&quot;:&quot;Title of form&quot;,&quot;whenWouldTheFormBeUsedLabel&quot;:&quot;When would the form be used?&quot;,&quot;createdByLabel&quot;:&quot;Created by&quot;,&quot;resourcesLabel&quot;:&quot;Resources&quot;,&quot;typeLabel&quot;:&quot;Type&quot;,&quot;nameLabel&quot;:&quot;Name&quot;,&quot;authorLabel&quot;:&quot;Author&quot;,&quot;sourceLabel&quot;:&quot;Source&quot;,&quot;lastUpdatedLabel&quot;:&quot;Last updated&quot;,&quot;moreOptionsLabel&quot;:&quot;More options&quot;,&quot;addToReadingListLabel&quot;:&quot;Add to reading list&quot;,&quot;downloadLabel&quot;:&quot;Download&quot;,&quot;customActionLabel&quot;:&quot;Create custom action&quot;,&quot;orderResourcesByLabel&quot;:&quot;Order resources by&quot;,&quot;loadingResourcesLabel&quot;:&quot;Loading resources&quot;,&quot;noResourcesFoundLabel&quot;:&quot;No resources were found for this policy.&quot;,&quot;couldNotRetrieveResourceLabel&quot;:&quot;Could not retrieve resource&quot;,&quot;resourcesErrorMessage&quot;:&quot;Something went wrong retrieving resources for this policy.&quot;,&quot;closeLabel&quot;:&quot;Close&quot;,&quot;expertInsightsLabel&quot;:&quot;Expert insights&quot;,&quot;unresolvedCustomValuesWarningHeader&quot;:&quot;Your System details are incomplete and so the content of this policy may not be customised to your organisation.&quot;,&quot;unresolvedCustomValuesWarningFooter&quot;:&quot;This document is uncontrolled once printed, see your online system.&quot;,&quot;disclaimer&quot;:&quot;\u003Cp\u003EThis policy is Copyright Quality Compliance Systems Ltd. 2025 (Last updated 2025). Use without a current Licence Certificate is strictly prohibited. If you have a current Licence Certificate, it can be accessed in your online account.\u003C/p\u003E&quot;,&quot;watermark&quot;:&quot;\u003Cp\u003E\u00A9 Quality Compliance Systems\u003Cbr\u003E\n[[[username]]], [[[locationname]]]\u003Cbr\u003E\nPolicy Download: 16 juni 2026\u003Cbr\u003E\n[[[useremail]]]\u003C/p\u003E&quot;,&quot;_system&quot;:{},&quot;_ts&quot;:1781616233},&quot;version&quot;:&quot;16.06.26-01.23.53&quot;}" preview="true"><!----> <section class="qcs-viewer qcs-viewer--category-31"> <qcs-tags><!----> <ul class="qcs-tags"> <!--?lit$330310992$--><!----> <li> <button type="button" class="qcs-tag"> <!--?lit$330310992$-->Medication </button> </li> <!----><!----> <li> <button type="button" class="qcs-tag"> <!--?lit$330310992$-->Safety </button> </li> <!----><!----> <li> <button type="button" class="qcs-tag"> <!--?lit$330310992$-->Risk  </button> </li> <!----> </ul> </qcs-tags> <header class="qcs-viewer__heading"> <!--?lit$330310992$--> <h1 class="qcs-viewer__title"><!--?lit$330310992$-->CN09 - <!--?lit$330310992$-->Controlled Drugs Policy and Procedure</h1> </header> <qcs-tabs-functionality initialized=""><template shadowrootmode="open">
+			<slot name="tabs"></slot>
+			<slot name="panels"></slot>
+		</template> <qcs-tabs slot="tabs"><!---->
+            <nav class="qcs-viewer__tabs-wrapper">
+                <ol class="qcs-viewer__tabs js-tabs" role="tablist" aria-orientation="horizontal" aria-label="">
+                    <!--?lit$330310992$--><!---->
+                                <li class="qcs-tab qcs-tab--all-policy js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#all-policy" role="tab" aria-selected="true" tabindex="0" aria-controls="all-policy" id="all-policy-btn"><!--?lit$330310992$-->All policy</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--review-sheet js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#review-sheet" role="tab" aria-selected="false" tabindex="-1" aria-controls="review-sheet" id="review-sheet-btn"><!--?lit$330310992$-->Review Sheet</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--purpose js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#purpose" role="tab" aria-selected="false" tabindex="-1" aria-controls="purpose" id="purpose-btn"><!--?lit$330310992$-->Purpose</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--scope js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#scope" role="tab" aria-selected="false" tabindex="-1" aria-controls="scope" id="scope-btn"><!--?lit$330310992$-->Scope</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--objectives js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#objectives" role="tab" aria-selected="false" tabindex="-1" aria-controls="objectives" id="objectives-btn"><!--?lit$330310992$-->Objectives</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--policy js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#policy" role="tab" aria-selected="false" tabindex="-1" aria-controls="policy" id="policy-btn"><!--?lit$330310992$-->Policy</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--procedure js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#procedure" role="tab" aria-selected="false" tabindex="-1" aria-controls="procedure" id="procedure-btn"><!--?lit$330310992$-->Procedure</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--definitions js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#definitions" role="tab" aria-selected="false" tabindex="-1" aria-controls="definitions" id="definitions-btn"><!--?lit$330310992$-->Definitions</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--key-facts-professionals js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#key-facts-professionals" role="tab" aria-selected="false" tabindex="-1" aria-controls="key-facts-professionals" id="key-facts-professionals-btn"><!--?lit$330310992$-->Key Facts - Professionals</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--key-facts-people js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#key-facts-people" role="tab" aria-selected="false" tabindex="-1" aria-controls="key-facts-people" id="key-facts-people-btn"><!--?lit$330310992$-->Key Facts - People Affected by The Service</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--further-reading js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#further-reading" role="tab" aria-selected="false" tabindex="-1" aria-controls="further-reading" id="further-reading-btn"><!--?lit$330310992$-->Further Reading</a>
+                                </li>
+                            <!----><!---->
+                                <li class="qcs-tab qcs-tab--outstanding-practice js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="https://web-pd-kontentai-prod-policyprev.azurewebsites.net/policy/preview/6a0cd7a5-8d97-5848-8aaa-92784eb649ea#outstanding-practice" role="tab" aria-selected="false" tabindex="-1" aria-controls="outstanding-practice" id="outstanding-practice-btn"><!--?lit$330310992$-->Outstanding Practice</a>
+                                </li>
+                            <!----><!----><!----><!----><!---->
+                </ol>
+                <!--?lit$330310992$-->
+            </nav>
+        </qcs-tabs> <qcs-panels slot="panels"><!---->
+            <section class="qcs-panels">
+                <!--?lit$330310992$--><!---->
+                            <section class="js-panel" id="all-policy" role="tabpanel" tabindex="0" aria-labelledby="all-policy-btn">
+                                <!--?lit$330310992$-->
+            <qcs-all-policy-panel>
+            </qcs-all-policy-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="review-sheet" role="tabpanel" tabindex="0" aria-labelledby="review-sheet-btn">
+                                <!--?lit$330310992$-->
+            <qcs-review-sheet-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--review-sheet" id="review-sheet">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$--><!--?lit$330310992$-->Review Sheet</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$--> <div class="qcs-panel__body qcs-review-sheet"> <!--?lit$330310992$--> <ul class="qcs-review-sheet__timeline"> <!--?lit$330310992$--> <li class="qcs-review-sheet__lastReviewedLabel qcs-review-sheet__date"> <span><!--?lit$330310992$-->Last Reviewed</span> <time class="qcs-review-sheet__time"> <!--?lit$330310992$-->26 Feb 26</time> </li>  <!--?lit$330310992$--> <li class="qcs-review-sheet__lastAmendedLabel qcs-review-sheet__date"> <span><!--?lit$330310992$-->Last Amended</span> <time class="qcs-review-sheet__time"> <!--?lit$330310992$-->26 Feb 26</time> </li>  <!--?lit$330310992$--> <li class="qcs-review-sheet__interval"> <span><!--?lit$330310992$-->This policy will be reviewed as needs require or at the following interval:</span> <span class="qcs-review-sheet__interval-value"><!--?lit$330310992$-->Annual</span> </li>  </ul>  <!--?lit$330310992$--> <dl class="qcs-review-sheet__datalist"> <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Business Impact:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <div class="qcs-review-sheet__impact"> <!--?lit$330310992$--> <div class="qcs-impact"> <div class="qcs-impact__bars"> <!--?lit$330310992$--><!----><div class=" qcs-impact__bar qcs-impact__bar--medium "></div><!----><!----><div class=" qcs-impact__bar qcs-impact__bar--medium "></div><!----><!----><div class=" qcs-impact__bar "></div><!----><!----><div class=" qcs-impact__bar "></div><!----> <dlw-tooltip position="bottom" inert="" role="tooltip" initialized=""><!--?lit$330310992$-->Medium</dlw-tooltip> </div> <span class="qcs-impact__label"><!--?lit$330310992$-->Medium</span> </div>  <p><!--?lit$330310992$-->Changes are important, but urgent implementation is not required, incorporate into your existing workflow.</p> </div> </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Reason for this Review:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <!--?lit$330310992$-->Best practice </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Changes Made:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <!--?lit$330310992$-->Yes </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Summary:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <!--?lit$330310992$--><p>This policy details processes that need to be followed for the safe management of controlled drugs. It has been reviewed with changes to sections 5.2, 5.4, 5.5 and 5.9. References have also been checked and updated.</p> </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Relevant Legislation:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <ul class="qcs-review-sheet__legislation"> <!--?lit$330310992$--><!----><li><!--?lit$330310992$-->The Controlled Drugs (Supervision of Management and Use) Regulations 2013</li><!----><!----><li><!--?lit$330310992$-->Medical Act 1983</li><!----><!----><li><!--?lit$330310992$-->Medicines Act 1968</li><!----><!----><li><!--?lit$330310992$-->The Human Medicines Regulations 2012</li><!----><!----><li><!--?lit$330310992$-->Misuse of Drugs Act 1971</li><!----><!----><li><!--?lit$330310992$-->The Misuse of Drugs (Safe Custody) Regulations 1973</li><!----><!----><li><!--?lit$330310992$-->The Misuse of Drugs and Misuse of Drugs (Safe Custody) (Amendment) Regulations 2007</li><!----><!----><li><!--?lit$330310992$-->The Health Act 2006</li><!----> </ul> </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Underpinning Knowledge:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <ul class="qcs-review-sheet__references"> <!--?lit$330310992$--><!----> <li> Author: <!--?lit$330310992$-->RCN, (<!--?lit$330310992$-->2024), <!--?lit$330310992$-->Resolution: Access to controlled drugs in care homes <!--?lit$330310992$--> <!--?lit$330310992$-->[Online] <!--?lit$330310992$--> Available from: <a href="https://www.rcn.org.uk/congress/congress-events/access-to-controlled-drugs-in-care-homes-2024"><!--?lit$330310992$-->https://www.rcn.org.uk/congress/congress-events/access-to-controlled-drugs-in-care-homes-2024</a> [Accessed: <!--?lit$330310992$-->26/02/2026] </li> <!----><!----> <li> Author: <!--?lit$330310992$-->NICE, (<!--?lit$330310992$-->2014), <!--?lit$330310992$-->Guideline - Managing medicines in care homes <!--?lit$330310992$--> <!--?lit$330310992$-->[Online] <!--?lit$330310992$--> Available from: <a href="https://www.nice.org.uk/guidance/sc1"><!--?lit$330310992$-->https://www.nice.org.uk/guidance/sc1</a> [Accessed: <!--?lit$330310992$-->26/02/2026] </li> <!----><!----> <li> Author: <!--?lit$330310992$-->Royal Pharmaceutical Society, (<!--?lit$330310992$-->2024), <!--?lit$330310992$-->Safe and secure handling of medicines <!--?lit$330310992$--> <!--?lit$330310992$-->[Online] <!--?lit$330310992$--> Available from: <a href="https://www.rpharms.com/recognition/setting-professional-standards/safe-and-secure-handling-of-medicines/professional-guidance-on-the-safe-and-secure-handling-of-medicinessegregated"><!--?lit$330310992$-->https://www.rpharms.com/recognition/setting-professional-standards/safe-and-secure-handling-of-medicines/professional-guidance-on-the-safe-and-secure-handling-of-medicinessegregated</a> [Accessed: <!--?lit$330310992$-->26/02/2026] </li> <!----><!----> <li> Author: <!--?lit$330310992$-->CQC, (<!--?lit$330310992$-->2025), <!--?lit$330310992$-->Controlled drugs in care homes <!--?lit$330310992$--> <!--?lit$330310992$-->[Online] <!--?lit$330310992$--> Available from: <a href="https://www.cqc.org.uk/guidance-providers/adult-social-care/controlled-drugs-care-homes"><!--?lit$330310992$-->https://www.cqc.org.uk/guidance-providers/adult-social-care/controlled-drugs-care-homes</a> [Accessed: <!--?lit$330310992$-->26/02/2026] </li> <!----><!----> <li> Author: <!--?lit$330310992$-->Royal College of Pharmacy, (<!--?lit$330310992$-->2018), <!--?lit$330310992$-->Professional Guidance on the Safe and Secure Handling of Medicines <!--?lit$330310992$--> <!--?lit$330310992$-->[Online] <!--?lit$330310992$--> Available from: <a href="https://www.rcpharm.org/professional-standards/professional-guidance-on-the-safe-and-secure-handling-of-medicines/"><!--?lit$330310992$-->https://www.rcpharm.org/professional-standards/professional-guidance-on-the-safe-and-secure-handling-of-medicines/</a> [Accessed: <!--?lit$330310992$-->26/02/2026] </li> <!----><!----> <li> Author: <!--?lit$330310992$-->CQC, (<!--?lit$330310992$-->2025), <!--?lit$330310992$-->The Safer Management of Controlled Drugs: Annual update 2024 <!--?lit$330310992$--> <!--?lit$330310992$-->[Online] <!--?lit$330310992$--> Available from: <a href="https://www.cqc.org.uk/publications/controlled-drugs/2024"><!--?lit$330310992$-->https://www.cqc.org.uk/publications/controlled-drugs/2024</a> [Accessed: <!--?lit$330310992$-->26/02/2026] </li> <!----> </ul> </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Suggested Action:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <ul class="sheet__legislation"> <!--?lit$330310992$--><!----><li><!--?lit$330310992$-->Encourage sharing the policy through the use of the QCS App</li><!----> </ul> </dd>  <!--?lit$330310992$--> <dt class="qcs-review-sheet__term"><!--?lit$330310992$-->Equality Impact Assessment:</dt> <dd class="qcs-review-sheet__definition"><!--?lit$330310992$--> <!--?lit$330310992$--><p>QCS have undertaken an equality analysis during the review of this policy. This statement is a written record that demonstrates that we have shown due regard to the need to eliminate unlawful discrimination, advance equality of opportunity and foster good relations with respect to the characteristics protected by equality law.</p> </dd>  </dl>  </div> 
+            </div>
+        </qcs-review-sheet-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="purpose" role="tabpanel" tabindex="0" aria-labelledby="purpose-btn">
+                                <!--?lit$330310992$-->
+            <qcs-purpose-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--purpose" id="purpose">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->1. <!--?lit$330310992$-->Purpose</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$--> <div class="qcs-panel__body"> <!--?lit$330310992$--> <!--?lit$330310992$--><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->1.<!--?lit$330310992$-->1</b> <!--?lit$330310992$--><p>To ensure that {{{Service_user_text}}}s are safeguarded by the systems put in place regarding the management of controlled drugs (CDs) at {{{Client_Name_Official}}}, in line with specific legal requirements.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->1.<!--?lit$330310992$-->2</b> <!--?lit$330310992$--><p>This policy should be read with the Overarching Medicines Management Policy and Procedure.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!---->  <!--?lit$330310992$--> <div class="nested-rich-text"> <span class="nested-rich-text__title"><b><!--?lit$330310992$-->1.<!--?lit$330310992$-->3 </b><!--?lit$330310992$-->To support {{{client_name_official}}} in meeting the following Quality Statements:</span> <div class="qcs-kloes qcs-table"> <header class="qcs-table__heading"> <div class="qcs-table__item qcs-kloes__heading-item qcs-kloes__heading-item--question"><!--?lit$330310992$-->Key Question</div> <div class="qcs-table__item qcs-kloes__heading-item qcs-kloes__heading-item--quality"><!--?lit$330310992$-->Quality Statements</div> </header> <ul class="qcs-table__body"> <!--?lit$330310992$--><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Caring</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSC1: <!--?lit$330310992$-->Kindness, compassion and dignity</li> <!----><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSC3: <!--?lit$330310992$-->Independence, choice and control</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Caring</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSC1: <!--?lit$330310992$-->Kindness, compassion and dignity</li> <!----><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSC3: <!--?lit$330310992$-->Independence, choice and control</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Safe</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSS8: <!--?lit$330310992$-->Medicines optimisation</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Safe</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSS8: <!--?lit$330310992$-->Medicines optimisation</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Well-led</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSW3: <!--?lit$330310992$-->Freedom to speak up</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Well-led</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSW3: <!--?lit$330310992$-->Freedom to speak up</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Well-led</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSW7: <!--?lit$330310992$-->Learning, improvement and innovation</li> <!----> </ul> </div> </li> <!----><!----> <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title"><!--?lit$330310992$-->Key Question</span><span class="qcs-table__value"><!--?lit$330310992$-->Well-led</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title"><!--?lit$330310992$-->Quality Statements</span> <ul class="qcs-quality-statements"> <!--?lit$330310992$--><!----> <li class="qcs-quality-statements__statement"><!--?lit$330310992$-->QSW7: <!--?lit$330310992$-->Learning, improvement and innovation</li> <!----> </ul> </div> </li> <!----> </ul> </div> </div> <!--?lit$330310992$--> <div class="nested-rich-text"> <span class="nested-rich-text__title"><b><!--?lit$330310992$-->1.<!--?lit$330310992$-->4</b> <!--?lit$330310992$-->Relevant Legislation</span> <ul class="qcs-review-sheet__legislation"> <!--?lit$330310992$--><!----><li><!--?lit$330310992$-->The Controlled Drugs (Supervision of Management and Use) Regulations 2013</li><!----><!----><li><!--?lit$330310992$-->Medical Act 1983</li><!----><!----><li><!--?lit$330310992$-->Medicines Act 1968</li><!----><!----><li><!--?lit$330310992$-->The Human Medicines Regulations 2012</li><!----><!----><li><!--?lit$330310992$-->Misuse of Drugs Act 1971</li><!----><!----><li><!--?lit$330310992$-->The Misuse of Drugs (Safe Custody) Regulations 1973</li><!----><!----><li><!--?lit$330310992$-->The Misuse of Drugs and Misuse of Drugs (Safe Custody) (Amendment) Regulations 2007</li><!----><!----><li><!--?lit$330310992$-->The Health Act 2006</li><!----> </ul> </div>  </div> 
+            </div>
+        </qcs-purpose-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="scope" role="tabpanel" tabindex="0" aria-labelledby="scope-btn">
+                                <!--?lit$330310992$-->
+            <qcs-scope-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--scope" id="scope">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->2. <!--?lit$330310992$-->Scope</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$--> <div class="qcs-panel__body qcs-scope"> <!--?lit$330310992$--> <div class="qcs-scope__item"> <span><b><!--?lit$330310992$-->2.1</b> <!--?lit$330310992$-->Roles Affected:</span> <ul> <!--?lit$330310992$--><!----><li><!--?lit$330310992$-->{{{Registered_Manager_JobTitle}}}</li><!----><!----><li><!--?lit$330310992$-->Nurse</li><!----><!----><li><!--?lit$330310992$-->Care staff</li><!----> </ul> </div>  <!--?lit$330310992$--> <div class="qcs-scope__item"> <span><b><!--?lit$330310992$-->2.2</b> <!--?lit$330310992$-->People Affected:</span> <ul> <!--?lit$330310992$--><!----><li><!--?lit$330310992$-->{{{Service_user_text}}}s</li><!----> </ul> </div>  <!--?lit$330310992$--> <div class="qcs-scope__item"> <span><b><!--?lit$330310992$-->2.3</b> <!--?lit$330310992$-->Stakeholders Affected:</span> <ul> <!--?lit$330310992$--><!----><li><!--?lit$330310992$-->Commissioners</li><!----><!----><li><!--?lit$330310992$-->External health professionals</li><!----><!----><li><!--?lit$330310992$-->Local Authority</li><!----><!----><li><!--?lit$330310992$-->NHS</li><!----> </ul> </div>  </div> 
+            </div>
+        </qcs-scope-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="objectives" role="tabpanel" tabindex="0" aria-labelledby="objectives-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--objectives" id="objectives">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->3. <!--?lit$330310992$-->Objectives</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+                <div class="qcs-panel__body">
+                    <!--?lit$330310992$--><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->3.<!--?lit$330310992$-->1</b> <!--?lit$330310992$--><p>To ensure that the supply, receipt, storage, administration and disposal of controlled drugs (CDs) meets all regulatory requirements.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->3.<!--?lit$330310992$-->2</b> <!--?lit$330310992$--><p>All staff involved in the administration of controlled drugs follow the '6 Rights of Medication Administration'.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->3.<!--?lit$330310992$-->3</b> <!--?lit$330310992$--><p>To ensure that there are procedures in place for identifying, reporting and reviewing incidents, errors and near misses involving CDs as well as sharing concerns about the mishandling of CDs.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!---->
+                </div>
+            
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="policy" role="tabpanel" tabindex="0" aria-labelledby="policy-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--policy" id="policy">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->4. <!--?lit$330310992$-->Policy</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+                <div class="qcs-panel__body">
+                    <!--?lit$330310992$--><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->4.<!--?lit$330310992$-->1</b> <!--?lit$330310992$--><p>The Misuse of Drugs Act 1971 places controls on certain medicines. These are referred to as controlled drugs (CDs).</p>
+<p>The Misuse of Drugs Regulations 2001 splits controlled drugs into 5 schedules, which specify the requirements that apply to them.</p>
+<ul>
+  <li>Schedule 1 - includes drugs not used medicinally</li>
+  <li>Schedule 2 - are subject to storage and recording conditions (e.g. morphine, diamorphine, methadone, oxycodone, fentanyl)</li>
+  <li>Schedule 3 - some are subject to storage conditions (e.g. gabapentin, midazolam, pregabalin, temazepam, tramadol)</li>
+  <li>Schedule 4 and 5 - no conditions (e.g. schedule 4 - zopiclone, diazepam, schedule 5 - codeine)</li>
+</ul>
+<p>A list of commonly used controlled drugs can be found at GOV.UK guidance 'List of most commonly encountered drugs currently controlled under the misuse of drugs legislation' (a link can be found in the further reading section).</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->4.<!--?lit$330310992$-->2</b> <!--?lit$330310992$--><p>{{{Client_Name_Official}}} will ensure that all medication trained staff are aware of, and follow, the policy and associated procedures relating to the safe and secure handling and storage of controlled drugs in accordance with legal, regulatory and good practice guidance specified by the Department of Health, the {{{reg_authority_name_long}}} and the Royal Pharmaceutical Society.</p>
+<p>{{{Client_Name_Official}}} will ensure, through the use of this policy and procedure, that:</p>
+<ul>
+  <li>Staff are clear on the standards that are expected of them in relation to the handling and storage of controlled drugs</li>
+  <li>Staff and visitors are not put at risk as a result of the incorrect handling of controlled drug medicines</li>
+  <li>All legislation and guidance are adhered to with respect to controlled drugs</li>
+  <li>Risks associated with the incorrect handling and storage of controlled drugs are reduced to a minimum</li>
+  <li>There are robust systems for ordering, storing, transporting, administering, recording and disposing of CDs safely</li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->4.<!--?lit$330310992$-->3</b> <!--?lit$330310992$--><p><strong>Controlled Drug Lead&nbsp;</strong></p>
+<p>Designated bodies are required under the Controlled Drug 2013 regulations to have a Controlled Drugs Accountable Officer&nbsp;(CDAO).&nbsp;</p>
+<p>These organisations include:</p>
+<ul>
+  <li>NHS trusts</li>
+  <li>Independent hospitals in England</li>
+  <li>NHS England Local Area Teams</li>
+  <li>Headquarters in England of the regular or reserved Armed Forces</li>
+</ul>
+<p>However, a wide range of organisations still prescribe and/or handle controlled drugs in their day-to-day work, but do not meet the definition of a designated body.</p>
+<p>These organisations should ensure they have a nominated person as a lead for controlled drugs to enable relevant focus on governance and oversight, ultimately helping to ensure safe care for {{{Service_user_text}}} (CQC 2025).</p>
+<p>{{{Reg_Manager_Name}}} will nominate a lead for controlled drugs at {{{Client_Name_Official}}}.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!---->
+                </div>
+            
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="procedure" role="tabpanel" tabindex="0" aria-labelledby="procedure-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--procedure" id="procedure">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->5. <!--?lit$330310992$-->Procedure</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+                <div class="qcs-panel__body">
+                    <!--?lit$330310992$--><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->1</b> <!--?lit$330310992$--><p><strong>Self-Administration</strong></p>
+<p>{{{Service_user_text}}}s who wish to self-administer controlled drugs must have a risk assessment in place to consider their safe storage.</p>
+<p>Staff should refer to the Overarching Medicines Management Policy and Procedure at {{{Client_Name_Official}}} for guidance on self-administration.</p>
+<p>Sensible precautions are important to make sure that controlled drugs are kept safely when with the {{{Service_user_text}}}. {{{Client_Name_Official}}} does not need a CD cupboard in each bedroom. However, a lockable cupboard or drawer is essential.</p>
+<p>The risk assessment process places responsibility on the {{{Service_user_text}}} who keeps the controlled drug. Through monitoring and review of the risk factors, {{{Client_Name_Official}}} should identify that controlled drugs are not left lying around where they could be taken by someone else. There is no need to keep a record in the CD Register when the {{{Service_user_text}}} is wholly independent; that is, they are responsible for requesting a prescription and collecting the controlled drugs personally from the pharmacy.</p>
+<p>If the {{{Service_user_text}}} does not arrange the supply and collection of controlled drugs but relies on {{{Client_Name_Official}}} to do so, there should be clear records in the CD Register, including:</p>
+<ul>
+  <li>Receipt from the pharmacy</li>
+  <li>Supply to the {{{Service_user_text}}}</li>
+  <li>Any subsequent disposal of unwanted controlled drugs</li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->2</b> <!--?lit$330310992$--><p><strong>Ordering and Receipt</strong></p>
+<p>The quantity of controlled drugs supplied should not exceed 30 days.</p>
+<p>{{{Reg_Manager_Name}}} must ensure there is a clear process for the safe handling of controlled drugs when they are being delivered to {{{Client_Name_Official}}}.</p>
+<p>CDs should be delivered separately from the main delivery of medicines and the package must be clearly marked that it contains a CD.</p>
+<p>Medication trained staff should sign for the CDs from the delivery driver and must ensure:</p>
+<ul>
+  <li>CDs are in a separate package on delivery and clearly marked</li>
+  <li>CDs are checked, signed for and witnessed by two staff members who are trained and competent</li>
+  <li>CDs are entered into the CD Register immediately</li>
+  <li>They are not left out on the side or in the cupboard to be entered later</li>
+  <li>CDs received are correct against copies of the original request or prescription. This check includes:
+    <ul>
+      <li>Drug name</li>
+      <li>Quantity - Staff should physically count tablets, capsules, ampoules, prefilled syringes and patches ensuring that the quantity received matches the quantity on the label and on the Medicines Administration Chart (MAR). For liquids, check that the seal has not been tampered with</li>
+      <li>Formulation – Tablets, capsules, patches, injections, liquids, etc.</li>
+      <li>Strength – milligram per unit dose or volume</li>
+      <li>Expiry date of preparation&nbsp;</li>
+      <li>Preparation fit for use i.e., no damage&nbsp;</li>
+      <li>Clear dose instructions</li>
+    </ul>
+  </li>
+  <li>Discrepancies are dealt with as per policy</li>
+  <li>After the checks have been performed and are correct, the MAR can be signed identifying the quantity received and dated by the receiving member of staff</li>
+</ul>
+<p>When staff sign the CDs in from the delivery driver, they are taking responsibility for those medicines.</p>
+<p>If a discrepancy is identified between what is expected and the supply received, then staff should:</p>
+<ul>
+  <li>Report immediately to {{{Reg_Manager_Name}}}&nbsp;&nbsp;</li>
+  <li>Record the stock received into the CD Register</li>
+  <li>Store the incorrect CD stock received separately in the CD cabinet until the discrepancy can be resolved</li>
+  <li>Contact the supplier of the CD to report the discrepancy</li>
+  <li>Arrange for the supplier to collect the incorrect CD</li>
+  <li>When the incorrect CD supply is collected by the supplier:
+    <ul>
+      <li>Obtain a signed receipt</li>
+      <li>Make an entry in the CD Register to record this</li>
+    </ul>
+  </li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->3</b> <!--?lit$330310992$--><p><strong>Stock of Controlled Drugs</strong></p>
+<p>All CDs in {{{Client_Name_Official}}} must be prescribed for individual {{{Service_user_text}}}s by an appropriately qualified healthcare professional and dispensed by a pharmacy or dispensing practice.</p>
+<p>Care homes that provide nursing care may hold stocks of CDs in schedules 3, 4 and 5 without the need to have a Home Office licence. For example, for {{{Service_user_text}}}s nearing the end of their lives.</p>
+<p>Stock of controlled drugs in schedule 2 can be held in care homes with nursing where the home is wholly or mainly maintained (50% or more) by a public authority, out of public funds, by charity, or voluntary subscriptions (Home Office 2014). Otherwise care homes with nursing&nbsp;must apply for a UK Home Office Controlled Drugs licence (RCN 2024).</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->4</b> <!--?lit$330310992$--><p><strong>Storage</strong></p>
+<p>{{{Client_Name_Official}}} is required to comply with the CD safe custody arrangements.</p>
+<p><strong>Schedule 2:</strong></p>
+<ul>
+  <li>Must be stored in a controlled drugs cupboard</li>
+  <li>Must keep records in a Controlled Drug Register</li>
+</ul>
+<p><strong>Schedule 3:</strong></p>
+<ul>
+  <li>Do not need to be recorded in the Controlled Drug Register
+    <ul>
+      <li>Some care homes may choose to do so, which is good practice</li>
+    </ul>
+  </li>
+  <li>Some need to be stored in the controlled drug cupboard
+    <ul>
+      <li>Temazepam, buprenorphine</li>
+    </ul>
+  </li>
+  <li>Some do not need to be stored in the controlled drug cupboard
+    <ul>
+      <li>Pregabalin, gabapentin, tramadol, midazolam</li>
+    </ul>
+  </li>
+</ul>
+<p>Local policies will need to be adhered to in relation to the storage and recording of Schedule 3 CDs exempt from secure storage and recording under the legislation.</p>
+<p>If staff are unsure what the legal requirements are, then they should contact the pharmacy.</p>
+<p><strong>Schedule 4 and 5:</strong></p>
+<ul>
+  <li>Do not need to be recorded in the Controlled Drug Register</li>
+  <li>Do not need to be stored in the controlled drug cupboard</li>
+  <li>Some services may choose to do so:
+    <ul>
+      <li>Oramorph® oral solution 10mg/5ml is not a schedule 2 CD</li>
+      <li>It is good practice to store it in a CD cabinet and complete CD records</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>The CD Cupboard:</strong></p>
+<ul>
+  <li>Must comply with the requirements laid out in the Misuse of Drugs (Safe Custody) Regulations, including:
+    <ul>
+      <li>Locked non-portable cabinet&nbsp;</li>
+      <li>Metal construction of specified gauge&nbsp;</li>
+      <li>Being fixed securely to a solid wall or floor with the specified bolts</li>
+      <li>Fitted with a robust lock and strong hinges</li>
+    </ul>
+  </li>
+  <li>Suppliers of CD cabinets can confirm that a cupboard meets the legal requirements. {{{Client_Name_Official}}} will request formal confirmation when purchasing a CD cabinet</li>
+  <li>A label should be fitted to the inside of the door displaying manufacturer name and other specific information</li>
+  <li>It is a commonly held belief that a CD cupboard must be a ‘cupboard within a cupboard’ but this is not the case</li>
+  <li>Nothing should be displayed outside a safe or cabinet to indicate that drugs are kept inside it</li>
+  <li>For safe practice, the controlled drug cupboards should only be used for the storage of controlled drugs
+    <ul>
+      <li>Items such as jewellery or money should not be placed in the cabinet</li>
+    </ul>
+  </li>
+  <li>If medication is provided in a monitored dosage system (MDS), the MDS should be stored in the CD cabinet</li>
+</ul>
+<p><strong>Key Management:</strong></p>
+<ul>
+  <li>Only those with authorised access should hold keys to the controlled drug cupboard and a log should be kept of keyholders</li>
+  <li>The Nurse in charge for each shift is responsible for the keys to the CD cupboard</li>
+  <li>The keys must be kept on the person of the Nurse in charge</li>
+  <li>Key-holding may be delegated to other suitably-trained Nurses or medication trained staff, but the responsibility rests with the Nurse in charge</li>
+  <li>At the end of each shift the Nurse in Charge for the shift is responsible for handing the controlled drug keys over to the incoming Nurse in charge</li>
+  <li>Staff requiring access to the controlled drug cupboard must return the keys to the nurse in charge when they have finished with the keys</li>
+  <li>{{{Client_Name_Official}}} should consider maintaining a register for the keys with time, date and signature</li>
+  <li>Spare keys should be stored securely</li>
+  <li>If the CD keys cannot be found, every effort must be made to find them as soon as possible . If there are doubts about the security of controlled drugs, {{{Reg_Manager_Name}}} should risk assess if the locks need to be changed
+    <ul>
+      <li>Spare key must only be issued in an emergency in order to access the CD cupboard for {{{Service_user_text}}} care</li>
+      <li>If the location of the missing key is not established by the end of the appropriate shift then the locks must be changed</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Refrigerating Controlled Drugs:</strong></p>
+<p>If a CD needs to be stored in the fridge, then it should be stored in a locked medicines fridge. The CD should be stored separately to other medications in a lockable box within the fridge.</p>
+<p><strong>Medicinal and Food Grade Cannabis Products</strong></p>
+<p>Cannabis based products for medicinal use (CBPMs) are Schedule 2 controlled drugs.</p>
+<p>Over the counter food grade cannabis products as food supplements are not medicines and if purchased for their own (or a relative's) use, a risk assessment must be in place.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->5</b> <!--?lit$330310992$--><p><strong>Recording of Named </strong><strong>{{{Service_user_text}}}</strong><strong>s' Controlled Drugs</strong></p>
+<p>For medicines that are controlled drugs, and subject to CD recording requirements, {{{Client_Name_Official}}} must keep a separate CD Register in addition to the record on the {{{MAR_Chart}}}</p>
+<p><strong>The CD Register:</strong></p>
+<ul>
+  <li>The CD register must be a bound book with numbered pages</li>
+  <li>There must be a separate page for each form and strength of each controlled drug for each {{{Service_user_text}}}</li>
+  <li>The name, form and strength of the drug is specified at the top of each page</li>
+  <li>An index page should be maintained in the CD register, indicating for individual {{{Service_user_text}}}s on which page of the CD register each CD can be found</li>
+  <li>All entries must be in ink or made using an indelible ballpoint pen</li>
+  <li>Entries must be in chronological order</li>
+  <li>The member of staff making the entry must sign and date it</li>
+  <li>Whenever possible, all entries should also be witnessed by a suitably trained member of staff who should also sign the entry</li>
+  <li>A running balance must be kept and checked for every entry</li>
+  <li>An electronic register which complies with the current guidance may be kept. {{{Client_Name_Official}}} will seek advice before using an electronic CD Register</li>
+  <li>The CD Register must be used to record the receipt, administration, transfer or disposal of CDs</li>
+  <li>The entry must be made as soon as possible</li>
+  <li>The CD Register should be kept for two years from the last entry</li>
+  <li>Good practice would be to keep the CD Register for longer, as cases can take several years to come to light or before they go to court</li>
+  <li>When transferring a CD to a new page in the CD Register:
+    <ul>
+      <li>State the page it is carried forward to at the bottom of the page</li>
+      <li>State the page it has been carried over from at the top of the new page, with ‘carried forward from page…’</li>
+      <li>Update the index at the front of the register including page numbers when CDs are carried forward</li>
+    </ul>
+  </li>
+  <li>Errors made in the CD Register must never be altered or crossed out</li>
+  <li>If an error is made in the CD Register, the incorrect entry should be put in brackets with a note made:
+    <ul>
+      <li>At the bottom of the page with the phrase ‘entered in error’, or</li>
+      <li>‘Entered in error’ can be written on a new line below the incorrect entry</li>
+      <li>The incorrect entry should be signed, witnessed, and dated</li>
+      <li>The correct entry should be made using a new line</li>
+    </ul>
+  </li>
+  <li>The register should not be used for any other purpose</li>
+  <li>The register must be kept in a secure place when not in use</li>
+</ul>
+<p>Electronic registers are permitted as an alternative to a bound book, legislation requires that computerised entries must:</p>
+<ul>
+  <li>Be attributable to the person who created the record</li>
+  <li>Be secure</li>
+  <li>Not be cancelled or altered</li>
+  <li>Be able to be corrected and dated when the correction is made</li>
+  <li>Be able to be audited</li>
+  <li>Comply with best practice</li>
+  <li>Be accessible from {{{Client_Name_Official}}} and capable of being printed</li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->6</b> <!--?lit$330310992$--><p><strong>The Following Details Should be Recorded on the Correct Page in the Register:</strong></p>
+<p>All entries in the Controlled Drug Register should be made by 2 staff members:</p>
+<ul>
+  <li>The registered nurse and</li>
+  <li>Witnessed by a second medication trained and competent staff member. Where possible, this should be a second registered nurse
+    <ul>
+      <li>If not, a medication trained and competent {{{SupportWorkerOrCarer}}} can witness</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Receipt:</strong> On the day of receipt, record the date of receipt, where the medication was received from and the quantity received. A running balance should be kept and updated.</p>
+<p><strong>Disposal</strong>: Record the date of disposal, the quantity disposed of, how the medication was disposed of and the reason for disposal. Update the running balance.</p>
+<p><strong>Transfers</strong>: Record the date of transfer, the quantity transferred and to whom (or where) the medication was transferred. Update the running balance.</p>
+<p><strong>Routine checks:</strong> The balance of all controlled drugs recorded in the CD Register/Record Book must be checked and reconciled with the stock amounts in the cupboard, and recorded. The frequency of such checks is determined by risk assessment and ensures that discrepancies are identified promptly. Balance checks should be carried out at least weekly.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->7</b> <!--?lit$330310992$--><p><strong>Dealing with Discrepancies</strong></p>
+<p>{{{Client_Name_Official}}} must ensure that any discrepancies are investigated without delay and a local incident form completed.</p>
+<p>If a discrepancy is identified between calculated stock figures (running balances) and actual stock, staff should:</p>
+<ul>
+  <li>Inform {{{Reg_Manager_Name}}} who should investigate immediately</li>
+  <li>Check back through the entries in the CD Register to ensure that there has not been an administrative error such as a missed or incorrect entry or a calculation error</li>
+  <li>Check the {{{MAR_Chart}}} and records of disposed medicines</li>
+</ul>
+<p>If the discrepancy can be identified, record the outcome:</p>
+<ul>
+  <li>DO NOT cancel, cross out or through, obliterate and/or alter any entry in the CD Register</li>
+  <li>Under the last entry, details of the following should be made:
+    <ul>
+      <li>The date</li>
+      <li>The error in subtraction/addition (indicated with an asterisk)</li>
+      <li>The correct balance</li>
+      <li>The signature of the registered nurse and the witnessing staff member</li>
+      <li>Reference to any supporting documentation that was used to resolve the discrepancy</li>
+    </ul>
+  </li>
+</ul>
+<p>Unresolved discrepancies must be reported; this should include the regional NHS Controlled Drugs Accountable Officer (CDAO) at NHS England or the police, depending on the circumstances, and the {{{reg_authority}}} if the incident meets the criteria of a statutory notification.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->8</b> <!--?lit$330310992$--><p><strong>Administration of Controlled Drugs</strong></p>
+<p>In addition to the procedures relating to the administration and recording of other medicines outlined in the <strong>Administration of Medicines Policy and Procedure</strong>, the following procedures <strong>must </strong>be carried out when administering controlled drugs:</p>
+<ul>
+  <li>The administration of a controlled drug should be by a registered nurse</li>
+  <li>It must be witnessed by a second staff member and where possible, this should be a second registered nurse</li>
+  <li>If not, a medication trained and competent {{{SupportWorkerOrCarer}}} can witness</li>
+  <li>They must witness the whole procedure</li>
+  <li>The stock balance should be confirmed prior to proceeding with administration</li>
+  <li>If incorrect, the {{{Registered_Manager_JobTitle}}} must be informed</li>
+  <li>See above for discrepancies</li>
+  <li>There should not be unnecessary delay in the {{{Service_user_text}}} receiving their medication</li>
+  <li>The stock balance, if different, should be clearly documented in the register before proceeding with administration</li>
+  <li>Record the time and date of administration and the dose to be administered</li>
+  <li>After administration, the Register must be signed by the registered nurse administering the medication and the witness, and the running balance updated</li>
+  <li>The {{{Service_user_text}}}’s {{{MAR_Chart}}} must be signed by the member of staff who administered the medication. It is good practice for this to be countersigned by the staff member who witnessed the medication administration</li>
+  <li>Where part of an injectable CD is administered, the CD Register/Record Book details the amount given and the amount denatured/disposed of</li>
+  <li>When administering topical controlled drugs, records should include the site of application and the frequency of rotation of the site</li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->9</b> <!--?lit$330310992$--><p><strong>Disposal of Controlled Drugs</strong></p>
+<p><strong>Disposal of Named </strong><strong>{{{Service_user_text}}}</strong><strong>s' CDs:</strong></p>
+<ul>
+  <li>When controlled drugs have passed their expiry date, the need for prescription has ceased, or the {{{Service_user_text}}} has died, the controlled drugs should be denatured using a recognised CD denaturing kit before consigning to a licensed waste company. (Some pharmacies are also willing to take back medication from nursing homes, but the home must ensure that the pharmacy has appropriate arrangements in place)
+    <ul>
+      <li>Advice on using denaturing kits can be found in the Further Reading Section</li>
+    </ul>
+  </li>
+  <li>Even when still in date, such drugs should not be reused for other {{{Service_user_text}}}s</li>
+  <li>{{{Client_Name_Official}}} must have a T28 exemption from the Environment Agency in place for the denaturing of CDs on site, a link can be found in the Further Reading section of this policy</li>
+  <li>{{{Client_Name_Official}}} must keep a copy of the Waste Transfer Note and make a record in its usual record of 'disposed of' medication</li>
+  <li>Denaturing should be performed by the registered nurse and witnessed</li>
+  <li>{{{Reg_Manager_Name}}} must ensure that unwanted CDs are denatured promptly and correctly, and collected as required</li>
+  <li>Relevant details of any such disposal should be entered into the ‘CD Register’ and signed by the authorised member of staff denaturing the drug and the witness</li>
+  <li>Appropriate records should also show:
+    <ul>
+      <li>The date</li>
+      <li>The controlled drug name and strength</li>
+      <li>The number or volume of tablets, liquid or patches</li>
+      <li>The signature of the authorised staff member</li>
+      <li>The signature of the witness</li>
+    </ul>
+  </li>
+  <li>Individual doses of CDs which have been prepared but not administered are denatured and witnessed (in accordance with local risk assessment/procedures), and the reason documented</li>
+</ul>
+<p><strong>Disposal of CD Patches:</strong></p>
+<ul>
+  <li>Used controlled drug patches, such as Fentanyl, still contain controlled drugs even after use and therefore should be folded in half and denatured as above</li>
+  <li>Unused CD patches should also be denatured as above</li>
+</ul>
+<p><strong>Stock Controlled Drugs:</strong></p>
+<ul>
+  <li>Staff must denature out-of-date stocks of controlled drugs in Schedules 2, 3 and 4 (Part I) before handing to the waste disposal company</li>
+  <li>Staff must destroy Schedule 2 stock in the presence of an authorised witness. This includes a police constable or inspectors of the General Pharmaceutical Council. The lead NHS England controlled drugs accountable officer may also appoint authorised witnesses (CQC 2025)</li>
+  <li>Staff need to record details of the destruction in the controlled drugs register. It is good practice for another member of staff to witness the denaturing of stock in Schedules 3 and 4 (Part I)</li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->10</b> <!--?lit$330310992$--><p><strong>Booking Out Named </strong><strong>{{{Service_user_text}}}</strong><strong> Controlled Drugs</strong></p>
+<p>Appropriate entries MUST BE RECORDED in the Controlled Drugs Register at {{{Client_Name_Official}}}. Records should indicate the date of discharge of the {{{Service_user_text}}} and the details of the medicines the {{{Service_user_text}}} has taken out of {{{Client_Name_Official}}}.</p>
+<ul>
+  <li>There should always be two medication trained staff booking out the medicines</li>
+  <li>The controlled drugs for booking out must be checked and counted against the {{{Service_user_text}}}'s {{{MAR_Chart}}} and checked for quantity left against instructions on the label on the medicine's original container</li>
+  <li>The balance of controlled drugs being booked out must be recorded in the Controlled Drugs Register and signed and dated by each authorised person</li>
+  <li>{{{Service_user_text}}}s or their representative should sign to say that they have taken the medicines out of {{{Client_Name_Official}}}</li>
+  <li>Medicines for self-administering {{{Service_user_text}}}s do not have to be booked out; this includes controlled drugs</li>
+  <li>Any discrepancies must be brought to the notice of the {{{Registered_Manager_JobTitle}}}</li>
+</ul></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title is-title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->11 <!--?lit$330310992$--><p><br></p>
+<p><br></p></b></span>
+                <!--?lit$330310992$--><p><strong>End Of Life Care</strong></p>
+<p>There should be appropriate access to controlled drugs at {{{Client_Name_Official}}} for {{{Service_user_text}}}s who require them, especially at the end of their lives.</p>
+<p><br></p>
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->12</b> <!--?lit$330310992$--><p><strong>Statutory Notifications</strong></p>
+<p>There is no requirement to notify CQC about medicines errors, but you must notify them if a medicines error has caused:</p>
+<ul>
+  <li>A death</li>
+  <li>An injury</li>
+  <li>Abuse, or an allegation of abuse</li>
+  <li>An incident reported to or investigated by the police</li>
+</ul>
+<p>This includes where any of these have been caused by a controlled drug.&nbsp;</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->13</b> <!--?lit$330310992$--><p><strong>CQC Self-Assessment Tool</strong></p>
+<p>CQC now provides a self-assessment tool for care homes to support staff to safely manage controlled drugs.</p>
+<p>Staff can download the tool from the CQC website - a link can be found in the Further Reading section of this policy. The tool is used anonymously and CQC do not have access to user details.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!----><!---->
+            <div class="nested-rich-text">
+                <!--?lit$330310992$--><span class="nested-rich-text__title"><b><!--?lit$330310992$-->5.<!--?lit$330310992$-->14</b> <!--?lit$330310992$--><p><strong>Governance</strong></p>
+<p>{{{Reg_Manager_Name}}} is responsible for ensuring that all aspects relating to the supply, administration, storage, recording and disposal of controlled drugs at {{{Client_Name_Official}}}, is regularly audited as part of the medication audit process.</p>
+<p>Staff should refer to the Auditing and Monitoring of Medication Policy and Procedure at {{{Client_Name_Official}}}.</p></span>
+                <!--?lit$330310992$-->
+            </div>
+        <!---->
+                </div>
+            
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="definitions" role="tabpanel" tabindex="0" aria-labelledby="definitions-btn">
+                                <!--?lit$330310992$-->
+            <qcs-definitions-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--definitions" id="definitions">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->6. <!--?lit$330310992$-->Definitions</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$--> <div class="qcs-panel__body qcs-definitions"> <!--?lit$330310992$--><!----> <div class="qcs-definitions__item"> <b><!--?lit$330310992$-->6.1 <!--?lit$330310992$-->Denaturing</b> <!--?lit$330310992$--><ul>
+  <li>Out of date or unwanted controlled drugs must be denatured prior to disposal so they cannot be retrieved, recovered or reused</li>
+  <li>Controlled drug denaturing kits will render unwanted medicines irretrievable and unfit for use, ready to be disposed of</li>
+</ul> </div> <!----> </div> 
+            </div>
+        </qcs-definitions-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="key-facts-professionals" role="tabpanel" tabindex="0" aria-labelledby="key-facts-professionals-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--key-facts-professionals" id="key-facts-professionals">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->7. <!--?lit$330310992$-->Key Facts - Professionals</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__body">
+                <!--?lit$330310992$-->
+                <!--?lit$330310992$--><ul>
+  <li>CDs prescribed by medical practitioners must comply with specific legal requirements</li>
+  <li>Staff must ensure that any administration, receipt or return to pharmacy of controlled drugs is logged in the Controlled Drug Register at {{{Client_Name_Official}}}</li>
+  <li>Providers must have a CD cabinet that complies with the requirements laid out in the Misuse of Drugs (Safe Custody) Regulations and this includes being fixed securely to a solid wall or floor with specified fixings</li>
+  <li>CD audits that check stock and expiry dates are necessary and must be evidenced within the Controlled Drug Book</li>
+  <li>All controlled drugs, when no longer required, will be denatured and disposed of by a licensed waste disposal company</li>
+</ul>
+            </div>
+        
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="key-facts-people" role="tabpanel" tabindex="0" aria-labelledby="key-facts-people-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--key-facts-people" id="key-facts-people">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$-->8. <!--?lit$330310992$-->Key Facts - People Affected by The Service</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__body">
+                <!--?lit$330310992$-->
+                <!--?lit$330310992$--><ul>
+  <li>{{{Service_user_text}}}s may self-administer controlled drugs</li>
+</ul>
+            </div>
+        
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="further-reading" role="tabpanel" tabindex="0" aria-labelledby="further-reading-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--further-reading" id="further-reading">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$--><!--?lit$330310992$-->Further Reading</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__body">
+                <!--?lit$330310992$--><span><!--?lit$330310992$-->As well as the information in the 'Underpinning Knowledge' section of the review sheet, we recommend that you add to your understanding in this policy area by considering the following materials.</span>
+                <!--?lit$330310992$--><p><strong>CQC - Controlled Drug Self-Assessment Tool for Care Homes:</strong></p>
+<p><a href="https://www.cqc.org.uk/publications/controlled-drugs/2024/issues">https://www.cqc.org.uk/publications/controlled-drugs/2024/issues</a></p>
+<p><strong>GOV.UK - Guidance - List of most commonly encountered drugs currently under the misuse of drugs legislation:</strong></p>
+<p><a href="https://www.gov.uk/government/publications/controlled-drugs-list--2/list-of-most-commonly-encountered-drugs-currently-controlled-under-the-misuse-of-drugs-legislation">https://www.gov.uk/government/publications/controlled-drugs-list--2/list-of-most-commonly-encountered-drugs-currently-controlled-under-the-misuse-of-drugs-legislation</a></p>
+<p><strong>GOV.UK - T28 Waste Exemption: Sort and denature controlled drugs for disposal:</strong></p>
+<p><a href="https://www.gov.uk/guidance/waste-exemption-t28-sort-and-denature-controlled-drugs-for-disposal">https://www.gov.uk/guidance/waste-exemption-t28-sort-and-denature-controlled-drugs-for-disposal</a></p>
+            </div>
+        
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!---->
+                            <section class="js-panel" id="outstanding-practice" role="tabpanel" tabindex="0" aria-labelledby="outstanding-practice-btn">
+                                <!--?lit$330310992$-->
+            <qcs-base-panel>
+            <!---->
+            <div data-panel="" class="qcs-panel qcs-panel--outstanding-practice" id="outstanding-practice">
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title"><!--?lit$330310992$--><!--?lit$330310992$-->Outstanding Practice</h2>
+                <!--?lit$330310992$-->
+            </div>
+        
+                <!--?lit$330310992$-->
+            <div class="qcs-panel__body">
+                <!--?lit$330310992$--><span><!--?lit$330310992$-->To be "outstanding" in this policy area you could provide evidence that:</span>
+                <!--?lit$330310992$--><ul>
+  <li>The wide understanding of the policy is enabled by proactive use of the QCS App</li>
+  <li>There is evidence of working with the multidisciplinary team to ensure that {{{Service_user_text}}}s' needs and wishes are met</li>
+  <li>Providers support {{{Service_user_text}}}s who wish to be self-managing with medication and robust procedures are in place to manage any risks</li>
+  <li>There is a training programme in place and competency is assessed, with staff given the opportunity to develop their skills and knowledge</li>
+  <li>Audits are undertaken as per local agreement and demonstrate compliance with this policy and safe practice</li>
+</ul>
+            </div>
+        
+            </div>
+        </qcs-base-panel>
+        
+                            </section>
+                        <!----><!----><!----><!----><!---->
+            </section>
+        </qcs-panels> </qcs-tabs-functionality> </section> 
+            </qcs-policy-viewer>
+
+        <script>
+            const form = document.getElementById("form");
+            const pdfButton = document.getElementById("pdf-preview");
+
+            // On load set the PDF preview button.
+            updatePDFUrl();
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                let policyId = document.getElementById("policy-id").value;
+                let customerId = document.getElementById("customer-id").value;
+                let locationId = document.getElementById("location-id").value;
+                let region = document.getElementById("region").value;
+
+                // Validate input.
+                if ((customerId == "" && locationId != "") || (customerId != "" && locationId == "")) {
+                    let emptyField = customerId == "" ? "Customer id" : "Location Id";
+                    let nonEmptyField = customerId == "" ? "Location id" : "Customer Id";
+                    document.getElementById("error").textContent = `${emptyField} cannot be empty if ${nonEmptyField} is not empty.`;
+                    return;
+                }
+
+                window.location.replace(buildUrl(policyId, customerId, locationId, region));               
+            });
+
+            function buildUrl(policyId, customerId, locationId, region, pdf) {
+                let url = new URL(`/policy/${pdf ? "previewpdf" : "preview"}/${policyId}`, window.location.origin);
+
+                if (customerId != "" && locationId != "") {
+                    url.searchParams.append("customerId", customerId);
+                    url.searchParams.append("locationId", locationId);
+                }
+
+                if (region != "") {
+                    url.searchParams.append("region", region);
+                }
+
+                return url;
+            }
+
+            document.querySelectorAll(".js-input").forEach(input => {
+                input.addEventListener("input", (e) => {
+                    updatePDFUrl();
+                });
+            });
+
+            function updatePDFUrl() {
+                let policyId = document.getElementById("policy-id").value;
+                let customerId = document.getElementById("customer-id").value;
+                let locationId = document.getElementById("location-id").value;
+                let region = document.getElementById("region").value;
+
+                pdfButton.setAttribute("href", buildUrl(policyId, customerId, locationId, region, true))
+            }
+        </script>
+    
+</body></html>

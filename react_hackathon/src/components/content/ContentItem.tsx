@@ -6,10 +6,10 @@ import { QcsLink } from "@/components/content/QcsLink"
 import { ShareSheet } from "@/components/content/ShareSheet"
 import { Button } from "@/components/ui/button"
 import {
-  getTopicBySlug,
   getTopicLikeStatus,
   likeTopic,
   logActivity,
+  resolveBackendUrl,
   unlikeTopic,
 } from "@/lib/api"
 import { cn } from "@/lib/utils"
@@ -23,6 +23,8 @@ export type ContentItemProps = {
   slug: string
   title: string
   subtitle: string
+  contentType: string
+  contentUrl?: string
   hook: string
   text: string
   format: string
@@ -36,6 +38,8 @@ export function ContentItem({
   slug,
   title,
   subtitle,
+  contentType,
+  contentUrl,
   hook,
   text,
   format,
@@ -49,6 +53,9 @@ export function ContentItem({
   const [isLiked, setIsLiked] = useState(initialLikedByCurrentUser ?? false)
   const [likeCount, setLikeCount] = useState(initialLikeCount ?? 0)
   const [isUpdating, setIsUpdating] = useState(false)
+  const [isDetailOpen, setIsDetailOpen] = useState(false)
+  const isPodcast = contentType.toLowerCase() === "podcast"
+  const audioUrl = contentUrl ? resolveBackendUrl(contentUrl) : undefined
   const [isExpanded, setIsExpanded] = useState(false)
   const [fetchedText, setFetchedText] = useState("")
   const [isLoadingDetail, setIsLoadingDetail] = useState(false)
@@ -59,8 +66,6 @@ export function ContentItem({
 
   useEffect(() => {
     if (initialLikeCount !== undefined && initialLikedByCurrentUser !== undefined) {
-      setIsLiked(initialLikedByCurrentUser)
-      setLikeCount(initialLikeCount)
       return
     }
 
@@ -180,6 +185,22 @@ export function ContentItem({
       </div>
       <p className="mt-2 text-sm leading-relaxed">{hook}</p>
 
+        {isPodcast ? (
+          <audio controls preload="none" className="mt-3 w-full">
+            <source src={audioUrl} type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        ) : (
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            className="mt-3"
+            onClick={() => setIsDetailOpen(true)}
+          >
+            Read more
+          </Button>
+        )}
       {isTextCard ? (
         <Button
           type="button"
@@ -219,6 +240,15 @@ export function ContentItem({
             </div>
           </div>
         </div>
+      </article>
+
+      {isDetailOpen && !isPodcast ? (
+        <ContentDetailDialog
+          title={title}
+          summary={hook}
+          text={text}
+          onClose={() => setIsDetailOpen(false)}
+        />
       ) : null}
 
       <div className="mt-3 flex items-center gap-4">

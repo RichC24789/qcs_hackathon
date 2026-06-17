@@ -29,4 +29,16 @@ public sealed class ContentController(
         var summary = topicContentService.GetSummaryMarkdown();
         return summary is null ? NotFound() : Ok(new { markdown = summary });
     }
+
+    [HttpGet("audio/{fileName}")]
+    public IActionResult GetAudio(string fileName)
+    {
+        var path = topicContentService.ResolveAudioFilePath(fileName);
+        if (path is null)
+        {
+            return NotFound();
+        }
+
+        return PhysicalFile(path, "audio/mpeg", enableRangeProcessing: true);
+    }
 }

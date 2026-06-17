@@ -5,8 +5,8 @@ public sealed record TopicDetail(
     string Slug,
     string Title,
     string Theme,
-    string PrimaryFormat,
-    string SecondaryFormat,
+    string ContentType,
+    string ContentUrl,
     IReadOnlyDictionary<string, string> Sections,
     string Text,
     string RawMarkdown);

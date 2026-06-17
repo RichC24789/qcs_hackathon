@@ -9,7 +9,8 @@
     "text": "./podcasts/audio/topic-18-mental-capacity-act.mp3"
   },
   "metadata": {
-    "format": "micro-podcast-audio",
+    "format": "podcast",
+    "url": "/api/content/audio/topic-18-mental-capacity-act.mp3",
     "topicIDs": [
       "18"
     ]

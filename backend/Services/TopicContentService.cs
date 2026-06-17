@@ -55,6 +55,28 @@ public sealed partial class TopicContentService : ITopicContentService
         return File.Exists(summaryPath) ? File.ReadAllText(summaryPath) : null;
     }
 
+    public string? ResolveAudioFilePath(string fileName)
+    {
+        // Only ever serve a bare .mp3 file name; reject anything that could traverse paths.
+        if (string.IsNullOrWhiteSpace(fileName) ||
+            !fileName.EndsWith(".mp3", StringComparison.OrdinalIgnoreCase) ||
+            fileName != Path.GetFileName(fileName))
+        {
+            return null;
+        }
+
+        var audioRoot = Path.GetFullPath(Path.Combine(_contentRoot, "podcasts", "audio"));
+        var fullPath = Path.GetFullPath(Path.Combine(audioRoot, fileName));
+
+        // Defence in depth: ensure the resolved path is still inside the audio folder.
+        if (!fullPath.StartsWith(audioRoot + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase))
+        {
+            return null;
+        }
+
+        return File.Exists(fullPath) ? fullPath : null;
+    }
+
     private IReadOnlyList<TopicDetail> LoadTopics()
     {
         if (!Directory.Exists(_contentRoot))
@@ -94,7 +116,7 @@ public sealed partial class TopicContentService : ITopicContentService
                 document.Header.Title,
                 document.Header.Theme,
                 document.Metadata.Format,
-                document.Metadata.SecondaryFormat,
+                document.Metadata.Url,
                 sections,
                 document.Body.Text,
                 rawMarkdown);
@@ -169,12 +191,12 @@ public sealed partial class TopicContentService : ITopicContentService
 
         if (!string.IsNullOrWhiteSpace(document.Metadata.Format))
         {
-            builder.AppendLine($"**Primary format:** {document.Metadata.Format}");
+            builder.AppendLine($"**Format:** {document.Metadata.Format}");
         }
 
-        if (!string.IsNullOrWhiteSpace(document.Metadata.SecondaryFormat))
+        if (!string.IsNullOrWhiteSpace(document.Metadata.Url))
         {
-            builder.AppendLine($"**Secondary format:** {document.Metadata.SecondaryFormat}");
+            builder.AppendLine($"**Content URL:** {document.Metadata.Url}");
         }
 
         builder.AppendLine();
@@ -227,7 +249,7 @@ public sealed partial class TopicContentService : ITopicContentService
     }
 
     private static TopicSummary ToSummary(TopicDetail topic) =>
-        new(topic.Number, topic.Slug, topic.Title, topic.Theme, topic.PrimaryFormat, topic.SecondaryFormat);
+        new(topic.Number, topic.Slug, topic.Title, topic.Theme, topic.ContentType, topic.ContentUrl);
 
     [GeneratedRegex(@"^##\s+(?<heading>.+)$", RegexOptions.Multiline)]
     private static partial Regex SectionHeadingRegex();

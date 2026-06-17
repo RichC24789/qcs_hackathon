@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom"
 import { LoginModal } from "@/components/auth/LoginModal"
 import { Footer } from "@/components/layout/Footer"
 import { Header } from "@/components/layout/Header"
-import { useAuth } from "@/contexts/AuthContext"
+import { useAuth } from "@/contexts/useAuth"
 import { cn } from "@/lib/utils"
 
 export function AppLayout() {

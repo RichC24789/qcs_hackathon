@@ -9,7 +9,8 @@
     "text": "./podcasts/audio/topic-37-maternity-leave.mp3"
   },
   "metadata": {
-    "format": "micro-podcast-audio",
+    "format": "podcast",
+    "url": "/api/content/audio/topic-37-maternity-leave.mp3",
     "topicIDs": [
       "37"
     ]

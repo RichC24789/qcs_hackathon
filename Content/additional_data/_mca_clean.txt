@@ -1,0 +1,417 @@
+CR88 Mental Capacity Act (MCA) 2005 Policy and Procedure - Preview
+Policy preview
+Policy Id:
+Region:
+England
+Wales
+Scotland
+Ireland
+Customer Id:
+Location Id:
+Update preview
+Preview pdf
+Care Planning Equality Registration Compliance Audit CR88 - Mental Capacity Act (MCA) 2005 Policy and Procedure
+All policy
+Review Sheet
+Purpose
+Scope
+Objectives
+Policy
+Procedure
+Definitions
+Key Facts - Professionals
+Key Facts - People Affected by The Service
+Further Reading
+Outstanding Practice
+Forms
+Review Sheet
+Last Reviewed 25 Mar 26 Last Amended 25 Mar 26 This policy will be reviewed as needs require or at the following interval: Annual Business Impact: Medium Medium Changes are important, but urgent implementation is not required, incorporate into your existing workflow. Reason for this Review: Improve usability Changes Made: Yes Summary: This Mental Capacity Act (MCA) 2005 policy has been reviewed with Section 4.2 updated to explain governance roles. For these changes to reflect in the policy, the system details questionnaire will need to be updated.  Relevant Legislation: The Care Act 2014 The Health and Social Care Act 2008 (Regulated Activities) Regulations 2014 Human Rights Act 1998 Mental Capacity Act 2005 Mental Capacity Act Code of Practice Health and Care Act 2022 Equality Act 2010 Underpinning Knowledge: Author: The Supreme Court, ( 2021), A Local Authority (Respondent) v JB (by his Litigation Friend, the Official Solicitor) (AP) (Appellant) [Online] Available from: https://www.supremecourt.uk/cases/uksc-2020-0133#case-summary [Accessed: 25/03/2026] Author: The Office of the Public Guardian, ( 2024), Mental Capacity Act Code of Practice [Book] https://www.gov.uk/government/publications/mental-capacity-act-code-of-practice Author: NHS, ( 2024), Mental Capacity Act [Online] Available from: https://www.nhs.uk/social-care-and-support/making-decisions-for-someone-else/mental-capacity-act/ [Accessed: 25/03/2026] Author: Social Care Institute for Excellence, ( 2023), Mental Capacity Act (MCA) Directory [Online] Available from: https://www.scie.org.uk/mca/directory/#:~:text=The%20MCA%20(Mental%20Capacity%20Act,and%20Deprivation%20of%20Liberty%20Safeguards. [Accessed: 25/03/2026] Author: Office of the Public Guardian, ( 2024), Making Decisions - A guide for people who work in health and social care [Online] Available from: https://www.gov.uk/government/publications/health-and-social-care-workers-mental-capacity-act-decisions [Accessed: 25/03/2026] Author: CQC, ( 2022), Home For Good: Successful community support for people with a learning disability, a mental health need and autistic people [Online] Available from: https://www.cqc.org.uk/publications/themed-work/home-good-successful-community-support-people-learning-disability-mental [Accessed: 25/03/2026] Author: Office of the Public Guardian, ( 2025), Guidance and Safeguarding Information about LPAs and Deputies [Online] Available from: https://publicguardian.blog.gov.uk/category/guidance/ [Accessed: 25/03/2026] Suggested Action: Encourage sharing the policy through the use of the QCS App Share ‘Key Facts’ with all staff Ensure the policy is discussed in planned supervision sessions with relevant staff Include discussion in staff handovers Equality Impact Assessment: QCS have undertaken an equality analysis during the review of this policy. This statement is a written record that demonstrates that we have shown due regard to the need to eliminate unlawful discrimination, advance equality of opportunity and foster good relations with respect to the characteristics protected by equality law.
+1. Purpose
+1. 1 About {{{Client_Name_Official}}}
+{{{Service_introduction}}}
+What are the values of {{{Client_Name_Official}}} ?
+{{{Care_philosophy}}}
+What are the Aims and Objectives of {{{Client_Name_Official}}} ?
+{{{Client_Name_Official_Aim_Objectives }}}
+1. 2 To meet the provisions of the Mental Capacity Act 2005 (MCA) (occasionally referred to as 'The Act' in this policy).
+1. 3 To support {{{client_name_official}}} in meeting the following Quality Statements: Key Question Quality Statements Key Question Caring Quality Statements QSC2: Treating people as individuals Key Question Caring Quality Statements QSC2: Treating people as individuals Key Question Caring Quality Statements QSC2: Treating people as individuals Key Question Caring Quality Statements QSC2: Treating people as individuals Key Question Caring Quality Statements QSC2: Treating people as individuals Key Question Caring Quality Statements QSC2: Treating people as individuals Key Question Caring Quality Statements QSC1: Kindness, compassion and dignity QSC3: Independence, choice and control Key Question Caring Quality Statements QSC1: Kindness, compassion and dignity QSC3: Independence, choice and control Key Question Caring Quality Statements QSC1: Kindness, compassion and dignity QSC3: Independence, choice and control Key Question Caring Quality Statements QSC1: Kindness, compassion and dignity QSC3: Independence, choice and control Key Question Caring Quality Statements QSC1: Kindness, compassion and dignity QSC3: Independence, choice and control Key Question Caring Quality Statements QSC1: Kindness, compassion and dignity QSC3: Independence, choice and control Key Question Effective Quality Statements QSE1: Assessing needs QSE2: Delivering evidence-based care & treatment Key Question Effective Quality Statements QSE1: Assessing needs QSE2: Delivering evidence-based care & treatment Key Question Effective Quality Statements QSE1: Assessing needs QSE2: Delivering evidence-based care & treatment Key Question Effective Quality Statements QSE1: Assessing needs QSE2: Delivering evidence-based care & treatment Key Question Effective Quality Statements QSE1: Assessing needs QSE2: Delivering evidence-based care & treatment Key Question Effective Quality Statements QSE1: Assessing needs QSE2: Delivering evidence-based care & treatment Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Responsive Quality Statements QSR1: Person-centred care Key Question Responsive Quality Statements QSR1: Person-centred care Key Question Responsive Quality Statements QSR1: Person-centred care Key Question Responsive Quality Statements QSR1: Person-centred care Key Question Responsive Quality Statements QSR1: Person-centred care Key Question Responsive Quality Statements QSR1: Person-centred care Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders 1. 4 Relevant Legislation The Care Act 2014 The Health and Social Care Act 2008 (Regulated Activities) Regulations 2014 Human Rights Act 1998 Mental Capacity Act 2005 Mental Capacity Act Code of Practice Health and Care Act 2022 Equality Act 2010
+2. Scope
+2.1 Roles Affected: All Staff {{{Registered_Manager_JobTitle}}} 2.2 People Affected: All adult {{{Service_user_text}}}s who might lack mental capacity as defined under the Act in England and Wales 2.3 Stakeholders Affected: The family and friends of {{{Service_user_text}}}s who might lack mental capacity as defined under the Act in England and Wales
+3. Objectives
+3. 1 To ensure that {{{Client_Name_Official}}} follows the statutory framework of the MCA, including the five principles, to empower and protect vulnerable people who may lack capacity to always make their own decisions; to support them to plan ahead, if they wish, for a time when they may lose capacity.
+3. 2 To ensure staff assume {{{Service_user_text}}}s have capacity until proven otherwise by use of a decision and time specific mental capacity assessment.
+Staff and volunteers understand that the empowering, human rights-based ethos of the Mental Capacity Act is a crucial framework for ensuring human rights-based care and interactions with any {{{Service_user_text}}}s who may lack capacity to make some decisions at the time they need to be made.
+3. 3 Staff empower and protect {{{Service_user_text}}}s who are not able to make their own decisions by use of the Mental Capacity Act Framework. By following the mental capacity code of practice, staff are supported to make decisions in the {{{Service_user_text}}}'s best interests and encouraged to identify the least restrictive of all available options.
+3. 4 To ensure that all staff at {{{Client_Name_Official}}} are given training in the Mental Capacity Act relevant to their role regarding who to assess as well as how and when to assess {{{Service_user_text}}}'s mental capacity, and how to make best interests decisions when necessary, whilst also ensuring that staff are aware of their responsibilities and are legally protected through following the principles of the MCA.
+4. Policy
+4. 1 CQC Regulated Activities, Service Types and Service User Bands
+Where required, {{{Client_Name_Official}}} will be registered with the {{{reg_authority}}} for regulated activities, service types and service user bands as defined in the {{{reg_authority}}} Statement of Purpose.
+This will ensure that {{{Client_Name_Official}}} provides services that are safe, effective, caring, responsive and well-led in line with the {{{reg_authority}}}'s published quality statements, regulatory framework and associated best practice guidance.
+{{{Client_Name_Official}}} is registered to provide the following regulated activities:
+{{{Regulated_Activities}}}
+{{{Client_Name_Official}}}  is registered to provide the following service types:
+{{{Service_types}}}
+{{{Client_Name_Official}}}  is registered to support the following service user bands:
+{{{Service_user_bands}}}
+4. 2 {{{Client_Name_Official}}}  Responsibilities and Representatives
+The {{{Registered_Manager_JobTitle}}}, and nominated individual of {{{Client_Name_Official}}}, have overall management responsibility for this policy and procedure and for ensuring the proper governance of {{{Client_Name_Official}}}.
+The {{{Registered_Manager_JobTitle}}} role is held by: {{{Reg_Manager_Name}}}
+The nominated individual role is held by: {{{Resp_individual_name}}}
+{{{good_governance}}}
+{{{Client_Name_Official}}} will ensure that at all times:
+The organisation is managed and governed appropriately
+Suitable systems are in place to effectively assess, monitor and improve the service
+Records are completed accurately and stored safely and securely
+That the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018 are met
+Care and support delivered is consistent, safe and of high-quality
+4. 3 Mental Capacity Act: 5 Principles
+{{{Client_Name_Official}}} will ensure that all staff know and work within the Mental Capacity Act and its 5 underpinning principles :
+The presumption of capacity – every adult has the right to make his or her own decisions and must be assumed to have the capacity to do so unless it is proved otherwise
+Individuals must be supported to make their own decisions – people must be given all appropriate help before anyone concludes that they cannot make their own decisions
+Individuals must be able to make what might be seen as eccentric or unwise decisions, without this being used as the sole reason to say they lack capacity
+Best interests – anything done for, or on behalf of people who lack capacity must be in their best interests
+Least restrictive option - before any act is done or a decision is made, staff must consider if they have found the option that, while meeting the need, is the least restrictive possible of the person's basic rights and freedoms
+4. 4 Supporting {{{Service_user_text}}} s to Make their Own Decisions - Consent
+Staff at {{{Client_Name_Official}}} ensure that they support {{{Service_user_text}}}s to make their own decisions at every opportunity by using all available means to enhance their capacity for each specific decision.
+{{{Client_Name_Official}}} understands the importance of supporting people to make their own informed decisions through informed choice and will ensure:
+Staff know how to present the right information in the right way, providing accessible information and resources, including using easy read or pictures where suitable, and being clear about all the available options
+Staff actively look for the best ways to communicate with an individual, by checking that their vision and hearing are as good as they can be, or querying if an interpreter might be needed
+Staff put the {{{Service_user_text}}} at ease, whether by choosing the right time of day to explain about a decision to the person, or asking whether they would like a relative or friend present
+Staff allow time for the {{{Service_user_text}}} to ponder on the decision, or go away and discuss it with trusted relatives or friends
+{{{Client_Name_Official}}} will never pressure or coerce {{{Service_user_text}}}s, or withhold information which is relevant to their decision-making process.
+4. 5 Assessing Capacity
+{{{Client_Name_Official}}} understands that all {{{Service_user_text}}}s will be presumed to have capacity unless there is reason to believe otherwise.
+{{{Client_Name_Official}}} understands a capacity assessment is not required if there is no doubt about an individual's capacity.
+When {{{Service_user_text}}}s lack the mental capacity to make a particular decision, all actions taken are in the best interests of that person and align, as far as possible, with the {{{Service_user_text}}}'s wishes and feelings. Past wishes and preferences can also be used to help with best interest decision making if the person no longer has the mental capacity to make decisions.
+Where appropriate (for more major decisions), staff will ensure that they use the MCA best interests checklist to inform best interest decision making.
+Any assessment of mental capacity is decision specific and time specific to decide whether {{{Service_user_text}}}s can make a particular decision at the time it needs to be made.
+{{{Reg_Manager_Name}}} or a designated and trained individual will undertake capacity assessments when they are required.
+All assessments will be completed using the form found in the 'Forms' section of this policy.
+4. 6 Best Interest Decisions
+When a person lacks the mental capacity to make a particular decision, everything that is done for, or on behalf of that person is in the person’s best interests and restricts their rights as little as possible. In working out what is in someone’s best interests, the {{{Registered_Manager_JobTitle}}} or appointed trained staff apply the mandatory checklist of factors laid out in the Mental Capacity Act.
+There are some key considerations to remember:
+Determining a person's best interests requires looking at all relevant circumstances. All these factors must be carefully balanced to determine what is truly in the best interests of the person.
+Decisions should not be based solely on the person's age, appearance, or on unjustified assumptions about what might be in their best interests due to their condition or behaviour.
+Life Sustaining Treatment
+When deciding if life-sustaining treatment is in the person's best interests, the desire to bring about their death should not influence the decision. Staff must take into account the person’s past and present wishes and feelings, especially any written statements made when they had capacity. Consider the beliefs and values that would influence the person’s decision if they had capacity.
+Other Factors:  Think about any other factors the person would likely consider if they were able to.
+Not Absolute:  The person's wishes are important but not always decisive. Just like with a person who has mental capacity, what the person wants may not always be feasible or the best course of action.
+4. 7 Restrictive Practices
+Staff refer to the associated policies and procedures at {{{Client_Name_Official}}}, such as restraint/physical interventions and restriction of freedom of movement, when considering capacity and best interest decision making and ensure that their actions are in accordance with the MCA.
+Staff know how the Mental Capacity Act 2005 defines restraint, and that restraint can be:
+Physical or mechanical
+Environmental
+Chemical
+Any restraint being considered should strike a balance between reducing the chances of harm occurring to the person or others, while limiting their freedom and rights as little as possible. These options and the reasoning linked to them should be recorded as part of a best interests decision process involving the person if they can take part in any way, people who know them and staff who are involved in their care and support.
+Any physical intervention must be agreed as part of a multidisciplinary decision involving external health professionals and senior managers at {{{Client_Name_Official}}}. Staff must follow strategies as detailed by an approved, accredited training provider (please refer to the Restrictive Practices Including Restraint and Physical Interventions Policy and Procedure).
+4. 8 {{{Deprivation_Of_Liberty_Type}}}
+Staff know that the Mental Capacity Act 2005 does not allow a person to be deprived of their liberty in settings such as care homes, domiciliary care and supported living unless this follows {{{Deprivation_Of_Liberty_Type}}} policies and procedures at {{{Client_Name_Official}}}.
+{{{Deprivation_Of_Liberty_Type}}} have checks under the Mental Capacity Act 2005, ensuring the rights of individuals receiving {{{Support_or_care}}} with restricted freedom.
+The DoLS assessment evaluates the alignment of {{{Support_or_care}}} with the person's best interests, covering age, mental health, capacity, best interests, eligibility, and refusals. Post-authorisation, safeguards continue, such as appointing a representative and setting review dates.
+Staff must be aware of, and understand, any conditions attached to a {{{Deprivation_Of_Liberty_Type}}} Authorisation. Further information can be found in the {{{Deprivation_Of_Liberty_Type}}} policies and procedures at {{{Client_Name_Official}}}.
+4. 9 Third Parties with Legal Responsibilities
+{{{Client_Name_Official}}} understands that families and friends do not have the legal right to make decisions on behalf of {{{Service_user_text}}}s without their consent, or if they do not have capacity.
+{{{Client_Name_Official}}} will ensure that they have a record of those lawfully able to act on behalf of {{{Service_user_text}}}s and under what circumstances.
+This includes:
+Lasting Power of Attorney (Health and Welfare)
+Lasting Power of Attorney (Property and Finance)
+Enduring Powers of Attorney (signed and dated before 2007 and applicable to the decision and circumstance)
+Court Appointed Deputies
+Advance Decisions
+{{{Client_Name_Official}}} will ensure that all legal requirements are met, including registration, before accepting the above.
+4. 10 Advance Statements of Wishes
+These are not legally binding, but they do matter as they are an indication of the person's wishes and it is good practice to encourage people to think about the ways they would like to be cared for if they should lose mental capacity.
+{{{Client_Name_Official}}} will make sure that Advance Statements are considered thoroughly when making best interest decisions for {{{Service_user_text}}}s.
+4. 11 Advocacy/IMCA
+In cases where {{{Service_user_text}}}s lack capacity and have no relatives or friends to be consulted about their wishes and feelings apart from paid staff, and there is a need for serious medical treatment or a change in accommodation (e.g. moving into a care home), staff know that an independent mental capacity advocate (IMCA) must be appointed by the relevant NHS body or local authority.
+Staff at {{{Client_Name_Official}}} will cooperate with any IMCA who is instructed.
+Staff can refer to the Advocacy Policy and Procedure at {{{Client_Name_Official}}} for further details.
+4. 12 Training
+All staff at {{{Client_Name_Official}}} are given training on the Mental Capacity Act 2005. References to training resources can be found in the Underpinning Knowledge/References section of this policy.
+Staff at {{{Client_Name_Official}}} know and work within the Mental Capacity Act principles and codes of practice, including knowing what deprivation of liberty is, the legal framework to support {{{Service_user_text}}}s lacking mental capacity, and the procedures that must be followed in such circumstances.
+The Government has also introduced a requirement for {{{reg_authority}}} registered service providers to ensure their employees receive learning disability and autism training appropriate to their role. This is to ensure the health and social care workforce have the right skills and knowledge to provide safe, compassionate and informed care to autistic people and people with a learning disability. This requirement is set out in the Health and Care Act 2022. A link to this requirement can be found in the Further Reading section of this policy.
+4. 13 Policy Accessibility
+{{{Client_Name_Official}}} understands that some {{{Service_user_text}}}s may take in and retain information in different ways. To support full understanding and engagement, this policy is available in accessible formats. The ReciteMe tool has various ways of making this policy accessible by providing this policy in:
+Audio
+Large print
+Multiple languages
+This policy can also be made available in:
+Easy-read versions
+Simple-policy view to reduce navigation and complexity
+These options are in place to help {{{Service_user_text}}}s to understand and engage with this policy more easily.
+5. Procedure
+5. 1 Roles and Responsibilities
+{{{Reg_Manager_Name}}} is responsible for this policy and the dissemination of its contents.
+{{{Reg_Manager_Name}}} maintains and raises awareness among all staff of the Mental Capacity Act 2005 principles and practice, including:
+Recognising the central importance of the MCA to protect the human rights of vulnerable people
+Understanding among all staff that the MCA springs out of human rights law combined with existing best practice in health and social care, so it is intuitive to work within, and aligns with good, person-centred practice
+The requirement to do everything possible to enable {{{Service_user_text}}}s to make their own decisions, even small ones, wherever they can do so
+The definition of restrictive interventions/restraint within the MCA, and how to recognise when deprivation of liberty is unavoidable in the {{{Service_user_text}}}'s best interests
+The requirement to interfere with the {{{Service_user_text}}}'s basic rights and freedoms as little as possible, while keeping them as safe as possible
+{{{Reg_Manager_Name}}} is responsible for assessing capacity and arranging best interest meetings, as well as more complex best interest decisions for {{{Service_user_text}}}s if this is required, or delegating responsibility to a trained deputy
+{{{Reg_Manager_Name}}} is responsible for reporting all breaches and raising safeguarding concerns to the regulator and local authority
+{{{Reg_Manager_Name}}} is responsible for checking the registration of those with third party legal responsibilities
+All staff have a responsibility to read this policy and procedure and direct questions to their line manager or {{{Reg_Manager_Name}}} if there is any element they do not understand.
+Staff have a responsibility to follow this policy and procedure and report any intentional or accidental breach of the process.
+Training will be set by {{{Reg_Manager_Name}}}, and staff have a duty to attend or make alternative arrangements to attend. It is every member of staff's responsibility to maintain this knowledge and raise any concerns or gaps in knowledge with {{{Reg_Manager_Name}}}.
+Staff should access the Raising Concerns, Freedom to Speak Up and Whistleblowing Policy and Procedure if they have witnessed any wrongdoing and wish to use this process to report a concern.
+5. 2 Consent
+Any decision about {{{Service_user_text}}} care or treatment must involve the informed and lawful consent of the {{{Service_user_text}}}. A list of considerations can be found in the Policy section to ensure that the {{{Service_user_text}}} is offering their informed consent.
+If a {{{SupportWorkerOrCarer}}} has concerns that any {{{Service_user_text}}} is unable to give informed and lawful consent (whether that be a refusal or agreement on the issue), the {{{SupportWorkerOrCarer}}} must inform the {{{Registered_Manager_JobTitle}}} and record this information in the {{{Care_plan_name}}} notes to see if a capacity assessment needs to be completed.
+5. 3 Supporting {{{Service_user_text}}} s to Make Decisions and the MCA Process
+Where it is helpful for the {{{Service_user_text}}}, a {{{SupportWorkerOrCarer}}} or a family member, advocate or representative may sit with them during the assessment process to reassure them and help them relax and feel comfortable.
+Staff adopt the following best practice in relation to supporting {{{Service_user_text}}}s to make decisions:
+Knowing how to present the right information in the right way, including being clear about all the available options
+Actively looking for the best ways to communicate with the {{{Service_user_text}}}, including checking whether they can see and hear as well as possible, or need an interpreter, or need to have pictures to understand their options
+Putting the {{{Service_user_text}}} at ease, choosing the right time of day to explain about a decision to them, or asking whether they would like a relative or friend present
+Taking care to enable the {{{Service_user_text}}}, wherever possible, to take away the information (in an accessible format such as easy read where suitable) and think it over, or discuss it with trusted friends or family
+Actively trying to create options that will fit with the {{{Service_user_text}}}'s wishes, feelings, history and personality
+Documenting any support given to help the {{{Service_user_text}}} make decisions in the {{{Service_user_text}}}'s {{{Care_plan_name}}}
+5. 4 If it is determined that the {{{Service_user_text}}} does not have the mental capacity to make a particular decision at the time it needs to be made, any action taken or any decision made must be in their best interest and recorded by the {{{SupportWorkerOrCarer}}}.
+5. 5 Day-to-Day Decisions
+{{{SupportWorkerOrCarer}}}s must work from the {{{Care_plan_name}}} for day-to-day decisions. For more important decisions, best interests decisions should be recorded. This can be done by completing the forms that accompany this policy with the {{{Service_user_text}}}.
+5. 6 Advance Care Planning
+Staff should ensure that {{{Service_user_text}}}s who are at risk of losing capacity to make decisions and {{{Service_user_text}}}s with fluctuating capacity have the opportunity to discuss advance care and support planning prior to commencing a package of {{{Support_or_care}}} with {{{Client_Name_Official}}} and when {{{Care_plan_name}}}s are reviewed.
+This will ensure that the {{{Service_user_text}}}'s wishes are known and documented for the future.
+5. 7 Who Should Assess Capacity?
+{{{Service_user_text}}}'s capacity should be assessed by the staff member providing {{{Support_or_care}}} for the {{{Service_user_text}}} when the decision needs to be made.
+Staff completing capacity assessments must be trained, confident and competent to carry out assessments, and have the communication skills and ability necessary.
+If a healthcare professional is proposing treatment, it is their responsibility to assess capacity.
+For complex decisions, a formal assessment may be required from a social worker, occupational therapist, psychologist or psychiatrist, who will advise those making the decision.
+5. 8 Assessment of Capacity
+Any assessment of {{{Service_user_text}}}'s mental capacity is decision specific and time specific to decide whether they can make a particular decision at the time it needs to be made. It is not about a range of decisions.
+Staff should involve the {{{Service_user_text}}}'s family or significant others or an Independent Mental Capacity Advocate if one has been appointed.
+Staff assessing {{{Service_user_text}}}'s capacity to make a decision for themselves should use the two-stage test of capacity.
+Stage 1: Does the impairment or disturbance mean that the {{{Service_user_text}}} is unable to make a specific decision when they need to, after being given all the practical and appropriate support to help them make the decision for themselves? Staff must have supported the {{{Service_user_text}}} to make the decision for Stage 1 to apply.
+Stage 2: Does the {{{Service_user_text}}} have an impairment of the mind or brain, or is there some sort of disturbance affecting the way their mind or brain works? (It does not matter whether the impairment or disturbance is temporary or permanent.)
+If the {{{Service_user_text}}} does not have such an impairment or disturbance of the mind or brain, they will not lack capacity under the Act
+These could include:
+Conditions associated with some forms of mental illness
+Dementia
+Significant learning disabilities
+Long-term effects of brain damage
+Delirium
+Physical or medical conditions that cause drowsiness or loss of consciousness
+If 'yes', does that impairment or disturbance mean that the {{{Service_user_text}}} is unable to make the decision in question at the time it needs to be made?
+{{{Service_user_text}}}s are unable to make a decision if they are unable to do the following:
+Understand information relevant to the decision that is to be made
+Retain that information in their mind
+Use or weigh the information to reach a decision, and
+Communicate their decision, by any means at all that can be understood
+There must never be a generalised statement that someone lacks mental capacity. It is never enough to say that the {{{Service_user_text}}} lacks mental capacity solely because of a diagnosis (such as dementia), or because someone thinks their decision is unwise, or because of their age, or their appearance.
+When assessing {{{Service_user_text}}}'s capacity, the {{{Service_user_text}}} does not have to prove that they have capacity to make a certain decision. It is up to the person(s) who will make decisions on behalf of the {{{Service_user_text}}} to prove that, on the balance of probabilities, the {{{Service_user_text}}} lacks the mental capacity to make this decision.
+If it is decided that, on the balance of probabilities, and after all possible help has been given to enable them to do so, the {{{Service_user_text}}} does not have the mental capacity to make a particular decision at the time it needs to be made, any action taken or any decision made must be in the {{{Service_user_text}}}'s best interests and recorded by the {{{SupportWorkerOrCarer}}}.
+5. 9 Fluctuating Capacity or Temporary Capacity
+Some {{{Service_user_text}}}s may have fluctuating capacity, meaning at times they can make decisions, but at other times their condition may affect their ability to make decisions. This could include:
+A psychotic episode during a delusion phase
+Manic depression during a manic phase
+Acute illness, severe pain, effect of medication
+Staff must assess the {{{Service_user_text}}}'s capacity to make the particular decision at the time it needs to be made. They should also consider if the decision can wait until the {{{Service_user_text}}} has the capacity to make it.
+5. 10 Complete Record of Assessment
+Any member of staff responsible for assessing capacity must ensure that all the required documentation is completed to evidence that the Mental Capacity Act 2005 has been followed. Staff must refer to the documentation that can be located in the Forms section of this policy.
+The capacity assessment must clearly document:
+The decision to be made
+The domains of capacity that the {{{Service_user_text}}} is lacking (understanding, retaining, weighing and/or communicating)
+Details of how staff have attempted to maximise the {{{Service_user_text}}}'s capacity
+{{{SupportWorkerOrCarer}}}s must work to a {{{Care_plan_name}}} which is clearly based on the assessment of capacity and best interests and is subject to review in accordance with local agreement and the {{{Service_user_text}}} care and support planning policies and procedures at {{{Client_Name_Official}}}.
+All {{{SupportWorkerOrCarer}}}s know that they can raise issues that might show that the {{{Care_plan_name}}} should be reviewed more urgently with senior staff. Examples of this include when the staff member thinks the {{{Service_user_text}}} has regained capacity, or that there is a decision they used to be able to make but now might have lost that capacity.
+The records of all assessments must be completed fully, signed by the assessor and dated. Assessments will be kept with the {{{Care_plan_name}}} so they are readily available and can be revisited when reviewing aspects of the {{{Service_user_text}}}'s {{{Support_or_care}}}.
+All information will be stored in line with data protection law and the UK General Data Protection Regulation.
+5. 11 Where any {{{Service_user_text}}} lacks capacity over a long period of time for many kinds of decisions, capacity must be reviewed whenever the {{{Service_user_text}}}'s {{{Care_plan_name}}} is being developed or reviewed, or there appears to be some change in their capacity to make decisions, or when they lack capacity for a major decision that needs to be made, for example, about where to live, or whether to have serious medical treatment.
+5. 12 Disputes
+If there is a dispute about best interests, firstly staff must ensure they have followed the mandatory best interests checklist, and tried, in particular, to make a decision that is in alignment with what the {{{Service_user_text}}} wants. The following must be considered:
+Families and friends with legal responsibilities will not always agree about what is in the best interests of an individual. However, they usually have greater knowledge than {{{SupportWorkerOrCarer}}}s of what this {{{Service_user_text}}} would have wanted, and sometimes of what the {{{Service_user_text}}} now wants
+The decision-maker will need to clearly demonstrate in the record kept that the decision is based on all available evidence and has taken into account all conflicting views. Particular care will be taken to look for the option that is the least restrictive of the {{{Service_user_text}}}'s rights
+5. 13 If there is a dispute, {{{Reg_Manager_Name}}} will consider the following things to assist in determining what is in the {{{Service_user_text}}}’s best interests:
+Where it might help, involve an advocate who can represent the {{{Service_user_text}}} and highlight their relevant wishes and feelings
+Hold a best interests meeting to identify all the possible options and explore the pros and cons of each, or, if for example, relatives or some professionals cannot attend in person, enable all relevant views to be properly recorded and shared
+Consider mediation
+As a last resort, apply to the Court of Protection for a ruling (normally undertaken by the relevant Local Authority or NHS Trust when a complex and serious decision is to be made)
+{{{Reg_Manager_Name}}} must ensure that all documents completed are both signed and dated.
+5. 14 Best Interest Meetings/Mental Capacity Act Checklist
+In making a decision in the {{{Service_user_text}}}'s best interests because they lack capacity to make this decision for themselves, the Mental Capacity Act 2005 makes it compulsory to use a checklist covering matters to be considered, except in an emergency. However, even in an emergency, decisions taken should still be taken in the person's best interests
+Decisions can be complex or life changing and a formal best interest decision meeting may be required. A number of different people may be involved if the decision would benefit from their input for the {{{Service_user_text}}} such as:
+Staff
+Third parties such as those with power of attorney
+Family/close friends
+A record of the conversations and conclusions must be recorded when making a decision in the {{{Service_user_text}}}'s best interests, and the following must be taken into account (except in an emergency, when there is no time).
+This checklist is a mandatory requirement under the Mental Capacity Act 2005 of matters to be considered by a decision-maker:
+Is the {{{Service_user_text}}} likely to regain the mental capacity to make this decision and, if so, can this decision wait until then?
+Do everything possible to encourage the {{{Service_user_text}}} to take part in the making of the decision, even though they lack the capacity to make the decision
+Give great weight to the {{{Service_user_text}}}’s past and present wishes and feelings (in particular if they have been written down)
+Identify any beliefs and values (e.g. religious, cultural or moral) that would be likely to influence the decision in question
+Include any other factors that would be relevant and important to this {{{Service_user_text}}} if they were able to make their own decision
+Be sure not to make assumptions about the {{{Service_user_text}}}'s best interests simply based upon the {{{Service_user_text}}}'s age, appearance, condition or behaviour
+As far as possible, the decision-maker must consult other people who might have views on the {{{Service_user_text}}}'s best interests and what they would have wanted when they had mental capacity, especially the following people:
+Anyone previously named by the {{{Service_user_text}}} lacking capacity as someone to be consulted
+Staff at {{{Client_Name_Official}}}, close relatives, friends or anyone else interested in the {{{Service_user_text}}}’s welfare
+Any attorney appointed under a Lasting Power of Attorney
+Any deputy appointed by the Court of Protection to make decisions for the {{{Service_user_text}}}
+Making a decision in the {{{Service_user_text}}} 's best interests requires evidence of the following:
+That the Act’s statutory principles and best interests checklist are properly considered
+That the {{{Service_user_text}}} remains central to the decision or decisions needing to be made and they are involved in the decision-making process where possible
+That relevant professionals and informal networks are properly consulted and if the statutory criteria are met, an independent mental capacity advocate is instructed
+A clear structure to the meeting, promoting partnership and collaborative working, the sharing of relevant information, the positive expression of different views, and an analysis of the risks and benefits attached to different options
+5. 15 Advocacy
+An advocate is someone who can help the {{{Service_user_text}}} express their wishes and views, and support them if:
+They have no family or friends and do not qualify for an Independent Mental Capacity Advocate (IMCA)
+Their family members disagree about their best interest
+There is conflict of interest with those who have been consulted over the best interest decision
+The {{{Service_user_text}}} has previously used an advocate
+5. 16 Independent Mental Capacity Advocate (IMCA)
+The IMCA service helps {{{Service_user_text}}}s who lack the capacity to make important decisions about serious medical treatment and other changes such as accommodation or a {{{Support_or_care}}} provider, and who have no family or friends that it would be appropriate to consult about those decisions.
+IMCAs are independent and will work with, and support, the {{{Service_user_text}}} who lacks capacity, to express their views to those who are working out their best interests.
+An IMCA must be instructed when {{{Service_user_text}}}s with no one else to support them lacks capacity and:
+An NHS body is proposing to provide serious medical treatment, or
+An NHS body or local authority is proposing to arrange accommodation (or a change of accommodation) in hospital or a care home, and
+The {{{Service_user_text}}} will stay in hospital longer than 28 days, or
+They will stay in a care home for more than eight weeks
+{{{Client_Name_Official}}} should also consider an IMCA for:
+Support/care reviews, where no one else is available to be consulted
+Adult protection cases, whether or not family, friends or others are involved
+5. 17 Education and Training
+All staff at {{{Client_Name_Official}}} are given training (including regular refresher training) in the Mental Capacity Act and the attendance of staff is recorded on a matrix at {{{Client_Name_Official}}}
+All staff understand the importance of seeking consent whenever staff intervene in the {{{Service_user_text}}}'s privacy or lifestyle, unless it can be shown the person lacks capacity to make this specific decision
+All staff understand that capacity is 'decision and time specific', so they must do all they can to enable this person to make this particular decision at the time it needs to be made, for example, by clearly explaining their options and the likely outcomes of different decisions they might make
+Staff recognise that {{{Service_user_text}}}s have the important right to consent to, or refuse, any staff interventions in their lives, provided they have capacity to do so
+All staff understand how to assess capacity when required, if appropriate, in cooperation with more senior staff
+All staff evaluate how effective the training is and feedback their views to {{{Reg_Manager_Name}}}
+New staff are expected to complete standard 9 of the Skills for Care Certificate
+Forums such as supervision, team meetings and observation of practice are used to continue improving staff practice in applying the MCA
+{{{reg_provider}}} makes accessible documents and resources about the Act, including training resources available to staff.
+References to resources can be found in the Further Reading and Underpinning Knowledge sections of this policy.
+5. 18 Care and Support at {{{Client_Name_Official}}}
+{{{Client_Name_Official}}} provides care and support to {{{Service_user_text}}}s with a range of needs in a person-centred, safe, and lawful way.
+All staff must follow the guidance within this policy and the {{{Service_user_text}}}’s {{{Care_plan_name}}}, ensuring that assessed needs, reasonable adjustments and individual preferences are met.
+Every {{{Service_user_text}}} is treated equally and with dignity and respect
+Care and support are tailored to individual needs, preferences and desired outcomes
+Staff follow legal, regulatory, and professional guidance at all times
+Person-centred approaches are used to promote independence, choice, and wellbeing
+To support this approach, staff will also follow the policies and procedures below where applicable:
+Person-Centred Care and Supporting Planning
+Safeguarding Adults
+Raising Concerns, Freedom to Speak Up and Whistleblowing
+Mental Capacity Act (MCA) 2005
+{{{Deprivation_Of_Liberty_Type}}}
+Consent to Care, Support and Treatment
+Equality, Diversity and Human Rights
+Overarching Medicines Management
+Positive Behaviour Support Including Challenging Behaviour
+Restrictive Practices Including Restraint and Physical Interventions
+Sex, Sexuality and Relationships
+This list is not exhaustive and there will be additional policies and procedures in place to support specific {{{Service_user_text}}} needs. Staff must seek clarification from their line manager or the {{{Registered_Manager_JobTitle}}}, {{{Reg_Manager_Name}}}, if there is any uncertainty.
+Staff supporting any specialist area of need will receive appropriate induction and training. They will complete competency assessments, where required, to meet the needs of {{{Service_user_text}}}s as outlined in the Training Policy and Procedure at {{{Client_Name_Official}}}.
+To ensure {{{Service_user_text}}}s receive person-centred care and support from {{{Client_Name_Official}}}, staff must adhere to the following {{{support_principles}}}:
+6. Definitions
+6.1 Mental Capacity Act
+The Mental Capacity Act 2005, covering England and Wales, lays out a legal framework for people who lack capacity to make decisions for themselves, or who have capacity and want to make preparations for a time when they might lack capacity in the future
+6.2 Test for Capacity
+The Act sets out a two-stage test for assessing whether a person lacks capacity to take a particular decision at the time it needs to be made. It is a 'decision-specific and time-specific' test, and must be recorded in a way that explains why you have reached the conclusions to answer these questions:
+Firstly, is this person unable to make a particular decision at the time it needs to be made? (See explanation below of how to consider the '4 steps' to work this out)
+Secondly, is their inability to make the decision BECAUSE OF some impairment of, or disturbance in the functioning of, their mind or brain? (This can be temporary or permanent; there will usually be a diagnosis of what is wrong with the mind or brain, but it is not essential)
+The person lacks capacity for this decision if there is one or more of the following steps that they CANNOT do:
+Understand appropriately presented information about the decision to be made
+Retain that information for long enough to use or weigh that information as part of the decision-making process
+Use or weigh that information as part of the decision-making process
+Communicate their decision (by talking, sign language or any other means)
+6.3 Best Interests
+Everything that is done to, or on behalf of a person who lacks capacity must be in that person’s best interests. The Mental Capacity Act does not define best interests but lays out how best interests decisions must be made. The Act provides a checklist of factors that decision-makers must work through, except in an emergency, in deciding what is in a person’s best interests. A person can put their wishes and feelings into a written statement if they so wish, which the person making the decision must consider
+6.4 Lasting Power of Attorney (LPA)
+The Act allows a person aged 18 and over, who has capacity to make this decision, to appoint attorneys to act on their behalf if they should lose capacity in the future. There are two types of LPA, one to make health and welfare decisions, and the other to make finance and property decisions. The provision replaces the previous role of Enduring Power of Attorney (EPA)
+Staff should be aware of any LPA in place for {{{Service_user_text}}}s in their care; they should know which individuals have been given powers to make which specific types of decisions
+6.5 Court Appointed Deputies
+The Act provides for a system of court appointed deputies to replace the previous system of receivership in the Court of Protection. Deputies are able to take decisions on welfare, healthcare and financial matters as authorised by the Court but are not able to refuse consent to life-sustaining treatment
+They are only appointed if the Court cannot make a one-off decision to resolve the issues, and if the person has already lost capacity to make these decisions. Staff should be aware of any Court appointed deputies in place for {{{Service_user_text}}}s in their care, and of what decisions any deputy is authorised to make
+6.6 Court of Protection
+The Court of Protection has jurisdiction relating to the whole Act and is the final arbiter for capacity matters. It has its own procedures and nominated judges
+6.7 Advance Decision to Refuse Treatment (ADRT)
+The Act creates ways for people aged 18 and over to make a decision in advance, to refuse medical treatment if they should lose capacity in the future. This is called an advance decision to refuse treatment.
+An advance decision to refuse treatment that is not life-sustaining does not need to be in writing, but the person must ensure that professionals know what treatment(s) the person is refusing
+A person who is refusing, in advance, life-sustaining treatment, must make sure that their advance decision meets certain requirements. These are that the decision must be in writing, signed and witnessed (as a safeguard that the person is not subject to undue pressure), with a clear statement of which treatment or treatments the person is refusing. In addition, there must be an express statement the person understands that this may put their life at risk but that the decision still stands
+A person can only refuse specified medical treatments; they cannot insist on any particular treatment.
+A person cannot refuse in advance to be admitted to a care home, or to be offered food and drink by mouth, or to being kept clean and comfortable.
+An advance decision to refuse treatment can be used to refuse, in advance, clinically-assisted nutrition and hydration (CANH) because this is regarded as a medical treatment
+If it meets the rules above, and applies to the situation at hand, an advance decision to refuse treatment is just the same as if the person is refusing the treatment with capacity: the treatment cannot be given.
+{{{SupportWorkerOrCarer}}}s must be clear:
+Whether an advance decision to refuse treatment exists
+What is in it, and
+Where it is to be found
+Any doctor or paramedic needs to know if treatment they might suggest would be lawful or whether the person has refused it in advance
+6.8 Independent Mental Capacity Advocate (IMCA)
+An IMCA is an advocate appointed by a Local Authority or NHS body, in certain circumstances, to support a person who lacks capacity but has no one except paid staff who are interested in their welfare
+The IMCA finds out about the person’s wishes, feelings, beliefs and values, and brings to the attention of the decision-maker all factors that are relevant to the decision. The decision-maker must consider the views of the IMCA but is not bound by them
+{{{Reg_Manager_Name}}} must ensure that, if an IMCA has been instructed and will visit, staff understand the IMCA has a right to see the person alone if they wish and has a right to see relevant records
+It is good practice to sort out what notes will be relevant to the decision the IMCA will advise on, to welcome the IMCA as a colleague, and if applicable to provide somewhere private for the IMCA to meet with the person if they wish, to read the information and make notes
+6.9 Restraint
+The Mental Capacity Act defines restraint of a person lacking mental capacity to consent to the action for which restraint is needed as:
+The use, or threat of use, of force to make someone do something they are resisting, or
+The restriction of a person's freedom of movement, whether they are resisting this or not
+6.10 Protection from Liability
+The Mental Capacity Act allows carers, healthcare and social care staff to carry out certain tasks for, or on behalf of people whom they reasonably believe to lack capacity to consent to these actions, without fear of liability
+For actions to receive protection from liability, the worker must
+Reasonably believe the person lacks capacity to consent to or refuse the proposed actions
+Reasonably believe the actions they propose are in the person's best interests, and
+Reasonably believe they have found the least restrictive option to meet the identified need
+Note that two extra conditions apply for the use of restraint. Any action intended to restrain a person who lacks capacity will not attract protection from liability unless the following two conditions are also met :
+The person taking action must reasonably believe that restraint is necessary to prevent harm to the person , and
+The amount or type or restraint must be a proportionate response to the likelihood and seriousness of that harm
+6.11 Deprivation of Liberty
+A person who lacks capacity to consent to or refuse the{{{Care_plan_name}}} that keeps them safe is deprived of their liberty if this {{{Care_plan_name}}} shows that they are:
+Under complete and effective supervision and control by staff (this may not always be 'line of sight' supervision, but staff prevent the person from acting in a way that would cause them harm, and know at all times pretty well what they are doing) and they are
+Not free to leave the place where they are being cared for (in the sense of leaving to go and live somewhere else if they choose, or go away on a trip without permission from others)
+6.12 Deprivation of Liberty in Community Settings
+In community settings such as when receiving care in their own home, supported living, extra-care housing or shared lives schemes, a person aged 16 or older who is deprived of their liberty to give them necessary care or treatment must have their rights protected by having the situation authorised by the Court of Protection. This is arranged by the commissioner of the service or, for self-funders, the Local Authority. If {{{Client_Name_Official}}} suspects that a {{{Service_user_text}}} is deprived of their liberty, they must notify the commissioner or Local Authority
+6.13 Winterbourne View and Mid Staffordshire Hospital
+Reports into care by the Care Quality Commission and others, at Winterbourne View and Mid Staffordshire Hospital, have highlighted issues where basic human rights have not been recognised and patients have been neglected and abused as a result
+The MCA is part of a framework aimed at protecting the human rights of vulnerable patients and, if applied correctly, assures both the provider and the commissioner that this is indeed the case
+Much of what went wrong at Winterbourne View and other places might have been avoided if the service provider had truly understood and acted upon their duty to protect the liberty and security of those in their care as well as understood what the Act says about the duty to take decisions in the best interests of vulnerable individuals
+7. Key Facts - Professionals
+The Act introduces new criminal offences of ill treatment or neglect of a person who lacks capacity. A person found guilty of such an offence may be liable to imprisonment for a term of up to 5 years
+The Mental Capacity Act 2005 provides a statutory framework to empower and protect people aged 16+ who are not able to make their own decisions. It makes it clear who can take decisions, in which situations, and how they must go about this. It enables people to plan ahead for a time when they may lose capacity
+When a person aged 16+ lacks capacity to consent to care, deprivation of liberty is only permitted if it has been authorised by the Court of Protection; this is arranged by the Commissioner or the Local Authority. DoLS legislation was expected to be replaced by the Liberty Protection Safeguards (LPS). Currently, the timetable for this change is not certain and we will update the policy when this has been confirmed
+Guidance on the Act is provided in a statutory Code of Practice. Whilst there is no legal duty on anyone to 'comply' with the Code, those working with people who lack mental capacity must follow its guidance or have extremely good reasons for not doing so. The Code is currently under revision to include LPS and other updates. Full guidance will be provided in due course before implementation
+8. Key Facts - People Affected by The Service
+Where a decision needs to be made for someone who lacks the capacity to make that decision, the decision must be made in the person's best interests. The decision-maker must take into account the person's wishes and the views of friends and family in making those decisions
+The Mental Capacity Act (MCA) protects the rights of people who lack mental capacity and those who take decisions on their behalf. It provides ways for anyone to plan ahead for a time when capacity might be lost. It also puts an obligation on paid staff to find the least restrictive, most person-centred ways possible to care for someone who lacks mental capacity, and keep them safe
+Further Reading
+As well as the information in the 'Underpinning Knowledge' section of the review sheet, we recommend that you add to your understanding in this policy area by considering the following materials.
+NHS England - Guidance to support implementation of the Mental Capacity Act in acute trusts for adults with a learning disability
+https://www.england.nhs.uk/publication/guidance-to-support-implementation-of-the-mental-capacity-act-in-acute-trusts-for-adults-with-a-learning-disability/
+NHS Health Education England - The Oliver McGowan Mandatory Training in Learning Disability and Autism:
+https://www.hee.nhs.uk/our-work/learning-disability/current-projects/oliver-mcgowan-mandatory-training-learning-disability-autism
+National Institute for Health and Care Excellence - Decision-making and Mental Capacity (NG108):
+https://www.nice.org.uk/guidance/ng108
+National Institute for Health and Care Excellence - Decision-making and Mental Capacity (QS194):
+https://www.nice.org.uk/guidance/QS194
+GOV.UK - Mental Capacity (Amendment) Act 2019:
+https://www.legislation.gov.uk/ukpga/2019/18/enacted
+This contains the new Liberty Protection Safeguards (LPS) which will eventually replace the Deprivation of Liberty Safeguards (DoLS). {{{Client_Name_Official}}} will provide information on the implementation timetable when this is available.
+GOV.UK - Changes to the MCA Code of Practice and Implementation of the LPS:
+https://www.gov.uk/government/consultations/changes-to-the-mca-code-of-practice-and-implementation-of-the-lps
+Using the Mental Capacity Act - YouTube:
+https://www.youtube.com/watch?v=z37_IcDkXWg
+Office of the Public Guardian – Making decisions about your health, welfare or finances. Who decides when you can’t?
+https://housingcare.org/downloads/kbase/2679.pdf
+Outstanding Practice
+To be "outstanding" in this policy area you could provide evidence that:
+All relevant staff can identify the principles of the Mental Capacity Act 2005
+{{{Service_user_text}}}s are helped and supported in several ways and on a regular basis to make decisions for themselves
+Staff can describe the difference between restrictions and restraint allowed by the Mental Capacity Act and a deprivation of liberty requiring special authorisation through DoLS (and in future through LPS)
+Current good practice materials, including technology, are available to help {{{Service_user_text}}}s who need support in decision making
+Decisions or choices made by {{{Service_user_text}}}s who lack capacity are respected as far as possible, while keeping the {{{Service_user_text}}} safe
+{{{Service_user_text}}}s with capacity are not prevented by the service from making decisions, even though others may disagree with their choices
+The wide understanding of the policy is enabled by proactive use of the QCS App
+Forms
+The following forms are included as part of this policy: Title of form When would the form be used? Created by Title of form Essential MCA Information - CR88 When would the form be used? To log essential information at the start of service delivery or when reviewing {{{Care_plan_name}}}s. Created by QCS Title of form Capacity Assessment Form - CR88 When would the form be used? When creating or reviewing {{{Care_plan_name}}}s if there is doubt whether the person has capacity to consent to receiving the services proposed Created by QCS Title of form Care Planning: Best Interests Decision-making Form - CR88 When would the form be used? When a person has been assessed as lacking capacity to create their own {{{Care_plan_name}}} or consent to receiving services Created by QCS Title of form Mental Capacity Act- Five principles of the MCA - CR88 When would the form be used? As a reference for understanding the five principles Created by QCS Essential MCA Information - CR88 1. Has the {{{Service_user_text}}} created Lasting Powers of Attorney (LPA) for: Property and Finance? Yes No Health and Welfare? Yes No If the answer for either of the above is 'yes', please use the space below to record their details. Use additional pages as necessary. Property and Finance LPA Names and contact details of attorneys: Has the LPA been registered with the Office of the Public Guardian (OPG)? Yes No What decision-making powers have been given, or withheld?   Health and Welfare LPA Names and contact details of attorneys: Has the LPA been registered with the Office of the Public Guardian (OPG)? Yes No What decision-making powers have been given, or withheld?           2. Is there a Deputy appointed by the Court of Protection? If the answer is 'yes', please complete their details below.         Yes No Name and contact details of Deputy: Briefly note what powers are given by the deputyship order: 3. Has the person made an Advance Decision (AD) to refuse treatment? Yes No   If ‘No’, and there is no reason to think the person lacks mental capacity to do this, do they understand that they can make an AD if they wish, but do not have to? Record briefly below any discussions you have had with the person on this topic.   3.A If ‘Yes’ they have made an AD, does it relate to potentially life-sustaining treatment? Yes No  If ‘Yes’: You should have a copy of this.  If ‘No’: Record below any details of verbal advance decisions to refuse treatment, with a signature from the person to confirm you have correctly recorded their wishes. If they lack mental capacity to give this confirmation, record how you learned of the advance decision. Details of any verbal advance decisions to refuse treatment:               Signed by: ________________________________  Date:____________   4. Has the person made any advance statements of wishes? Yes No  If ‘Yes’: You should have a copy of this.  If ‘No’: If the person has mental capacity to decide details of how they might like to be treated if they no longer had mental capacity, it is good practice to encourage them to make any advance statements they wish, to be recorded here. Advance Statements:                                         Signed by: ________________________________  Date:____________   Notes for Question 1: LPAs must be registered with the Office of the Public Guardian before they can be used. If the LPA is registered, each page will have a mark saying ‘Validated – OPG’ An LPA for property and finance, once it has been registered, CAN be used while the person has mental capacity to manage their own affairs, but only with their permission An LPA for health and welfare can ONLY be used once it has been registered, if the person who created it lacks the mental capacity to make a particular decision at the time it needs to be made. People must make their own health and care decisions if they have the mental capacity to do so A person creating an LPA can personalise it, if they wish, by giving the attorney the power to make some decisions but not others. Therefore, it is important that you note BOTH who the attorneys are, AND what decisions the attorney has the power to make. This is particularly important with LPAs for health and welfare, since the attorney might have the power to consent to, or refuse, life-sustaining treatment on behalf of the person, or that power might have been withheld Attorneys making decisions under an LPA have a duty, just as you do, to act within the Code of Practice of the MCA. This means you should give them the information they need to make a particular decision, if the person lacks capacity to do this. It also means that, if you think an attorney is failing to act in the best interests of the person, you must immediately tell the Office of the Public Guardian. They will then investigate. Examples of poor practice might be: if there is a property/finance LPA, failing to provide the person with money for toiletries or hairdressing, or being in arrears with the fees; or, if they have a health/welfare LPA, refusing to let the person go to the church of their choice. If you have concerns about any actions of an LPA attorney, you should tell the OPG as a matter of urgency Within the possible limits explained in (4) above, you should think of the attorney as ‘standing in the shoes’ of the person who has given them the powers; they can make decisions as if they are the person receiving services For further information, see MCA Code of Practice chapter 7. Notes for Question 2 For further information, see MCA Code of Practice chapter 8. Notes for Question 3: An advance decision to refuse treatment is a powerful legal tool to make sure someone is not given treatment they would not want, when they lack capacity to consent to it. If an advance decision is valid (made correctly) and applicable (relates to the treatment being considered), it is as if the person is refusing that treatment with capacity; the treatment cannot then be given Please do not use phrases such as ‘living will’ or ‘advance directive’ since these are confusing and have no legal power Nobody has to make an advance decision to refuse treatment. If a person has not done so, decisions are made in the best interests of the person, taking account of what is known about their past and present wishes and feelings An advance decision to refuse treatment can only be a refusal of medical treatment. This can include Clinically Assisted Nutrition or Hydration (CANH) but a person cannot refuse ‘basic care’, such as being kept warm, clean and comfortable, and being offered nutrition or hydration by mouth It is not possible to make an advance decision to refuse admission to a care home A person with mental capacity can make, change, or cancel an advance decision at any time. You may need to help them get their decision updated at their GP practice or hospital providing treatment If there is an advance decision to refuse treatment, but it is not about life-sustaining treatment, it does not, in law, need to be in writing. But in order to honour it, it is important that it is described in the records of the care provider and the GP If there is an advance decision that relates to potentially life-sustaining treatment, it must be in writing, in the person’s own words, signed by them (or in their presence, if they physically cannot sign), and witnessed. It must also contain a statement that the person understands that this may shorten their life, but they wish it to apply anyway For further information, see MCA Code of Practice chapter 9.   Notes for Question 4: Advance statements of wishes are not legally binding, but it is good practice to encourage people to think about the ways they would like to be cared for if they should lose mental capacity Providers must give any written statement real weight in deciding on the {{{Care_plan_name}}} of someone who lacks mental capacity to decide their own {{{Care_plan_name}}} Whether written or not, advance statements of wishes should be considered, recorded as relevant, and honoured wherever possible in best interests decision-making An example of advance statements might be: ‘If I lack mental capacity to consent to medication, I would like staff to know I have difficulty swallowing large tablets and do better if they can be hard-coated and shaped for easier swallowing; and I need a large glass of water, and not to be rushed.’ Or, ‘If I lack mental capacity, I would like staff to know that I have always loved dogs and would like my {{{Care_plan_name}}} to continue to incorporate PAT dogs if possible.’ Capacity Assessment Form - CR88 Notes : If there is no reason to think that the person might lack mental capacity, there is no need to carry out a capacity assessment. Remember that nobody needs to prove they have capacity. But if you plan to act on behalf of an individual in their best interests, under the MCA, you must show that, on balance, the person lacks mental capacity. Person’s name:   Name and role of person completing this form:   Date:__________ Nature of decision : (for example, ‘consenting to necessary medication’, ‘consenting to the use of bedrails at night’ or ‘consenting to be helped with intimate personal care’)   Step 1 1. Does the impairment mean the person is unable to make a specific decision when they need to? People can lack capacity to make some decisions, but have capacity to make others. Mental capacity can also fluctuate with time – someone may lack capacity at one point in time, but may be able to make the same decision at a later point in time. You need to consider the four steps which the MCA says a person has to be able to do, in order to make a decision. If a person cannot carry out all of these steps with as much support as possible, then they lack mental capacity for this decision at this time. 1A. If ‘Yes’: Can the person Understand information relating to the decision (suitably expressed, and without unnecessary detail)? If ‘No’ , describe below how you tried to explain the information, and how you know the person did not understand it Yes No     Step 2 2. Does the person have an impairment of their mind or brain, whether as a result of an illness, or external factors such as alcohol or drug use? 2A. If ‘No’:  The Mental Capacity Act cannot be used as a framework for decision-making unless there is some impairment or disturbance as described above. Do not continue. If  ‘Yes’ : Describe below the nature of this impairment or disturbance. If you do not know its cause, you should describe it, for example, ‘confusion and memory loss, cause not established’). Yes No           2B . Can the person Retain that information at least for a short while? If ‘ No ’, describe below how you know the person could not remember the information for long enough to use it Yes No     2C . Can the person Use or weigh it to make their decision? Yes No If ‘No’, describe below how you know the person was not able to use or weigh the information 2D. Can the person Communicate the decision by any means? If ‘No’, describe how you tried to help the person to communicate their decision, and why they were unable to do so Yes No   If ‘ Yes ’ throughout, the person has capacity for this decision. You cannot make a best interests decision on this person’s behalf; they have the right to make their own decisions. If ‘No’ at any stage, the person does not have capacity and a best interest decision has to be made. Explain below why you think that the problem in the person’s mind or brain is the reason why they cannot do at least one of them. For example, you might write: ‘Maria is often convinced she is on the staff here, and this delusion stops her being able to understand why she cannot go ‘home’ to her mother at tea-time’ or ‘Mr Smith’s dementia has seriously affected his short-term memory, and this means he cannot remember his need to take his medication however often he is reminded.’ Use additional pages as necessary. Care Planning: Best Interests Decision-making Form - CR88 {{{Service_user_text}}}'s Name:   Name of Assessor:   Signature:   Date:   Please list the names and status of anyone who assisted with this document Name Status Signature                                 The Decision - Description of the decision to be made by the {{{Service_user_text}}} Comments         The Assessment – Give a brief summary of the meeting outcome Comments         Determining Impairment or Disturbance of Mind or Brain (Part 1) Guidance: Every adult should be assumed to have the capacity to make a decision unless it is proved that they lack capacity. An assumption about someone’s capacity cannot be made merely on the basis of a {{{Service_user_text}}}'s age or appearance, condition or aspect of their behaviour. 1. Has the {{{Service_user_text}}} been determined as lacking capacity to make this particular decision at this moment in time? Yes No Comments   If you have answered 'YES' to the above, proceed to Part 2. If you have answered 'NO', identify decision(s) to be made and complete the Capacity Assessment.   Determining Best Interests (Part 2) All steps and decisions taken for someone who lacks capacity must be taken in their best interests.   Question 1: Avoid Discrimination Have you avoided making assumptions merely on the basis of the {{{Service_user_text}}}'s age, appearance, condition or behaviour? Yes No Comments     Question 2: Relevant Circumstances Have you identified all the things the {{{Service_user_text}}} would have taken into account making the decision for themselves? Yes No Consider also political, ethical  or cultural factors that are important to them. Comments     Question 3: Regaining Capacity Have you considered if the {{{Service_user_text}}} is likely to have capacity at some date in the future and if the decision can be delayed until that time? Yes No Comments     Question 4: Encourage Participation Have you done whatever is possible to permit and encourage the {{{Service_user_text}}} to take part in making the decision? Yes No Comments        Question 5: Special Considerations Where the decision relates to life-sustaining treatment, have you ensured that the decision has not been motivated in any way by a desire to bring about their death? Yes No Comments       Question 6: The Person's Wishes Has consideration been given to the {{{Service_user_text}}}'s past and present wishes and feelings, beliefs and values, that would be likely to influence this decision? Yes No Comments       Question 7: Written Statements Have you considered any written statement made by the person when they had capacity? Yes No Comments       Question 8: Consult Others Have you, where practicable and appropriate, consulted and taken into account the views of others including those engaged in caring for the {{{Service_user_text}}}, relatives and friends, and persons previously named by the {{{{Service_user_text}}}. Consider if there is any other person with legal powers to make this decision, for example, persons who are named and appointed: Attorneys - Scotland Lasting Power of Attorney, or a Court of Protection Deputy - England and Wales Yes No Comments       Question 9: IMCA If the decision relates to serious medical treatment or changes to accommodation and there is no one identified in Question 8, you must consider instructing an Independent Mental Capacity Advocate and receive a report from an IMCA - see the IMCA referral document for relevant guidance regarding referral to the IMCA service. Comments       Question 10: Avoid Restricting Rights Has consideration been given to the least restrictive option for the {{{Service_user_text}}}? Yes No Comments       Question 11: Other Considerations Have you considered factors such as emotional bonds, family obligations that the person would be likely to consider if they were making the decision? Yes No Comments       Question 12 Having considered all the relevant circumstances, what decision/action do you intend to take whilst acting in the best interests of the {{{Service_user_text}}}? Comments     Signature:   Date:   Mental Capacity Act- Five principles of the MCA - CR88 Mental Capacity Act- Five principles of the MCA
+At the heart of the MCA in terms of concepts and values, are the five ‘statutory principles’. Consider the five principles as the benchmark – use them to underpin all acts done and decisions taken in relation to those who lack capacity. In doing so, you will better empower and protect individuals who lack capacity. It is useful to consider the principles chronologically: principles 1 to 3 will support the process before or at the point of determining whether someone lacks capacity. Once you have decided that capacity is lacking, use principles 4 and 5 to support the decision-making process.
+The five key underpinning principles (Section 1, MCA)
+Principle 1:
+A presumption of capacity. Every adult has the right to make his or her own decisions and must be assumed to have capacity to do so unless it is proved otherwise. This means that you cannot assume that someone cannot make a decision for themselves just because they have a particular medical condition or disability.
+Principle 2:
+Individuals being supported to make their own decisions. A person must be given all practicable help before anyone treats them as not being able to make their own decisions. This means you will make every effort to encourage and support people to make the decision for themselves. If lack of capacity is established, it is still important that you involve the person, as far as possible, in making decisions.
+Principle 3:
+Unwise decisions. People have the right to make what others might regard as an unwise or eccentric decision. Everyone has their own values, beliefs and preferences which may not be the same as those of other people. You cannot treat them as lacking capacity for that reason.
+Principle 4 :
+Best interests. If a person has been assessed as lacking capacity, then any action taken, or any decision made for, or on behalf of that person, must be made in their best interests.
+Principle 5:
+Less restrictive option. Someone making a decision or acting on behalf of a person who lacks capacity must consider whether it is possible to decide or act in a way that would interfere less with the person’s rights and freedoms of action, or whether there is a need to decide or act at all. In essence, any intervention will be proportional to the particular circumstances of the case.

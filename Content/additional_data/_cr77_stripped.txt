@@ -1,0 +1,532 @@
+
+ CR77 Restrictive Practices Including Restraint and Physical Interventions Policy and Procedure - Preview 
+ Policy preview 
+ Policy Id: 
+ Region: 
+ England 
+ Wales 
+ Scotland 
+ Ireland 
+ Customer Id: 
+ Location Id: 
+ Update preview 
+ Preview pdf 
+ Safeguard Care Planning Behaviour Audit CR77 - Restrictive Practices Including Restraint and Physical Interventions Policy and Procedure 
+ All policy 
+ Review Sheet 
+ Purpose 
+ Scope 
+ Objectives 
+ Policy 
+ Procedure 
+ Definitions 
+ Key Facts - Professionals 
+ Key Facts - People Affected by The Service 
+ Further Reading 
+ Outstanding Practice 
+ Forms 
+ Review Sheet 
+ Last Reviewed 15 Apr 26 Last Amended 15 Apr 26 This policy will be reviewed as needs require or at the following interval: Annual Business Impact: Low Low Minimal action required. Circulate information amongst relevant parties. Reason for this Review: Scheduled review Changes Made: Yes Summary: This Restrictive Practices Including Restraint and Physical Interventions Policy and Procedure continues to offer guidance around restrictive practices including restraint and physical interventions. It has been reviewed with minor wording amendments to the headers in the policy section for clarity. Underpinning Knowledge and Further Reading links have been checked. Relevant Legislation: Autism Act 2009 The Care Act 2014 Equality Act 2010 The Health and Social Care Act 2008 (Regulated Activities) (Amendment) Regulations 2012 Human Rights Act 1998 Management of Health and Safety at Work Regulations 1999 Mental Capacity Act 2005 Mental Capacity Act Code of Practice Mental Health Act 2007 Safeguarding Vulnerable Groups Act 2006 Criminal Law Act (1967) Criminal Justice Act (2003) UK GDPR Data (Use and Access) Act 2025 Underpinning Knowledge: Author: Department of Health, ( 2022), Deprivation of Liberty Safeguards (DoLS) at a glance [Online] Available from: https://www.scie.org.uk/mca/dols/at-a-glance/ [Accessed: 15/04/2026] Author: National Institute for Health and Care Excellence, ( 2015), Violence and Aggression: Short-term management in mental health, health and community settings [Online] Available from: https://www.nice.org.uk/guidance/ng10 [Accessed: 15/04/2026] Author: Department of Health - Social Care, Local Government and Care Partnership Directorate, ( 2014), Positive and Proactive Care: Reducing the need for restrictive interventions [Online] Available from: https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/300293/JRA_DoH_Guidance_on_RP_web_accessible.pdf [Accessed: 15/04/2026] Author: Care Quality Commission, ( 2018), Brief Guide: Restraint (physical and mechanical) [Online] Available from: https://www.cqc.org.uk/sites/default/files/20180322_900803_briefguide-restraint_physical_mechanical_v1.pdf [Accessed: 15/04/2026] Author: Department of Health, ( 2012), Transforming Care: A national response to Winterbourne View Hospital [Online] Available from: https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/213215/final-report.pdf [Accessed: 15/04/2026] Author: Department of Health, ( 2017), Code of practice: Mental Health Act 1983 [Online] Available from: https://www.gov.uk/government/publications/code-of-practice-mental-health-act-1983 [Accessed: 15/04/2026] Author: HM Government, ( 2020), Mental Capacity Act Code of Practice [Online] Available from: https://www.gov.uk/government/publications/mental-capacity-act-code-of-practice [Accessed: 15/04/2026] Author: NATIONAL INSTITUTE FOR HEALTH AND CARE EXCELLENCE, ( 2015), Challenging Behaviour and Learning Disabilities: Prevention and interventions for people with learning disabilities whose behaviour challenges [Online] Available from: https://www.nice.org.uk/guidance/ng11 [Accessed: 15/04/2026] Author: GOV.UK, ( 2019), Reducing the Need for Restraint and Restrictive Intervention [Online] Available from: https://www.gov.uk/government/publications/reducing-the-need-for-restraint-and-restrictive-intervention [Accessed: 15/04/2026] Author: Local Government Association, The Care Provider Alliance, ADASS, ( 2016), Promoting less restrictive practice: reducing restrictions tool [Online] Available from: https://www.local.gov.uk/publications/promoting-less-restrictive-practice-reducing-restrictions-tool [Accessed: 15/04/2026] Author: equality human rights, ( 2019), Human Rights Framework Restraint [Online] Available from: https://www.equalityhumanrights.com/sites/default/files/human-rights-framework-restraint.pdf [Accessed: 15/04/2026] Author: NHS England, ( 2015), The Importance of Vital Signs During and After Restrictive Interventions/Manual Restraint [Online] Available from: https://www.england.nhs.uk/wp-content/uploads/2019/12/psa-vital-signs-restrictive-interventions-031115.pdf [Accessed: 15/04/2026] Author: Gov.UK, ( 2022), Guidance: Working Definition of Trauma-informed Practice [Online] Available from: https://www.gov.uk/government/publications/working-definition-of-trauma-informed-practice/working-definition-of-trauma-informed-practice [Accessed: 15/04/2026] Author: Restraint Reduction Network, ( 2024), Free resources providing guidance on reducing restrictive practices within services [Online] Available from: https://restraintreductionnetwork.org/resources/ [Accessed: 15/04/2026] Suggested Action: Encourage sharing the policy through the use of the QCS App Equality Impact Assessment: QCS have undertaken an equality analysis during the review of this policy. This statement is a written record that demonstrates that we have shown due regard to the need to eliminate unlawful discrimination, advance equality of opportunity and foster good relations with respect to the characteristics protected by equality law. 
+ 1. Purpose 
+ 1. 1 About {{{Client_Name_Official}}} 
+ {{{Service_introduction}}} 
+ What are the values of {{{Client_Name_Official}}} ? 
+ {{{Care_philosophy}}} 
+ What are the Aims and Objectives of {{{Client_Name_Official}}} ? 
+ {{{Client_Name_Official_Aim_Objectives }}} 
+ 1. 2 Meeting Regulation 18: Staffing   
+ This policy ensures that staffing levels and competencies are sufficient to meet the needs of {{{Service_user_text}}}s, providing high-quality care and support. Ongoing training, professional development, and performance evaluations are conducted to maintain a skilled and capable workforce. 
+ 1. 3 Meeting Regulation 17: Good governance   
+ This policy ensures the implementation of strong governance practices, including continuous quality improvement, risk management, and compliance with all regulatory requirements. Effective leadership and accountability structures are in place to support high standards of care/support and service delivery. 
+ 1. 4 Meeting Regulation 13: Safeguarding {{{Service_user_text}}} s from abuse and improper treatment   
+ This policy aims to safeguard {{{Service_user_text}}}s from abuse and improper treatment by implementing robust procedures for prevention, identification, and response. Staff are trained to recognise signs of abuse and are equipped with clear reporting mechanisms to address any concerns promptly and effectively. 
+ 1. 5 Meeting Regulation 12: Safe care and treatment   
+ This policy is designed to ensure that all care, support and treatment provided is safe, effective, and in line with best practices and regulatory standards. Risk assessments, staff training, and continuous monitoring are implemented to maintain the highest levels of safety and quality in care and support delivery. 
+ 1. 6 Meeting Regulation 11: Need for consent   
+ This policy ensures that valid consent is obtained from {{{Service_user_text}}}s for all aspects of their care, support and treatment, in accordance with legal and ethical standards, including the Mental Capacity Act 2005. Informed consent procedures are in place to ensure that {{{Service_user_text}}}s understand and agree to their {{{Care_plan_name}}}s, respecting their autonomy and rights. This policy also ensures that when {{{Service_user_text}}}s lack the capacity to consent, decisions are made in their best interests, following the guidelines set out by the Mental Capacity Act. 
+ 1. 7 Meeting Regulation 10: Dignity and respect   
+ This policy ensures that all {{{Service_user_text}}}s are treated with dignity and respect at all times, promoting a culture of kindness and compassion. Staff are trained to recognise and uphold the intrinsic value of each individual, promoting an environment where {{{Service_user_text}}}s feel valued and respected. 
+ 1. 8 Meeting Regulation 9: Person-centred care 
+ This policy emphasises the importance of delivering person-centred care, ensuring that all services are tailored to the individual needs, preferences, and values of each {{{Service_user_text}}}. This approach promotes dignity, respect, and independence, enhancing the overall quality of life for {{{Service_user_text}}}s. 
+ 1. 9 {{{Client_Name_Official}}} is committed to upholding human rights and ensuring that least restrictive practices are embedded in all aspects of care and support at all times.  
+ This policy provides a framework to support adult health and social care services in promoting a culture where restrictive practices, including restraint and physical interventions, are used only as a last resort and for the shortest possible duration. 
+ 1. 10 To create a culture of positive and proactive {{{Support_or_care}}} to reduce the need for restrictive interventions and set out mechanisms to ensure accountability to reduce the use of restrictive practices including restraint and physical interventions, as well as effective governance and transparent reporting and monitoring. 
+ 1. 11 This policy will refer to ‘a behaviour’ of {{{Service_user_text}}}s. In this policy we mean any behaviour or reaction of {{{Service_user_text}}}s that other people may consider to be challenging or concerning. 
+ 1. 12 To support {{{client_name_official}}} in meeting the following Quality Statements: Key Question Quality Statements Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE2: Delivering evidence-based care & treatment QSE3: How staff, teams & services work together Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Effective Quality Statements QSE6: Consent to care and treatment Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS3: Safeguarding Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Safe Quality Statements QSS4: Involving people to manage risks QSS5: Safe environments Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW1: Shared direction and culture QSW2: Capable, compassionate and inclusive leaders Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability Key Question Well-led Quality Statements QSW5: Governance, management and sustainability 1. 13 Relevant Legislation Autism Act 2009 The Care Act 2014 Equality Act 2010 The Health and Social Care Act 2008 (Regulated Activities) (Amendment) Regulations 2012 Human Rights Act 1998 Management of Health and Safety at Work Regulations 1999 Mental Capacity Act 2005 Mental Capacity Act Code of Practice Mental Health Act 2007 Safeguarding Vulnerable Groups Act 2006 Criminal Law Act (1967) Criminal Justice Act (2003) UK GDPR Data (Use and Access) Act 2025 
+ 2. Scope 
+ 2.1 Roles Affected: All Staff {{{Registered_Manager_JobTitle}}} 2.2 People Affected: {{{Service_user_text}}}s 2.3 Stakeholders Affected: Family Advocates Representatives Commissioners External health professionals Legal Representatives 
+ 3. Objectives 
+ 3. 1 Any restrictive practice in use within {{{Client_Name_Official}}} is carried out within a clearly defined legal framework, is proportionate to the level of risk, is the least restrictive and only ever used for the minimum duration. 
+ 3. 2 Protect people’s fundamental human rights and promote person-centred, best interest and therapeutic approaches to supporting {{{Service_user_text}}}s when they are distressed. 
+ 3. 3 Improve the quality of life of those who may, in extreme circumstances, require restrictive practices including restraint and physical interventions to keep them and those supporting them safe. 
+ 3. 4 Reduce reliance on restrictive practices and interventions by promoting a positive culture and practices that focus on prevention, de-escalation and reflection. 
+ 3. 5 Increase understanding of the root causes of behaviour and recognise that many behaviours are the result of distress due to unmet needs. 
+ 3. 6 Where required, focus on the safest and most dignified use of restrictive practices including restraint and physical interventions. 
+ 4. Policy 
+ 4. 1 Restrictive Practices 
+ ‌’Restrictive practices’ is a collective term for different types of restraint.  
+ Restriction is about imposing limits or conditions that confine or control. 
+ NHS England state 8 types of restrictive practice: 
+ Cultural restraint 
+ Surveillance 
+ Blanket restrictions 
+ Mechanical restraint 
+ Physical restraint 
+ Chemical restraint 
+ Psychological restraint 
+ Environmental Restraint 
+ 4. 2 What is Restraint? 
+ {{{Client_Name_Official}}} accepts the Equality and Human Rights Commission's definition of restraint as: 
+ ‘Restraint is an act carried out with the purpose of restricting an individual’s movement, liberty and/or freedom to act independently.' 
+ Different types of restraint include: 
+ Physical - any direct physical contact where the intention of the person intervening is to prevent, restrict, or subdue movement of the body, or part of the body of another person 
+ Mechanical - the use of a device (e.g. belt or cuff) to prevent, restrict or subdue movement of a person’s body, or part of the body, for the primary purpose of behavioural control 
+ Chemical - the use of medication which is prescribed and administered for the purpose of controlling or subduing disturbed/violent behaviour, where it is not prescribed for the treatment of a formally identified physical or mental illness 
+ Environmental - using the physical environment to make someone do something they do not want to or stop them from doing something they do want to do. Numerous terms refer to environmental restraint – segregation, isolation, time-out, solitary confinement 
+ Legal Framework 
+ There must be a legal framework governing the use of restraint that complies with the following principles: 
+ The legal framework must include a legal power authorising the use of restraint:
+ In the individual’s circumstances 
+ For the intended purpose of the restraint 
+ The legal power to restrain may be contained in primary or secondary legislation, or derived from the common law. For this purpose, Section 6 of the Mental Capacity Act 2005 provides {{{Client_Name_Official}}} lawful authority for restraint to be used: 
+ On a person who lacks capacity 
+ Where it is reasonably believed to be necessary and proportionate to protect them from harm 
+ Unlawful Restraint 
+ It is never lawful to use: 
+ Restraint with intent to torture, humiliate, distress or degrade someone 
+ A method of restraining someone that is inherently inhuman or degrading, or which amounts to torture 
+ Physical force as a means of punishment 
+ Restraint that unnecessarily humiliates or otherwise subjects a person to serious ill-treatment or conditions that are inhuman or degrading 
+ {{{Client_Name_Official}}} recognises and acknowledges the importance of understanding the {{{Service_user_text}}}'s perspective and the potential emotional and psychological impact of restraint on them. Staff will be trained to recognise these effects and to use restraint only when absolutely necessary. 
+ 4. 3 NICE guidelines highlight that physical intervention used to forcibly confine a person (also known as manual restraint and the use of mechanical restraint), whether physical or chemical, should not be used in services. 
+ However, manual restraint may be agreed as part of a multidisciplinary decision or agreed at senior management level in exceptional circumstances. Any agreed manual restraint will be for the least time possible and only for someone who lacks capacity where this is deemed as a necessary and proportionate deprivation of liberty. 
+ {{{Client_Name_Official}}} will embed a positive and proactive approach to {{{Support_or_care}}} for all {{{Service_user_text}}}s to ensure that any discussions regarding restraint/physical intervention are agreed as part of a best interest decision. 
+ 4. 4 All staff must have positive behaviour support training within learning disability/autism services before undertaking any training that requires restrictive practices including restraint/physical intervention. 
+ In other services, similar training should be undertaken which evidences a positive and proactive approach in supporting challenging, concerning, stressed or distressed behaviours. 
+ All staff must undergo refresher training in positive behaviour support as outlined in {{{Client_Name_Official}}} training schedule and will be assessed for competency post-training. Any gaps in knowledge or skills identified during assessments will be addressed promptly through additional training sessions. 
+ 4. 5 The policy will follow the five principles of the Mental Capacity Act 2005, and any decision made to consider the use of restraint will only be made under legal best interest with relevant parties who can represent the views and wishes of {{{Service_user_text}}}s as well as any other healthcare professionals involved in their {{{Support_or_care}}}. 
+ 4. 6 {{{Care_plan_name}}}s will focus on avoiding or reducing restrictive practices by ensuring that there is a detailed personal history and an up-to-date risk assessment in place for {{{Service_user_text}}}s. 
+ {{{Care_plan_name}}}s and risk assessments will be reviewed and updated in line with {{{Client_Name_Official}}} Person-Centred Care and Support Planning Policy and Procedures or immediately following any incident. This ensures that they remain relevant and effective in meeting the {{{Service_user_text}}}'s needs. 
+ 4. 7 {{{Care_plan_name}}}s will contain details of techniques and strategies, such as diversion, prevention, or consideration of allowing the {{{Service_user_text}}} to have their preference used before restrictive practices are considered as an option. 
+ Individual care and support plans will detail the specific techniques approved for {{{Service_user_text}}}s following comprehensive risk assessment taking place. 
+ 4. 8 Before any staff members use restrictive practices including restraint/physical intervention (other than short-term restriction of the {{{Service_user_text}}}'s freedom of movement, or in an unforeseen emergency) they will receive appropriate levels of training in line with the {{{Service_user_text}}}'s needs, staff roles and responsibilities and will be assessed as competent to carry out any prescribed techniques. 
+ Knowledge and practice will be reviewed on an annual basis, or sooner based on assessment. 
+ 4. 9 This policy should ONLY be implemented in services where the use of restrictive practices, restraint/physical intervention has been agreed at senior management level to support individual {{{Service_user_text}}}s. 
+ Restrictive practices, restraint/physical intervention should only be used when an approved, accredited trainer has delivered the training. An approved list can be found here: Certified organisations - Bild - Association of Certified Training (bildact.org.uk) 
+ 4. 10 Registered Manager Responsibilities 
+ Act as the lead for this policy and procedure covering restrictive practices  
+ Ensure that this policy remains up to date and in line with practices carried out at {{{Client_Name_Official}}} 
+ Ensuring staff are aware of and have read this policy 
+ Continuously review and update practices regarding restrictive practices to ensure adherence to the latest NICE guidelines 
+ Conduct regular audit and monitoring that checks the standards of practice  
+ Provide appropriate training and updates to staff 
+ Ensure training and competency assessments are delivered by approved, accredited trainers  
+ Ensure {{{Care_plan_name}}}s and risk assessments are completed and updated 
+ Ensure staff are clear on who can authorise and apply restraint at {{{Client_Name_Official}}} 
+ Keep an up to date list of staff who are trained and assessed as competent 
+ Review all incidents where restraint is deployed, to ensure that the restraint used is reasonable, proportionate and necessary 
+ Ensure that any restraint is recorded via the accident/incident reporting process at {{{Client_Name_Official}}}  
+ Review all accident/incident reports completed around restraint or restrictive interventions, and provide overview and learning from incidents involving restraint 
+ Be involved in the de-brief and any subsequent follow up activity 
+ Update the {{{Resp_individual_name}}} regularly on issues relating to restraint 
+ Liaise with relevant external agencies as appropriate 
+ {{{Reg_Manager_Name}}} has overall responsibility but may delegate some specific responsibilities to other qualified staff members. Delegated responsibilities must be clearly documented, and the assignee must acknowledge and accept the delegation. 
+ 4. 11 {{{SupportWorkerOrCarer}}} Responsibilities 
+ Understand the actions/interventions that are defined as restrictive practice 
+ Ensure they have read and are complying with this policy and seeking advice if they are unsure of any aspect  
+ Ensure they have up to date training and have been assessed as competent to carry out any prescribed techniques 
+ Only staff know who are authorised by {{{Reg_Manager_Name}}} can apply restraint at {{{Client_Name_Official}}}  
+ Take all practical steps to comply with this policy when undertaking or assisting in interventions  
+ Advocate that the use of restrictive practices or restraint will only be considered when all other practical means of managing the situation, such as de-escalation, verbal persuasion, distraction and consideration of medical and physical causes have been unsuccessful in the circumstances 
+ Act with decency, honesty, humanity and respect for the rights of the {{{Service_user_text}}} whilst being balanced against the risk of harm to themselves, staff and members of the public 
+ Ensure that restrictions and restraint used are proportionate, reasonable and necessary. Being the least restrictive, for the shortest time possible and focused on person-centred care 
+ Ensuring they keep a record of interventions used for each {{{Service_user_text}}}  and complete an accident/incident report 
+ Inform {{{Reg_Manager_Name}}} after any episode of restriction or restraint 
+ Take part in post incident de-brief 
+ 4. 12 Safeguarding Lead Responsibilities 
+ Embed safeguarding practices and improve practice in line with national and local developments 
+ Report any incidents of abuse to the relevant parties 
+ Ensure that information is recorded and that the {{{Local_Authority_Name}}} Adult Safeguarding Team is contacted to inform them of the concern or harm 
+ Follow {{{Local_Authority_Name}}} policy guidelines where applicable 
+ Advise and support staff 
+ Work in partnership with other agencies to ensure that concerns or allegations of abuse are appropriately referred for investigation to the most appropriate agency 
+ 4. 13 Policy Accessibility 
+ {{{Client_Name_Official}}} understands that some {{{Service_user_text}}}s may take in and retain information in different ways. To support full understanding and engagement, this policy is available in accessible formats. The ReciteMe tool has various ways of making this policy accessible by providing this policy in: 
+ Audio 
+ Large print 
+ Multiple languages 
+ This policy can also be made available in: 
+ Easy-read versions 
+ Simple-policy view to reduce navigation and complexity 
+ These options are in place to help {{{Service_user_text}}}s to understand and engage with this policy more easily.  
+ 5. Procedure 
+ 5. 1 Positive Behaviour Support 
+ Positive Behaviour Support (PBS) provides a framework that seeks to understand the context and meaning of behaviour in order to inform the development of supportive environments and skills that can enhance a person’s quality of life. Evidence has shown that PBS-based approaches can enhance quality of life and also reduce behaviour, which in turn can lead to a reduction in the use of restrictive practices including restraint/physical intervention (please refer to the Positive Behaviour Support Including Challenging Behaviour Policy and Procedure). 
+ Data on behavioural incidents and outcomes will be collected and analysed to inform and refine PBS plans continually at the {{{Client_Name_Official}}}. This data-driven approach ensures that strategies are effective and responsive to the {{{Service_user_text}}}'s evolving needs. 
+ All staff should be familiar with the Positive Behaviour Support Including Challenging Behaviour Policy and Procedure at {{{Client_Name_Official}}} and have undertaken relevant training on ensuring a positive and proactive approach to managing behaviour. 
+ All staff will undertake training in positive behaviour support/management when supporting {{{Service_user_text}}}s assessed as needing positive behaviour support. PBS is commonly used in learning disability and autism services, but is also effective in supporting any {{{Service_user_text}}} behaviour, including those who are elderly, confused, who may become agitated and may be living with Dementia.  
+ Please refer to the Positive Behaviour Support document in the Forms section of this policy. 
+ 5. 2 Human Rights 
+ The Human Rights Framework for Restraint covers all forms of restraint covered by the following definition: 
+ 'Restraint is an act carried out with the purpose of restricting an individual’s movement, liberty and/or freedom to act independently. Restraint includes chemical, mechanical and physical forms of control, coercion and enforced isolation, which may also be called ‘restrictive interventions' 
+ {{{Client_Name_Official}}} accepts that under human rights legislation, basic rights and freedoms belong to every individual without exception. 
+ The policy at {{{Client_Name_Official}}} is based on a set core of principles sometimes known as FREDA: 
+ F - Fairness 
+ R - Respect 
+ E - Equality 
+ D - Dignity 
+ A - Autonomy 
+ These principles are designed to protect {{{Service_user_text}}}s' freedoms and empower them to control how they choose to live their own lives, to take part effectively in decisions made about them which impact upon their rights, and to receive a fair and equal service. 
+ The use of all restrictive practices including restraint/physical intervention must be in line with the principles described in the Human Rights Framework for Restraint produced by the Equality and Human Rights Commission. 
+ Staff at {{{Client_Name_Official}}} understand that not all restrictive practice includes the use of force; it can also include acts of interference, for example, the tilting of a recliner chair to make it difficult for {{{Service_user_text}}}s to get out or moving a walking aid out of reach. Even moving a call bell out of reach could be seen as being restrictive as it prevents the {{{Service_user_text}}} from calling for assistance. This may in turn constitute a safeguarding concern as outlined in Section 5.8. 
+ All acts of restrictive practice must be lawful, proportionate and the least restrictive option available 
+ It is never lawful to use restrictive practices including restraint/physical intervention to humiliate, degrade or punish any {{{Service_user_text}}} 
+ The best way to avoid restrictive practices is to work preventatively and meet needs before a crisis arises. However, there may be rare occasions when it is necessary to use restrictive practices to prevent harm to {{{Service_user_text}}} or others. 
+ {{{Client_Name_Official}}} will ensure that {{{Service_user_text}}}s have appropriate {{{Care_plan_name}}}s in place. This is to ensure that in the event of restrictive practices being identified as needed, the {{{Care_plan_name}}} contains all the relevant information required that makes the restrictive practice lawful by following recognised procedures. 
+ {{{Care_plan_name}}}s will detail why some {{{Service_user_text}}}s are particularly vulnerable to violations of their human rights. This will include protected characteristics such as age, capacity or because of discrimination related to their protected characteristics as defined by the Equality Act 2010. 
+ {{{Care_plan_name}}}s and risk assessments will detail where {{{Service_user_text}}}s have past trauma, communication barriers, or who have other differences and, as a result, find certain restrictive practices distressing, challenging and harmful and will clearly identify any support required to avoid, reduce and alleviate these processes. 
+ 5. 3 Trauma Informed Care and Support 
+ It is the aim of {{{Client_Name_Official}}} to ensure that all care and support is provided in a way that promotes physical, psychological and emotional safety, respects dignity and individual experiences, and minimises the risk of re-traumatisation. 
+ Trauma-informed principles underpin the approach of {{{Client_Name_Official}}} to care and support delivery, staff interactions, service design and organisational culture. 
+ Key Principles 
+ All care and support will be guided by the following principles: 
+ Safety: Physical, emotional and psychological safety 
+ Trust and Transparency: Clear, consistent and honest communication 
+ Choice: Respecting preferences and promoting control 
+ Collaboration: Working in partnership with people and those important to them 
+ Empowerment: Building on strengths and promoting independence 
+ Cultural Sensitivity and Inclusion: Respecting identity, background and lived experience 
+ Assessment and Planning 
+ Assessments will consider life history, preferences, triggers and coping strategies (where this is appropriate and with the {{{Service_user_text}}}'s consent). 
+ Staff Awareness and Training 
+ Where applicable, in line with the training needs analysis at {{{Client_Name_Official}}}, staff, including temporary staff, will receive trauma-informed care awareness as part of induction and ongoing training.  
+ Further information can be found in the Trauma Informed Care and Support Policy and Procedure at {{{Client_Name_Official}}} 
+ 5. 4 Capacity and Consent 
+ Staff at {{{Client_Name_Official}}} must ensure that they assess the {{{Service_user_text}}}'s mental capacity. Consent for the use of any type or method of restrictive practices including restraint/physical intervention must be gained from the {{{Service_user_text}}} unless they lack the mental capacity to make the decision. 
+ Staff must be aware of the following: 
+ Restrictive practice can only be carried out with the consent of the {{{Service_user_text}}} 
+ If the {{{Service_user_text}}} has capacity, but does not give consent and there is no risk of harm to other people, then restraint is not acceptable and could result in civil or criminal assault 
+ If the {{{Service_user_text}}} does not give consent but a restrictive practice is considered necessary to safely manage a situation, minimise the risk, or meet the {{{Service_user_text}}}'s needs, then a multidisciplinary discussion must take place in order to discuss and agree alternative strategies 
+ Where there are concerns over the {{{Service_user_text}}}'s capacity to consent to a restrictive practice, then an assessment of the {{{Service_user_text}}}'s capacity in relation to that specific issue must be undertaken. A 'best interest' meeting may need to be held in line with the Mental Capacity Act (MCA) 2005 Policy and Procedures 
+ For {{{Service_user_text}}}s who lack capacity in relation to their behaviour and restrictive practices including restraint/physical intervention, {{{Client_Name_Official}}} must have a 'Deprivation of Liberty' agreed which is deemed necessary and proportionate to carry out this level of restriction in specific circumstances 
+ Staff must be aware of the guiding principles of the Mental Capacity Act: 
+ Principle 1: Assumption of capacity. This means that everyone from the age of 16 is assumed to have mental capacity unless it is established that they lack capacity 
+ Principle 2: A person must not be assessed as lacking capacity unless all practicable steps have been taken to help them make the decision, without success 
+ Principle 3: A person is not to be treated as unable to make a decision just because they make an unwise decision 
+ Principle 4: Anything which is done on behalf of someone who lacks capacity must be done in their best interests 
+ Principle 5: When taking action or making a decision on behalf of someone who lacks capacity, thought must always be given to whether this could be achieved in a way which is less restrictive of the person’s rights and freedom of action 
+ Advocacy 
+ Where there are significant concerns about any {{{Service_user_text}}}'s capacity, an independent mental capacity advocate (IMCA) will be involved to ensure that the {{{Service_user_text}}}'s rights and best interests are represented. Where appropriate to do so, {{{Service_user_text}}}s will have access to, and be supported to access, advocacy services in line with the Advocacy Policy and Procedure at {{{Client_Name_Official}}}. 
+ Find an Advocate 
+ 5. 5 Person-centred Practice 
+ {{{Client_Name_Official}}} supports the culture of person-centred practice, recognising this as the key to reducing restrictive practice. 
+ {{{Client_Name_Official}}} remains fully committed to the reduction of any restrictive practice. All {{{Service_user_text}}}s will receive detailed positive behaviour support (PBS) plans and risk assessments in order to meet {{{Service_user_text}}}s' needs aimed at improving their quality of life and removing the need to implement any restrictive practice. PBS plans will be developed and reviewed in co-production with {{{Service_user_text}}}s, their families, advocates or legal representatives to ensure they reflect the {{{Service_user_text}}}'s preferences, needs, and aspirations. This ensures that this policy and any restraint practices will be regularly reviewed with input from {{{Service_user_text}}}s, families, and advocates. 
+ {{{Reg_Manager_Name}}} will have a process in place for the assessment, monitoring and review of PBS plans in order to understand why {{{Service_user_text}}}s may use certain behaviour to communicate in order to have their needs met by {{{SupportWorkerOrCarer}}}s. 
+ PBS plans must contain the following: 
+ Communication needs 
+ Sensory assessment 
+ Active support 
+ Risk management 
+ Physical health needs 
+ Trauma informed support 
+ Consent 
+ Recovery models 
+ Any additional relevant information such as how it will be reviewed and monitored for effectiveness 
+ Working as a multidisciplinary team (MDT), adjustments to PBS plans are made collectively in order to improve support and outcomes for {{{Service_user_text}}}s 
+ Positive behaviour support policies and procedures at {{{Client_Name_Official}}} guide staff in the reduction of restrictive behaviours by adopting alternative methods of support. Staff should follow {{{Care_plan_name}}}s and any concerns must be discussed with {{{Reg_Manager_Name}}}. 
+ Please refer to the Positive Behaviour Support Including Challenging Behaviour Policy and Procedure. 
+ 5. 6 Before Using Restrictive Practices including Restraint/Physical intervention 
+ Staff must be familiar with the definitions of restrictive practices including restraint/physical intervention. 
+ They will also be clear that, in accordance with the Mental Capacity Act 2005, when considering using any form of restraint with {{{Service_user_text}}}s who lack capacity, the following two conditions must both be met: 
+ The {{{SupportWorkerOrCarer}}} taking action must reasonably believe that restraint is necessary to prevent harm to the person who lacks capacity, and 
+ The amount and type of restrictive practices including restraint/physical intervention used and the amount of time it lasts must be a proportionate response to the likelihood and seriousness of harm 
+ The following must be assessed: 
+ The {{{Service_user_text}}}'s behaviour 
+ The {{{Service_user_text}}}'s underlying condition and treatment 
+ The {{{Service_user_text}}}'s mental capacity in relation to making decisions about their behaviour which is leading staff to consider using restrictive practices including restraint/physical intervention. This is to include completion of the mental capacity assessment records 
+ The communication needs of the {{{Service_user_text}}} 
+ The impact of the use of the type of restrictive practices including restraint/physical intervention on the {{{Service_user_text}}} 
+ It is unlawful to restrain any {{{Service_user_text}}} in a way that deprives them of their liberty unless the procedures set out in the Mental Capacity Act (MCA) 2005 Policy and Procedure and the deprivation of liberty policies and procedures at {{{Client_Name_Official}}} are followed. 
+ Staff will ensure that they have considered all other options to ensure the {{{Service_user_text}}}'s safety and wellbeing and this is the last resort. Staff can refer to the Restraint/Physical Intervention Flow Chart included in the Forms section of this policy which provides a guide to decision making. 
+ When a decision has been made, a risk assessment will be completed and a {{{Care_plan_name}}} will be produced. A separate risk assessment for the use of bed rails can be found in Use of Bed Rails Policy and Procedure. 
+ Staff must refer to Positive Behaviour Support Including Challenging Behaviour Policy and Procedure at {{{Client_Name_Official}}} to understand how to support and assess {{{Service_user_text}}}s. 
+ Staff should always ask the following questions: 
+ Is it lawful? – If not, stop it or change it 
+ Is it necessary? – If not, stop it or change it 
+ Is it proportionate? – If not, is there a less restrictive way of doing it? 
+ 5. 7 {{{Care_plan_name}}} s and Risk Assessment 
+ To help protect the interests of {{{Service_user_text}}}s with whom restrictive practices including restraint/physical interventions are used, it is good practice to involve the {{{Service_user_text}}}, and wherever possible, family members, advocates and other relevant legal representatives (e.g. the attorney or deputy for a person who lacks capacity) in planning, monitoring and reviewing how and when they are used. This includes ensuring all reasonable adjustments and that documentation is in a format the {{{Service_user_text}}} understands. If the {{{Service_user_text}}} is not involved, this should be fully documented and justified (refer to the Accessible Information Standard (AIS) Policy and Procedure). 
+ {{{Care_plan_name}}}s must always include clear evidence of health and social needs assessment, and must be created with input from the {{{Service_user_text}}}, their carers, relatives or advocates. This should identify: 
+ The context in which the {{{Service_user_text}}}'s behaviours occur 
+ Clear, primary, preventative strategies which focus on improvement of quality of life and ensuring that needs are met 
+ Secondary preventative strategies which aim to ensure that early signs of anxiety and agitation are recognised and responded to 
+ Tertiary strategies which may include details of planned restrictive interventions to be used in the safest possible manner, and which should only be used as an absolute last resort 
+ If the {{{Service_user_text}}} is able to be involved in their {{{Care_plan_name}}}, it is important to capture their views on what support they require when they are displaying challenging, concerning, stressed or distressed behaviours. 
+ {{{Care_plan_name}}}s are developed with a clear focus on cultural competence, ensuring that individual cultural, religious, and linguistic needs are respected and integrated into all aspects of {{{Support_or_care}}} delivery. 
+ Reasonable adjustments are identified and documented within the {{{Care_plan_name}}} to address specific barriers, promoting equitable access and personalised {{{Support_or_care}}} tailored to each {{{Service_user_text}}}’s unique circumstances. 
+ Refer to the Positive Behaviour Support Including Challenging Behaviour Policy and Procedure for effective {{{Support_or_care}}} planning. 
+ As a resource to assist in this preparation, the Local Government Association has provided guidance with Promoting less restrictive practice: Reducing restrictions tool . 
+ Where any restrictive practices have been identified and documented, {{{Reg_Manager_Name}}} will be responsible for ensuring an appropriate reduction plan is in place. 
+ Plans are reviewed within governance systems at {{{Client_Name_Official}}} and using a lessons learnt process. 
+ 5. 8 De-Escalation, Disengagement and Breakaway Techniques 
+ In line with NICE recommendations, staff should not use restrictive practices including restraint/physical interventions. However, in some circumstances, they may be agreed as part of a multidisciplinary decision and also agreed at senior management level in exceptional circumstances. 
+ Staff have a legal right to defend themselves and a professional duty to protect others from harm. 
+ De-escalation, disengagement and breakaway techniques are suggested for community settings (NICE, 2015). This training must be delivered through an accredited training provider. The training must focus on an awareness of the physical environment, strategies to keep safe, and reduce the likelihood of assault or harm. Further information on how to recognise and manage escalating behaviours appropriately at the earliest opportunity, how to minimise the risk of assault, and how to call for help in an emergency should also be included. 
+ Section 3 of the Criminal Law Act (1967) allows all citizens the right to use force that is reasonable in a threatening situation. However, this must be proportionate to the perceived threat. In situations of high risk, staff must remove themselves from the situation and, if there is immediate risk to life, contact the Police. 
+ Strategies to de-escalate and how to disengage safely should be included in the overall positive behaviour support plan. De-escalation techniques include verbal de-escalation, active listening, offering choices, and creating a calm environment. Staff will receive specialised training in these techniques to ensure they can effectively manage and diffuse potentially challenging situations 
+ 5. 9 The Safe and Ethical Use of Restrictive Practices including Restraint/Physical Interventions 
+ Restrictive interventions should never be used to punish, or for the sole intention of inflicting pain, suffering or humiliation 
+ There must be a real possibility of harm to the {{{Service_user_text}}} or to staff, the public or others if no action is taken 
+ The nature of techniques used to restrict must be proportionate to the risk of harm and the seriousness of that harm 
+ Any action taken to restrict {{{Service_user_text}}}'s freedom of movement must be the least restrictive option that will meet the need 
+ Any restriction should be imposed for no longer than absolutely necessary 
+ What is done to people, why and with what consequences must be subject to audit and monitoring, and must be open and transparent 
+ Restrictive interventions should only ever be used as a last resort 
+ {{{Service_user_text}}}s' families, legal representatives and advocate involvement are essential when reviewing plans for restrictive interventions 
+ When confronted with acute behavioural disturbance, or highly stressed or distressed behaviours, the choice of restrictive practices including restraint/physical interventions must always represent the least restrictive option to meet the immediate need. It should always be informed by the {{{Service_user_text}}}'s preference (if known), any particular risks associated with their general health and an appraisal of the immediate environment. 
+ Individual risk factors which suggest a person is at increased risk of physical and/or emotional trauma must be taken into account when applying restrictive practices including restraint/physical interventions. 
+ 5. 10 Unplanned use of Restraint/Physical Intervention 
+ In line with NICE recommendations, staff must not use manual restraint / physical intervention . In situations of medium risk, staff must consider using de-escalation techniques (Refer to the Positive Behaviour Support Including Challenging Behaviour Policy and Procedure at {{{Client_Name_Official}}} or where trained to do so in high risk areas, the breakaway technique).  
+ Restraint/physical intervention must only be used in emergency situations where there is an immediate risk of harm and no alternative de-escalation strategy is effective. Its use should always be a last resort and never as a routine or convenience measure. 
+ Restraint/physical intervention must NOT be used unless this has been agreed as part of a wider multidisciplinary decision involving external professionals. 
+ In situations of high risk, staff must remove themselves from the situation and, if there is immediate risk to life, contact the Police. Unplanned restraint/physical intervention, where staff have not been trained in approved techniques, must not be used. 
+ In exceptional circumstances, if an unplanned and documented form of restraint/physical intervention has been used, the following information must be recorded: 
+ Why restraint/physical intervention took place 
+ What happened, when and who was involved 
+ How long the restraint/physical intervention lasted 
+ What form of restraint/physical intervention was used 
+ If there was any impact on the wellbeing of the {{{Service_user_text}}} 
+ If vital signs were taken (as recommended) 
+ The relevant people have been informed 
+ This documentation must be completed immediately following the incident to ensure accuracy and transparency. A formal review of the incident must be conducted promptly to evaluate the circumstances, assess the necessity and proportionality of the intervention, identify any learning points, and update {{{Care_plan_name}}}s accordingly to prevent future occurrences. 
+ If there are any incidents of unplanned restraint/physical intervention, staff must complete the appropriate incident or accident form and follow the incident and accident reporting policies at {{{Client_Name_Official}}}. 
+ {{{Client_Name_Official}}} must ensure that an investigation takes place immediately after the event and the local safeguarding team and the {{{reg_authority}}} are notified where required to do so. 
+ 5. 11 Use of Chemical Restraint 
+ {{{Client_Name_Official}}} is committed to reducing restrictive practices and preventing the inappropriate use of medication. Chemical restraint, including rapid tranquillisation or the use of psychotropic medication primarily to control behaviour, will only be used as a last resort to prevent serious harm and is not routine care and support. 
+ Any use of chemical restraint must be authorised by {{{Reg_Manager_Name}}} following multidisciplinary team (MDT) review, or in an emergency, and must align with NICE guidance (NG10), STOMP guidance, as detailed in the Overarching Medicines Management Policy and Procedure at {{{Client_Name_Official}}}. Decisions must be supported by informed consent or a best interest decision in accordance with the Mental Capacity Act 2005. 
+ All psychotropic medication use will be clearly prescribed, regularly reviewed, and monitored for effectiveness and side effects. Care/support and behaviour support plans will fully detail the rationale for medication use, identified triggers, non-restrictive alternatives, monitoring arrangements, and plans for reduction or withdrawal where clinically appropriate. 
+ All incidents involving chemical restraint will be recorded, reviewed through governance processes at  {{{Client_Name_Official}}}, and notified to the {{{reg_authority}}} where required to do so. 
+ 5. 12 Planned use of Restraint/Physical Intervention 
+ Staff will be familiar with the definition of restraint/physical intervention and the types of restraint/physical intervention. 
+ Only staff who have had approved, accredited training will be involved in any type of restraint/physical intervention. 
+ They will also be clear that, in accordance with the Mental Capacity Act 2005, when considering using any form of restraint/physical intervention with {{{Service_user_text}}} who lacks capacity, the following conditions must be met: 
+ The {{{SupportWorkerOrCarer}}} taking action must reasonably believe that restraint/physical intervention is necessary to prevent harm to the person who lacks capacity 
+ The amount and type of restraint/physical intervention used and the amount of time it lasts must be a proportionate response to the likelihood and seriousness of harm, and 
+ A multidisciplinary approach has been taken and a 'Deprivation of Liberty' is in place to include this restriction practice 
+ The following must be assessed: 
+ The {{{Service_user_text}}}'s behaviour 
+ The {{{Service_user_text}}}'s underlying condition and treatment 
+ The {{{Service_user_text}}}'s mental capacity in relation to making decisions about their behaviour which is leading staff to consider using restraint / physical intervention. This is to include completion of the mental capacity assessment records and a best interest meeting 
+ The communication needs of the {{{Service_user_text}}} 
+ The impact of the use of the type of restraint/physical intervention on the {{{Service_user_text}}} 
+ It is unlawful to physically restrain any {{{Service_user_text}}} in a way that deprives them of their liberty unless the procedures set out in the Mental Capacity Act (MCA) 2005 Policy and Procedure and the deprivation of liberty policies and procedures at {{{Client_Name_Official}}} are followed. 
+ Assessing staff will ensure that they have considered all other options to ensure the {{{Service_user_text}}}'s safety and wellbeing and this is the last resort. Staff can refer to the Physical Intervention Flow Chart included in the Forms section of this policy which provides a guide to decision making 
+ 5. 13 Time Limits, Escalation and Review 
+ Restraint/physical intervention must be applied for the shortest time necessary to manage the immediate risk and must never exceed the time limits set out in the {{{Service_user_text}}}'s care and support plans without urgent reassessment.  
+ If the restraint continues beyond this time limit, staff must escalate the situation to {{{Reg_Manager_Name}}} or the senior on duty immediately. An urgent review will be conducted to evaluate the necessity of ongoing restraint, consider alternative interventions, and ensure the safety and dignity of the {{{Service_user_text}}}.  
+ All instances where time limits are approached or exceeded must be clearly documented and trigger a formal review as outlined in the {{{Service_user_text}}}'s care and support plans to prevent recurrence and update plans accordingly. Where applicable, this review may trigger formal MDT review. 
+ 5. 14 Physical Health Monitoring after Restraint/Physical Intervention 
+ {{{Service_user_text}}}s who have had restraint/physical intervention must have their observations monitored after the incident. 
+ This will include: 
+ Respiratory rate 
+ Oxygen saturations 
+ Temperature 
+ Systolic blood pressure 
+ Pulse rate 
+ Level of consciousness 
+ This should be clearly documented in the {{{Care_plan_name}}} and if there are any concerns, medical help must be called for. 
+ Injuries Sustained Through the Use of Restraint/Physical Intervention 
+ Any injuries or suspected injuries should be dealt with as soon as it is practical and safe to do so. 
+ The person responsible for managing the incident must check with staff and the {{{Service_user_text}}} to ascertain their wellbeing after the incident and whether they may have any injuries. All injuries must be recorded as part of the post-incident debrief and reporting, and a body map should be completed. 
+ 5. 15 Post-incident Review and Support 
+ {{{Client_Name_Official}}} will ensure that the process for post-incident restraint/physical intervention reviews will be completed in line with NICE Guidance NG10 and QS154 (NICE, 2015, 2017). 
+ Restrictive practice may trigger traumatic memories for some {{{Service_user_text}}}s and staff should offer support after an incident that has involved a restrictive practice as detailed in {{{Service_user_text}}} Positive Behaviour Support Plans. Other {{{Service_user_text}}}s who may have witnessed the event may also require post-incident support. 
+ Post-incident reviews will involve a structured debriefing process, including individual and team reflections. This ensures that all perspectives are considered, and lessons are learned to improve future practice. 
+ The provision of post-incident support alongside other strategies is a fundamental principle at {{{Client_Name_Official}}} as it has been acknowledged the correct support post incident can have the following benefits: 
+ Rebuild trust 
+ Assure safety 
+ Assess injury, physical and emotional wellbeing 
+ Reflect on the event or practice, learning lessons 
+ Redirection 
+ Post-incident support must be available after any incident where restrictive practice has been used and after any incident that may have had an impact on {{{Service_user_text}}}s. It should also be available to those {{{SupportWorkerOrCarer}}}s and others who may have been involved or witnessed the incident. 
+ {{{Service_user_text}}}s with cognitive and/or communication impairments may need to be helped to engage in this process, for example, by the use of simplified language or visual imagery. Other people may not be able to be involved due to the nature of their impairment. 
+ If the {{{Service_user_text}}} wishes to raise a formal concern or complaint, they should be reminded how to access the local complaints procedure of {{{Client_Name_Official}}}. Staff or {{{Service_user_text}}}s who have sustained injuries or have been subjected to a serious assault should be supported and consideration should be given to involve the Police. 
+ Good governance at {{{Client_Name_Official}}} includes a blame-free approach, lessons learnt and continuous improvements aimed at improving outcomes for {{{Service_user_text}}}s. 
+ {{{Client_Name_Official}}} will offer debriefing to {{{SupportWorkerOrCarer}}}s following any restrictive practices. It will also be offered to discuss issues of concern through team meetings at {{{Client_Name_Official}}}, supervision and the appraisal process. 
+ 5. 16 Post-Incident Debrief 
+ {{{Client_Name_Official}}} must ensure that where appropriate, lessons are learned when incidents occur where restrictive interventions, including restraint/physical intervention, have had to be used. 
+ {{{Reg_Manager_Name}}} or a delegated other should carry out a post-incident analysis (refer to the Forms section of this policy) with all staff involved as soon as possible after the incident, ideally before staff finish their shift. 
+ Individual staff may also require a separate review due to sustaining injuries, psychological distress or anxiety around the incident. Whilst all staff should attend the group post analysis, staff should also be encouraged to have an individual reflection to raise any specific concerns that may not be appropriate to do so in a group forum. 
+ The aims of post-incident reviews are to: 
+ Evaluate the physical and emotional impact on all individuals involved (including any witnesses) 
+ Identify if there is a need, and if so, provide counselling or support for any trauma that might have resulted 
+ Help {{{Service_user_text}}}s and staff to identify what led to the incident and what could have been done differently 
+ Determine whether alternatives, including less restrictive interventions, were considered 
+ Determine whether service barriers or constraints make it difficult to avoid the same course of action in future 
+ Where appropriate, recommend changes to the service’s philosophy, policies, care environment, treatment approaches, staff education and training 
+ Where appropriate, avoid a similar incident happening on another occasion 
+ All post-incident reviews should be analysed by {{{Reg_Manager_Name}}}, which should form part of the overall governance and oversight of restrictive practices in the service and within {{{Client_Name_Official}}}. 
+ 5. 17 Recording and Reporting 
+ {{{Reg_Manager_Name}}} will monitor and maintain a register of all incidents of restraint/physical intervention. This register will be used to review practice and allow for the opportunity to reduce and eliminate the need. This will also be reviewed as part of overall governance at {{{Client_Name_Official}}}. 
+ {{{Reg_Manager_Name}}} will oversee and ensure that for any {{{Service_user_text}}} having any form of restraint/physical intervention or restrictive practice, that the necessary procedures and authorisation, as detailed within this policy, are in place. 
+ Following any occasion where restrictive practices are used, whether planned or unplanned, a full record should be made. This should be recorded as soon as practicable (and always within 24 hours of the incident). The record should detail: 
+ The names of the staff and people involved 
+ The reason for using the specific type of restrictive practices used (rather than an alternative less restrictive strategy) 
+ The type of restrictive practice employed 
+ The date and the duration of the restrictive practice 
+ Whether the {{{Service_user_text}}} or anyone else experienced injury or distress (a body map should also detail any injuries) 
+ What action was taken 
+ 5. 18 Safeguarding  and Notifications 
+ Where the use of restrictive practice or restraint/physical intervention gives rise to safeguarding concerns, a safeguarding referral will be made promptly and without delay, in line with {{{Local_Authority_Name}}} safeguarding protocols. This includes any incident involving suspected abuse, neglect, excessive, inappropriate, or unauthorised use of restraint, or where the {{{Service_user_text}}} has experienced harm or is at risk of harm.  
+ Families, commissioners, legal representatives and health professionals involved in the {{{Service_user_text}}}'s {{{Support_or_care}}} may also be required to be informed according to individual {{{Care_plan_name}}}s. 
+ All actions taken will prioritise the {{{Service_user_text}}}’s safety, rights, dignity, and wellbeing. 
+ {{{Client_Name_Official}}} will act in accordance with the duty of candour requirements by being open and transparent when a notifiable safety incident occurs in relation to restrictive practice or restraint. This includes informing the {{{Service_user_text}}} and/or their representative, offering an apology where appropriate, providing a clear explanation of what is known about the incident, and outlining the actions taken to mitigate harm and prevent recurrence.  
+ Duty of candour notifications and records will be completed in line with regulatory guidance and the policies and procedures at {{{Client_Name_Official}}}. 
+ 5. 19 Restraint/Physical Intervention Reduction 
+ {{{Client_Name_Official}}} will have restrictive intervention reduction programmes based on the principles of effective leadership, data informed practice, workforce development, the use of specific restrictive intervention reduction tools, {{{Service_user_text}}} empowerment and a commitment to effective models of post-incident review. 
+ To support reductions, {{{Client_Name_Official}}} will: 
+ Assess, implement and use environmental adjustments and sensory interventions to reduce distress 
+ Regularly review restrictive practices reduction targets with clear leadership accountability 
+ Use analysis, data analytics and technology to identify patterns of restraint and inform quality improvement 
+ Restrictive intervention reduction programmes will be reviewed on an ongoing basis. As a minimum, there must be evidence of at least an annual, full evidence-based review of control measures leading to revision and update of corporate action plans. All restrictive intervention reduction programmes and evidence of associated reviews must be made available for inspection for the regulators. 
+ Any {{{Service_user_text}}} with a behaviour support plan advocating the use of restrictive interventions should have clear, proactive strategies including details of primary and secondary preventative strategies (refer to the Positive Behaviour Support Including Challenging Behaviour Policy and Procedure). 
+ There must be assurance mechanisms in place which routinely examine the quality of training provided to staff about positive behavioural support, de-escalation and the use of restrictive interventions. {{{Client_Name_Official}}} will utilise technology and data analytics to monitor the use of restrictive practices. This will help identify patterns and trends, enabling targeted interventions to reduce reliance on such practices. 
+ There will be arrangements for staff with differing degrees of specialism and seniority to maintain the competence associated with their role (i.e. the competencies required to deliver an effective behaviour support plan are qualitatively and quantitatively different than those required by a specialist practitioner who undertakes complex assessments and devises behaviour support plans). 
+ {{{Client_Name_Official}}} will acknowledge and seek to minimise the risks associated with any restrictive interventions taught to staff. 
+ Services must maintain accurate information that allows them to readily identify which {{{Service_user_text}}}s have behaviour support plans that include the use of restrictive interventions as tertiary strategies. 
+ Reviews of the quality of design and application of all positive behaviour support plans will be included in the internal audit of {{{Client_Name_Official}}} and will inform organisational increased behaviour support planning and restrictive intervention reduction strategies. 
+ {{{Client_Name_Official}}} will publish a public, annually updated, accessible report on their increased behaviour support planning and restrictive intervention reduction, which outlines the training strategy, techniques used (how often) and reasons why, whether any significant injuries resulted, and details of ongoing strategies for bringing about reductions in the use of restrictive interventions. 
+ 5. 20 Audit and Monitoring 
+ {{{Reg_Manager_Name}}} will monitor and maintain a register of restraint/physical Intervention used in {{{Client_Name_Official}}}. This register will be used to review practice and allow for the opportunity to reduce and eliminate the need. 
+ {{{Reg_Manager_Name}}} will oversee and ensure that any {{{Service_user_text}}} having any form of restraint or restrictive practice in place has the necessary procedures followed as detailed within this policy. 
+ 5. 21 Good Governance and Corporate Accountability 
+ {{{Client_Name_Official}}} will ensure that robust governance oversight, monitoring and regular review are in place where {{{Service_user_text}}}s who are exposed to restrictive interventions have access to high-quality behaviour support plans that are designed, implemented and reviewed by staff with the necessary skills, and that restrictive interventions are undertaken lawfully. {{{Client_Name_Official}}} will ensure that its effective governance frameworks are founded on transparency and accountability. 
+ Details of how the senior management level (or equivalent) authorisation and approval of any restrictive interventions taught to their staff and used in practice will be available. 
+ {{{Client_Name_Official}}} will ensure that there is an identified director or equivalent who takes a lead responsibility for restrictive intervention reduction programmes. {{{Service_user_text}}}s and families will be informed of who this is. 
+ The senior management team who authorises the use of restrictive interventions in the service should also undertake appropriate training in the use of PBS and restraint/physical interventions to ensure they are fully aware of the techniques their staff are being trained in. 
+ 5. 22 Learning and Development 
+ The Restraint Reduction Network Training Standards apply to all training that has a restrictive intervention component. Before delivering any training, {{{Client_Name_Official}}} will ensure that the accredited, certified training provider carries out a training needs analysis to obtain as much information as possible about the needs and characteristics of staff and {{{Service_user_text}}}s. This will ensure that any restraint/physical intervention is appropriate, proportional, meets identified needs, and that any elevated risks are highlighted and adjustments made where needed. De-escalation and breakaway techniques may be the appropriate training required without the need for physical restraint training. 
+ These standards will ensure that training is directly related and proportional to the needs of individual {{{Service_user_text}}}s and that training is delivered by competent and experienced training staff who can evidence knowledge and skills that go beyond the application of physical restraint or other restrictive interventions. 
+ In addition to improving training and practice, the standards will: 
+ Protect {{{Service_user_text}}}s' fundamental human rights and promote person-centred, best interest and therapeutic approaches to supporting {{{Service_user_text}}}s when they are distressed 
+ Improve the quality of life of {{{Service_user_text}}}s being restrained and those supporting them 
+ Reduce reliance on restrictive practices by promoting positive culture and practice that focuses on prevention, de-escalation and reflective practice 
+ Increase understanding of the root causes of the {{{Service_user_text}}}'s behaviour and recognition that many behaviours are the result of distress due to unmet needs 
+ In exceptional circumstances, and only in agreement with external professionals, focus on the safest and most dignified use of restrictive practices including restraint/physical interventions 
+ {{{Reg_Manager_Name}}} must ensure all staff have access to positive behaviour support (PBS) training which underpins the support of {{{Service_user_text}}}s who may become distressed. 
+ {{{Client_Name_Official}}} will ensure staff will have access to ongoing professional development opportunities and the latest research and best practices in the field. This ensures that its practices remain aligned to up-to-date guidance and best practice. 
+ In addition, training should be in place which supports individual needs such as autism, brain injury and mental health conditions. 
+ Any training in restraint/physical intervention must only be delivered after all relevant staff have completed an appropriate level of immediate life support training (including required refresher training). This should be in accordance with the guidelines of the UK Resuscitation Council for immediate life support. 
+ The accredited training provider or in-house trainer must ensure that the training identifies: 
+ Who the training is intended for 
+ Aims, objectives and learning outcomes for each programme 
+ Training methods 
+ Timings assessment methods 
+ Rationale that justifies the inclusion of each restrictive intervention in the programme. This may be in any format, but must include the following as a minimum:
+ RRN Training Standards - Name and description of restrictive intervention (diagram or photo) 
+ Rationale for use (why and in what situation?) 
+ How the intervention will be taught to staff and how competence will be tested 
+ General safety issues for staff during teaching and practice 
+ Any person-specific safety issues for staff during teaching and practice (where information has been provided, and adjustments need to be made) 
+ Any issues that may compromise the fidelity of the technique between the taught version in the classroom and its application in practice. This must include a description of how any identified issues may compromise both safety and effectiveness 
+ General safety guidelines, supporting those restrictive interventions authorised for use at population level 
+ Person-centred safety guidelines, principles of trauma-informed practice, supporting personalised restrictive interventions 
+ A statement that the restrictive intervention must be used as taught and not modified, unless authorised by the accredited training provider 
+ Training Providers Must Ensure: 
+ That any form of mechanical restraint/physical intervention that they are requested to teach the use of has been agreed at {{{Client_Name_Official}}} senior management level 
+ Mechanical restraint must only be considered for use in exceptional circumstances in specific settings and under very specific circumstances 
+ Sharing of NICE (NG10) 2015 guidance, that taking {{{Service_user_text}}}s to the floor during manual restraint/physical intervention should be avoided, but that if it is necessary, the supine (face up) position should be used in preference to the prone (face down) position:
+ This position can, and has, caused death after as little as 10 minutes, by causing a cardiac event. Consistent implementation of these recommendations will save lives, improve safety and minimise distress for all involved 
+ 5. 23 Care and Support at {{{Client_Name_Official}}} 
+ {{{Client_Name_Official}}} provides care and support to {{{Service_user_text}}}s with a range of needs in a person-centred, safe, and lawful way. 
+ All staff must follow the guidance within this policy and the {{{Service_user_text}}}’s {{{Care_plan_name}}}, ensuring that assessed needs, reasonable adjustments and individual preferences are met. 
+ Every {{{Service_user_text}}} is treated equally and with dignity and respect 
+ Care and support are tailored to individual needs, preferences and desired outcomes 
+ Staff follow legal, regulatory, and professional guidance at all times 
+ Person-centred approaches are used to promote independence, choice, and wellbeing 
+ To support this approach, staff will also follow the policies and procedures below where applicable: 
+ Person-Centred Care and Supporting Planning 
+ Safeguarding Adults 
+ Raising Concerns, Freedom to Speak Up and Whistleblowing 
+ Mental Capacity Act (MCA) 2005 
+ {{{Deprivation_Of_Liberty_Type}}} 
+ Consent to Care, Support and Treatment 
+ Equality, Diversity and Human Rights 
+ Overarching Medicines Management 
+ Positive Behaviour Support Including Challenging Behaviour 
+ Restrictive Practices Including Restraint and Physical Interventions 
+ Sex, Sexuality and Relationships 
+ This list is not exhaustive and there will be additional policies and procedures in place to support specific {{{Service_user_text}}} needs. Staff must seek clarification from their line manager or the {{{Registered_Manager_JobTitle}}}, {{{Reg_Manager_Name}}}, if there is any uncertainty. 
+ Staff supporting any specialist area of need will receive appropriate induction and training. They will complete competency assessments, where required, to meet the needs of {{{Service_user_text}}}s as outlined in the Training Policy and Procedure at {{{Client_Name_Official}}}. 
+ To ensure {{{Service_user_text}}}s receive person-centred care and support from {{{Client_Name_Official}}}, staff must adhere to the following {{{support_principles}}}: 
+ 6. Definitions 
+ 6.1 Restrictive Practice 
+ Restrictive practices are defined as: 'Making someone do something they don’t want to do or stopping someone doing something they want to do.' (Skills for Care and Skills for Health, 2014, p. 9) 
+ Restricting practice risks a breach of the following human rights:
+ The right to freedom from torture, inhuman and degrading treatment 
+ The right to liberty and security 
+ The right to respect for private and family life, home and correspondence 
+ Examples of restrictive practice include:
+ Use of blanket rules (routine locking of doors, observation levels, use of seclusion, restraining an aggressive {{{Service_user_text}}}, sedation with medication) 
+ 6.2 Restrictive Interventions 
+ This is a specific set of interventions. They are deliberate acts (that could be seen to restrict a {{{Service_user_text}}}'s movement, liberty or freedom to act independently) placed on a person to:
+ Take immediate control of a dangerous situation (where there is the risk of harm to the person or others if no action is taken) and 
+ End or reduce significantly the danger to the person or others 
+ Examples could include:
+ Physical interventions and restraint (including mechanical restraint) 
+ Seclusion 
+ Rapid tranquilisation 
+ Personal and other searches 
+ Enhanced supervision 
+ Withholding of information or equipment 
+ Blanket restrictions 
+ 6.3 Restraint 
+ 'The use or threat of force to help do an act which the person resists, or the restriction of the person’s liberty of movement, whether or not they resist. Restraint may only be used where it is necessary to protect the person from harm and is proportionate to the risk of harm.' (Mental Capacity Act 2005) 
+ Any restrictive intervention must be justified both ethically and legally. It must only be:
+ Imposed if necessary to prevent serious harm 
+ The least restrictive option 
+ Approved using the correct authorisations 
+ Deprivation of liberty is a form of restraint and it means to prevent someone from exercising their rights and freedoms 
+ 6.4 Seclusion 
+ Seclusion refers to the supervised confinement and isolation of the {{{Service_user_text}}}, away from other {{{Service_user_text}}}s, in an area from which the {{{Service_user_text}}} is prevented from leaving, where it is of immediate necessity for the purpose of the containment of severe behavioural disturbance which is likely to cause harm to others (Mental Health Act 1983 Code of Practice 2015, 26.103) 
+ 6.5 Blanket Restrictions 
+ Blanket restrictions are rules or limitations applied to all individuals within a service or setting, regardless of their individual circumstances, capacity, or risk. They are not based on personalised assessment and can unnecessarily restrict freedom, choice, or autonomy 
+ 7. Key Facts - Professionals 
+ The prevention of the use of any form of restrictive practices including restraint/physical intervention is the main objective of {{{Support_or_care}}} 
+ The {{{Care_plan_name}}} must detail specific behaviour, de-escalation techniques, alternative approaches to reduce the need for restraint/physical intervention, and clearly state that restraint/physical intervention must only be used as a 'last resort' 
+ The use of any restrictive practices including restraint/physical intervention must be accurately recorded and shared with the management of {{{Client_Name_Official}}} and, if ongoing, be subject to regular review 
+ When restraint/physical intervention is used, this must be used for the shortest time possible and with the minimum possible restriction by staff with the relevant training 
+ The capacity of the {{{Service_user_text}}} must be considered and action must be taken in line with the five principles of the MCA 
+ All staff must have PBS training 
+ 8. Key Facts - People Affected by The Service 
+ You have the right to live your life with freedom, choice and control 
+ When you become distressed and this presents a risk to you or others, {{{Client_Name_Official}}} will ensure that it works within the law to support you safely and effectively while considering your rights at all times. {{{Client_Name_Official}}} will always involve you to ask what you would want us to do to support you when you are distressed 
+ {{{Care_plan_name}}}s are used to enable {{{Client_Name_Official}}} to capture your preferences and wishes and provide staff with clear guidance about how they provide you with {{{Support_or_care}}}. These {{{Care_plan_name}}}s include your views and wishes that relate to areas that could have the potential to restrict your freedom or choice 
+ Further Reading 
+ As well as the information in the 'Underpinning Knowledge' section of the review sheet, we recommend that you add to your understanding in this policy area by considering the following materials. 
+ MIND - Mental Health Crisis Care: Physical restraint in crisis: 
+ https://www.mind.org.uk/media/4378/physical_restraint_final_web_version.pdf 
+ Beyond Limits: 
+ https://beyondlimits-uk.org/ 
+ Restraint Reduction Network: 
+ https://restraintreductionnetwork.org/ 
+ RCN “Let’s Talk About Restraint” - Rights, Risks and Responsibility: 
+ https://restraintreductionnetwork.org/wp-content/uploads/2016/11/Lets-talk-about-restraint.pdf 
+ BILD: 
+ https://www.bild.org.uk/resources/ 
+ Use of Force Act 2018 guidance. This Act is not applicable to supported living services but provides good background information and understanding about the need to reduce the use of force, and how it could be done: 
+ https://www.gov.uk/government/publications/mental-health-units-use-of-force-act-2018/mental-health-units-use-of-force-act-2018-statutory-guidance-for-nhs-organisations-in-england-and-police-forces-in-england-and-wales 
+ NHSE - Identifying restrictive practice weblink: 
+ https://www.england.nhs.uk/long-read/identifying-restrictive-practice/ 
+ Outstanding Practice 
+ To be "outstanding" in this policy area you could provide evidence that: 
+ All relevant staff are fully aware of the issues surrounding restrictive practices including restraint/physical intervention and understand the implications for themselves and the {{{Service_user_text}}} 
+ Stakeholders are extremely satisfied with the service. The way in which {{{Client_Name_Official}}} manages behaviours that might lead to restrictive practices including restraint/physical intervention is seen as 'best practice' 
+ Other services have learnt from the way in which {{{Client_Name_Official}}} manages behaviour that might lead to restrictive practices 
+ There are no incidents of restrictive practices including restraint/physical intervention and all staff have training in, and knowledge of, the positive behaviour support approach 
+ {{{Client_Name_Official}}} can demonstrate that it is open and transparent in the area of restrictive practices including restraint/physical intervention, learning from individuals and their relatives or friends about how it can be avoided 
+ {{{Service_user_text}}}s and their representatives are extremely satisfied with the way that care and support is provided by {{{Client_Name_Official}}} 
+ The wide understanding of the policy is enabled by proactive use of the QCS App 
+ Forms 
+ The following forms are included as part of this policy: Title of form When would the form be used? Created by Title of form Restraint Physical Intervention Register When would the form be used? To provide evidence to support practice improvement and reduction of restraint/physical interventions. Created by QCS Title of form Restraint/Physical Intervention Flow Chart - CR77 When would the form be used? To be used to guide decision-making before using any form of restraint. Created by QCS Title of form Post Restraint/Physical Interventional Analysis - CR77 When would the form be used? Post event, this form should be completed as an opportunity for reflective learning and demonstration of continuous improvement. Created by QCS Title of form Individual Staff Post-incident Debrief - CR77 When would the form be used? To debrief after an incident involving restrictive practices. Created by QCS Title of form Safe Holds Easy Read When would the form be used? To support enabling {{{service_user_text}}}s to understand safe holds. Created by QCS Title of form Positive Behaviour Support When would the form be used? A poster that can be displayed to raise awareness. Created by British Institute of Learning Disabilities (BILD) Title of form {{{Service_user_text}}} Debrief When would the form be used? This form is to be used following an incident. It should be completed with the {{{service_user_text}}} to aid reflection. Created by QCS Restraint Physical Intervention Register Name of {{{Service_user_text}}} Date, time and duration of restraint/physical intervention Reason for restraint/physical intervention Type of restraint/physical intervention Actions taken as a result of the restraint/physical intervention Name of person/people involved in the restraint/physical intervention                                                                                                 Post Restraint/Physical Interventional Analysis - CR77 All staff involved in the incident should attend the post-intervention analysis during which this form is completed. Person carrying out post-intervention analysis with staff:                                                             Names of staff involved in post restraint/physical intervention analysis:   Ref number:   Attendees at post intervention analysis:   Date:   Name of {{{Service_user_text}}} who had restraint/physical intervention:   Location, time and date of incident:   Description of the challenging, concerned, stressed or distressed behaviour leading up to the restraint/physical intervention:   Who made the decision to physically intervene?   Staff involved with actual restraint/ physical intervention:   Did the {{{Service_user_text}}} struggle or become more distressed during the restraint/physical intervention?   What occurred during the restraint/physical intervention? (Details around de-escalation, any medication used or any concerns during the restraint/physical intervention)   How long was the person physically restrained for?   Were any injuries sustained by the {{{Service_user_text}}} or staff?   What happened after the person was released from restraint/physical intervention?   Cont/d.   Views and opinions on whether the decision to restrain/physically intervene was necessary, proportionate to the level of risk, or whether a less restrictive option could have been carried out:   Opinions on whether the incident was well managed:       Any other issues to be addressed, e.g. {{{Service_user_text}}} concerns, training     Comments of interviewer:       Have all staff involved received the relevant training and are they up to date with this and deemed competent? (Provide details)       Further action required:   Signature of Manager:   Date:   Individual Staff Post-incident Debrief - CR77 Date of restrictive practice/ restraint/physical intervention:   Reference Number:   Brief description of incident:   Name/post of staff member receiving support:   Name/post of staff member providing support:   Were any physical injuries sustained (please tick)? Yes   No   If, ‘YES’, what injuries?   What first aid/medical attention was needed?   Does the staff member require time out and if so, what has been provided?   Is the staff member able to complete their shift/continue to attend work?   How is the staff member feeling post incident?   Cont/d.   Does the staff member require further support and if so, what support?   Is further debriefing needed for the staff member and/or related to the incident? If it is, please describe.   What changes can be made to reduce further incidents? e.g. review risks assessments, PBS plans   Has the staff member identified any further suggestions to reduce risks or personal support needs?   Date:   Sent to Manager (Tick to confirm)   Signature of staff member receiving support:   Signature of staff member providing support:   Further action taken by manager:   Signature of manager:   Date:   
+ 

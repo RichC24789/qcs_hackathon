@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Care animation</title>
+  <link rel="stylesheet" href="css/player.css">
+</head>
+<body>
+  <main class="player">
+    <header class="player__head">
+      <p class="player__source" id="topicMeta"></p>
+      <h1 class="player__title" id="topicTitle">Loading…</h1>
+    </header>
+
+    <div class="progress" aria-hidden="true">
+      <span class="progress__fill" id="progressFill"></span>
+    </div>
+
+    <section class="stage" id="stage"></section>
+
+    <nav class="stepper" id="stepper" aria-label="Steps"></nav>
+
+    <div class="controls" role="group" aria-label="Playback controls">
+      <button class="ctrl" id="btnPrev" type="button" aria-label="Previous step">‹</button>
+      <button class="ctrl ctrl--primary" id="btnPlay" type="button" aria-label="Play">►</button>
+      <button class="ctrl" id="btnNext" type="button" aria-label="Next step">›</button>
+      <button class="ctrl" id="btnReplay" type="button" aria-label="Replay from start">↺</button>
+    </div>
+
+    <p class="sr-only" id="live" aria-live="polite"></p>
+  </main>
+
+  <!-- data bundle (works on file://) then engine -->
+  <script src="data/animations-data.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/player.js"></script>
+</body>
+</html>

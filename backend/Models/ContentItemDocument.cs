@@ -46,8 +46,8 @@ internal sealed class ContentItemMetadata
     [JsonPropertyName("format")]
     public string Format { get; init; } = string.Empty;
 
-    [JsonPropertyName("secondaryFormat")]
-    public string SecondaryFormat { get; init; } = string.Empty;
+    [JsonPropertyName("url")]
+    public string Url { get; init; } = string.Empty;
 
     [JsonPropertyName("topicNumber")]
     public int TopicNumber { get; init; }

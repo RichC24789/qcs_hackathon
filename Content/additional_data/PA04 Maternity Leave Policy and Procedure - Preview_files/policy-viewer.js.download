@@ -1,0 +1,3545 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  QCS_Policy_Viewer: () => (/* reexport */ Qcs_Policy_Viewer),
+  html: () => (/* reexport */ lit_html_x)
+});
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/css-tag.js
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const css_tag_t = window,
+  css_tag_e = css_tag_t.ShadowRoot && (void 0 === css_tag_t.ShadyCSS || css_tag_t.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype,
+  s = Symbol(),
+  n = new WeakMap();
+class css_tag_o {
+  constructor(t, e, n) {
+    if (this._$cssResult$ = !0, n !== s) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
+    this.cssText = t, this.t = e;
+  }
+  get styleSheet() {
+    let t = this.o;
+    const s = this.t;
+    if (css_tag_e && void 0 === t) {
+      const e = void 0 !== s && 1 === s.length;
+      e && (t = n.get(s)), void 0 === t && ((this.o = t = new CSSStyleSheet()).replaceSync(this.cssText), e && n.set(s, t));
+    }
+    return t;
+  }
+  toString() {
+    return this.cssText;
+  }
+}
+const r = t => new css_tag_o("string" == typeof t ? t : t + "", void 0, s),
+  i = (t, ...e) => {
+    const n = 1 === t.length ? t[0] : e.reduce((e, s, n) => e + (t => {
+      if (!0 === t._$cssResult$) return t.cssText;
+      if ("number" == typeof t) return t;
+      throw Error("Value passed to 'css' function must be a 'css' function result: " + t + ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.");
+    })(s) + t[n + 1], t[0]);
+    return new css_tag_o(n, t, s);
+  },
+  S = (s, n) => {
+    css_tag_e ? s.adoptedStyleSheets = n.map(t => t instanceof CSSStyleSheet ? t : t.styleSheet) : n.forEach(e => {
+      const n = document.createElement("style"),
+        o = css_tag_t.litNonce;
+      void 0 !== o && n.setAttribute("nonce", o), n.textContent = e.cssText, s.appendChild(n);
+    });
+  },
+  c = css_tag_e ? t => t : t => t instanceof CSSStyleSheet ? (t => {
+    let e = "";
+    for (const s of t.cssRules) e += s.cssText;
+    return r(e);
+  })(t) : t;
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/reactive-element.js
+
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+var reactive_element_s;
+const reactive_element_e = window,
+  reactive_element_r = reactive_element_e.trustedTypes,
+  h = reactive_element_r ? reactive_element_r.emptyScript : "",
+  reactive_element_o = reactive_element_e.reactiveElementPolyfillSupport,
+  reactive_element_n = {
+    toAttribute(t, i) {
+      switch (i) {
+        case Boolean:
+          t = t ? h : null;
+          break;
+        case Object:
+        case Array:
+          t = null == t ? t : JSON.stringify(t);
+      }
+      return t;
+    },
+    fromAttribute(t, i) {
+      let s = t;
+      switch (i) {
+        case Boolean:
+          s = null !== t;
+          break;
+        case Number:
+          s = null === t ? null : Number(t);
+          break;
+        case Object:
+        case Array:
+          try {
+            s = JSON.parse(t);
+          } catch (t) {
+            s = null;
+          }
+      }
+      return s;
+    }
+  },
+  a = (t, i) => i !== t && (i == i || t == t),
+  l = {
+    attribute: !0,
+    type: String,
+    converter: reactive_element_n,
+    reflect: !1,
+    hasChanged: a
+  },
+  d = "finalized";
+class u extends HTMLElement {
+  constructor() {
+    super(), this._$Ei = new Map(), this.isUpdatePending = !1, this.hasUpdated = !1, this._$El = null, this._$Eu();
+  }
+  static addInitializer(t) {
+    var i;
+    this.finalize(), (null !== (i = this.h) && void 0 !== i ? i : this.h = []).push(t);
+  }
+  static get observedAttributes() {
+    this.finalize();
+    const t = [];
+    return this.elementProperties.forEach((i, s) => {
+      const e = this._$Ep(s, i);
+      void 0 !== e && (this._$Ev.set(e, s), t.push(e));
+    }), t;
+  }
+  static createProperty(t, i = l) {
+    if (i.state && (i.attribute = !1), this.finalize(), this.elementProperties.set(t, i), !i.noAccessor && !this.prototype.hasOwnProperty(t)) {
+      const s = "symbol" == typeof t ? Symbol() : "__" + t,
+        e = this.getPropertyDescriptor(t, s, i);
+      void 0 !== e && Object.defineProperty(this.prototype, t, e);
+    }
+  }
+  static getPropertyDescriptor(t, i, s) {
+    return {
+      get() {
+        return this[i];
+      },
+      set(e) {
+        const r = this[t];
+        this[i] = e, this.requestUpdate(t, r, s);
+      },
+      configurable: !0,
+      enumerable: !0
+    };
+  }
+  static getPropertyOptions(t) {
+    return this.elementProperties.get(t) || l;
+  }
+  static finalize() {
+    if (this.hasOwnProperty(d)) return !1;
+    this[d] = !0;
+    const t = Object.getPrototypeOf(this);
+    if (t.finalize(), void 0 !== t.h && (this.h = [...t.h]), this.elementProperties = new Map(t.elementProperties), this._$Ev = new Map(), this.hasOwnProperty("properties")) {
+      const t = this.properties,
+        i = [...Object.getOwnPropertyNames(t), ...Object.getOwnPropertySymbols(t)];
+      for (const s of i) this.createProperty(s, t[s]);
+    }
+    return this.elementStyles = this.finalizeStyles(this.styles), !0;
+  }
+  static finalizeStyles(i) {
+    const s = [];
+    if (Array.isArray(i)) {
+      const e = new Set(i.flat(1 / 0).reverse());
+      for (const i of e) s.unshift(c(i));
+    } else void 0 !== i && s.push(c(i));
+    return s;
+  }
+  static _$Ep(t, i) {
+    const s = i.attribute;
+    return !1 === s ? void 0 : "string" == typeof s ? s : "string" == typeof t ? t.toLowerCase() : void 0;
+  }
+  _$Eu() {
+    var t;
+    this._$E_ = new Promise(t => this.enableUpdating = t), this._$AL = new Map(), this._$Eg(), this.requestUpdate(), null === (t = this.constructor.h) || void 0 === t || t.forEach(t => t(this));
+  }
+  addController(t) {
+    var i, s;
+    (null !== (i = this._$ES) && void 0 !== i ? i : this._$ES = []).push(t), void 0 !== this.renderRoot && this.isConnected && (null === (s = t.hostConnected) || void 0 === s || s.call(t));
+  }
+  removeController(t) {
+    var i;
+    null === (i = this._$ES) || void 0 === i || i.splice(this._$ES.indexOf(t) >>> 0, 1);
+  }
+  _$Eg() {
+    this.constructor.elementProperties.forEach((t, i) => {
+      this.hasOwnProperty(i) && (this._$Ei.set(i, this[i]), delete this[i]);
+    });
+  }
+  createRenderRoot() {
+    var t;
+    const s = null !== (t = this.shadowRoot) && void 0 !== t ? t : this.attachShadow(this.constructor.shadowRootOptions);
+    return S(s, this.constructor.elementStyles), s;
+  }
+  connectedCallback() {
+    var t;
+    void 0 === this.renderRoot && (this.renderRoot = this.createRenderRoot()), this.enableUpdating(!0), null === (t = this._$ES) || void 0 === t || t.forEach(t => {
+      var i;
+      return null === (i = t.hostConnected) || void 0 === i ? void 0 : i.call(t);
+    });
+  }
+  enableUpdating(t) {}
+  disconnectedCallback() {
+    var t;
+    null === (t = this._$ES) || void 0 === t || t.forEach(t => {
+      var i;
+      return null === (i = t.hostDisconnected) || void 0 === i ? void 0 : i.call(t);
+    });
+  }
+  attributeChangedCallback(t, i, s) {
+    this._$AK(t, s);
+  }
+  _$EO(t, i, s = l) {
+    var e;
+    const r = this.constructor._$Ep(t, s);
+    if (void 0 !== r && !0 === s.reflect) {
+      const h = (void 0 !== (null === (e = s.converter) || void 0 === e ? void 0 : e.toAttribute) ? s.converter : reactive_element_n).toAttribute(i, s.type);
+      this._$El = t, null == h ? this.removeAttribute(r) : this.setAttribute(r, h), this._$El = null;
+    }
+  }
+  _$AK(t, i) {
+    var s;
+    const e = this.constructor,
+      r = e._$Ev.get(t);
+    if (void 0 !== r && this._$El !== r) {
+      const t = e.getPropertyOptions(r),
+        h = "function" == typeof t.converter ? {
+          fromAttribute: t.converter
+        } : void 0 !== (null === (s = t.converter) || void 0 === s ? void 0 : s.fromAttribute) ? t.converter : reactive_element_n;
+      this._$El = r, this[r] = h.fromAttribute(i, t.type), this._$El = null;
+    }
+  }
+  requestUpdate(t, i, s) {
+    let e = !0;
+    void 0 !== t && (((s = s || this.constructor.getPropertyOptions(t)).hasChanged || a)(this[t], i) ? (this._$AL.has(t) || this._$AL.set(t, i), !0 === s.reflect && this._$El !== t && (void 0 === this._$EC && (this._$EC = new Map()), this._$EC.set(t, s))) : e = !1), !this.isUpdatePending && e && (this._$E_ = this._$Ej());
+  }
+  async _$Ej() {
+    this.isUpdatePending = !0;
+    try {
+      await this._$E_;
+    } catch (t) {
+      Promise.reject(t);
+    }
+    const t = this.scheduleUpdate();
+    return null != t && (await t), !this.isUpdatePending;
+  }
+  scheduleUpdate() {
+    return this.performUpdate();
+  }
+  performUpdate() {
+    var t;
+    if (!this.isUpdatePending) return;
+    this.hasUpdated, this._$Ei && (this._$Ei.forEach((t, i) => this[i] = t), this._$Ei = void 0);
+    let i = !1;
+    const s = this._$AL;
+    try {
+      i = this.shouldUpdate(s), i ? (this.willUpdate(s), null === (t = this._$ES) || void 0 === t || t.forEach(t => {
+        var i;
+        return null === (i = t.hostUpdate) || void 0 === i ? void 0 : i.call(t);
+      }), this.update(s)) : this._$Ek();
+    } catch (t) {
+      throw i = !1, this._$Ek(), t;
+    }
+    i && this._$AE(s);
+  }
+  willUpdate(t) {}
+  _$AE(t) {
+    var i;
+    null === (i = this._$ES) || void 0 === i || i.forEach(t => {
+      var i;
+      return null === (i = t.hostUpdated) || void 0 === i ? void 0 : i.call(t);
+    }), this.hasUpdated || (this.hasUpdated = !0, this.firstUpdated(t)), this.updated(t);
+  }
+  _$Ek() {
+    this._$AL = new Map(), this.isUpdatePending = !1;
+  }
+  get updateComplete() {
+    return this.getUpdateComplete();
+  }
+  getUpdateComplete() {
+    return this._$E_;
+  }
+  shouldUpdate(t) {
+    return !0;
+  }
+  update(t) {
+    void 0 !== this._$EC && (this._$EC.forEach((t, i) => this._$EO(i, this[i], t)), this._$EC = void 0), this._$Ek();
+  }
+  updated(t) {}
+  firstUpdated(t) {}
+}
+u[d] = !0, u.elementProperties = new Map(), u.elementStyles = [], u.shadowRootOptions = {
+  mode: "open"
+}, null == reactive_element_o || reactive_element_o({
+  ReactiveElement: u
+}), (null !== (reactive_element_s = reactive_element_e.reactiveElementVersions) && void 0 !== reactive_element_s ? reactive_element_s : reactive_element_e.reactiveElementVersions = []).push("1.6.3");
+
+;// CONCATENATED MODULE: ../node_modules/lit-html/lit-html.js
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+var lit_html_t;
+const lit_html_i = window,
+  lit_html_s = lit_html_i.trustedTypes,
+  lit_html_e = lit_html_s ? lit_html_s.createPolicy("lit-html", {
+    createHTML: t => t
+  }) : void 0,
+  lit_html_o = "$lit$",
+  lit_html_n = `lit$${(Math.random() + "").slice(9)}$`,
+  lit_html_l = "?" + lit_html_n,
+  lit_html_h = `<${lit_html_l}>`,
+  lit_html_r = document,
+  lit_html_u = () => lit_html_r.createComment(""),
+  lit_html_d = t => null === t || "object" != typeof t && "function" != typeof t,
+  lit_html_c = Array.isArray,
+  v = t => lit_html_c(t) || "function" == typeof (null == t ? void 0 : t[Symbol.iterator]),
+  lit_html_a = "[ \t\n\f\r]",
+  f = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,
+  _ = /-->/g,
+  m = />/g,
+  p = RegExp(`>|${lit_html_a}(?:([^\\s"'>=/]+)(${lit_html_a}*=${lit_html_a}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`, "g"),
+  g = /'/g,
+  $ = /"/g,
+  y = /^(?:script|style|textarea|title)$/i,
+  w = t => (i, ...s) => ({
+    _$litType$: t,
+    strings: i,
+    values: s
+  }),
+  lit_html_x = w(1),
+  b = w(2),
+  T = Symbol.for("lit-noChange"),
+  A = Symbol.for("lit-nothing"),
+  E = new WeakMap(),
+  C = lit_html_r.createTreeWalker(lit_html_r, 129, null, !1);
+function P(t, i) {
+  if (!Array.isArray(t) || !t.hasOwnProperty("raw")) throw Error("invalid template strings array");
+  return void 0 !== lit_html_e ? lit_html_e.createHTML(i) : i;
+}
+const V = (t, i) => {
+  const s = t.length - 1,
+    e = [];
+  let l,
+    r = 2 === i ? "<svg>" : "",
+    u = f;
+  for (let i = 0; i < s; i++) {
+    const s = t[i];
+    let d,
+      c,
+      v = -1,
+      a = 0;
+    for (; a < s.length && (u.lastIndex = a, c = u.exec(s), null !== c);) a = u.lastIndex, u === f ? "!--" === c[1] ? u = _ : void 0 !== c[1] ? u = m : void 0 !== c[2] ? (y.test(c[2]) && (l = RegExp("</" + c[2], "g")), u = p) : void 0 !== c[3] && (u = p) : u === p ? ">" === c[0] ? (u = null != l ? l : f, v = -1) : void 0 === c[1] ? v = -2 : (v = u.lastIndex - c[2].length, d = c[1], u = void 0 === c[3] ? p : '"' === c[3] ? $ : g) : u === $ || u === g ? u = p : u === _ || u === m ? u = f : (u = p, l = void 0);
+    const w = u === p && t[i + 1].startsWith("/>") ? " " : "";
+    r += u === f ? s + lit_html_h : v >= 0 ? (e.push(d), s.slice(0, v) + lit_html_o + s.slice(v) + lit_html_n + w) : s + lit_html_n + (-2 === v ? (e.push(void 0), i) : w);
+  }
+  return [P(t, r + (t[s] || "<?>") + (2 === i ? "</svg>" : "")), e];
+};
+class N {
+  constructor({
+    strings: t,
+    _$litType$: i
+  }, e) {
+    let h;
+    this.parts = [];
+    let r = 0,
+      d = 0;
+    const c = t.length - 1,
+      v = this.parts,
+      [a, f] = V(t, i);
+    if (this.el = N.createElement(a, e), C.currentNode = this.el.content, 2 === i) {
+      const t = this.el.content,
+        i = t.firstChild;
+      i.remove(), t.append(...i.childNodes);
+    }
+    for (; null !== (h = C.nextNode()) && v.length < c;) {
+      if (1 === h.nodeType) {
+        if (h.hasAttributes()) {
+          const t = [];
+          for (const i of h.getAttributeNames()) if (i.endsWith(lit_html_o) || i.startsWith(lit_html_n)) {
+            const s = f[d++];
+            if (t.push(i), void 0 !== s) {
+              const t = h.getAttribute(s.toLowerCase() + lit_html_o).split(lit_html_n),
+                i = /([.?@])?(.*)/.exec(s);
+              v.push({
+                type: 1,
+                index: r,
+                name: i[2],
+                strings: t,
+                ctor: "." === i[1] ? H : "?" === i[1] ? L : "@" === i[1] ? z : k
+              });
+            } else v.push({
+              type: 6,
+              index: r
+            });
+          }
+          for (const i of t) h.removeAttribute(i);
+        }
+        if (y.test(h.tagName)) {
+          const t = h.textContent.split(lit_html_n),
+            i = t.length - 1;
+          if (i > 0) {
+            h.textContent = lit_html_s ? lit_html_s.emptyScript : "";
+            for (let s = 0; s < i; s++) h.append(t[s], lit_html_u()), C.nextNode(), v.push({
+              type: 2,
+              index: ++r
+            });
+            h.append(t[i], lit_html_u());
+          }
+        }
+      } else if (8 === h.nodeType) if (h.data === lit_html_l) v.push({
+        type: 2,
+        index: r
+      });else {
+        let t = -1;
+        for (; -1 !== (t = h.data.indexOf(lit_html_n, t + 1));) v.push({
+          type: 7,
+          index: r
+        }), t += lit_html_n.length - 1;
+      }
+      r++;
+    }
+  }
+  static createElement(t, i) {
+    const s = lit_html_r.createElement("template");
+    return s.innerHTML = t, s;
+  }
+}
+function lit_html_S(t, i, s = t, e) {
+  var o, n, l, h;
+  if (i === T) return i;
+  let r = void 0 !== e ? null === (o = s._$Co) || void 0 === o ? void 0 : o[e] : s._$Cl;
+  const u = lit_html_d(i) ? void 0 : i._$litDirective$;
+  return (null == r ? void 0 : r.constructor) !== u && (null === (n = null == r ? void 0 : r._$AO) || void 0 === n || n.call(r, !1), void 0 === u ? r = void 0 : (r = new u(t), r._$AT(t, s, e)), void 0 !== e ? (null !== (l = (h = s)._$Co) && void 0 !== l ? l : h._$Co = [])[e] = r : s._$Cl = r), void 0 !== r && (i = lit_html_S(t, r._$AS(t, i.values), r, e)), i;
+}
+class M {
+  constructor(t, i) {
+    this._$AV = [], this._$AN = void 0, this._$AD = t, this._$AM = i;
+  }
+  get parentNode() {
+    return this._$AM.parentNode;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  u(t) {
+    var i;
+    const {
+        el: {
+          content: s
+        },
+        parts: e
+      } = this._$AD,
+      o = (null !== (i = null == t ? void 0 : t.creationScope) && void 0 !== i ? i : lit_html_r).importNode(s, !0);
+    C.currentNode = o;
+    let n = C.nextNode(),
+      l = 0,
+      h = 0,
+      u = e[0];
+    for (; void 0 !== u;) {
+      if (l === u.index) {
+        let i;
+        2 === u.type ? i = new R(n, n.nextSibling, this, t) : 1 === u.type ? i = new u.ctor(n, u.name, u.strings, this, t) : 6 === u.type && (i = new Z(n, this, t)), this._$AV.push(i), u = e[++h];
+      }
+      l !== (null == u ? void 0 : u.index) && (n = C.nextNode(), l++);
+    }
+    return C.currentNode = lit_html_r, o;
+  }
+  v(t) {
+    let i = 0;
+    for (const s of this._$AV) void 0 !== s && (void 0 !== s.strings ? (s._$AI(t, s, i), i += s.strings.length - 2) : s._$AI(t[i])), i++;
+  }
+}
+class R {
+  constructor(t, i, s, e) {
+    var o;
+    this.type = 2, this._$AH = A, this._$AN = void 0, this._$AA = t, this._$AB = i, this._$AM = s, this.options = e, this._$Cp = null === (o = null == e ? void 0 : e.isConnected) || void 0 === o || o;
+  }
+  get _$AU() {
+    var t, i;
+    return null !== (i = null === (t = this._$AM) || void 0 === t ? void 0 : t._$AU) && void 0 !== i ? i : this._$Cp;
+  }
+  get parentNode() {
+    let t = this._$AA.parentNode;
+    const i = this._$AM;
+    return void 0 !== i && 11 === (null == t ? void 0 : t.nodeType) && (t = i.parentNode), t;
+  }
+  get startNode() {
+    return this._$AA;
+  }
+  get endNode() {
+    return this._$AB;
+  }
+  _$AI(t, i = this) {
+    t = lit_html_S(this, t, i), lit_html_d(t) ? t === A || null == t || "" === t ? (this._$AH !== A && this._$AR(), this._$AH = A) : t !== this._$AH && t !== T && this._(t) : void 0 !== t._$litType$ ? this.g(t) : void 0 !== t.nodeType ? this.$(t) : v(t) ? this.T(t) : this._(t);
+  }
+  k(t) {
+    return this._$AA.parentNode.insertBefore(t, this._$AB);
+  }
+  $(t) {
+    this._$AH !== t && (this._$AR(), this._$AH = this.k(t));
+  }
+  _(t) {
+    this._$AH !== A && lit_html_d(this._$AH) ? this._$AA.nextSibling.data = t : this.$(lit_html_r.createTextNode(t)), this._$AH = t;
+  }
+  g(t) {
+    var i;
+    const {
+        values: s,
+        _$litType$: e
+      } = t,
+      o = "number" == typeof e ? this._$AC(t) : (void 0 === e.el && (e.el = N.createElement(P(e.h, e.h[0]), this.options)), e);
+    if ((null === (i = this._$AH) || void 0 === i ? void 0 : i._$AD) === o) this._$AH.v(s);else {
+      const t = new M(o, this),
+        i = t.u(this.options);
+      t.v(s), this.$(i), this._$AH = t;
+    }
+  }
+  _$AC(t) {
+    let i = E.get(t.strings);
+    return void 0 === i && E.set(t.strings, i = new N(t)), i;
+  }
+  T(t) {
+    lit_html_c(this._$AH) || (this._$AH = [], this._$AR());
+    const i = this._$AH;
+    let s,
+      e = 0;
+    for (const o of t) e === i.length ? i.push(s = new R(this.k(lit_html_u()), this.k(lit_html_u()), this, this.options)) : s = i[e], s._$AI(o), e++;
+    e < i.length && (this._$AR(s && s._$AB.nextSibling, e), i.length = e);
+  }
+  _$AR(t = this._$AA.nextSibling, i) {
+    var s;
+    for (null === (s = this._$AP) || void 0 === s || s.call(this, !1, !0, i); t && t !== this._$AB;) {
+      const i = t.nextSibling;
+      t.remove(), t = i;
+    }
+  }
+  setConnected(t) {
+    var i;
+    void 0 === this._$AM && (this._$Cp = t, null === (i = this._$AP) || void 0 === i || i.call(this, t));
+  }
+}
+class k {
+  constructor(t, i, s, e, o) {
+    this.type = 1, this._$AH = A, this._$AN = void 0, this.element = t, this.name = i, this._$AM = e, this.options = o, s.length > 2 || "" !== s[0] || "" !== s[1] ? (this._$AH = Array(s.length - 1).fill(new String()), this.strings = s) : this._$AH = A;
+  }
+  get tagName() {
+    return this.element.tagName;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  _$AI(t, i = this, s, e) {
+    const o = this.strings;
+    let n = !1;
+    if (void 0 === o) t = lit_html_S(this, t, i, 0), n = !lit_html_d(t) || t !== this._$AH && t !== T, n && (this._$AH = t);else {
+      const e = t;
+      let l, h;
+      for (t = o[0], l = 0; l < o.length - 1; l++) h = lit_html_S(this, e[s + l], i, l), h === T && (h = this._$AH[l]), n || (n = !lit_html_d(h) || h !== this._$AH[l]), h === A ? t = A : t !== A && (t += (null != h ? h : "") + o[l + 1]), this._$AH[l] = h;
+    }
+    n && !e && this.j(t);
+  }
+  j(t) {
+    t === A ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, null != t ? t : "");
+  }
+}
+class H extends k {
+  constructor() {
+    super(...arguments), this.type = 3;
+  }
+  j(t) {
+    this.element[this.name] = t === A ? void 0 : t;
+  }
+}
+const I = lit_html_s ? lit_html_s.emptyScript : "";
+class L extends k {
+  constructor() {
+    super(...arguments), this.type = 4;
+  }
+  j(t) {
+    t && t !== A ? this.element.setAttribute(this.name, I) : this.element.removeAttribute(this.name);
+  }
+}
+class z extends k {
+  constructor(t, i, s, e, o) {
+    super(t, i, s, e, o), this.type = 5;
+  }
+  _$AI(t, i = this) {
+    var s;
+    if ((t = null !== (s = lit_html_S(this, t, i, 0)) && void 0 !== s ? s : A) === T) return;
+    const e = this._$AH,
+      o = t === A && e !== A || t.capture !== e.capture || t.once !== e.once || t.passive !== e.passive,
+      n = t !== A && (e === A || o);
+    o && this.element.removeEventListener(this.name, this, e), n && this.element.addEventListener(this.name, this, t), this._$AH = t;
+  }
+  handleEvent(t) {
+    var i, s;
+    "function" == typeof this._$AH ? this._$AH.call(null !== (s = null === (i = this.options) || void 0 === i ? void 0 : i.host) && void 0 !== s ? s : this.element, t) : this._$AH.handleEvent(t);
+  }
+}
+class Z {
+  constructor(t, i, s) {
+    this.element = t, this.type = 6, this._$AN = void 0, this._$AM = i, this.options = s;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  _$AI(t) {
+    lit_html_S(this, t);
+  }
+}
+const j = {
+    O: lit_html_o,
+    P: lit_html_n,
+    A: lit_html_l,
+    C: 1,
+    M: V,
+    L: M,
+    R: v,
+    D: lit_html_S,
+    I: R,
+    V: k,
+    H: L,
+    N: z,
+    U: H,
+    F: Z
+  },
+  B = lit_html_i.litHtmlPolyfillSupport;
+null == B || B(N, R), (null !== (lit_html_t = lit_html_i.litHtmlVersions) && void 0 !== lit_html_t ? lit_html_t : lit_html_i.litHtmlVersions = []).push("2.8.0");
+const D = (t, i, s) => {
+  var e, o;
+  const n = null !== (e = null == s ? void 0 : s.renderBefore) && void 0 !== e ? e : i;
+  let l = n._$litPart$;
+  if (void 0 === l) {
+    const t = null !== (o = null == s ? void 0 : s.renderBefore) && void 0 !== o ? o : null;
+    n._$litPart$ = l = new R(i.insertBefore(lit_html_u(), t), t, void 0, null != s ? s : {});
+  }
+  return l._$AI(t), l;
+};
+
+;// CONCATENATED MODULE: ../node_modules/lit-element/lit-element.js
+
+
+
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+var lit_element_l, lit_element_o;
+const lit_element_r = (/* unused pure expression or super */ null && (t));
+class lit_element_s extends u {
+  constructor() {
+    super(...arguments), this.renderOptions = {
+      host: this
+    }, this._$Do = void 0;
+  }
+  createRenderRoot() {
+    var t, e;
+    const i = super.createRenderRoot();
+    return null !== (t = (e = this.renderOptions).renderBefore) && void 0 !== t || (e.renderBefore = i.firstChild), i;
+  }
+  update(t) {
+    const i = this.render();
+    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t), this._$Do = D(i, this.renderRoot, this.renderOptions);
+  }
+  connectedCallback() {
+    var t;
+    super.connectedCallback(), null === (t = this._$Do) || void 0 === t || t.setConnected(!0);
+  }
+  disconnectedCallback() {
+    var t;
+    super.disconnectedCallback(), null === (t = this._$Do) || void 0 === t || t.setConnected(!1);
+  }
+  render() {
+    return T;
+  }
+}
+lit_element_s.finalized = !0, lit_element_s._$litElement$ = !0, null === (lit_element_l = globalThis.litElementHydrateSupport) || void 0 === lit_element_l || lit_element_l.call(globalThis, {
+  LitElement: lit_element_s
+});
+const lit_element_n = globalThis.litElementPolyfillSupport;
+null == lit_element_n || lit_element_n({
+  LitElement: lit_element_s
+});
+const lit_element_h = {
+  _$AK: (t, e, i) => {
+    t._$AK(e, i);
+  },
+  _$AL: t => t._$AL
+};
+(null !== (lit_element_o = globalThis.litElementVersions) && void 0 !== lit_element_o ? lit_element_o : globalThis.litElementVersions = []).push("3.3.3");
+
+;// CONCATENATED MODULE: ../node_modules/lit/index.js
+
+
+
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/custom-element.js
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const custom_element_e = e => n => "function" == typeof n ? ((e, n) => (customElements.define(e, n), n))(e, n) : ((e, n) => {
+  const {
+    kind: t,
+    elements: s
+  } = n;
+  return {
+    kind: t,
+    elements: s,
+    finisher(n) {
+      customElements.define(e, n);
+    }
+  };
+})(e, n);
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/property.js
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const property_i = (i, e) => "method" === e.kind && e.descriptor && !("value" in e.descriptor) ? {
+    ...e,
+    finisher(n) {
+      n.createProperty(e.key, i);
+    }
+  } : {
+    kind: "field",
+    key: Symbol(),
+    placement: "own",
+    descriptor: {},
+    originalKey: e.key,
+    initializer() {
+      "function" == typeof e.initializer && (this[e.key] = e.initializer.call(this));
+    },
+    finisher(n) {
+      n.createProperty(e.key, i);
+    }
+  },
+  property_e = (i, e, n) => {
+    e.constructor.createProperty(n, i);
+  };
+function property_n(n) {
+  return (t, o) => void 0 !== o ? property_e(n, t, o) : property_i(n, t);
+}
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/base.js
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const base_e = (e, t, o) => {
+    Object.defineProperty(t, o, e);
+  },
+  base_t = (e, t) => ({
+    kind: "method",
+    placement: "prototype",
+    key: t.key,
+    descriptor: e
+  }),
+  base_o = ({
+    finisher: e,
+    descriptor: t
+  }) => (o, n) => {
+    var r;
+    if (void 0 === n) {
+      const n = null !== (r = o.originalKey) && void 0 !== r ? r : o.key,
+        i = null != t ? {
+          kind: "method",
+          placement: "prototype",
+          key: n,
+          descriptor: t(o.key)
+        } : {
+          ...o,
+          key: n
+        };
+      return null != e && (i.finisher = function (t) {
+        e(t, n);
+      }), i;
+    }
+    {
+      const r = o.constructor;
+      void 0 !== t && Object.defineProperty(o, n, t(n)), null == e || e(r, n);
+    }
+  };
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/query.js
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+function query_i(i, n) {
+  return base_o({
+    descriptor: o => {
+      const t = {
+        get() {
+          var o, n;
+          return null !== (n = null === (o = this.renderRoot) || void 0 === o ? void 0 : o.querySelector(i)) && void 0 !== n ? n : null;
+        },
+        enumerable: !0,
+        configurable: !0
+      };
+      if (n) {
+        const n = "symbol" == typeof o ? Symbol() : "__" + o;
+        t.get = function () {
+          var o, t;
+          return void 0 === this[n] && (this[n] = null !== (t = null === (o = this.renderRoot) || void 0 === o ? void 0 : o.querySelector(i)) && void 0 !== t ? t : null), this[n];
+        };
+      }
+      return t;
+    }
+  });
+}
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/query-all.js
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+function query_all_e(e) {
+  return base_o({
+    descriptor: r => ({
+      get() {
+        var r, o;
+        return null !== (o = null === (r = this.renderRoot) || void 0 === r ? void 0 : r.querySelectorAll(e)) && void 0 !== o ? o : [];
+      },
+      enumerable: !0,
+      configurable: !0
+    })
+  });
+}
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/query-assigned-elements.js
+
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+var query_assigned_elements_n;
+const query_assigned_elements_e = null != (null === (query_assigned_elements_n = window.HTMLSlotElement) || void 0 === query_assigned_elements_n ? void 0 : query_assigned_elements_n.prototype.assignedElements) ? (o, n) => o.assignedElements(n) : (o, n) => o.assignedNodes(n).filter(o => o.nodeType === Node.ELEMENT_NODE);
+function query_assigned_elements_l(n) {
+  const {
+    slot: l,
+    selector: t
+  } = null != n ? n : {};
+  return o({
+    descriptor: o => ({
+      get() {
+        var o;
+        const r = "slot" + (l ? `[name=${l}]` : ":not([name])"),
+          i = null === (o = this.renderRoot) || void 0 === o ? void 0 : o.querySelector(r),
+          s = null != i ? query_assigned_elements_e(i, n) : [];
+        return t ? s.filter(o => o.matches(t)) : s;
+      },
+      enumerable: !0,
+      configurable: !0
+    })
+  });
+}
+
+;// CONCATENATED MODULE: ../node_modules/@lit/reactive-element/decorators/query-assigned-nodes.js
+
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+function query_assigned_nodes_o(o, n, r) {
+  let l,
+    s = o;
+  return "object" == typeof o ? (s = o.slot, l = o) : l = {
+    flatten: n
+  }, r ? t({
+    slot: s,
+    flatten: n,
+    selector: r
+  }) : e({
+    descriptor: e => ({
+      get() {
+        var e, t;
+        const o = "slot" + (s ? `[name=${s}]` : ":not([name])"),
+          n = null === (e = this.renderRoot) || void 0 === e ? void 0 : e.querySelector(o);
+        return null !== (t = null == n ? void 0 : n.assignedNodes(l)) && void 0 !== t ? t : [];
+      },
+      enumerable: !0,
+      configurable: !0
+    })
+  });
+}
+
+;// CONCATENATED MODULE: ../node_modules/lit/decorators.js
+
+
+
+
+
+
+
+
+
+;// CONCATENATED MODULE: ./src/Qcs_Constants.ts
+class Constants {}
+// Different sections of a policy to be rendered as tabs.
+// Key is used as identifier.
+// label is used as translation key.
+// Pointer is a pointer to the matching policy property for this section.
+Constants.PolicySections = [{
+  key: "all-policy",
+  translationKey: "allPolicyLabel"
+}, {
+  key: "review-sheet",
+  translationKey: "reviewSheetLabel"
+}, {
+  key: "purpose",
+  translationKey: "purposeLabel",
+  pointer: "purposeSections",
+  showIndex: true
+}, {
+  key: "scope",
+  translationKey: "scopeLabel",
+  showIndex: true
+}, {
+  key: "objectives",
+  translationKey: "objectivesLabel",
+  pointer: "objectivesSections",
+  showIndex: true
+}, {
+  key: "policy",
+  translationKey: "policyLabel",
+  pointer: "policySections",
+  showIndex: true
+}, {
+  key: "procedure",
+  translationKey: "procedureLabel",
+  pointer: "procedureSections",
+  showIndex: true
+}, {
+  key: "definitions",
+  translationKey: "definitionLabel",
+  showIndex: true
+}, {
+  key: "key-facts-professionals",
+  translationKey: "keyFactsProfessionalsLabel",
+  pointer: "keyFactsProfessionals",
+  showIndex: true
+}, {
+  key: "key-facts-people",
+  translationKey: "keyFactsPeopleLabel",
+  pointer: "keyFactsPeopleAffected",
+  showIndex: true
+}, {
+  key: "further-reading",
+  translationKey: "furtherReadingLabel",
+  pointer: "furtherReadingText"
+}, {
+  key: "outstanding-practice",
+  translationKey: "outstandingPracticeLabel",
+  pointer: "outstandingPractice"
+}, {
+  key: "forms",
+  translationKey: "formsLabel"
+}, {
+  key: "resources",
+  translationKey: "resourcesLabel",
+  hideFromAll: true
+}];
+Constants.AllPolicy = "all-policy";
+class ItemTypes {}
+ItemTypes.Policy = "policy";
+ItemTypes.ArchivedPolicy = "archived-policy";
+ItemTypes.PolicyViewConfiguration = "policy-view-configuration";
+var ResourceTypes;
+(function (ResourceTypes) {
+  ResourceTypes[ResourceTypes["Document"] = 3814] = "Document";
+  ResourceTypes[ResourceTypes["Image"] = 3816] = "Image";
+  ResourceTypes[ResourceTypes["Video"] = 3815] = "Video";
+  ResourceTypes[ResourceTypes["Folder"] = 3817] = "Folder";
+  ResourceTypes[ResourceTypes["ExpertInsight"] = 3818] = "ExpertInsight";
+  ResourceTypes[ResourceTypes["Audio"] = 3990] = "Audio";
+  ResourceTypes[ResourceTypes["PowerPoint"] = 3819] = "PowerPoint";
+})(ResourceTypes || (ResourceTypes = {}));
+class Events {}
+Events.InitTabs = "qcs-init-tabs";
+Events.TabChange = "qcs-tabs-change";
+class FileExtensions {}
+FileExtensions.PDF = ["pdf"];
+FileExtensions.Document = ["docx", "doc"];
+FileExtensions.Excel = ["xlsx", "xls"];
+FileExtensions.Text = ["txt"];
+FileExtensions.Image = ["bmp", "psd", "png", "tif", "tiff", "thm", "ai", "svg", "jpg", "jpeg", "gif"];
+FileExtensions.PowerPoint = ["ppt", "pptx", "pps", "ppsx"];
+;// CONCATENATED MODULE: ./src/apiclients/ODS_Apiclient.ts
+
+class ODS_Apiclient {
+  constructor(apiUrl, token, options) {
+    this.apiUrl = apiUrl;
+    this.token = token;
+    this.options = options;
+  }
+  async retrievePolicy(id, version, locale) {
+    return await this.getById(id, ItemTypes.Policy, locale);
+  }
+  async retrievePDF(id) {
+    var response = await fetch(`${this.apiUrl}/assets/policy/${id}`, {
+      method: 'GET',
+      headers: this.getHeaders()
+    });
+    if (response.ok) {
+      return response;
+    }
+  }
+  async getById(id, itemType, locale) {
+    var response = await fetch(`${this.apiUrl}/items/${itemType}/${id}/${id}?locale=${locale}`, {
+      method: 'GET',
+      headers: this.getHeaders()
+    });
+    if (response.ok) {
+      return response.json();
+    }
+    return {
+      status: response.status,
+      statusText: response.statusText
+    };
+  }
+  getHeaders() {
+    const headers = new Headers({
+      'Content-Type': 'application/json'
+    });
+    if (this.token) {
+      headers.set('Authorization', `Bearer ${this.token}`);
+    }
+    if (!this.options) return headers;
+    if (this.options.filterSections) headers.set('X-Sections', this.options.filterSections.toString());
+    if (this.options.filterForms) headers.set('X-Forms', this.options.filterForms.toString());
+    return headers;
+  }
+}
+;// CONCATENATED MODULE: ./src/localization/Qcs_Translator.ts
+var _a;
+// Simple class for translations. Static so it can be used as a singleton throughout the project.
+class Qcs_Translator {
+  static initialize(translations) {
+    this._translations = new Map(Object.entries(translations)) ?? new Map();
+  }
+}
+_a = Qcs_Translator;
+Qcs_Translator.translateKey = key => {
+  return _a._translations?.has(key) ? _a._translations.get(key) : `<${key}>`;
+};
+// Helper method to prevent long class name in import and usage.
+const translate = key => {
+  return Qcs_Translator.translateKey(key);
+};
+;// CONCATENATED MODULE: ./src/Qcs_Helpers.ts
+const formatKontentDateString = dateString => {
+  const date = new Date(dateString);
+  return date.toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "2-digit",
+    timeZone: "utc"
+  });
+};
+const formatDateStringToNumeric = dateString => {
+  const date = new Date(dateString);
+  return date.toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    timeZone: "Europe/London"
+  });
+};
+// Check whether an object is of type IPolicy.
+const isPolicy = objectValue => {
+  return objectValue.referenceNumber !== undefined;
+};
+const shouldRenderTab = (policy, tabkey, config = undefined) => {
+  switch (tabkey) {
+    case "all-policy":
+      break;
+    case "review-sheet":
+      if (!hasSectionHeader(policy.sectionsToRender, "reviewsheet")) return false;
+      break;
+    case "purpose":
+      {
+        if (!policy.purposeSections && !policy.kloeQualityStatements && !policy.relevantLegislations) return false;
+        if (!hasSectionHeader(policy.sectionsToRender, "purpose")) return false;
+        break;
+      }
+    case "scope":
+      {
+        if (!policy.rolesThatMightBeAffected && !policy.peopleThatMayBeAffected && !policy.stakeholdersThatMayBeAffected) return false;
+        if (!hasSectionHeader(policy.sectionsToRender, "scope")) return false;
+        break;
+      }
+    case "objectives":
+      {
+        if (!policy.objectivesSections) return false;
+        break;
+      }
+    case "policy":
+      {
+        if (!policy.policySections) return false;
+        break;
+      }
+    case "procedure":
+      {
+        if (!policy.procedureSections) return false;
+        break;
+      }
+    case "definitions":
+      {
+        if (!policy.definitions) return false;
+        break;
+      }
+    case "key-facts-professionals":
+      {
+        if (!policy.keyFactsProfessionals) return false;
+        break;
+      }
+    case "key-facts-people":
+      {
+        if (!policy.keyFactsPeopleAffected) return false;
+        break;
+      }
+    case "further-reading":
+      {
+        if (!policy.furtherReadingText && !policy.policySections) return false;
+        if (!hasSectionHeader(policy.sectionsToRender, "furtherreading")) return false;
+        return true;
+      }
+    case "outstanding-practice":
+      {
+        if (!policy.outstandingPractice) return false;
+        break;
+      }
+    case "forms":
+      {
+        if (!policy.forms || policy.forms.length === 0 || config && config.hideForms) return false;
+        break;
+      }
+    case "resources":
+      {
+        if (config.isPreview || policy.sectionsToRender) return false;
+        return true;
+      }
+  }
+  return true;
+};
+// Get CSS class modifier based on category ID.
+const getCategoryModifier = policy => {
+  if (policy.category?.categoryId) return `category-${policy.category?.categoryId}`;
+};
+const isEmpty = value => {
+  if (!value) return true;
+  if (typeof value === "string" && value === "") return true;
+  if (typeof Array.isArray(value) && value.length === 0) return true;
+  if (typeof value === "object" && Object.keys(value).length === 0) return true;
+  return false;
+};
+const downloadFile = (blobUrl, fileName) => {
+  let a = document.createElement("a");
+  a.style.display = "none";
+  a.href = blobUrl;
+  a.download = fileName;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  window.URL.revokeObjectURL(blobUrl);
+};
+const getClaim = (claim, token) => {
+  try {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function (c) {
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+    var json = JSON.parse(jsonPayload);
+    return json[claim];
+  } catch (error) {
+    return null;
+  }
+};
+const tabKeyToHeader = key => {
+  return key.split("-").map((part, index) => index > 0 ? `${part[0].toUpperCase()}${part.slice(1, part.length)}` : part).join("");
+};
+const hasSectionHeader = (sectionsToRender, section) => {
+  if (!sectionsToRender) return true;
+  return sectionsToRender.map(x => x.toLowerCase()).includes(section.toLowerCase());
+};
+;// CONCATENATED MODULE: ./src/views/loading/Qcs_Loading.ts
+
+class Qcs_Loading {}
+Qcs_Loading.renderLoading = label => {
+  return lit_html_x` <div class="qcs-loading"> <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <style>.spinner_OSmW{transform-origin:center;animation:spinner_T6mA .75s step-end infinite}@keyframes spinner_T6mA{8.3%{transform:rotate(30deg)}16.6%{transform:rotate(60deg)}25%{transform:rotate(90deg)}33.3%{transform:rotate(120deg)}41.6%{transform:rotate(150deg)}50%{transform:rotate(180deg)}58.3%{transform:rotate(210deg)}66.6%{transform:rotate(240deg)}75%{transform:rotate(270deg)}83.3%{transform:rotate(300deg)}91.6%{transform:rotate(330deg)}100%{transform:rotate(360deg)}}</style> <g class="spinner_OSmW"> <rect x="11" y="1" width="2" height="5" opacity=".14"/> <rect x="11" y="1" width="2" height="5" transform="rotate(30 12 12)" opacity=".29"/> <rect x="11" y="1" width="2" height="5" transform="rotate(60 12 12)" opacity=".43"/> <rect x="11" y="1" width="2" height="5" transform="rotate(90 12 12)" opacity=".57"/> <rect x="11" y="1" width="2" height="5" transform="rotate(120 12 12)" opacity=".71"/> <rect x="11" y="1" width="2" height="5" transform="rotate(150 12 12)" opacity=".86"/> <rect x="11" y="1" width="2" height="5" transform="rotate(180 12 12)"/> </g> </svg> <span>${label}</span> </div> `;
+};
+;// CONCATENATED MODULE: ./src/Qcs_Events.ts
+class Qcs_Events {}
+Qcs_Events.Qcs_Tag = "qcs-tag";
+// Pdf
+Qcs_Events.Qcs_Download_Pdf = "qcs-download-pdf";
+Qcs_Events.Qcs_Download_Section_Pdf = "qcs-download-section-pdf";
+Qcs_Events.Qcs_Download_Section_Word = "qcs-download-section-word";
+Qcs_Events.Qcs_Email_Section = "qcs-email-section";
+Qcs_Events.Qcs_Print_Section = "qcs-print-section";
+Qcs_Events.Qcs_Print_Pdf = "qcs-print-pdf";
+// Resources
+Qcs_Events.Qcs_Resource_Add_Readinglist = "qcs-resource-add-readinglist";
+Qcs_Events.Qcs_Resource_Email = "qcs-resource-email";
+Qcs_Events.Qcs_Resource_Clicked = "qcs-resource-clicked";
+Qcs_Events.Qcs_Resource_Detail = "qcs-resource-detail";
+Qcs_Events.Qcs_Resource_Folder = "qcs-resource-folder";
+Qcs_Events.Qcs_Resource_Custom = "qcs-resource-custom-action";
+;// CONCATENATED MODULE: ./src/actions/QCS_Action_Handler.ts
+
+
+// Class for handling DOM Events sent by external sources. 
+class QCS_Action_Handler {
+  constructor(policyId, policy, odsClient, config) {
+    this.policyId = policyId;
+    this.policy = policy;
+    this.odsClient = odsClient;
+    QCS_Action_Handler.config = config;
+    document.addEventListener(Qcs_Events.Qcs_Download_Pdf, async e => {
+      await this.handleDownloadPDF();
+    });
+    document.addEventListener(Qcs_Events.Qcs_Print_Pdf, async e => {
+      await this.handlePrintPDF();
+    });
+  }
+  async handleDownloadPDF() {
+    await this.retrievePDFUrl().then(url => {
+      downloadFile(url, `${this.policy.referenceNumber} - ${this.policy.name}`);
+    });
+  }
+  async handlePrintPDF() {
+    await this.retrievePDFUrl().then(url => {
+      let iframe = document.createElement("iframe");
+      iframe.style.display = "none";
+      iframe.src = url;
+      iframe.onload = () => {
+        iframe.focus();
+        iframe.contentWindow.print();
+      };
+      document.body.appendChild(iframe);
+    });
+  }
+  async retrievePDFUrl() {
+    const pdfResponse = await this.odsClient.retrievePDF(this.policyId);
+    const blob = await pdfResponse.blob();
+    return window.URL.createObjectURL(blob);
+  }
+  static dispatch(event, detail) {
+    // Add default properties.
+    if (detail) detail.isTrial = this.config.configToken?.isTrialUser;
+    document.dispatchEvent(new CustomEvent(event, {
+      detail: detail
+    }));
+  }
+}
+;// CONCATENATED MODULE: ./src/apiclients/QCS_Apiclient.ts
+class QCS_Apiclient {
+  constructor(apiUrl, accessToken) {
+    this.apiUrl = apiUrl;
+    this.accessToken = accessToken;
+  }
+  getHeaders() {
+    const headers = new Headers({
+      'Content-Type': 'application/json'
+    });
+    if (this.accessToken) {
+      headers.set('Authorization', `Bearer ${this.accessToken}`);
+    }
+    return headers;
+  }
+  async getResources(policyRef) {
+    try {
+      var response = await fetch(`${this.apiUrl}/get-resources-for-policy/${policyRef}`, {
+        method: 'GET',
+        headers: this.getHeaders()
+      });
+      if (response.ok) {
+        return response.status === 204 ? [] : response.json();
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  async openStatistics(policyRef, isMobile) {
+    try {
+      var response = await fetch(`${this.apiUrl}/open-view-stats/${policyRef}/${isMobile}`, {
+        method: 'POST',
+        headers: this.getHeaders()
+      });
+      if (response.ok) {
+        let jsonResponse = await response.json();
+        return jsonResponse.logId;
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  async closeStatistics(policyRef, logId) {
+    try {
+      var response = await fetch(`${this.apiUrl}/close-view-stats/${policyRef}/${logId}`, {
+        method: 'POST',
+        headers: this.getHeaders()
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  async getBlogContent(blogId) {
+    try {
+      var response = await fetch(`${this.apiUrl}/blog/${blogId}`, {
+        method: 'POST',
+        headers: this.getHeaders()
+      });
+      if (response.ok) {
+        return await response.json();
+      } else {
+        console.error(response.status);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+}
+;// CONCATENATED MODULE: ./src/Qcs_Policy_Viewer.ts
+var __decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+let QCS_Policy_Viewer = class QCS_Policy_Viewer extends lit_element_s {
+  constructor() {
+    super(...arguments);
+    this.locale = "en";
+    this.isMobile = false;
+  }
+  createRenderRoot() {
+    return this;
+  }
+  async connectedCallback() {
+    super.connectedCallback();
+    // Only retrieve policy if the policy is not yet available. 
+    if (this.policy) {
+      Qcs_Translator.initialize(this.policy.viewConfig);
+      return;
+    }
+    ;
+    // Check if the config is valid. If yes continue by retrieving the policy.
+    await this.isValidConfig().then(async isValid => {
+      if (isValid) {
+        await this.initializePolicyViewer().then(() => {
+          this.requestUpdate();
+        });
+      }
+    });
+    // Event listener to close flyouts that need closing on click outside.
+    document.addEventListener("click", e => this.closeOnClickOutside());
+  }
+  disconnectedCallback() {
+    document.removeEventListener("click", e => this.closeOnClickOutside());
+  }
+  getOdsOptions() {
+    if (!this.filterSections && !this.filterForms) return null;
+    return {
+      filterSections: this.filterSections,
+      filterForms: this.filterForms
+    };
+  }
+  async initializePolicyViewer() {
+    if (this.preview && this.policy == undefined) return console.error("Preview mode was enabled but no policy was provided.");
+    if (this.preview && this.policy != undefined) {
+      Qcs_Translator.initialize(this.policy.viewConfig);
+      return;
+    }
+    if (!this.isValidConfig()) return;
+    this.odsClient = new ODS_Apiclient(this.apiUrl, this.token, this.getOdsOptions());
+    // Retrieve policy.
+    const odsResponse = await this.odsClient.retrievePolicy(this.policyId, this.policyVersion, this.locale);
+    if (isPolicy(odsResponse)) {
+      this.policy = odsResponse;
+      Qcs_Translator.initialize(this.policy.viewConfig);
+      this.qcsActionHandler = new QCS_Action_Handler(this.policyId, this.policy, this.odsClient, this.getConfig());
+      this.initializeStatistics();
+    } else {
+      this.error = odsResponse;
+    }
+  }
+  async initializeStatistics() {
+    this.qcsClient = new QCS_Apiclient(this.qcsApiUrl, this.qcsAccessToken);
+    this.logId = await this.qcsClient.openStatistics(this.policy.referenceNumber, this.isMobile);
+    if (this.logId) {
+      window.addEventListener("beforeunload", () => {
+        this.qcsClient.closeStatistics(this.policy.referenceNumber, this.logId);
+      });
+    }
+  }
+  // Validate if all required properties are available on the webcomponent.
+  async isValidConfig() {
+    let isValid = true;
+    if (!this.policyId) {
+      console.error("No policy id specified for policy viewer.");
+      isValid = false;
+    }
+    if (!this.locale) {
+      console.error("No locale specified for policy viewer.");
+      isValid = false;
+    }
+    if (!this.apiUrl) {
+      console.error("No apiUrl specified for policy viewer.");
+      isValid = false;
+    }
+    if (!this.token) {
+      console.error("No token specified for policy viewer.");
+      isValid = false;
+    }
+    if (!isValid) {
+      this.error = {
+        status: 400,
+        statusText: "Invalid configuration."
+      };
+    }
+    return isValid;
+  }
+  getConfig() {
+    return {
+      isPrintPreview: this.printPreview,
+      isPreview: this.preview,
+      hideForms: this.hideForms,
+      qcsApi: {
+        apiUrl: this.qcsApiUrl,
+        token: this.qcsAccessToken
+      },
+      odsApi: this.odsClient,
+      policyId: this.policyId,
+      configToken: this.configToken
+    };
+  }
+  closeOnClickOutside() {
+    document.querySelectorAll('[data-close-on-click-outside="true"]').forEach(element => {
+      element.removeAttribute("open");
+    });
+  }
+  renderError() {
+    const errorString = `Error: ${this.error.status} ${this.error.statusText ? `${this.error.statusText}` : ""}`;
+    return lit_html_x` <section class="qcs-viewer is-error"> <div class="qcs-panels"> <h1>${translate("genericError")}</h1> <span>${errorString}</span> </div> </section> `;
+  }
+  renderLogo() {
+    if (!this.logoUrl) return;
+    return lit_html_x` <div class="qcs-viewer__logo-wrapper"> <img class="qcs-viewer__logo" src="${this.logoUrl}" alt="Company logo" height="55"> </div> `;
+  }
+  renderLoading() {
+    return lit_html_x` <section class="qcs-viewer is-loading"> <div class="qcs-panels"> ${Qcs_Loading.renderLoading()} </div> </section> `;
+  }
+  renderPrintPreview() {
+    return lit_html_x` <section class="qcs-viewer qcs-viewer--${getCategoryModifier(this.policy)}"> <qcs-panels slot="panels" .policy="${this.policy}" .config="${this.getConfig()}"></qcs-panels> </section> `;
+  }
+  render() {
+    if (this.error) return this.renderError();
+    if (!this.policy) return this.renderLoading();
+    if (this.printPreview) return this.renderPrintPreview();
+    return lit_html_x` <section class="qcs-viewer qcs-viewer--${getCategoryModifier(this.policy)}"> <qcs-tags .tags="${this.policy.tags}"></qcs-tags> <header class="qcs-viewer__heading"> ${this.renderLogo()} <h1 class="qcs-viewer__title">${this.policy.referenceNumber} - ${this.policy.name}</h1> </header> <qcs-tabs-functionality> <qcs-tabs slot="tabs" .policy="${this.policy}" .config="${this.getConfig()}"></qcs-tabs> <qcs-panels slot="panels" .policy="${this.policy}" .config="${this.getConfig()}"></qcs-panels> </qcs-tabs-functionality> </section> `;
+  }
+};
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "policyId", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "policyVersion", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "locale", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "apiUrl", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "qcsApiUrl", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "qcsAccessToken", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "token", void 0);
+__decorate([property_n({
+  type: Object
+})], QCS_Policy_Viewer.prototype, "policy", void 0);
+__decorate([property_n({
+  type: Boolean
+})], QCS_Policy_Viewer.prototype, "preview", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "logoUrl", void 0);
+__decorate([property_n({
+  type: Boolean
+})], QCS_Policy_Viewer.prototype, "hideForms", void 0);
+__decorate([property_n({
+  type: Boolean
+})], QCS_Policy_Viewer.prototype, "isMobile", void 0);
+__decorate([property_n({
+  type: String
+})], QCS_Policy_Viewer.prototype, "logId", void 0);
+__decorate([property_n({
+  type: Boolean
+})], QCS_Policy_Viewer.prototype, "printPreview", void 0);
+__decorate([property_n({
+  type: Array
+})], QCS_Policy_Viewer.prototype, "filterSections", void 0);
+__decorate([property_n({
+  type: Array
+})], QCS_Policy_Viewer.prototype, "filterForms", void 0);
+__decorate([property_n({
+  type: Object
+})], QCS_Policy_Viewer.prototype, "configToken", void 0);
+QCS_Policy_Viewer = __decorate([custom_element_e("qcs-policy-viewer")], QCS_Policy_Viewer);
+/* harmony default export */ const Qcs_Policy_Viewer = (QCS_Policy_Viewer);
+;// CONCATENATED MODULE: ../node_modules/lit-html/static.js
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const static_e = Symbol.for(""),
+  static_l = t => {
+    if ((null == t ? void 0 : t.r) === static_e) return null == t ? void 0 : t._$litStatic$;
+  },
+  static_o = t => ({
+    _$litStatic$: t,
+    r: static_e
+  }),
+  static_i = (t, ...r) => ({
+    _$litStatic$: r.reduce((r, e, l) => r + (t => {
+      if (void 0 !== t._$litStatic$) return t._$litStatic$;
+      throw Error(`Value passed to 'literal' function must be a 'literal' result: ${t}. Use 'unsafeStatic' to pass non-literal values, but\n            take care to ensure page security.`);
+    })(e) + t[l + 1], t[0]),
+    r: static_e
+  }),
+  static_s = new Map(),
+  static_a = t => (r, ...e) => {
+    const o = e.length;
+    let i, a;
+    const n = [],
+      u = [];
+    let c,
+      $ = 0,
+      f = !1;
+    for (; $ < o;) {
+      for (c = r[$]; $ < o && void 0 !== (a = e[$], i = static_l(a));) c += i + r[++$], f = !0;
+      $ !== o && u.push(a), n.push(c), $++;
+    }
+    if ($ === o && n.push(r[o]), f) {
+      const t = n.join("$$lit$$");
+      void 0 === (r = static_s.get(t)) && (n.raw = n, static_s.set(t, r = n)), e = u;
+    }
+    return t(r, ...e);
+  },
+  static_n = static_a(lit_html_x),
+  static_u = static_a(b);
+
+;// CONCATENATED MODULE: ../node_modules/lit/static-html.js
+
+;// CONCATENATED MODULE: ./src/views/tabs/Qcs_Tabs.ts
+var Qcs_Tabs_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+let Qcs_Policy_Viewer_Tabs = class Qcs_Policy_Viewer_Tabs extends lit_element_s {
+  createRenderRoot() {
+    return this;
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    this.tabsSize = Number.parseInt(getComputedStyle(document.body).getPropertyValue("--qcs-tab__size").replace("px", "")) + 5;
+    this.scrollTarget = 0;
+  }
+  firstUpdated() {
+    if (!this.tabsList) return;
+    this.isScrollable = this.tabsList.scrollWidth > this.tabsList.clientWidth;
+    this.validateButtonRendering();
+  }
+  async updated(_changedProperties) {
+    super.updated(_changedProperties);
+    await this.updateComplete;
+    this.initScrollspy();
+  }
+  initScrollspy() {
+    const tabs = this.querySelectorAll("a");
+    const sections = this.closest("qcs-policy-viewer").querySelectorAll("[data-panel]");
+    this.iObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        const tab = Array.from(tabs).find(tab => tab.getAttribute("href") === `#${id}`);
+        if (entry.isIntersecting) {
+          tab.classList.add("is-active");
+        } else {
+          tab.classList.remove("is-active");
+        }
+      });
+    }, {
+      rootMargin: "-50% 0%",
+      root: document
+    });
+    sections.forEach(section => {
+      this.iObserver.observe(section);
+    });
+  }
+  validateButtonRendering() {
+    this.shouldRenderPrev = this.tabsList.scrollLeft > 0;
+    this.shouldRenderNext = this.tabsList.scrollLeft + this.tabsList.clientWidth < this.tabsList.scrollWidth;
+  }
+  scrollPrev() {
+    this.scrollTarget -= this.tabsSize;
+    this.tabsList.scrollTo({
+      left: this.scrollTarget,
+      behavior: "smooth"
+    });
+    this.validateButtonRendering();
+  }
+  scrollNext() {
+    this.scrollTarget += this.tabsSize;
+    this.tabsList.scrollTo({
+      left: this.scrollTarget,
+      behavior: "smooth"
+    });
+    this.validateButtonRendering();
+  }
+  renderScrollButtons() {
+    if (!this.isScrollable) return;
+    return static_n`
+            ${this.shouldRenderPrev ? static_n`<button @click=${e => this.scrollPrev()} type="button" class="qcs-viewer__tabs-button qcs-viewer__tabs-button--prev js-prev">
+                            <span class="sr-only">${translate("previousLabel")}</span>
+                        </button>` : A}
+            ${this.shouldRenderNext ? static_n`<button @click=${e => this.scrollNext()} type="button" class="qcs-viewer__tabs-button qcs-viewer__tabs-button--next js-next">
+                            <span class="sr-only">${translate("nextLabel")}</span>
+                        </button>` : A}
+        `;
+  }
+  render() {
+    return static_n`
+            <nav class="qcs-viewer__tabs-wrapper">
+                <ol class="qcs-viewer__tabs js-tabs" @scroll=${e => this.validateButtonRendering()}>
+                    ${Constants.PolicySections.map(tab => {
+      if (!shouldRenderTab(this.policy, tab.key, this.config)) return;
+      return static_n`
+                                <li class="qcs-tab qcs-tab--${tab.key} js-tab">
+                                    <i class="qcs-tab__icon"></i>
+                                    <a class="qcs-tab__label" href="#${tab.key}">${translate(tab.translationKey)}</a>
+                                </li>
+                            `;
+    })}
+                </ol>
+                ${this.renderScrollButtons()}
+            </nav>
+        `;
+  }
+};
+Qcs_Tabs_decorate([property_n({
+  type: Object
+})], Qcs_Policy_Viewer_Tabs.prototype, "policy", void 0);
+Qcs_Tabs_decorate([property_n({
+  type: Object
+})], Qcs_Policy_Viewer_Tabs.prototype, "config", void 0);
+Qcs_Tabs_decorate([query_i(".js-tabs")], Qcs_Policy_Viewer_Tabs.prototype, "tabsList", void 0);
+Qcs_Tabs_decorate([property_n({
+  type: Boolean
+})], Qcs_Policy_Viewer_Tabs.prototype, "isScrollable", void 0);
+Qcs_Tabs_decorate([property_n({
+  type: Boolean
+})], Qcs_Policy_Viewer_Tabs.prototype, "shouldRenderPrev", void 0);
+Qcs_Tabs_decorate([property_n({
+  type: Boolean
+})], Qcs_Policy_Viewer_Tabs.prototype, "shouldRenderNext", void 0);
+Qcs_Policy_Viewer_Tabs = Qcs_Tabs_decorate([custom_element_e("qcs-tabs")], Qcs_Policy_Viewer_Tabs);
+/* harmony default export */ const Qcs_Tabs = ((/* unused pure expression or super */ null && (Qcs_Policy_Viewer_Tabs)));
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/utils/accessibility-utils.js
+const Keys = {
+  end: 35,
+  home: 36,
+  left: 37,
+  up: 38,
+  right: 39,
+  down: 40
+};
+function getAriaOrientation(isVertical) {
+  return isVertical ? "vertical" : "horizontal";
+}
+// Add or substract in a navigation element, depending on key pressed
+function getNavigationDirectionAsNumber(keyPressed) {
+  switch (keyPressed) {
+    case Keys.left:
+    case Keys.up:
+      return -1;
+    case Keys.right:
+    case Keys.down:
+      return 1;
+  }
+}
+const HtmlTagNames = {
+  a: "A",
+  button: "BUTTON"
+};
+function isEventTargetButton(target) {
+  const tagName = target.tagName;
+  switch (tagName) {
+    case HtmlTagNames.a:
+    case HtmlTagNames.button:
+      return true;
+  }
+  return target.getAttribute("type") === "submit";
+}
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/utils/string-utils.js
+function stringIsNullOrEmpty(text) {
+  // '==' so it covers undefined as well!
+  return text == null || text === "";
+}
+function getIdFromAnchor(hash) {
+  const index = hash.indexOf("#");
+  if (index > -1) {
+    return hash.substr(index + 1);
+  }
+  return hash;
+}
+function kebabCaseToCamelCase(kebabAttributeName) {
+  const camelCaseName = kebabAttributeName.replace(/(-[a-z])/, g => {
+    return g.replace("-", "").toUpperCase();
+  });
+  return camelCaseName;
+}
+function stringToJson(text) {
+  if (stringIsNullOrEmpty(text)) return;
+  if (typeof text === "Object") return text;
+  // when the object string exist only of single quote replace it by double quotes
+  const regexp = new RegExp(/^(\{')/, "g");
+  text = regexp.test(text) ? text.replace(/(')/g, '"') : text;
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    console.log(error);
+  }
+}
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/utils/global-styles.js
+// Inspired by https://eisenbergeffect.medium.com/using-global-styles-in-shadow-dom-5b80e802e89d
+// TODO: What with dynamically added stylesheets?
+let globalSheets = null;
+/**
+ * Get all document's stylesheets on the same domain
+ * @returns list of stylesheets
+ */
+function getGlobalStyleSheets() {
+  if (globalSheets === null) {
+    globalSheets = Array.from(document.styleSheets).map(x => {
+      if (isSheetAccessible(x)) {
+        const sheet = new CSSStyleSheet();
+        const css = Array.from(x.cssRules).map(rule => rule.cssText).join(" ");
+        sheet.replaceSync(css);
+        return sheet;
+      }
+    }).filter(x => x != null);
+  }
+  return globalSheets;
+}
+/**
+ * Is the stylesheet accessible. If not, return false.
+ * Eg. If the sheet is not accessible, it cannot be used for adoptedStyleSheets
+ * @param {CSSStyleSheet} sheet
+ * @returns
+ */
+function isSheetAccessible(sheet) {
+  return sheet.href && !sheet.href.startsWith(location.origin) ? false : true;
+}
+/**
+ * Add the document's stylesheets to the adoptedStyleSheets for the shadowDOM
+ * @param {ShadowRoot} shadowRoot */
+function addGlobalStylesToShadowRoot(shadowRoot) {
+  shadowRoot.adoptedStyleSheets.push(...getGlobalStyleSheets());
+}
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/base/dlw-webcomponent-base.js
+
+
+class DlwBaseWebComponent extends HTMLElement {
+  /**
+   * Constructor for internal checks (prevent DOM manipulation in the constructor)
+   */
+  constructor() {
+    super();
+    this.componentInitializedState = "initialized";
+    /**
+     * renderRoot is the root on which you can query. Accessible via this.renderRoot in your component. */
+    this.renderRoot = null;
+    /**
+     * config is a JSON object passed to the config attribute on the component
+     */
+    this.config = null;
+    this.bindRenderRoot();
+  }
+  /**
+   * If the component has a Declarative ShadowDOM attached, use it as the renderRoot.
+   * In case there's no Declarative ShadowDOM, use the renderRoot as defined in this.createRenderRoot (null or shadowDom);
+   */
+  bindRenderRoot() {
+    // If we don't have a Declarative ShadowDOM, add the result of the render method to the renderRoot
+    if (!this.shadowRoot) {
+      // Set the root on which we can query.
+      this.renderRoot = this.createRenderRoot();
+      const template = this.render();
+      if (template) this.renderRoot.innerHTML = template;
+    }
+    // If it does exist, lets use the Declarative ShadowDOM
+    else {
+      this.renderRoot = this.shadowRoot;
+    }
+  }
+  /**
+   * Invoked every time the web component is connected to the DOM
+   */
+  connectedCallback() {
+    // Convert param to JSON
+    var json = this.getAttributeValue("config");
+    if (json) {
+      try {
+        this.config = JSON.parse(json);
+      } catch (e) {
+        console.error("Invalid JSON passed to 'config' attribute");
+        this.config = json;
+      }
+    }
+    // Adopt global styles
+    if (this.shadowRoot && this.getAttributeValue("adopt-global-styles") == "true") {
+      addGlobalStylesToShadowRoot(this.shadowRoot);
+    }
+    // Check if component should be initialized upon scrolling in view (loading=lazy)
+    const loadLazy = this.getAttributeValue("loading") == "lazy";
+    if (loadLazy) {
+      const iObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !this.hasAttribute(this.componentInitializedState)) {
+            this.beforeInit();
+          }
+        });
+      });
+      iObserver.observe(this);
+    } else {
+      this.beforeInit();
+    }
+  }
+  beforeInit() {
+    this.init();
+    this.setAttribute(this.componentInitializedState, "");
+  }
+  /**
+   * Init method to setup event listeners, fetch data, query the renderRoot, access assignedElements, ...
+   */
+  init() {}
+  /**
+   * Return the template of the component
+   */
+  render() {
+    return null;
+  }
+  /**
+   * Create the root in which we can query.
+   * By default, we create a ShadowDom (open)
+   * Override this method in case you want the light DOM. Therefore, use 'return this' (Similar to Lit)
+   */
+  createRenderRoot() {
+    return this.attachShadow({
+      mode: "open"
+    });
+  }
+  /**
+   * Get the value of an attribute, or get its default value in case there's no value
+   * @param {string} name the name of the attribute
+   * @param defaultValue default value of the attribute
+   */
+  getAttributeValue(name, defaultValue = false) {
+    let value = this.getAttribute(name);
+    if (value === undefined || value === "") {
+      return true;
+    } else if (value) {
+      return value;
+    }
+    return defaultValue;
+  }
+  /**
+   * Check if attribute exist or has an empty string or value true     *
+   * @property {string} name - attribute name to be checked if false or true
+   * @returns {boolean}
+   */
+  getBooleanAttributeValue(name) {
+    let value = this.getAttribute(name);
+    return value === undefined || value === "" || value === "true" ? true : false;
+  }
+  /**
+   * Lifecycle method triggered after an attribute is added, removed or its value is changed
+   * @param {string} property
+   * @param {string} oldValue
+   * @param {string} newValue
+   */
+  attributeChangedCallback(property, oldValue, newValue) {
+    if (oldValue === newValue) return;
+    const propName = kebabCaseToCamelCase(property);
+    this[propName] = newValue;
+    if (this.onAttributeChangedCallback) {
+      this.onAttributeChangedCallback(propName);
+    }
+  }
+  /**
+   * Register the component
+   * @param {string} name the name of your web components that will be used as custom element; eg. hello-world
+   */
+  static define(name) {
+    window.customElements.define(name, this);
+  }
+}
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/dlw-tabs.js
+// This is an adapted version of seven-minute-tabs by Zach Leat
+// https://www.zachleat.com/web/seven-minute-tabs/
+
+
+
+class TabsComponentFunctionality {
+  constructor(htmlElement, delay) {
+    this.htmlElement = htmlElement;
+    this.delay = delay;
+    this.tablist = this.htmlElement.querySelector('[role="tablist"]');
+    this.buttons = this.htmlElement.querySelectorAll('[role="tab"]');
+    this.panels = this.htmlElement.querySelectorAll('[role="tabpanel"]');
+    if (!this.tablist || !this.buttons.length || !this.panels.length) {
+      return;
+    }
+    // This order is important
+    this.initButtons();
+    this.initPanels();
+  }
+  //#region Tabs initialize
+  initButtons() {
+    const hasASelectedButton = this.getHasASelectedButtonState();
+    let count = 0;
+    for (let button of this.buttons) {
+      let isSelected = button.getAttribute("aria-selected") === "true";
+      // If no button is selected, select the first one
+      if (!hasASelectedButton && count === 0) {
+        isSelected = true;
+      }
+      // Attributes
+      this.setButtonAttributes(button, isSelected);
+      // Events
+      this.bindButtonEvents(button);
+      button.index = count++;
+    }
+  }
+  bindButtonEvents(button) {
+    button.addEventListener("click", this.clickEventListener.bind(this));
+    button.addEventListener("keydown", this.keydownEventListener.bind(this));
+    button.addEventListener("keyup", this.keyupEventListener.bind(this));
+  }
+  setButtonAttributes(button, isSelected) {
+    if (!button.hasAttribute("aria-selected")) {
+      button.setAttribute("aria-selected", isSelected);
+    }
+    button.setAttribute("tabindex", isSelected ? "0" : "-1");
+    const tabId = getIdFromAnchor(button.getAttribute("href"));
+    if (!button.hasAttribute("aria-controls")) {
+      button.setAttribute("aria-controls", tabId);
+    }
+    if (!button.hasAttribute("id")) {
+      button.setAttribute("id", this.getButtonIdFromTabId(tabId));
+    }
+  }
+  getButtonIdFromTabId(tabId) {
+    return `${tabId}-btn`;
+  }
+  getHasASelectedButtonState() {
+    return Array.from(this.buttons).filter(btn => btn.getAttribute("aria-selected") === "true").length > 0;
+  }
+  //#endregion
+  //#region Tabs event handlers
+  // Handle click on tabs
+  clickEventListener(event) {
+    const button = event.target;
+    if (isEventTargetButton(button)) {
+      event.preventDefault();
+    }
+    this.activateTab(button, false);
+  }
+  // Handle keydown on tabs
+  keydownEventListener(event) {
+    const key = event.keyCode;
+    switch (key) {
+      case Keys.end:
+        event.preventDefault();
+        // Activate last tab
+        this.activateTab(this.buttons[this.buttons.length - 1]);
+        break;
+      case Keys.home:
+        event.preventDefault();
+        // Activate first tab
+        this.activateTab(this.buttons[0]);
+        break;
+      // Up and down are in keydown
+      // because we need to prevent page scroll >:)
+      case Keys.up:
+      case Keys.down:
+        this.determineOrientation(event);
+        break;
+    }
+  }
+  // Handle keyup on tabs
+  keyupEventListener(event) {
+    const key = event.keyCode;
+    switch (key) {
+      case Keys.left:
+      case Keys.right:
+        this.determineOrientation(event);
+        break;
+    }
+  }
+  //#endregion
+  //#region Panels initialize
+  initPanels() {
+    // Get selected panel id from the current selected tab
+    const selectedPanelId = this.htmlElement.querySelector('[role="tab"][aria-selected="true"]').getAttribute("aria-controls");
+    // Set each panel
+    for (let panel of this.panels) {
+      // Hide all panels that are not the selected one
+      if (panel.getAttribute("id") !== selectedPanelId) {
+        panel.setAttribute("hidden", "");
+      }
+      panel.setAttribute("tabindex", "0");
+      if (!panel.hasAttribute("aria-labelledby")) {
+        const tabId = panel.getAttribute("id");
+        panel.setAttribute("aria-labelledby", this.getButtonIdFromTabId(tabId));
+      }
+    }
+  }
+  //#endregion
+  //#region Arrow navigation helpers
+  // When a tablist’s aria-orientation is set to vertical,
+  // only up and down arrow should function.
+  // In all other cases only left and right arrow function.
+  determineOrientation(event) {
+    const key = event.keyCode;
+    const vertical = this.tablist.getAttribute("aria-orientation") == "vertical";
+    let proceed = false;
+    if (vertical) {
+      if (key === Keys.up || key === Keys.down) {
+        event.preventDefault();
+        proceed = true;
+      }
+    } else {
+      if (key === Keys.left || key === Keys.right) {
+        proceed = true;
+      }
+    }
+    if (proceed) {
+      this.switchTabOnArrowPress(key, event.target);
+    }
+  }
+  // Either focus the next, previous, first, or last tab
+  // depending on key pressed
+  switchTabOnArrowPress(keyPressedCode, currentTab) {
+    for (let button of this.buttons) {
+      button.addEventListener("focus", this.focusEventHandler.bind(this));
+    }
+    // Get +1 or -1 depending on direction (or undefined if not arrow keys)
+    const indexToAdd = getNavigationDirectionAsNumber(keyPressedCode);
+    if (!indexToAdd || currentTab.index === undefined) return;
+    let newTabIndex = currentTab.index + indexToAdd;
+    // if current tab is first or last, circle around
+    if (!this.buttons[newTabIndex]) newTabIndex = indexToAdd === -1 ? this.buttons.length - 1 : 0;
+    this.buttons[newTabIndex].focus();
+  }
+  // Handle focus on tabs
+  focusEventHandler(event) {
+    const target = event.target;
+    setTimeout(this.checkTabFocus.bind(this), this.delay, target);
+  }
+  // Only activate tab on focus if it still has focus after the delay
+  checkTabFocus(target) {
+    let focused = document.activeElement;
+    if (target === focused) {
+      this.activateTab(target, false);
+    }
+  }
+  //#endregion
+  //#region Navigation helpers
+  // Activates any given tab panel
+  activateTab(tab, setFocus) {
+    // Select the actual tab
+    if (tab.getAttribute("role") !== "tab") {
+      tab = tab.closest('[role="tab"]');
+    }
+    setFocus = setFocus || true;
+    // Deactivate all other tabs
+    this.deactivateTabs();
+    // Remove tabindex attribute
+    tab.removeAttribute("tabindex");
+    // Set the tab as selected
+    tab.setAttribute("aria-selected", "true");
+    // Get the value of aria-controls (which is an ID)
+    const controls = tab.getAttribute("aria-controls");
+    // Remove hidden attribute from tab panel to make it visible
+    document.getElementById(controls).removeAttribute("hidden");
+    // Set focus when required
+    if (setFocus) {
+      tab.focus();
+    }
+  }
+  // Deactivate all tabs and tab panels
+  deactivateTabs() {
+    for (let button of this.buttons) {
+      button.setAttribute("tabindex", "-1");
+      button.setAttribute("aria-selected", "false");
+      button.removeEventListener("focus", this.focusEventHandler.bind(this));
+    }
+    for (let panel of this.panels) {
+      panel.setAttribute("hidden", "hidden");
+    }
+  }
+}
+class DlwTabs extends DlwBaseWebComponent {
+  constructor() {
+    super();
+    this.delay = 0;
+    this.isVertical = false;
+    this.meaningfullLabel = "";
+    this.observer = new MutationObserver(this.init);
+  }
+  onAttributeChangedCallback(propName) {
+    if (propName === "delay" && this.functionality) this.functionality.delay = this.getDelayAsNumber(this.delay);
+  }
+  getDelayAsNumber(delayStr) {
+    const parsedDelay = parseInt(`${delayStr}`);
+    if (isNaN(parsedDelay)) return 0;
+    return parsedDelay;
+  }
+  //#region shadow dom manipulations
+  render() {
+    return `
+			<slot name="tabs"></slot>
+			<slot></slot>
+		`;
+  }
+  assureAccessibilityAttributes() {
+    const tabsSlot = this.renderRoot.querySelector('slot[name="tabs"]');
+    const tabSlotElements = tabsSlot.assignedElements();
+    if (tabSlotElements && tabSlotElements.length > 0) {
+      const tabList = tabSlotElements[0];
+      tabList.setAttribute("role", "tablist");
+      tabList.setAttribute("aria-orientation", getAriaOrientation(this.isVertical));
+      tabList.setAttribute("aria-label", this.meaningfullLabel);
+      for (let tabWrapper of tabList.children) {
+        const currentTab = tabWrapper.querySelector("a");
+        currentTab.setAttribute("role", "tab");
+      }
+    }
+    const panelSlot = this.renderRoot.querySelector("slot:not([name])");
+    const panelElements = panelSlot.assignedElements();
+    if (panelElements && panelElements.length > 0) {
+      for (let panel of panelElements) {
+        panel.setAttribute("role", "tabpanel");
+      }
+    }
+  }
+  //#endregion
+  //#region Lifecycle and attributes
+  connectedCallback() {
+    super.connectedCallback();
+    this.observer.observe(this, {
+      childList: true
+    });
+  }
+  //#endregion
+  //#region init
+  init() {
+    this.assureAccessibilityAttributes();
+    this.functionality = new TabsComponentFunctionality(this, this.getDelayAsNumber(this.delay));
+  }
+}
+DlwTabs.observedAttributes = ["delay", "is-vertical", "meaningfull-label"];
+DlwTabs.define("dlw-tabs");
+;// CONCATENATED MODULE: ./src/views/tabs/Qcs_Tabs_functionality.ts
+
+
+
+class Qcs_Tabs_Functionality extends DlwTabs {
+  init() {
+    document.addEventListener(Events.InitTabs, () => {
+      this.initRequest();
+    });
+  }
+  initRequest() {
+    this.assureAccessibilityAttributes();
+    super.functionality = new QcsTabsComponentFunctionality(this, super.getDelayAsNumber(super.delay));
+  }
+  render() {
+    return `
+			<slot name="tabs"></slot>
+			<slot name="panels"></slot>
+		`;
+  }
+  assureAccessibilityAttributes() {
+    const tabsSlot = this.renderRoot.querySelector('slot[name="tabs"]');
+    const tabSlotElements = tabsSlot.assignedElements()[0]?.children[0]?.children;
+    if (tabSlotElements && tabSlotElements.length > 0) {
+      const tabList = tabSlotElements[0];
+      tabList.setAttribute("role", "tablist");
+      tabList.setAttribute("aria-orientation", getAriaOrientation(this.isVertical));
+      tabList.setAttribute("aria-label", this.meaningfullLabel);
+      for (let tabWrapper of tabList.children) {
+        const currentTab = tabWrapper.querySelector("a");
+        currentTab.setAttribute("role", "tab");
+      }
+    }
+    const panelSlot = this.renderRoot.querySelector('slot[name="panels"]');
+    const panelElements = panelSlot.assignedElements()[0].querySelectorAll(".js-panel");
+    if (panelElements && panelElements.length > 0) {
+      for (let panel of panelElements) {
+        panel.setAttribute("role", "tabpanel");
+      }
+    }
+  }
+}
+class QcsTabsComponentFunctionality extends TabsComponentFunctionality {
+  constructor(htmlElement, delay) {
+    super(htmlElement, delay);
+  }
+  initPanels() {
+    // Get selected panel id from the current selected tab
+    const selectedPanelId = this.htmlElement.querySelector('[role="tab"][aria-selected="true"]').getAttribute("aria-controls");
+    // Set each panel
+    for (let panel of this.panels) {
+      // Hide all panels that are not the selected one
+      if (panel.getAttribute("id") !== selectedPanelId && selectedPanelId != "all-policy") {
+        panel.setAttribute("hidden", "");
+      }
+      panel.setAttribute("tabindex", "0");
+      if (!panel.hasAttribute("aria-labelledby")) {
+        const tabId = panel.getAttribute("id");
+        panel.setAttribute("aria-labelledby", super.getButtonIdFromTabId(tabId));
+      }
+    }
+  }
+  // Activates any given tab panel
+  activateTab(tab, setFocus) {
+    // Select the actual tab
+    if (tab.getAttribute("role") !== "tab") {
+      tab = tab.closest('[role="tab"]');
+    }
+    setFocus = setFocus || true;
+    // Deactivate all other tabs
+    super.deactivateTabs();
+    // Remove tabindex attribute
+    tab.removeAttribute("tabindex");
+    // Set the tab as selected
+    tab.setAttribute("aria-selected", "true");
+    // Get the value of aria-controls (which is an ID)
+    const controls = tab.getAttribute("aria-controls");
+    // Remove hidden attribute from all panels if tab = all-policy.
+    if (controls === Constants.AllPolicy) {
+      document.querySelectorAll("[role='tabpanel']").forEach(panel => panel.removeAttribute("hidden"));
+    } else {
+      // Remove hidden attribute from tab panel to make it visible
+      document.getElementById(controls).removeAttribute("hidden");
+    }
+    // Set focus when required
+    if (setFocus) {
+      tab.focus();
+    }
+    document.dispatchEvent(new CustomEvent(Events.TabChange, {
+      detail: controls
+    }));
+  }
+}
+window.customElements.define("qcs-tabs-functionality", Qcs_Tabs_Functionality);
+;// CONCATENATED MODULE: ./src/views/panels/Qcs_Panels.ts
+var Qcs_Panels_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+let Qcs_Panels = class Qcs_Panels extends lit_element_s {
+  createRenderRoot() {
+    return this;
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    // If a tab that is hidden on all policy is activated, trigger a re-render to render the content of the tab.
+    document.addEventListener(Events.TabChange, e => {
+      if (Constants.PolicySections.find(ps => ps.key === e.detail)?.hideFromAll) this.requestUpdate();
+    });
+  }
+  firstUpdated(_changedProperties) {
+    QCS_Action_Handler.dispatch(Events.InitTabs);
+  }
+  getPanelTag(tab) {
+    if (!tab.pointer || tab.pointer === "purposeSections") return `qcs-${tab.key}-panel`;
+    return 'qcs-base-panel';
+  }
+  getActiveTabId() {
+    return document.querySelector('[role="tab"][aria-selected="true"]')?.getAttribute("aria-controls");
+  }
+  renderPanelContent(tab, index) {
+    const panelTag = this.getPanelTag(tab);
+    return static_n`
+            <${static_o(panelTag)}
+                .policy="${this.policy}"
+                .tab="${tab}"
+                .config=${this.config}
+                .index="${index}">
+            </${static_o(panelTag)}>
+        `;
+  }
+  render() {
+    let panelIndex = 1;
+    return static_n`
+            <section class="qcs-panels">
+                ${Constants.PolicySections.map(tab => {
+      if (!shouldRenderTab(this.policy, tab.key, this.config)) return;
+      const index = tab.showIndex ? panelIndex++ : null;
+      // Check if we want to prevent the content from showing up in the all policy tab.
+      const activeTabId = this.getActiveTabId();
+      const hidePanelContent = tab.hideFromAll && (!activeTabId || activeTabId === Constants.AllPolicy);
+      return static_n`
+                            <section id="${tab.key}" class="js-panel" ?hide-from-all="${tab.hideFromAll}">
+                                ${hidePanelContent ? A : this.renderPanelContent(tab, index)}
+                            </section>
+                        `;
+    })}
+            </section>
+        `;
+  }
+};
+Qcs_Panels_decorate([property_n({
+  type: Object
+})], Qcs_Panels.prototype, "policy", void 0);
+Qcs_Panels_decorate([property_n({
+  type: Boolean
+})], Qcs_Panels.prototype, "config", void 0);
+Qcs_Panels = Qcs_Panels_decorate([custom_element_e("qcs-panels")], Qcs_Panels);
+
+;// CONCATENATED MODULE: ../node_modules/lit-html/directive.js
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const directive_t = {
+    ATTRIBUTE: 1,
+    CHILD: 2,
+    PROPERTY: 3,
+    BOOLEAN_ATTRIBUTE: 4,
+    EVENT: 5,
+    ELEMENT: 6
+  },
+  directive_e = t => (...e) => ({
+    _$litDirective$: t,
+    values: e
+  });
+class directive_i {
+  constructor(t) {}
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  _$AT(t, e, i) {
+    this._$Ct = t, this._$AM = e, this._$Ci = i;
+  }
+  _$AS(t, e) {
+    return this.update(t, e);
+  }
+  update(t, e) {
+    return this.render(...e);
+  }
+}
+
+;// CONCATENATED MODULE: ../node_modules/lit-html/directives/unsafe-html.js
+
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+class unsafe_html_e extends directive_i {
+  constructor(i) {
+    if (super(i), this.et = A, i.type !== directive_t.CHILD) throw Error(this.constructor.directiveName + "() can only be used in child bindings");
+  }
+  render(r) {
+    if (r === A || null == r) return this.ft = void 0, this.et = r;
+    if (r === T) return r;
+    if ("string" != typeof r) throw Error(this.constructor.directiveName + "() called with a non-string value");
+    if (r === this.et) return this.ft;
+    this.et = r;
+    const s = [r];
+    return s.raw = s, this.ft = {
+      _$litType$: this.constructor.resultType,
+      strings: s,
+      values: []
+    };
+  }
+}
+unsafe_html_e.directiveName = "unsafeHTML", unsafe_html_e.resultType = 1;
+const unsafe_html_o = directive_e(unsafe_html_e);
+
+;// CONCATENATED MODULE: ../node_modules/lit/directives/unsafe-html.js
+
+;// CONCATENATED MODULE: ./src/views/panels/Qcs_Base_Panel.ts
+var Qcs_Base_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+let Qcs_Base_Panel = class Qcs_Base_Panel extends lit_element_s {
+  createRenderRoot() {
+    return this;
+  }
+  getSectionIndex(asNumber = false) {
+    if (!this.index) return null;
+    if (asNumber) return this.index;
+    return `${this.index.toString()}. `;
+  }
+  tryGetStandardText(tab) {
+    // Build the property name of the standard text label based on tab key. 
+    const propertyName = `${tab.key.split("-").reduce((x, cur, i) => {
+      return x += i > 0 ? cur.charAt(0).toUpperCase() + cur.slice(1) : cur;
+    }, "")}StandardText`;
+    // Check if there is a standard text for when the section is empty. 
+    if ((!this.policy.hasOwnProperty(tab.pointer) || isEmpty(this.policy[tab.pointer])) && this.policy.viewConfig.hasOwnProperty(`no${propertyName.charAt(0).toUpperCase() + propertyName.slice(1)}`)) return this.policy.viewConfig[`no${propertyName.charAt(0).toUpperCase() + propertyName.slice(1)}`];
+    if (this.policy.viewConfig.hasOwnProperty(propertyName)) return this.policy.viewConfig[propertyName];
+    return null;
+  }
+  shareSection(eventName) {
+    const tab = tabKeyToHeader(this.tab.key);
+    QCS_Action_Handler.dispatch(eventName, {
+      policy: this.policy,
+      section: tab
+    });
+  }
+  renderDownloadButton() {
+    if (this.config.isPreview || this.config.isPrintPreview || !this.config.configToken || !this.config.configToken.canShowEmail && !this.config.configToken.canShowPdf && !this.config.configToken.canShowPrint && !this.config.configToken.canShowWord) return;
+    return static_n`
+            <details class="qcs-options" data-close-on-click-outside="true">
+                <summary class="qcs-options__summary" aria-label="${translate("shareSectionButtonLabel")}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                        <path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z"></path>
+                    </svg>
+                </summary>
+                <ul class="qcs-options__list">
+                    ${this.config.configToken?.canShowPdf ? static_n`
+                                <li class="qcs-options__item">
+                                    <button class="qcs-options__button qcs-share-pdf" type="button" @click=${e => this.shareSection(Qcs_Events.Qcs_Download_Section_Pdf)}>
+                                        <i class="qcs-options__icon"></i>
+                                        ${translate("downloadSectionAsPdfLabel")}
+                                    </button>
+                                </li>
+                            ` : A}
+                    ${this.config.configToken?.canShowWord ? static_n`                    
+                                <li class="qcs-options__item">
+                                    <button class="qcs-options__button qcs-share-word" type="button" @click=${e => this.shareSection(Qcs_Events.Qcs_Download_Section_Word)}>
+                                        <i class="qcs-options__icon"></i>
+                                        ${translate("downloadSectionAsWordLabel")}
+                                    </button>
+                                </li>
+                            ` : A}
+                    ${this.config.configToken?.canShowEmail ? static_n`                    
+                                <li class="qcs-options__item">
+                                    <button class="qcs-options__button qcs-share-email" type="button" @click=${e => this.shareSection(Qcs_Events.Qcs_Email_Section)}>
+                                        <i class="qcs-options__icon"></i>
+                                        ${translate("emailLabel")}
+                                    </button>
+                                </li>
+                            ` : A}
+                    ${this.config.configToken?.canShowPrint ? static_n`                    
+                                <li class="qcs-options__item">
+                                    <button class="qcs-options__button qcs-share-print" type="button" @click=${e => this.shareSection(Qcs_Events.Qcs_Print_Section)}>
+                                        <i class="qcs-options__icon"></i>
+                                        ${translate("printLabel")}
+                                    </button>
+                                </li>
+                            ` : A}
+                </ul>
+            </details>
+        `;
+  }
+  renderHeading() {
+    return static_n`
+            <div class="qcs-panel__header">
+                <h2 class="qcs-panel__title">${this.getSectionIndex()}${translate(this.tab.translationKey)}</h2>
+                ${this.renderDownloadButton()}
+            </div>
+        `;
+  }
+  renderSection(item, index) {
+    const hasTitle = item.title != '';
+    return static_n`
+            <div class="nested-rich-text">
+                ${this.renderSectionTitle(item, index)}
+                ${hasTitle ? unsafe_html_o(item.text) : ""}
+            </div>
+        `;
+  }
+  renderSectionTitle(item, index) {
+    if (item.title) {
+      return static_n`<span class="nested-rich-text__title is-title"><b>${this.getSectionIndex(true)}.${++index} ${unsafe_html_o(item.title)}</b></span>`;
+    }
+    return static_n`<span class="nested-rich-text__title"><b>${this.getSectionIndex(true)}.${++index}</b> ${unsafe_html_o(item.text)}</span>`;
+  }
+  renderBody() {
+    if (typeof this.policy[this.tab.pointer] !== "string" && Array.isArray(this.policy[this.tab.pointer])) {
+      var objectArray = this.policy[this.tab.pointer];
+      return static_n`
+                <div class="qcs-panel__body">
+                    ${objectArray.map((item, index) => this.renderSection(item, index))}
+                </div>
+            `;
+    }
+    const standardText = this.tryGetStandardText(this.tab);
+    return static_n`
+            <div class="qcs-panel__body">
+                ${standardText ? static_n`<span>${standardText}</span>` : A}
+                ${unsafe_html_o(this.policy[this.tab.pointer])}
+            </div>
+        `;
+  }
+  render() {
+    return static_n`
+            <div class="qcs-panel qcs-panel--${this.tab.key}" id="${this.tab.key}" data-panel>
+                ${this.renderHeading()}
+                ${this.renderBody()}
+            </div>
+        `;
+  }
+};
+Qcs_Base_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Base_Panel.prototype, "policy", void 0);
+Qcs_Base_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Base_Panel.prototype, "tab", void 0);
+Qcs_Base_Panel_decorate([property_n({
+  type: Number
+})], Qcs_Base_Panel.prototype, "index", void 0);
+Qcs_Base_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Base_Panel.prototype, "config", void 0);
+Qcs_Base_Panel = Qcs_Base_Panel_decorate([custom_element_e("qcs-base-panel")], Qcs_Base_Panel);
+
+;// CONCATENATED MODULE: ./src/views/panels/purpose/Qcs_Purpose_Panel.ts
+var Qcs_Purpose_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+let Qcs_Purpose_Panel = class Qcs_Purpose_Panel extends Qcs_Base_Panel {
+  constructor() {
+    super(...arguments);
+    this.sections = [];
+    //#endregion
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    if (Array.isArray(this.policy[this.tab.pointer])) {
+      this.sections = this.policy[this.tab.pointer];
+    }
+  }
+  renderBody() {
+    return lit_html_x` <div class="qcs-panel__body"> ${this.renderSections()} ${this.renderQuestions()} ${this.renderLegislation()} </div> `;
+  }
+  //#region Sections
+  renderSections() {
+    if (this.sections && this.sections.length > 0) {
+      return lit_html_x` ${this.sections.map((item, index) => super.renderSection(item, index))} `;
+    }
+    return lit_html_x``;
+  }
+  //#endregion
+  //#region Questions
+  shouldRenderQualityStatements() {
+    return this.policy.kloeQualityStatements && this.policy.kloeQualityStatements.some(x => x.qualityStatements);
+  }
+  renderQuestions() {
+    if (!this.shouldRenderQualityStatements()) return;
+    var title = translate("defaultKloeTitle");
+    return lit_html_x` <div class="nested-rich-text"> <span class="nested-rich-text__title"><b>${this.getSectionIndex(true)}.${this.sections.length + 1} </b>${title}</span> <div class="qcs-kloes qcs-table"> <header class="qcs-table__heading"> <div class="qcs-table__item qcs-kloes__heading-item qcs-kloes__heading-item--question">${translate("keyQuestionLabel")}</div> <div class="qcs-table__item qcs-kloes__heading-item qcs-kloes__heading-item--quality">${translate("qsLabel")}</div> </header> <ul class="qcs-table__body"> ${this.policy.kloeQualityStatements.map(purposeQuestion => this.renderQuestion(purposeQuestion))} </ul> </div> </div>`;
+  }
+  renderQuestion(purposeQuestion) {
+    if (!purposeQuestion?.qualityStatements) return;
+    return lit_html_x` <li class="qcs-kloe qcs-table__row"> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--question"><span class="qcs-table__title">${translate("keyQuestionLabel")}</span><span class="qcs-table__value">${purposeQuestion.keyQuestion.name}</span></div> <div class="qcs-table__item qcs-kloe__item qcs-kloe__item--quality"><span class="qcs-table__title">${translate("qsLabel")}</span> <ul class="qcs-quality-statements"> ${purposeQuestion.qualityStatements.map(statement => this.renderStatement(statement))} </ul> </div> </li> `;
+  }
+  renderStatement(statement) {
+    return lit_html_x` <li class="qcs-quality-statements__statement">${statement.code}: ${statement.qualityStatement}</li> `;
+  }
+  //#endregion
+  //#region Relevant legislations
+  renderLegislation() {
+    if (!this.policy.relevantLegislations || this.policy.relevantLegislations.length == 0) return;
+    let subsectionIndex = this.shouldRenderQualityStatements() ? this.sections.length + 2 : this.sections.length + 1;
+    return lit_html_x` <div class="nested-rich-text"> <span class="nested-rich-text__title"><b>${this.getSectionIndex(true)}.${subsectionIndex}</b> ${translate("relevantLegislationLabel")}</span> <ul class="qcs-review-sheet__legislation"> ${this.policy.relevantLegislations.map(legislation => lit_html_x`<li>${legislation.legislation}</li>`)} </ul> </div> `;
+  }
+};
+Qcs_Purpose_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Purpose_Panel.prototype, "policy", void 0);
+Qcs_Purpose_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Purpose_Panel.prototype, "tab", void 0);
+Qcs_Purpose_Panel_decorate([property_n({
+  type: Number
+})], Qcs_Purpose_Panel.prototype, "index", void 0);
+Qcs_Purpose_Panel = Qcs_Purpose_Panel_decorate([custom_element_e("qcs-purpose-panel")], Qcs_Purpose_Panel);
+
+;// CONCATENATED MODULE: ./src/Qcs_Interfaces.ts
+var BusinessImpactValue;
+(function (BusinessImpactValue) {
+  BusinessImpactValue["Low"] = "low";
+  BusinessImpactValue["Medium"] = "medium";
+  BusinessImpactValue["High"] = "high";
+  BusinessImpactValue["Critical"] = "critical";
+})(BusinessImpactValue || (BusinessImpactValue = {}));
+;// CONCATENATED MODULE: ../node_modules/lit-html/directives/class-map.js
+
+
+/**
+ * @license
+ * Copyright 2018 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const class_map_o = directive_e(class extends directive_i {
+  constructor(t) {
+    var i;
+    if (super(t), t.type !== directive_t.ATTRIBUTE || "class" !== t.name || (null === (i = t.strings) || void 0 === i ? void 0 : i.length) > 2) throw Error("`classMap()` can only be used in the `class` attribute and must be the only part in the attribute.");
+  }
+  render(t) {
+    return " " + Object.keys(t).filter(i => t[i]).join(" ") + " ";
+  }
+  update(i, [s]) {
+    var r, o;
+    if (void 0 === this.it) {
+      this.it = new Set(), void 0 !== i.strings && (this.nt = new Set(i.strings.join(" ").split(/\s/).filter(t => "" !== t)));
+      for (const t in s) s[t] && !(null === (r = this.nt) || void 0 === r ? void 0 : r.has(t)) && this.it.add(t);
+      return this.render(s);
+    }
+    const e = i.element.classList;
+    this.it.forEach(t => {
+      t in s || (e.remove(t), this.it.delete(t));
+    });
+    for (const t in s) {
+      const i = !!s[t];
+      i === this.it.has(t) || (null === (o = this.nt) || void 0 === o ? void 0 : o.has(t)) || (i ? (e.add(t), this.it.add(t)) : (e.remove(t), this.it.delete(t)));
+    }
+    return T;
+  }
+});
+
+;// CONCATENATED MODULE: ../node_modules/lit/directives/class-map.js
+
+;// CONCATENATED MODULE: ./src/views/panels/review-sheet/Qcs_Review_Sheet_Panel.ts
+var Qcs_Review_Sheet_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+let Qcs_Review_Sheet_Panel = class Qcs_Review_Sheet_Panel extends Qcs_Base_Panel {
+  renderDate(dateString, key) {
+    if (!dateString) return;
+    return lit_html_x` <li class="qcs-review-sheet__${key} qcs-review-sheet__date"> <span>${translate(key)}</span> <time class="qcs-review-sheet__time"> ${formatKontentDateString(dateString)}</time> </li> `;
+  }
+  renderNextPlannedReview() {
+    if (!this.policy.reviewInterval) return;
+    return lit_html_x` <li class="qcs-review-sheet__interval"> <span>${translate("reviewIntervalLabel")}</span> <span class="qcs-review-sheet__interval-value">${this.policy.reviewInterval.name}</span> </li> `;
+  }
+  renderTimeline() {
+    return lit_html_x` <ul class="qcs-review-sheet__timeline"> ${this.renderDate(this.policy.lastReviewed, "lastReviewedLabel")} ${this.renderDate(this.policy.lastAmended, "lastAmendedLabel")} ${this.renderNextPlannedReview()} </ul> `;
+  }
+  renderImpactIndicator() {
+    if (!this.policy.businessImpact) return;
+    // Variable to decide how many "bars" of the indicator need color.
+    let untilIndex = 0;
+    switch (this.policy.businessImpact.value) {
+      case BusinessImpactValue.Low:
+        untilIndex = 1;
+        break;
+      case BusinessImpactValue.Medium:
+        untilIndex = 2;
+        break;
+      case BusinessImpactValue.High:
+        untilIndex = 3;
+        break;
+      case BusinessImpactValue.Critical:
+        untilIndex = 4;
+        break;
+      default:
+        untilIndex = 0;
+        break;
+    }
+    return lit_html_x` <div class="qcs-impact"> <div class="qcs-impact__bars"> ${Object.keys(BusinessImpactValue).map((x, index) => {
+      return lit_html_x`<div class="${class_map_o({
+        "qcs-impact__bar": true,
+        [`qcs-impact__bar--${this.policy.businessImpact?.value}`]: index < untilIndex
+      })}"></div>`;
+    })} <dlw-tooltip position="bottom">${this.policy.businessImpact?.label}</dlw-tooltip> </div> <span class="qcs-impact__label">${this.policy.businessImpact?.label}</span> </div> `;
+  }
+  renderBusinessImpact() {
+    return this.renderEntry("businessImpactLabel", lit_html_x` <div class="qcs-review-sheet__impact"> ${this.renderImpactIndicator()} <p>${this.policy.businessImpact?.explanatoryText}</p> </div> `);
+  }
+  renderReasonForReview() {
+    return this.renderEntry("reviewReasonLabel", lit_html_x` ${this.policy.reviewReason} `);
+  }
+  renderChangesMade() {
+    return this.renderEntry("changesMadeLabel", lit_html_x` ${this.policy.wereChangesMade} `);
+  }
+  renderSummary() {
+    return this.renderEntry("summaryLabel", lit_html_x` ${unsafe_html_o(this.policy.reviewSummary)} `);
+  }
+  renderLegislation() {
+    if (!this.policy.relevantLegislations) return;
+    return this.renderEntry("relevantLegislationLabel", lit_html_x` <ul class="qcs-review-sheet__legislation"> ${this.policy.relevantLegislations.map(legislation => lit_html_x`<li>${legislation.legislation}</li>`)} </ul> `);
+  }
+  renderKnowledge() {
+    if (!this.policy.references) return;
+    return this.renderEntry("underpinningKnowledgeLabel", lit_html_x` <ul class="qcs-review-sheet__references"> ${this.policy.references.map(reference => {
+      return lit_html_x` <li> Author: ${reference.referenceAuthor}, (${reference.referenceYear}), ${reference.referenceTitle} ${reference.publisher ? `[Book] ${reference.publisher}` : A} ${reference.onlineReferenceUrl ? lit_html_x`[Online] ${reference.pages ? lit_html_x`${reference.pages}.` : ""} Available from: <a href="${reference.onlineReferenceUrl}">${reference.onlineReferenceUrl}</a> [Accessed: ${this.policy.lastReviewed ? formatDateStringToNumeric(this.policy.lastReviewed) : ""}]` : A} </li> `;
+    })} </ul> `);
+  }
+  renderSuggestedAction() {
+    if (!this.policy.communicationActions) return;
+    return this.renderEntry("suggestedActionLabel", lit_html_x` <ul class="sheet__legislation"> ${this.policy.communicationActions.map(action => lit_html_x`<li>${unsafe_html_o(action)}</li>`)} </ul> `);
+  }
+  renderEIA() {
+    return this.renderEntry("equalityImpactAssessmentLabel", lit_html_x` ${unsafe_html_o(translate("equalityImpactAssessmentValue"))} `);
+  }
+  renderEntry(translationKey, propertyBody) {
+    return lit_html_x` <dt class="qcs-review-sheet__term">${translate(translationKey)}:</dt> <dd class="qcs-review-sheet__definition">${propertyBody}</dd> `;
+  }
+  renderDatalist() {
+    return lit_html_x` <dl class="qcs-review-sheet__datalist"> ${this.renderBusinessImpact()} ${this.renderReasonForReview()} ${this.renderChangesMade()} ${this.renderSummary()} ${this.renderLegislation()} ${this.renderKnowledge()} ${this.renderSuggestedAction()} ${this.renderEIA()} </dl> `;
+  }
+  renderBody() {
+    return lit_html_x` <div class="qcs-panel__body qcs-review-sheet"> ${this.renderTimeline()} ${this.renderDatalist()} </div> `;
+  }
+};
+Qcs_Review_Sheet_Panel = Qcs_Review_Sheet_Panel_decorate([custom_element_e("qcs-review-sheet-panel")], Qcs_Review_Sheet_Panel);
+
+;// CONCATENATED MODULE: ./src/views/panels/scope/Qcs_Scope_Panel.ts
+var Qcs_Scope_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+let Qcs_Scope_Panel = class Qcs_Scope_Panel extends Qcs_Base_Panel {
+  constructor() {
+    super(...arguments);
+    this.scopeIndex = 1;
+  }
+  renderScopeEntry(index, titleKey, items) {
+    return lit_html_x` <div class="qcs-scope__item"> <span><b>${index}</b> ${translate(titleKey)}:</span> <ul> ${items.map(item => lit_html_x`<li>${item}</li>`)} </ul> </div> `;
+  }
+  renderAffectedRoles() {
+    if (!this.policy.rolesThatMightBeAffected || this.policy.rolesThatMightBeAffected.length == 0) return;
+    return this.renderScopeEntry(`${this.getSectionIndex(true)}.${this.scopeIndex++}`, "rolesAffectedLabel", this.policy.rolesThatMightBeAffected);
+  }
+  renderAffectedUsers() {
+    if (!this.policy.peopleThatMayBeAffected || this.policy.peopleThatMayBeAffected.length == 0) return;
+    return this.renderScopeEntry(`${this.getSectionIndex(true)}.${this.scopeIndex++}`, "peopleAffectedLabel", this.policy.peopleThatMayBeAffected);
+  }
+  renderAffectedStakeholders() {
+    if (!this.policy.stakeholdersThatMayBeAffected || this.policy.stakeholdersThatMayBeAffected.length == 0) return;
+    return this.renderScopeEntry(`${this.getSectionIndex(true)}.${this.scopeIndex++}`, "stakeholdersAffectedLabel", this.policy.stakeholdersThatMayBeAffected);
+  }
+  renderBody() {
+    this.scopeIndex = 1;
+    return lit_html_x` <div class="qcs-panel__body qcs-scope"> ${this.renderAffectedRoles()} ${this.renderAffectedUsers()} ${this.renderAffectedStakeholders()} </div> `;
+  }
+};
+Qcs_Scope_Panel_decorate([property_n({
+  type: Number
+})], Qcs_Scope_Panel.prototype, "scopeIndex", void 0);
+Qcs_Scope_Panel = Qcs_Scope_Panel_decorate([custom_element_e("qcs-scope-panel")], Qcs_Scope_Panel);
+
+;// CONCATENATED MODULE: ./src/views/panels/definitions/Qcs_Definitions_Panel.ts
+var Qcs_Definitions_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+let Qcs_Definitions_Panel = class Qcs_Definitions_Panel extends Qcs_Base_Panel {
+  renderDefinition(definition, index) {
+    return lit_html_x` <div class="qcs-definitions__item"> <b>${`${this.getSectionIndex(true)}.${index + 1}`} ${definition.term}</b> ${unsafe_html_o(definition.definition)} </div> `;
+  }
+  renderBody() {
+    return lit_html_x` <div class="qcs-panel__body qcs-definitions"> ${this.policy.definitions.map((definition, index) => this.renderDefinition(definition, index))} </div> `;
+  }
+};
+Qcs_Definitions_Panel = Qcs_Definitions_Panel_decorate([custom_element_e("qcs-definitions-panel")], Qcs_Definitions_Panel);
+
+;// CONCATENATED MODULE: ./src/views/panels/resources/Qcs_Resource_Detail.ts
+var Qcs_Resource_Detail_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var QCS_Resource_Detail_1;
+
+
+
+
+
+
+
+let QCS_Resource_Detail = QCS_Resource_Detail_1 = class QCS_Resource_Detail extends lit_element_s {
+  createRenderRoot() {
+    return this;
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    document.addEventListener(Qcs_Events.Qcs_Resource_Detail, e => {
+      this.resource = e.detail.resource;
+      this.blog = e.detail.blog;
+      this.error = e.detail.error;
+      this.dialogElement?.showModal();
+    });
+  }
+  // Helper method which determines if we can render a detail view for a certain resource.
+  // Expert insight to be implemented.
+  static resourceHasDetailView(resource) {
+    if (resource.ext?.includes("pdf") || resource.type == ResourceTypes.Image || resource.type == ResourceTypes.Video || resource.type == ResourceTypes.Audio || resource.type == ResourceTypes.ExpertInsight) {
+      return true;
+    }
+    return false;
+  }
+  renderImageResource() {
+    return lit_html_x` <img class="qcs-resource__image" src="${this.resource.absolutePath}" alt="${this.resource.title}"> `;
+  }
+  renderVideoResource() {
+    const source = this.resource.sourceURL.toLowerCase();
+    if (source.includes("dailymotion")) {
+      return lit_html_x` <iframe src="https://geo.dailymotion.com/player.html?video=${this.resource.dailymotionVideoId}&mute=true" style="height:100%;width:100%" allowfullscreen scrolling="no" allow="encrypted-media; fullscreen; picture-in-picture; web-share;"> </iframe> `;
+    }
+    if (source.includes("vimeo")) {
+      return lit_html_x` <iframe src="https://player.vimeo.com/video/${this.resource.vimeoVideoId}" style="border:none" height="100%" width="100%" allowfullscreen> </iframe> `;
+    }
+    if (source.includes("youtube")) {
+      return lit_html_x` <iframe src="https://www.youtube.com/embed/${this.resource.youtubeVideoId}" style="border:none" height="100%" width="100%" allowfullscreen> </iframe> `;
+    }
+    return lit_html_x` <video controls type="video/${this.resource.ext?.replace(".", "")}" src="${this.resource.absolutePath}"> `;
+  }
+  renderPDFResource() {
+    return lit_html_x` <object class="qcs-resource__pdf" data="${this.resource.absolutePath}"> `;
+  }
+  renderAudioResource() {
+    return lit_html_x` <audio controls> <source src="${this.resource.absolutePath}" type="audio/${this.resource.ext?.replace(".", "")}"> </audio> `;
+  }
+  renderExpertInsight() {
+    if (this.error) return lit_html_x` <span class="qcs-blog-error">${translate("couldNotRetrieveResourceLabel")}</span> `;
+    if (!this.blog) return lit_html_x` <span class="qcs-blog-error">${translate("loadingResourcesLabel")}</span> `;
+    return lit_html_x` <section class="qcs-blog"> <span class="qcs-blog__category">${translate("expertInsightsLabel")} - ${this.blog.CategoryName}</span> <h2 class="qcs-blog__title">${this.blog.Title}</h2> <span class="qcs-blog__author">${this.blog.CreatedBy}</span> <time class="qcs-blog__date">${formatKontentDateString(this.blog.PublishDate)}</time> <div class="qcs-blog__content"> ${unsafe_html_o(this.blog.Content)} </div> </section> `;
+  }
+  renderResource() {
+    if (!QCS_Resource_Detail_1.resourceHasDetailView(this.resource)) return;
+    if (this.resource.ext?.includes("pdf")) return this.renderPDFResource();
+    if (this.resource.type == ResourceTypes.Image) return this.renderImageResource();
+    if (this.resource.type == ResourceTypes.Video) return this.renderVideoResource();
+    if (this.resource.type == ResourceTypes.Audio) return this.renderAudioResource();
+    if (this.resource.type == ResourceTypes.ExpertInsight) return this.renderExpertInsight();
+  }
+  render() {
+    if (!this.resource) return;
+    return lit_html_x` <dlw-dialog-utils close-esc="true" open-on-start="true" disable-body-scroll> <dialog class="qcs-dialog qcs-resource" role="dialog" aria-modal="true" id="resource-detail" aria-modal=""> <header class="qcs-dialog__header"> <h2>${this.resource.title}</h2> <button class="qcs-dialog__close" type="button" data-dialog-close="true"> <span class="sr-only">${translate("closeLabel")}</span> </button> </header> <div class="qcs-dialog__body"> ${this.renderResource()} </div> </dialog> </dlw-dialog-utils> `;
+  }
+};
+Qcs_Resource_Detail_decorate([property_n({
+  type: Object
+})], QCS_Resource_Detail.prototype, "resource", void 0);
+Qcs_Resource_Detail_decorate([property_n({
+  type: Object
+})], QCS_Resource_Detail.prototype, "config", void 0);
+Qcs_Resource_Detail_decorate([property_n({
+  type: Object
+})], QCS_Resource_Detail.prototype, "blog", void 0);
+Qcs_Resource_Detail_decorate([property_n({
+  type: Boolean
+})], QCS_Resource_Detail.prototype, "error", void 0);
+Qcs_Resource_Detail_decorate([query_i("dialog")], QCS_Resource_Detail.prototype, "dialogElement", void 0);
+QCS_Resource_Detail = QCS_Resource_Detail_1 = Qcs_Resource_Detail_decorate([custom_element_e("qcs-resource")], QCS_Resource_Detail);
+
+;// CONCATENATED MODULE: ./src/views/panels/resources/Qcs_Resources_Panel.ts
+var Qcs_Resources_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+var SortDirection;
+(function (SortDirection) {
+  SortDirection["Ascending"] = "ascending";
+  SortDirection["Descending"] = "descending";
+})(SortDirection || (SortDirection = {}));
+var SortableProperties;
+(function (SortableProperties) {
+  SortableProperties["Title"] = "title";
+  SortableProperties["Author"] = "author";
+  SortableProperties["Source"] = "source";
+  SortableProperties["LastUpdated"] = "lastUpdated";
+})(SortableProperties || (SortableProperties = {}));
+let Qcs_Resources_Panel = class Qcs_Resources_Panel extends Qcs_Base_Panel {
+  constructor() {
+    super(...arguments);
+    this.optionsClass = "js-options";
+  }
+  async connectedCallback() {
+    super.connectedCallback();
+    this.qcsApiClient = new QCS_Apiclient(this.config.qcsApi.apiUrl, this.config.qcsApi.token);
+    this.resources = await this.qcsApiClient.getResources(this.policy.referenceNumber);
+    this.hasManageReadinglistPermission = this.canManageReadinglist();
+    if (!this.resources) this.error = true;
+    document.addEventListener("click", () => this.onClickOutside());
+  }
+  disconnectedCallback() {
+    document.removeEventListener("click", () => this.onClickOutside());
+  }
+  canManageReadinglist() {
+    const lpClaim = getClaim("lp", this.config.qcsApi.token);
+    if (!lpClaim || lpClaim == "") return false;
+    return JSON.parse(lpClaim).some(x => x.m == 2 && x.p == 8);
+  }
+  onClickOutside() {
+    this.optionButtons.forEach(optionButton => {
+      optionButton.removeAttribute("open");
+    });
+  }
+  getResourceThumbnail(resource) {
+    if (resource.thumbnailImage) return resource.thumbnailImage;
+    if (resource.type !== ResourceTypes.Video) return;
+    if (resource.videoThumbnailUrl) return resource.videoThumbnailUrl;
+    if (resource.dailymotionThumbnailUrl) return resource.dailymotionThumbnailUrl;
+    if (resource.vimeoThumbnailUrl) return resource.vimeoThumbnailUrl;
+    if (resource.youtubeThumbnailUrl) return resource.youtubeThumbnailUrl;
+  }
+  getSortedResources() {
+    if (!this.activeSorting) return this.resources;
+    if (this.activeSorting.property === SortableProperties.LastUpdated) return this.resources.sort((a, b) => {
+      return this.activeSorting.direction === SortDirection.Ascending ? new Date(a.updatedDate ?? a.createdDate).getTime() - new Date(b.updatedDate ?? b.createdDate).getTime() : new Date(b.updatedDate ?? b.createdDate).getTime() - new Date(a.updatedDate ?? a.createdDate).getTime();
+    });
+    return this.resources.sort((a, b) => {
+      return this.activeSorting.direction === SortDirection.Ascending ? (a[this.activeSorting.property] ?? "").toString().localeCompare(b[this.activeSorting.property] ?? "") : (b[this.activeSorting.property] ?? "").toString().localeCompare(a[this.activeSorting.property] ?? "");
+    });
+  }
+  setSorting(targetProperty) {
+    const direction = this.activeSorting?.property === targetProperty ? this.activeSorting.direction === SortDirection.Ascending ? SortDirection.Descending : SortDirection.Ascending : SortDirection.Ascending;
+    this.activeSorting = {
+      property: targetProperty,
+      direction: direction
+    };
+  }
+  canDownload(resource) {
+    if (resource.type == ResourceTypes.Folder || resource.type == ResourceTypes.ExpertInsight || resource.type == ResourceTypes.Video) return false;
+    return true;
+  }
+  async onResourceClick(e, resource) {
+    this.activeResource = null;
+    const target = e.target;
+    // Send resource clicked event.
+    QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Resource_Clicked, {
+      id: resource.id,
+      item: resource
+    });
+    // Options were clicked, do not open resource detail view.
+    if (target.classList.contains(this.optionsClass) || target.closest(`.${this.optionsClass}`)?.contains(target)) return;
+    // If the resource has a type that we support, set it as active so it can be rendered accordingly.
+    if (QCS_Resource_Detail.resourceHasDetailView(resource)) {
+      this.activeResource = resource;
+      if (Number.parseInt(resource.blogId) > 0) {
+        await this.qcsApiClient.getBlogContent(resource.blogId).then(res => {
+          res ? this.activeBlog = res : this.blogError = true;
+        });
+      }
+      QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Resource_Detail, {
+        resource: this.activeResource,
+        blog: this.activeBlog,
+        error: this.blogError
+      });
+      return;
+    }
+    if (resource.type === ResourceTypes.Folder) {
+      QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Resource_Folder, {
+        id: resource.id,
+        item: resource
+      });
+    }
+    // As default fallback check if there is an url for this non-supported resource so we can link to it/ download it.
+    if (resource.absolutePath) {
+      window.open(resource.absolutePath);
+      return;
+    }
+    if (resource.sourceURL) window.open(resource.sourceURL, "_blank")?.focus();
+  }
+  onAddToReadingList(resource) {
+    QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Resource_Add_Readinglist, {
+      id: resource.id,
+      item: resource
+    });
+  }
+  onEmail(resource) {
+    QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Resource_Email, {
+      id: resource.id,
+      item: resource
+    });
+  }
+  async onDownload(resource) {
+    fetch(resource.absolutePath, {
+      method: "GET"
+    }).then(res => res.blob()).then(blob => {
+      downloadFile(window.URL.createObjectURL(blob), resource.title);
+    });
+  }
+  customAction(resource) {
+    QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Resource_Custom, {
+      id: resource.id,
+      item: resource
+    });
+  }
+  renderResourcesHeading() {
+    return lit_html_x` <thead> <th class="qcs-resources__th qcs-resources__th--type">${translate("typeLabel")}</th> <th class="qcs-resources__th qcs-resources__th--thumb"></th> <th>${translate("nameLabel")} ${this.renderSortButton(SortableProperties.Title)}</th> <th class="u-hide-on-mobile">${translate("authorLabel")} ${this.renderSortButton(SortableProperties.Author)}</th> <th class="u-hide-on-mobile">${translate("sourceLabel")} ${this.renderSortButton(SortableProperties.Source)}</th> <th class="u-hide-on-mobile">${translate("lastUpdatedLabel")} ${this.renderSortButton(SortableProperties.LastUpdated)}</th> <th></th> </thead> `;
+  }
+  renderSortButton(targetProperty) {
+    const direction = this.activeSorting && this.activeSorting.property === targetProperty ? this.activeSorting.direction : SortDirection.Descending;
+    return lit_html_x` <button @click="${() => this.setSorting(targetProperty)}" type="button" class="qcs-resources__sort ${direction === SortDirection.Ascending ? "qcs-resources__sort--asc" : ""}"> <span class="sr-only">${translate("orderResourcesByLabel")} ${translate(`${targetProperty}Label`)} ${direction}</span> </button> `;
+  }
+  renderType(resource) {
+    if (!resource.sourceURL || resource.sourceURL === "" || resource.type === ResourceTypes.Folder) return lit_html_x`<div class="qcs-resources__type-wrapper"><span class="qcs-resources__type-count">${resource.folderCount}</span><svg class="qcs-resources__type" id="folder-1" viewBox="0 0 58 58"><title>folder-1</title><path style="fill:#efce4a" d="M46.324,52.5H1.565c-1.03,0-1.779-0.978-1.51-1.973l10.166-27.871 c0.184-0.682,0.803-1.156,1.51-1.156H56.49c1.03,0,1.51,0.984,1.51,1.973L47.834,51.344C47.65,52.026,47.031,52.5,46.324,52.5z"></path><g> <path style="fill:#ebba16" d="M50.268,12.5H25l-5-7H1.732C0.776,5.5,0,6.275,0,7.232V49.96c0.069,0.002,0.138,0.006,0.205,0.01 l10.015-27.314c0.184-0.683,0.803-1.156,1.51-1.156H52v-7.268C52,13.275,51.224,12.5,50.268,12.5z"></path></g></svg></div>`;
+    if (FileExtensions.Excel.includes(resource.fileExt)) return lit_html_x`<svg class="qcs-resources__type" id="xls" viewBox="0 0 56 56"><title>xls</title><path style="fill:#e9e9e0" d="M36.985,0H7.963C7.155,0,6.5,0.655,6.5,1.926V55c0,0.345,0.655,1,1.463,1h40.074 c0.808,0,1.463-0.655,1.463-1V12.978c0-0.696-0.093-0.92-0.257-1.085L37.607,0.257C37.442,0.093,37.218,0,36.985,0z"></path><polygon style="fill:#d9d7ca" points="37.5,0.151 37.5,12 49.349,12 "></polygon><path style="fill:#91cda0" d="M48.037,56H7.963C7.155,56,6.5,55.345,6.5,54.537V39h43v15.537C49.5,55.345,48.845,56,48.037,56z"></path><g> <path style="fill:#fff" d="M20.379,48.105L22.936,53h-1.9l-1.6-3.801h-0.137L17.576,53h-1.9l2.557-4.895l-2.721-5.182h1.873 l1.777,4.102h0.137l1.928-4.102H23.1L20.379,48.105z"></path> <path style="fill:#fff" d="M27.037,42.924v8.832h4.635V53h-6.303V42.924H27.037z"></path> <path style="fill:#fff" d="M39.041,50.238c0,0.364-0.075,0.718-0.226,1.06S38.453,51.94,38.18,52.2s-0.611,0.467-1.012,0.622 c-0.401,0.155-0.857,0.232-1.367,0.232c-0.219,0-0.444-0.012-0.677-0.034s-0.467-0.062-0.704-0.116 c-0.237-0.055-0.463-0.13-0.677-0.226c-0.214-0.096-0.399-0.212-0.554-0.349l0.287-1.176c0.127,0.073,0.289,0.144,0.485,0.212 c0.196,0.068,0.398,0.132,0.608,0.191c0.209,0.06,0.419,0.107,0.629,0.144c0.209,0.036,0.405,0.055,0.588,0.055 c0.556,0,0.982-0.13,1.278-0.39c0.296-0.26,0.444-0.645,0.444-1.155c0-0.31-0.105-0.574-0.314-0.793 c-0.21-0.219-0.472-0.417-0.786-0.595s-0.654-0.355-1.019-0.533c-0.365-0.178-0.707-0.388-1.025-0.629 c-0.319-0.241-0.583-0.526-0.793-0.854c-0.21-0.328-0.314-0.738-0.314-1.23c0-0.446,0.082-0.843,0.246-1.189 s0.385-0.641,0.663-0.882c0.278-0.241,0.602-0.426,0.971-0.554s0.759-0.191,1.169-0.191c0.419,0,0.843,0.039,1.271,0.116 c0.428,0.077,0.774,0.203,1.039,0.376c-0.055,0.118-0.119,0.248-0.191,0.39c-0.073,0.142-0.142,0.273-0.205,0.396 c-0.064,0.123-0.119,0.226-0.164,0.308c-0.046,0.082-0.073,0.128-0.082,0.137c-0.055-0.027-0.116-0.063-0.185-0.109 s-0.167-0.091-0.294-0.137c-0.128-0.046-0.296-0.077-0.506-0.096c-0.21-0.019-0.479-0.014-0.807,0.014 c-0.183,0.019-0.355,0.07-0.52,0.157s-0.31,0.193-0.438,0.321c-0.128,0.128-0.228,0.271-0.301,0.431 c-0.073,0.159-0.109,0.313-0.109,0.458c0,0.364,0.104,0.658,0.314,0.882c0.209,0.224,0.469,0.419,0.779,0.588 c0.31,0.169,0.647,0.333,1.012,0.492c0.364,0.159,0.704,0.354,1.019,0.581s0.576,0.513,0.786,0.854 C38.936,49.261,39.041,49.7,39.041,50.238z"></path> </g><path style="fill:#c8bdb8" d="M23.5,16v-4h-12v4v2v2v2v2v2v2v2v4h10h2h21v-4v-2v-2v-2v-2v-2v-4H23.5z M13.5,14h8v2h-8V14z M13.5,18h8v2h-8V18z M13.5,22h8v2h-8V22z M13.5,26h8v2h-8V26z M21.5,32h-8v-2h8V32z M42.5,32h-19v-2h19V32z M42.5,28h-19v-2h19V28 z M42.5,24h-19v-2h19V24z M23.5,20v-2h19v2H23.5z"></path></svg>`;
+    if (FileExtensions.Text.includes(resource.fileExt)) return lit_html_x`<svg class="qcs-resources__type" id="txt" viewBox="0 0 56 56"><title>txt</title><path style="fill:#e9e9e0" d="M36.985,0H7.963C7.155,0,6.5,0.655,6.5,1.926V55c0,0.345,0.655,1,1.463,1h40.074 c0.808,0,1.463-0.655,1.463-1V12.978c0-0.696-0.093-0.92-0.257-1.085L37.607,0.257C37.442,0.093,37.218,0,36.985,0z"></path><polygon style="fill:#d9d7ca" points="37.5,0.151 37.5,12 49.349,12 "></polygon><path style="fill:#95a5a5" d="M48.037,56H7.963C7.155,56,6.5,55.345,6.5,54.537V39h43v15.537C49.5,55.345,48.845,56,48.037,56z"></path><g> <path style="fill:#fff" d="M21.867,42.924v1.121h-3.008V53h-1.654v-8.955h-3.008v-1.121H21.867z"></path> <path style="fill:#fff" d="M28.443,48.105L31,53h-1.9l-1.6-3.801h-0.137L25.641,53h-1.9l2.557-4.895l-2.721-5.182h1.873 l1.777,4.102h0.137l1.928-4.102h1.873L28.443,48.105z"></path> <path style="fill:#fff" d="M40.529,42.924v1.121h-3.008V53h-1.654v-8.955h-3.008v-1.121H40.529z"></path> </g><path style="fill:#c8bdb8" d="M18.5,13h-6c-0.553,0-1-0.448-1-1s0.447-1,1-1h6c0.553,0,1,0.448,1,1S19.053,13,18.5,13z"></path><path style="fill:#c8bdb8" d="M21.5,18h-9c-0.553,0-1-0.448-1-1s0.447-1,1-1h9c0.553,0,1,0.448,1,1S22.053,18,21.5,18z"></path><path style="fill:#c8bdb8" d="M25.5,18c-0.26,0-0.521-0.11-0.71-0.29c-0.181-0.19-0.29-0.44-0.29-0.71s0.109-0.52,0.3-0.71 c0.36-0.37,1.04-0.37,1.41,0c0.18,0.19,0.29,0.45,0.29,0.71c0,0.26-0.11,0.52-0.29,0.71C26.02,17.89,25.76,18,25.5,18z"></path><path style="fill:#c8bdb8" d="M37.5,18h-8c-0.553,0-1-0.448-1-1s0.447-1,1-1h8c0.553,0,1,0.448,1,1S38.053,18,37.5,18z"></path><path style="fill:#c8bdb8" d="M12.5,33c-0.26,0-0.521-0.11-0.71-0.29c-0.181-0.19-0.29-0.45-0.29-0.71 c0-0.26,0.109-0.52,0.29-0.71c0.37-0.37,1.05-0.37,1.42,0.01c0.18,0.18,0.29,0.44,0.29,0.7c0,0.26-0.11,0.52-0.29,0.71 C13.02,32.89,12.76,33,12.5,33z"></path><path style="fill:#c8bdb8" d="M24.5,33h-8c-0.553,0-1-0.448-1-1s0.447-1,1-1h8c0.553,0,1,0.448,1,1S25.053,33,24.5,33z"></path><path style="fill:#c8bdb8" d="M43.5,18h-2c-0.553,0-1-0.448-1-1s0.447-1,1-1h2c0.553,0,1,0.448,1,1S44.053,18,43.5,18z"></path><path style="fill:#c8bdb8" d="M34.5,23h-22c-0.553,0-1-0.448-1-1s0.447-1,1-1h22c0.553,0,1,0.448,1,1S35.053,23,34.5,23z"></path><path style="fill:#c8bdb8" d="M43.5,23h-6c-0.553,0-1-0.448-1-1s0.447-1,1-1h6c0.553,0,1,0.448,1,1S44.053,23,43.5,23z"></path><path style="fill:#c8bdb8" d="M16.5,28h-4c-0.553,0-1-0.448-1-1s0.447-1,1-1h4c0.553,0,1,0.448,1,1S17.053,28,16.5,28z"></path><path style="fill:#c8bdb8" d="M30.5,28h-10c-0.553,0-1-0.448-1-1s0.447-1,1-1h10c0.553,0,1,0.448,1,1S31.053,28,30.5,28z"></path><path style="fill:#c8bdb8" d="M43.5,28h-9c-0.553,0-1-0.448-1-1s0.447-1,1-1h9c0.553,0,1,0.448,1,1S44.053,28,43.5,28z"></path></svg>`;
+    if (FileExtensions.PDF.includes(resource.fileExt)) return lit_html_x`<svg class="qcs-resources__type" id="pdf" viewBox="0 0 56 56"><title>pdf</title><path style="fill:#e9e9e0" d="M36.985,0H7.963C7.155,0,6.5,0.655,6.5,1.926V55c0,0.345,0.655,1,1.463,1h40.074 c0.808,0,1.463-0.655,1.463-1V12.978c0-0.696-0.093-0.92-0.257-1.085L37.607,0.257C37.442,0.093,37.218,0,36.985,0z"></path><polygon style="fill:#d9d7ca" points="37.5,0.151 37.5,12 49.349,12 "></polygon><path style="fill:#cc4b4c" d="M19.514,33.324L19.514,33.324c-0.348,0-0.682-0.113-0.967-0.326 c-1.041-0.781-1.181-1.65-1.115-2.242c0.182-1.628,2.195-3.332,5.985-5.068c1.504-3.296,2.935-7.357,3.788-10.75 c-0.998-2.172-1.968-4.99-1.261-6.643c0.248-0.579,0.557-1.023,1.134-1.215c0.228-0.076,0.804-0.172,1.016-0.172 c0.504,0,0.947,0.649,1.261,1.049c0.295,0.376,0.964,1.173-0.373,6.802c1.348,2.784,3.258,5.62,5.088,7.562 c1.311-0.237,2.439-0.358,3.358-0.358c1.566,0,2.515,0.365,2.902,1.117c0.32,0.622,0.189,1.349-0.39,2.16 c-0.557,0.779-1.325,1.191-2.22,1.191c-1.216,0-2.632-0.768-4.211-2.285c-2.837,0.593-6.15,1.651-8.828,2.822 c-0.836,1.774-1.637,3.203-2.383,4.251C21.273,32.654,20.389,33.324,19.514,33.324z M22.176,28.198 c-2.137,1.201-3.008,2.188-3.071,2.744c-0.01,0.092-0.037,0.334,0.431,0.692C19.685,31.587,20.555,31.19,22.176,28.198z M35.813,23.756c0.815,0.627,1.014,0.944,1.547,0.944c0.234,0,0.901-0.01,1.21-0.441c0.149-0.209,0.207-0.343,0.23-0.415 c-0.123-0.065-0.286-0.197-1.175-0.197C37.12,23.648,36.485,23.67,35.813,23.756z M28.343,17.174 c-0.715,2.474-1.659,5.145-2.674,7.564c2.09-0.811,4.362-1.519,6.496-2.02C30.815,21.15,29.466,19.192,28.343,17.174z M27.736,8.712c-0.098,0.033-1.33,1.757,0.096,3.216C28.781,9.813,27.779,8.698,27.736,8.712z"></path><path style="fill:#cc4b4c" d="M48.037,56H7.963C7.155,56,6.5,55.345,6.5,54.537V39h43v15.537C49.5,55.345,48.845,56,48.037,56z"></path><g> <path style="fill:#fff" d="M17.385,53h-1.641V42.924h2.898c0.428,0,0.852,0.068,1.271,0.205 c0.419,0.137,0.795,0.342,1.128,0.615c0.333,0.273,0.602,0.604,0.807,0.991s0.308,0.822,0.308,1.306 c0,0.511-0.087,0.973-0.26,1.388c-0.173,0.415-0.415,0.764-0.725,1.046c-0.31,0.282-0.684,0.501-1.121,0.656 s-0.921,0.232-1.449,0.232h-1.217V53z M17.385,44.168v3.992h1.504c0.2,0,0.398-0.034,0.595-0.103 c0.196-0.068,0.376-0.18,0.54-0.335c0.164-0.155,0.296-0.371,0.396-0.649c0.1-0.278,0.15-0.622,0.15-1.032 c0-0.164-0.023-0.354-0.068-0.567c-0.046-0.214-0.139-0.419-0.28-0.615c-0.142-0.196-0.34-0.36-0.595-0.492 c-0.255-0.132-0.593-0.198-1.012-0.198H17.385z"></path> <path style="fill:#fff" d="M32.219,47.682c0,0.829-0.089,1.538-0.267,2.126s-0.403,1.08-0.677,1.477s-0.581,0.709-0.923,0.937 s-0.672,0.398-0.991,0.513c-0.319,0.114-0.611,0.187-0.875,0.219C28.222,52.984,28.026,53,27.898,53h-3.814V42.924h3.035 c0.848,0,1.593,0.135,2.235,0.403s1.176,0.627,1.6,1.073s0.74,0.955,0.95,1.524C32.114,46.494,32.219,47.08,32.219,47.682z M27.352,51.797c1.112,0,1.914-0.355,2.406-1.066s0.738-1.741,0.738-3.09c0-0.419-0.05-0.834-0.15-1.244 c-0.101-0.41-0.294-0.781-0.581-1.114s-0.677-0.602-1.169-0.807s-1.13-0.308-1.914-0.308h-0.957v7.629H27.352z"></path> <path style="fill:#fff" d="M36.266,44.168v3.172h4.211v1.121h-4.211V53h-1.668V42.924H40.9v1.244H36.266z"></path> </g></svg>`;
+    if (resource.type == ResourceTypes.ExpertInsight) return lit_html_x`<svg class="qcs-resources__type" id="blog" viewBox="0 0 491.52 491.52"><title>blog</title><rect x="56.064" style="fill:#d5d6db" width="379.392" height="491.52"></rect><rect x="56.064" style="fill:#ebf0f3" width="379.392" height="473.651"></rect><rect x="79.089" y="20.685" style="fill:#e56353" width="333.312" height="20.234"></rect><g> <rect x="206.945" y="61.097" style="fill:#d5d6db" width="205.466" height="8.934"></rect> <rect x="206.945" y="98.683" style="fill:#d5d6db" width="205.466" height="8.934"></rect> <rect x="206.945" y="136.274" style="fill:#d5d6db" width="205.466" height="8.934"></rect> <rect x="206.945" y="173.86" style="fill:#d5d6db" width="205.466" height="8.934"></rect> <rect x="79.089" y="211.456" style="fill:#d5d6db" width="333.312" height="8.934"></rect> <rect x="79.089" y="249.027" style="fill:#d5d6db" width="333.312" height="8.934"></rect> <rect x="79.089" y="286.618" style="fill:#d5d6db" width="333.312" height="8.934"></rect> <rect x="79.089" y="324.198" style="fill:#d5d6db" width="333.312" height="8.934"></rect> <rect x="79.089" y="361.779" style="fill:#d5d6db" width="333.312" height="8.934"></rect> <rect x="79.089" y="399.36" style="fill:#d5d6db" width="333.312" height="8.934"></rect> <rect x="79.089" y="436.992" style="fill:#d5d6db" width="333.312" height="8.934"></rect> </g><rect x="79.089" y="61.097" style="fill:#27a2db" width="111.089" height="121.702"></rect><g> <circle style="fill:#2d93ba" cx="131.236" cy="95.565" r="22.426"></circle> <path style="fill:#2d93ba" d="M134.636,129.008c-29.707,0-53.79,24.082-53.79,53.789h107.58 C188.426,153.09,164.343,129.008,134.636,129.008z"></path> </g></svg>`;
+    if (FileExtensions.Image.includes(resource.fileExt)) return lit_html_x`<img class="qcs-resources__type" src="${resource.sourceURL}" width="30" height="30">`;
+    if (FileExtensions.PowerPoint.includes(resource.fileExt)) return lit_html_x`<svg class="qcs-resources__type" id="ppt" viewBox="0 0 56 56"><title>ppt</title><path style="fill:#e9e9e0" d="M36.985,0H7.963C7.155,0,6.5,0.655,6.5,1.926V55c0,0.345,0.655,1,1.463,1h40.074 c0.808,0,1.463-0.655,1.463-1V12.978c0-0.696-0.093-0.92-0.257-1.085L37.607,0.257C37.442,0.093,37.218,0,36.985,0z"></path><polygon style="fill:#d9d7ca" points="37.5,0.151 37.5,12 49.349,12 "></polygon><path style="fill:#f6712e" d="M48.037,56H7.963C7.155,56,6.5,55.345,6.5,54.537V39h43v15.537C49.5,55.345,48.845,56,48.037,56z"></path><g> <path style="fill:#fff" d="M17.581,53H15.94V42.924h2.898c0.428,0,0.852,0.068,1.271,0.205 c0.419,0.137,0.795,0.342,1.128,0.615c0.333,0.273,0.602,0.604,0.807,0.991s0.308,0.822,0.308,1.306 c0,0.511-0.087,0.973-0.26,1.388c-0.173,0.415-0.415,0.764-0.725,1.046c-0.31,0.282-0.684,0.501-1.121,0.656 s-0.921,0.232-1.449,0.232h-1.217V53z M17.581,44.168v3.992h1.504c0.2,0,0.398-0.034,0.595-0.103 c0.196-0.068,0.376-0.18,0.54-0.335s0.296-0.371,0.396-0.649c0.1-0.278,0.15-0.622,0.15-1.032c0-0.164-0.023-0.354-0.068-0.567 c-0.046-0.214-0.139-0.419-0.28-0.615c-0.142-0.196-0.34-0.36-0.595-0.492c-0.255-0.132-0.593-0.198-1.012-0.198H17.581z"></path> <path style="fill:#fff" d="M25.853,53h-1.641V42.924h2.898c0.428,0,0.852,0.068,1.271,0.205 c0.419,0.137,0.795,0.342,1.128,0.615c0.333,0.273,0.602,0.604,0.807,0.991s0.308,0.822,0.308,1.306 c0,0.511-0.087,0.973-0.26,1.388c-0.173,0.415-0.415,0.764-0.725,1.046c-0.31,0.282-0.684,0.501-1.121,0.656 s-0.921,0.232-1.449,0.232h-1.217V53z M25.853,44.168v3.992h1.504c0.2,0,0.398-0.034,0.595-0.103 c0.196-0.068,0.376-0.18,0.54-0.335s0.296-0.371,0.396-0.649c0.1-0.278,0.15-0.622,0.15-1.032c0-0.164-0.023-0.354-0.068-0.567 c-0.046-0.214-0.139-0.419-0.28-0.615c-0.142-0.196-0.34-0.36-0.595-0.492c-0.255-0.132-0.593-0.198-1.012-0.198H25.853z"></path> <path style="fill:#fff" d="M39.606,42.924v1.121h-3.008V53h-1.654v-8.955h-3.008v-1.121H39.606z"></path> </g><path style="fill:#c8bdb8" d="M39.5,30h-24V14h24V30z M17.5,28h20V16h-20V28z"></path><path style="fill:#c8bdb8" d="M20.499,35c-0.175,0-0.353-0.046-0.514-0.143c-0.474-0.284-0.627-0.898-0.343-1.372l3-5 c0.284-0.474,0.898-0.627,1.372-0.343c0.474,0.284,0.627,0.898,0.343,1.372l-3,5C21.17,34.827,20.839,35,20.499,35z"></path><path style="fill:#c8bdb8" d="M34.501,35c-0.34,0-0.671-0.173-0.858-0.485l-3-5c-0.284-0.474-0.131-1.088,0.343-1.372 c0.474-0.283,1.088-0.131,1.372,0.343l3,5c0.284,0.474,0.131,1.088-0.343,1.372C34.854,34.954,34.676,35,34.501,35z"></path><path style="fill:#c8bdb8" d="M27.5,16c-0.552,0-1-0.447-1-1v-3c0-0.553,0.448-1,1-1s1,0.447,1,1v3C28.5,15.553,28.052,16,27.5,16 z"></path><rect x="17.5" y="16" style="fill:#d3ccc9" width="20" height="12"></rect></svg>`;
+    if (resource.type == ResourceTypes.Document) return lit_html_x`<svg class="qcs-resources__type" id="document" viewBox="0 0 512 512"><title>document</title><g> <path style="fill:#ece5dd" d="M464.39,265.16l-12.949-2.314h-10.653v140.46h10.653l12.949-2.316 c27.587-4.932,47.61-28.864,47.61-56.904v-22.022C512,294.025,491.977,270.093,464.39,265.16z"></path> <path style="fill:#ece5dd" d="M30.107,512C13.506,512,0,498.494,0,481.893V121.118L121.118,0h283.7 c16.601,0,30.107,13.506,30.107,30.107v451.787c0,16.601-13.506,30.107-30.107,30.107H30.107z"></path> </g><g> <path style="fill:#d9cbbd" d="M404.818,0h-33.583c16.601,0,30.107,13.506,30.107,30.107v451.787 c0,16.601-13.506,30.107-30.107,30.107h33.583c16.601,0,30.107-13.506,30.107-30.107V30.107C434.925,13.506,421.419,0,404.818,0z"></path> <path style="fill:#d9cbbd" d="M0,121.118L121.118,0l5.505,107.379c0,10.611-8.634,19.245-19.245,19.245L0,121.118z"></path> </g><g> <path style="fill:#bababa" d="M167.914,132.129h132.129c4.562,0,8.258-3.696,8.258-8.258s-3.696-8.258-8.258-8.258H167.914 c-4.562,0-8.258,3.696-8.258,8.258S163.352,132.129,167.914,132.129z"></path> <path style="fill:#bababa" d="M355.097,132.129h22.022c4.562,0,8.258-3.696,8.258-8.258s-3.696-8.258-8.258-8.258h-22.022 c-4.562,0-8.258,3.696-8.258,8.258S350.535,132.129,355.097,132.129z"></path> <path style="fill:#bababa" d="M57.806,220.215h176.172c4.562,0,8.258-3.696,8.258-8.258c0-4.562-3.696-8.258-8.258-8.258H57.806 c-4.562,0-8.258,3.696-8.258,8.258C49.548,216.519,53.245,220.215,57.806,220.215z"></path> <path style="fill:#bababa" d="M377.118,203.699h-99.097c-4.562,0-8.258,3.696-8.258,8.258c0,4.562,3.696,8.258,8.258,8.258h99.097 c4.562,0,8.258-3.696,8.258-8.258C385.376,207.395,381.68,203.699,377.118,203.699z"></path> <path style="fill:#bababa" d="M132.129,333.075c0-4.562-3.696-8.258-8.258-8.258H57.806c-4.562,0-8.258,3.696-8.258,8.258 c0,4.562,3.696,8.258,8.258,8.258h66.065C128.433,341.333,132.129,337.637,132.129,333.075z"></path> <path style="fill:#bababa" d="M344.086,445.935H101.849c-4.562,0-8.258,3.696-8.258,8.258c0,4.562,3.696,8.258,8.258,8.258 h242.237c4.562,0,8.258-3.696,8.258-8.258C352.344,449.632,348.648,445.935,344.086,445.935z"></path> </g><path style="fill:#5f4c37" d="M214.71,294.538l-33.577,25.183c-4.244,3.182-6.677,8.05-6.677,13.355 c0,5.305,2.433,10.173,6.676,13.354l33.578,25.184h15.966v-77.075H214.71z"></path><polygon style="fill:#c0ab91" points="253.247,264.258 209.204,298.667 209.204,367.484 253.247,401.892 295.319,401.892 295.319,264.258 "></polygon><rect x="253.247" y="264.258" style="fill:#ffb656" width="175.071" height="137.634"></rect><path style="fill:#fe5022" d="M432.172,412.903c-13.66,0-24.774-11.114-24.774-24.774V278.022c0-13.66,11.114-24.774,24.774-24.774 s24.774,11.114,24.774,24.774v110.108C456.946,401.789,445.832,412.903,432.172,412.903z"></path></svg>`;
+    if (resource.type == ResourceTypes.Video) return lit_html_x`<img class="qcs-resources__type" src="${this.getResourceThumbnail(resource)}" alt="Thumbnail" width="30" height="30">`;
+    if (resource.type == ResourceTypes.Audio) return lit_html_x`<svg class="qcs-resources__type" xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 56 64"><defs><style>.cls-2{fill:#fff}.cls-4{fill:#cad1d8}</style></defs><path fill="#e2e5e7" d="M52.54 64H11.03a3.46 3.46 0 0 1-3.46-3.46V3.46A3.46 3.46 0 0 1 11.03 0h29.05l9.63 9.55L56 15.78v44.75a3.46 3.46 0 0 1-3.46 3.46Z"/><path fill="#b0b7bd" d="m56 15.79-12.18.2a3.68 3.68 0 0 1-3.74-3.68V0L56 15.79Z"/><path d="M56 15.79v12.42L43.82 15.99l12.18-.2zM48.04 53.4V34.63a2.55 2.55 0 0 0-2.55-2.55H7.57v23.87h37.92a2.55 2.55 0 0 0 2.55-2.55Z" class="cls-4"/><rect width="48.04" height="23.87" y="29.99" fill="#50bee8" rx="2.55" ry="2.55"/><path d="m11.9 46.46-1.89-7.53v8.15c0 .45-.1.79-.3 1.02-.2.23-.47.34-.8.34s-.59-.11-.79-.33c-.2-.22-.31-.56-.31-1.02v-9.35c0-.52.13-.86.4-1.04.27-.18.63-.27 1.09-.27h.74c.45 0 .77.04.97.12.2.08.35.23.45.44.1.21.21.55.33 1.02l1.72 6.47 1.72-6.47c.12-.47.23-.81.33-1.02.1-.21.25-.35.45-.44.2-.08.52-.12.97-.12h.74c.46 0 .82.09 1.09.27.27.18.4.53.4 1.04v9.35c0 .45-.1.79-.3 1.02-.2.23-.47.34-.81.34-.32 0-.58-.11-.78-.34s-.31-.56-.31-1.02v-8.15l-1.89 7.53c-.12.49-.22.85-.3 1.08s-.22.44-.43.62c-.21.19-.5.28-.87.28-.28 0-.52-.06-.71-.18a1.41 1.41 0 0 1-.45-.46 2.6 2.6 0 0 1-.25-.62l-.19-.71ZM26.24 43.64h-2.19v3.34c0 .48-.11.84-.34 1.09s-.51.37-.85.37-.65-.12-.87-.37c-.22-.24-.33-.6-.33-1.08v-9.1c0-.53.12-.9.36-1.13s.63-.34 1.15-.34h3.07c.91 0 1.61.07 2.09.21a3.09 3.09 0 0 1 2.05 1.81c.18.45.27.96.27 1.52 0 1.2-.37 2.12-1.11 2.74-.74.62-1.84.93-3.31.93Zm-.58-5.41h-1.61v3.61h1.61a4.7 4.7 0 0 0 1.41-.18c.38-.12.67-.31.87-.58s.3-.62.3-1.06c0-.52-.15-.95-.46-1.27-.34-.35-1.05-.52-2.12-.52ZM35.89 41.11c.49 0 .92-.15 1.28-.44s.54-.71.54-1.25a1.5 1.5 0 0 0-1.58-1.52c-.33 0-.6.05-.81.14-.21.09-.38.21-.5.36s-.24.34-.35.58l-.3.67a.6.6 0 0 1-.29.27c-.14.06-.3.1-.48.1a.84.84 0 0 1-.59-.26c-.18-.17-.27-.41-.27-.7s.08-.57.25-.88c.17-.31.42-.6.74-.88s.73-.5 1.21-.67a4.83 4.83 0 0 1 1.62-.25c.52 0 1 .07 1.43.21s.8.35 1.12.62a2.66 2.66 0 0 1 .96 2.07c0 .54-.12 1-.35 1.38-.23.38-.57.76-1 1.12.42.23.77.48 1.06.77s.5.61.65.96c.15.35.22.73.22 1.14a3.56 3.56 0 0 1-1.16 2.64c-.38.36-.83.64-1.36.84a4.85 4.85 0 0 1-3.47-.05 3.92 3.92 0 0 1-2.01-1.95 2.31 2.31 0 0 1-.25-.92c0-.31.1-.56.3-.75.2-.19.45-.29.75-.29.15 0 .29.04.43.13s.23.19.27.32c.28.75.58 1.3.9 1.66.32.36.77.54 1.35.54a2.06 2.06 0 0 0 2.03-2.1c0-.63-.17-1.12-.52-1.48s-.82-.54-1.43-.54l-.5.03-.44.03c-.29 0-.52-.07-.68-.22-.16-.15-.24-.35-.24-.62s.1-.47.29-.62.48-.24.86-.24h.33Z" class="cls-2"/></svg>`;
+    return lit_html_x`<svg class="qcs-resources__type" id="doc" viewBox="0 0 56 56"><title>doc</title><path style="fill:#e9e9e0" d="M36.985,0H7.963C7.155,0,6.5,0.655,6.5,1.926V55c0,0.345,0.655,1,1.463,1h40.074 c0.808,0,1.463-0.655,1.463-1V12.978c0-0.696-0.093-0.92-0.257-1.085L37.607,0.257C37.442,0.093,37.218,0,36.985,0z"></path><polygon style="fill:#d9d7ca" points="37.5,0.151 37.5,12 49.349,12 "></polygon><path style="fill:#8697cb" d="M18.5,13h-6c-0.552,0-1-0.448-1-1s0.448-1,1-1h6c0.552,0,1,0.448,1,1S19.052,13,18.5,13z"></path><path style="fill:#8697cb" d="M21.5,18h-9c-0.552,0-1-0.448-1-1s0.448-1,1-1h9c0.552,0,1,0.448,1,1S22.052,18,21.5,18z"></path><path style="fill:#8697cb" d="M25.5,18c-0.26,0-0.52-0.11-0.71-0.29c-0.18-0.19-0.29-0.45-0.29-0.71c0-0.26,0.11-0.52,0.29-0.71 c0.37-0.37,1.05-0.37,1.42,0c0.18,0.19,0.29,0.45,0.29,0.71c0,0.26-0.11,0.52-0.29,0.71C26.02,17.89,25.76,18,25.5,18z"></path><path style="fill:#8697cb" d="M37.5,18h-8c-0.552,0-1-0.448-1-1s0.448-1,1-1h8c0.552,0,1,0.448,1,1S38.052,18,37.5,18z"></path><path style="fill:#8697cb" d="M12.5,33c-0.26,0-0.52-0.11-0.71-0.29c-0.18-0.19-0.29-0.45-0.29-0.71c0-0.26,0.11-0.52,0.29-0.71 c0.37-0.37,1.05-0.37,1.42,0c0.18,0.19,0.29,0.44,0.29,0.71c0,0.26-0.11,0.52-0.29,0.71C13.02,32.89,12.76,33,12.5,33z"></path><path style="fill:#8697cb" d="M24.5,33h-8c-0.552,0-1-0.448-1-1s0.448-1,1-1h8c0.552,0,1,0.448,1,1S25.052,33,24.5,33z"></path><path style="fill:#8697cb" d="M43.5,18h-2c-0.552,0-1-0.448-1-1s0.448-1,1-1h2c0.552,0,1,0.448,1,1S44.052,18,43.5,18z"></path><path style="fill:#8697cb" d="M34.5,23h-22c-0.552,0-1-0.448-1-1s0.448-1,1-1h22c0.552,0,1,0.448,1,1S35.052,23,34.5,23z"></path><path style="fill:#8697cb" d="M43.5,23h-6c-0.552,0-1-0.448-1-1s0.448-1,1-1h6c0.552,0,1,0.448,1,1S44.052,23,43.5,23z"></path><path style="fill:#8697cb" d="M16.5,28h-4c-0.552,0-1-0.448-1-1s0.448-1,1-1h4c0.552,0,1,0.448,1,1S17.052,28,16.5,28z"></path><path style="fill:#8697cb" d="M30.5,28h-10c-0.552,0-1-0.448-1-1s0.448-1,1-1h10c0.552,0,1,0.448,1,1S31.052,28,30.5,28z"></path><path style="fill:#8697cb" d="M43.5,28h-9c-0.552,0-1-0.448-1-1s0.448-1,1-1h9c0.552,0,1,0.448,1,1S44.052,28,43.5,28z"></path><path style="fill:#0096e6" d="M48.037,56H7.963C7.155,56,6.5,55.345,6.5,54.537V39h43v15.537C49.5,55.345,48.845,56,48.037,56z"></path><g> <path style="fill:#fff" d="M23.5,47.682c0,0.829-0.089,1.538-0.267,2.126s-0.403,1.08-0.677,1.477s-0.581,0.709-0.923,0.937 s-0.672,0.398-0.991,0.513c-0.319,0.114-0.611,0.187-0.875,0.219C19.503,52.984,19.307,53,19.18,53h-3.814V42.924H18.4 c0.848,0,1.593,0.135,2.235,0.403s1.176,0.627,1.6,1.073s0.74,0.955,0.95,1.524C23.395,46.494,23.5,47.08,23.5,47.682z M18.633,51.797c1.112,0,1.914-0.355,2.406-1.066s0.738-1.741,0.738-3.09c0-0.419-0.05-0.834-0.15-1.244 c-0.101-0.41-0.294-0.781-0.581-1.114s-0.677-0.602-1.169-0.807s-1.13-0.308-1.914-0.308h-0.957v7.629H18.633z"></path> <path style="fill:#fff" d="M33.475,47.914c0,0.848-0.107,1.595-0.321,2.242c-0.214,0.647-0.511,1.185-0.889,1.613 c-0.378,0.429-0.82,0.752-1.326,0.971s-1.06,0.328-1.661,0.328s-1.155-0.109-1.661-0.328s-0.948-0.542-1.326-0.971 c-0.378-0.429-0.675-0.966-0.889-1.613c-0.214-0.647-0.321-1.395-0.321-2.242s0.107-1.593,0.321-2.235 c0.214-0.643,0.51-1.178,0.889-1.606c0.378-0.429,0.82-0.754,1.326-0.978s1.06-0.335,1.661-0.335s1.155,0.111,1.661,0.335 s0.948,0.549,1.326,0.978c0.378,0.429,0.674,0.964,0.889,1.606C33.367,46.321,33.475,47.066,33.475,47.914z M29.236,51.729 c0.337,0,0.658-0.066,0.964-0.198c0.305-0.132,0.579-0.349,0.82-0.649c0.241-0.301,0.431-0.695,0.567-1.183 s0.209-1.082,0.219-1.784c-0.009-0.684-0.08-1.265-0.212-1.743c-0.132-0.479-0.314-0.873-0.547-1.183s-0.497-0.533-0.793-0.67 c-0.296-0.137-0.608-0.205-0.937-0.205c-0.337,0-0.659,0.063-0.964,0.191c-0.306,0.128-0.579,0.344-0.82,0.649 c-0.242,0.306-0.431,0.699-0.567,1.183s-0.21,1.075-0.219,1.777c0.009,0.684,0.08,1.267,0.212,1.75 c0.132,0.483,0.314,0.877,0.547,1.183s0.497,0.528,0.793,0.67C28.596,51.658,28.908,51.729,29.236,51.729z"></path> <path style="fill:#fff" d="M42.607,51.975c-0.374,0.364-0.798,0.638-1.271,0.82c-0.474,0.183-0.984,0.273-1.531,0.273 c-0.602,0-1.155-0.109-1.661-0.328s-0.948-0.542-1.326-0.971c-0.378-0.429-0.675-0.966-0.889-1.613 c-0.214-0.647-0.321-1.395-0.321-2.242s0.107-1.593,0.321-2.235c0.214-0.643,0.51-1.178,0.889-1.606 c0.378-0.429,0.822-0.754,1.333-0.978c0.51-0.224,1.062-0.335,1.654-0.335c0.547,0,1.057,0.091,1.531,0.273 c0.474,0.183,0.897,0.456,1.271,0.82l-1.135,1.012c-0.228-0.265-0.481-0.456-0.759-0.574c-0.278-0.118-0.567-0.178-0.868-0.178 c-0.337,0-0.659,0.063-0.964,0.191c-0.306,0.128-0.579,0.344-0.82,0.649c-0.242,0.306-0.431,0.699-0.567,1.183 s-0.21,1.075-0.219,1.777c0.009,0.684,0.08,1.267,0.212,1.75c0.132,0.483,0.314,0.877,0.547,1.183s0.497,0.528,0.793,0.67 c0.296,0.142,0.608,0.212,0.937,0.212s0.636-0.06,0.923-0.178s0.549-0.31,0.786-0.574L42.607,51.975z"></path></g></svg>`;
+  }
+  renderThumbnail(resource) {
+    const thumbnailSource = this.getResourceThumbnail(resource);
+    if (!thumbnailSource) return;
+    return lit_html_x` <img class="qcs-resources__image" src="${thumbnailSource}" alt="" width="112" height="72" loading="lazy"> `;
+  }
+  renderOptionsButton(resource) {
+    return lit_html_x` <details class="qcs-options js-options"> <summary class="qcs-options__summary"> <span class="sr-only">${translate("moreOptionsLabel")}</span> </summary> <ul class="qcs-options__list"> <li class="qcs-options__item"> <button class="qcs-options__button" type="button" @click="${e => this.onAddToReadingList(resource)}">${translate("addToReadingListLabel")}</button> </li> <li class="qcs-options__item"> <button class="qcs-options__button" type="button" @click="${e => this.onEmail(resource)}">${translate("emailLabel")}</button> </li> ${this.canDownload(resource) ? lit_html_x`<li class="qcs-options__item"><button class="qcs-options__button" type="button" @click="${e => this.onDownload(resource)}">${translate("downloadLabel")}</button></li>` : A} ${resource.isDementiaProductAvailable ? lit_html_x`<li class="qcs-options__item"><button class="qcs-options__button" type="button" @click="${e => this.customAction(resource)}">${translate("customActionLabel")}</button></li>` : A} </ul> </details> `;
+  }
+  renderResources() {
+    return lit_html_x` <tbody> ${this.getSortedResources().map(resource => {
+      return lit_html_x` <tr @click="${e => this.onResourceClick(e, resource)}"> <td>${this.renderType(resource)}</td> <td>${this.renderThumbnail(resource)}</td> <td>${resource.title}</td> <td class="u-hide-on-mobile">${resource.author ?? "N/A"}</td> <td class="u-hide-on-mobile">${resource.source ?? "N/A"}</td> <td class="u-hide-on-mobile">${formatDateStringToNumeric(resource.updatedDate ?? resource.createdDate)}</td> <td>${this.renderOptionsButton(resource)}</td> </tr> `;
+    })} </tbody> `;
+  }
+  renderError() {
+    return lit_html_x` <span class="qcs-resources-message">${translate("resourcesErrorMessage")}</span> `;
+  }
+  renderLoading() {
+    return lit_html_x` <section class="qcs-resources-loader"> ${Qcs_Loading.renderLoading(translate("loadingResourcesLabel"))} </section> `;
+  }
+  renderEmpty() {
+    return lit_html_x` <span class="qcs-resources-message">${translate("noResourcesFoundLabel")}</span> `;
+  }
+  renderDetailView() {
+    if (!this.activeResource) return;
+    return lit_html_x` <qcs-resource .config="${this.config}" .resource="${this.activeResource}" .blog="${this.activeBlog}" ?error="${this.blogError}"></qcs-resource> `;
+  }
+  render() {
+    if (this.error) return this.renderError();
+    if (!this.resources) return this.renderLoading();
+    if (this.resources.length === 0) return this.renderEmpty();
+    return lit_html_x` <section class="qcs-resources-wrapper"> <table class="qcs-resources"> ${this.renderResourcesHeading()} ${this.renderResources()} </table> ${this.renderDetailView()} </section> `;
+  }
+};
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "resources", void 0);
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "error", void 0);
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "hasManageReadinglistPermission", void 0);
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "blogError", void 0);
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "activeSorting", void 0);
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "activeResource", void 0);
+Qcs_Resources_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Resources_Panel.prototype, "activeBlog", void 0);
+Qcs_Resources_Panel_decorate([query_all_e(`.js-options`)], Qcs_Resources_Panel.prototype, "optionButtons", void 0);
+Qcs_Resources_Panel = Qcs_Resources_Panel_decorate([custom_element_e("qcs-resources-panel")], Qcs_Resources_Panel);
+
+;// CONCATENATED MODULE: ./src/views/panels/forms/Qcs_Forms_Panel.ts
+var Qcs_Forms_Panel_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+let Qcs_Forms_Panel = class Qcs_Forms_Panel extends Qcs_Base_Panel {
+  connectedCallback() {
+    super.connectedCallback();
+    this.forms = this.policy.forms;
+  }
+  renderSummary() {
+    return lit_html_x` <section class="qcs-forms__summary"> <span class="qcs-forms__summary-label">${translate("includedFormsLabel")}</span> <div class="qcs-table"> <div class="qcs-table__heading" aria-hidden="true"> <span class="qcs-table__item">${translate("titleOfFormLabel")}</span> <span class="qcs-table__item">${translate("whenWouldTheFormBeUsedLabel")}</span> <span class="qcs-table__item">${translate("createdByLabel")}</span> </div> <ul class="qcs-table__body"> ${this.forms.map(form => {
+      return lit_html_x` <li class="qcs-table__row"> <div class="qcs-table__item"> <span class="qcs-table__title">${translate("titleOfFormLabel")}</span> ${form.formDocument && !form.form ? lit_html_x`<a href="${form.formDocument.url}" target="_blank">${form.title}</a>` : form.title} </div> <div class="qcs-table__item"> <span class="qcs-table__title">${translate("whenWouldTheFormBeUsedLabel")}</span> ${form.whenWouldItBeUsed} </div> <div class="qcs-table__item"> <span class="qcs-table__title">${translate("createdByLabel")}</span> ${form.createdBy} </div> </li> `;
+    })} </ul> </div> </section> `;
+  }
+  // Only render forms created in Kontent.ai, for linked PDFs we only render a link in the summary.
+  renderForms() {
+    return lit_html_x` <ul class="qcs-forms__list"> ${this.forms.filter(form => form.form).map(form => {
+      return lit_html_x` <li class="qcs-form"> <h2 class="qcs-form__title">${form.title}<h2> ${unsafe_html_o(form.form)} </h2></h2></li> `;
+    })} <ul> </ul></ul>`;
+  }
+  renderBody() {
+    return lit_html_x` <div class="qcs-panel__body qcs-forms"> ${this.renderSummary()} ${this.renderForms()} </div> `;
+  }
+};
+Qcs_Forms_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Forms_Panel.prototype, "policy", void 0);
+Qcs_Forms_Panel_decorate([property_n({
+  type: Object
+})], Qcs_Forms_Panel.prototype, "tab", void 0);
+Qcs_Forms_Panel = Qcs_Forms_Panel_decorate([custom_element_e("qcs-forms-panel")], Qcs_Forms_Panel);
+
+;// CONCATENATED MODULE: ./src/views/tags/Qcs_Tags.ts
+var Qcs_Tags_decorate = undefined && undefined.__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+let Qcs_Tags = class Qcs_Tags extends lit_element_s {
+  createRenderRoot() {
+    return this;
+  }
+  onClick(tag) {
+    QCS_Action_Handler.dispatch(Qcs_Events.Qcs_Tag, {
+      tag: tag
+    });
+  }
+  renderTag(tag) {
+    return lit_html_x` <li> <button @click="${e => this.onClick(tag)}" type="button" class="qcs-tag"> ${tag} </button> </li> `;
+  }
+  render() {
+    if (!this.tags) return;
+    return lit_html_x` <ul class="qcs-tags"> ${this.tags.map(tag => this.renderTag(tag))} </ul> `;
+  }
+};
+Qcs_Tags_decorate([property_n({
+  type: Array
+})], Qcs_Tags.prototype, "tags", void 0);
+Qcs_Tags = Qcs_Tags_decorate([custom_element_e("qcs-tags")], Qcs_Tags);
+
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/dlw-tooltip.js
+// Based on a component by Adam Argyle
+// https://web.dev/building-a-tooltip-component/
+
+
+class DlwTooltip extends DlwBaseWebComponent {
+  constructor() {
+    super(...arguments);
+    this.POLYFILL_ID = "dlw-tooltip-polyfill";
+    this.STATIC_POSITIONS = ["top", "right", "bottom", "left"];
+    this.DYNAMIC_POSITIONS = ["block-start", "inline-end", "block-end", "inline-start"];
+  }
+  //** Turn off ShadowDOM */
+  createRenderRoot() {
+    return this;
+  }
+  init() {
+    this.position = super.getAttributeValue("position", this.DYNAMIC_POSITIONS[0]);
+    this.checkViewport = this.getAttributeValue("check-viewport", true);
+    this.addAccessibility();
+    this.cssPolyfill();
+    this.parentElement.addEventListener("focus", () => {
+      this.validatePosition();
+    });
+    this.parentElement.addEventListener("mouseenter", () => {
+      this.validatePosition();
+    });
+  }
+  addAccessibility() {
+    this.setAttribute("inert", "");
+    this.setAttribute("role", "tooltip");
+  }
+  cssPolyfill() {
+    if (!CSS.supports("selector(:has(*))")) {
+      this.parentNode.classList.add("has-tooltip");
+      if (!document.querySelector(`#${this.POLYFILL_ID}`)) {
+        let styles = document.createElement("style");
+        styles.id = this.POLYFILL_ID;
+        styles.textContent = `
+                    .has-tooltip {
+                        position: relative;
+                    }
+                    .has-tooltip:is(:hover, :focus-visible, :active) > dlw-tooltip {
+                        opacity: 1;
+                        transition-delay: 200ms;
+                    }
+                `;
+        document.head.appendChild(styles);
+      }
+    }
+  }
+  validatePosition(index = 0) {
+    if (this.inViewport()) return;
+    // Prevent infinite loop, if we reach index 4 it means the tooltip will not be visible on any side.
+    // Default to on top because top will always have more visible content than to the side.
+    if (index >= 4) {
+      this.setPosition(this.positions[0]);
+      return;
+    }
+    // Make sure we use the same format of positions when falling back.
+    if (!this.positions) this.position.includes("block") || this.position.includes("inline") ? this.positions = this.DYNAMIC_POSITIONS : this.positions = this.STATIC_POSITIONS;
+    this.setPosition(this.positions[index]);
+    if (!this.inViewport()) this.validatePosition(++index);
+  }
+  inViewport() {
+    if (this.getBoundingClientRect().left < 0 || this.getBoundingClientRect().right >= window.innerWidth - 50) return false;
+    return true;
+  }
+  setPosition(position) {
+    this.position = position;
+    this.setAttribute("position", this.position);
+  }
+}
+DlwTooltip.define("dlw-tooltip");
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/node_modules/nanoid/url-alphabet/index.js
+const urlAlphabet = 'useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict';
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/node_modules/nanoid/index.browser.js
+
+
+let random = bytes => crypto.getRandomValues(new Uint8Array(bytes));
+let customRandom = (alphabet, defaultSize, getRandom) => {
+  let mask = (2 << Math.log2(alphabet.length - 1)) - 1;
+  let step = -~(1.6 * mask * defaultSize / alphabet.length);
+  return (size = defaultSize) => {
+    let id = '';
+    while (true) {
+      let bytes = getRandom(step);
+      let j = step | 0;
+      while (j--) {
+        id += alphabet[bytes[j] & mask] || '';
+        if (id.length >= size) return id;
+      }
+    }
+  };
+};
+let customAlphabet = (alphabet, size = 21) => customRandom(alphabet, size | 0, random);
+let nanoid = (size = 21) => {
+  let id = '';
+  let bytes = crypto.getRandomValues(new Uint8Array(size |= 0));
+  while (size--) {
+    id += urlAlphabet[bytes[size] & 63];
+  }
+  return id;
+};
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/utils/id-utils.js
+
+const GetUniqueId = () => {
+  // prefix is because nanoid can start with a number that is not allowed on id attribute
+  return `dlw-${nanoid(10)}-${Date.now()}-${Math.floor(Math.random() * 100)}`;
+};
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/utils/utils.js
+function toggleBodyScroll(forceState) {
+  switch (forceState) {
+    case true:
+      document.body.style.overflow = "hidden";
+      break;
+    case false:
+      document.body.style.overflow = "";
+      break;
+    default:
+      document.body.style.overflow = document.body.style.overflow === "hidden" ? "" : "hidden";
+      break;
+  }
+}
+;// CONCATENATED MODULE: ../node_modules/@delawarepro/web-components/src/dlw-dialog-utils.js
+
+
+
+class DlwDialogUtils extends DlwBaseWebComponent {
+  //** Turn off ShadowDOM */
+  createRenderRoot() {
+    return this;
+  }
+  init() {
+    const dlwDialog = this.querySelector("dialog");
+    const openAttribute = this.getAttribute("open-on-start");
+    const idDialog = this.getAttribute("name");
+    const closeElementAttribute = this.querySelectorAll("[data-dialog-close]");
+    const firstHElement = this.querySelectorAll("h1, h2, h3, h4, h5, h6")[0];
+    const closeOutsideAttribute = super.getAttributeValue("close-on-click-outside");
+    this.disableBodyScroll = super.getAttributeValue("disable-body-scroll");
+    if (dlwDialog !== undefined) {
+      dlwDialog.removeAttribute("open");
+      if (closeOutsideAttribute) {
+        document.addEventListener("click", e => {
+          if (!this.contains(e.target) && dlwDialog.getAttribute("open") != null && e.target.getAttribute("data-dialog-id") == null) {
+            dlwDialog.close();
+          }
+        });
+      }
+      // Re-enable body scroll when dialog closes.
+      if (this.disableBodyScroll) {
+        dlwDialog.addEventListener("close", () => {
+          toggleBodyScroll(false);
+        });
+      }
+      Array.from(closeElementAttribute).forEach(element => {
+        element.addEventListener("click", () => {
+          if (element.getAttribute("data-dialog-close") === "true") {
+            dlwDialog.close();
+          }
+        });
+      });
+      Array.from(document.querySelectorAll(`#${idDialog}`)).forEach(element => {
+        element.addEventListener("click", () => {
+          this.openDialog(dlwDialog);
+        });
+      });
+      document.addEventListener("click", e => {
+        if (e.target.closest("[data-dialog-id]")?.attributes["data-dialog-id"].value === dlwDialog.id) this.openDialog(dlwDialog);
+      });
+      this.openOnStartFunction(dlwDialog, openAttribute);
+      this.addAriaLabelledBy(firstHElement, dlwDialog);
+    } else {
+      console.log("please add a dialog inside the dlw-dialog brackets");
+    }
+  }
+  // Open the dialog when the page is loaded if the attribute "open-on-start" is true
+  openOnStartFunction(dlwDialog, openAttribute) {
+    if (openAttribute === "true") {
+      this.openDialog(dlwDialog);
+    }
+  }
+  // Open the dialog
+  openDialog(dlwDialog) {
+    dlwDialog.showModal();
+    this.checkForEscape(dlwDialog);
+    if (this.disableBodyScroll) toggleBodyScroll(true);
+  }
+  // Close dialog on escape if the "close-on-esc" attribtue is true
+  checkForEscape(element) {
+    this.addEventListener("keydown", e => {
+      if (e.code === "Escape") {
+        if (this.attributes["close-on-esc"]?.value === "false" && element.open) {
+          e.preventDefault();
+        }
+      }
+    });
+  }
+  //Add "aria labeledby" on the first h1 element inside the dialog
+  addAriaLabelledBy(firstHElement, dlwDialog) {
+    if (firstHElement) {
+      if (firstHElement.getAttribute("id") === null) {
+        let titleId = GetUniqueId();
+        firstHElement.setAttribute("id", titleId);
+        dlwDialog.setAttribute("aria-labelledby", titleId);
+      }
+    }
+  }
+}
+DlwDialogUtils.define("dlw-dialog-utils");
+;// CONCATENATED MODULE: ./src/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Base components
+
+
+// css
+
+// Export lit-html so custom components can render data on the page using the html directive.
+// If a custom component were to depend on lit-html themselves it wouldn't work because it's a different instance.
+
+
+this["@qcs/policy-viewer"] = __webpack_exports__;
+/******/ })()
+;

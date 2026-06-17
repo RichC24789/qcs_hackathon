@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react"
 
 import { ContentItem } from "@/components/content/ContentItem"
 import { PullToRefresh } from "@/components/content/PullToRefresh"
-import { useAuth } from "@/contexts/AuthContext"
+import { useAuth } from "@/contexts/useAuth"
 import { getContentFeed, type ContentFeedItem } from "@/lib/api"
 
 export function ContentPage() {
@@ -13,15 +13,12 @@ export function ContentPage() {
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const isLoadingMoreRef = useRef(false)
 
-  const loadFeed = useCallback(async () => {
+  const fetchFeed = useCallback(async () => {
     if (!email) {
-      setItems([])
-      return
+      return []
     }
 
-    const nextItems = await getContentFeed(email, 10)
-    setItems(nextItems)
-    setError(null)
+    return getContentFeed(email, 10)
   }, [email])
 
   const loadMore = useCallback(async () => {
@@ -50,14 +47,33 @@ export function ContentPage() {
 
   useEffect(() => {
     if (!isLoggedIn || !email) {
-      setIsLoading(false)
       return
     }
 
-    loadFeed()
-      .catch(() => setError("Could not load your feed from the API."))
-      .finally(() => setIsLoading(false))
-  }, [email, isLoggedIn, loadFeed])
+    let cancelled = false
+
+    fetchFeed()
+      .then((nextItems) => {
+        if (!cancelled) {
+          setItems(nextItems)
+          setError(null)
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setError("Could not load your feed from the API.")
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoading(false)
+        }
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [email, fetchFeed, isLoggedIn])
 
   const handleRefresh = useCallback(async () => {
     if (!email) {
@@ -65,11 +81,13 @@ export function ContentPage() {
     }
 
     try {
-      await loadFeed()
+      const nextItems = await fetchFeed()
+      setItems(nextItems)
+      setError(null)
     } catch {
       setError("Could not load your feed from the API.")
     }
-  }, [email, loadFeed])
+  }, [email, fetchFeed])
 
   if (!isLoggedIn) {
     return (
@@ -105,6 +123,8 @@ export function ContentPage() {
           slug={item.slug}
           title={item.title}
           subtitle={item.theme}
+          contentType={item.contentType}
+          contentUrl={item.contentUrl}
           hook={item.hook}
           text={item.text ?? ""}
           format={item.primaryFormat}

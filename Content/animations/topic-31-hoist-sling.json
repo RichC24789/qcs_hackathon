@@ -1,0 +1,32 @@
+{
+  "id": 31,
+  "slug": "hoist-sling",
+  "title": "Hoist and sling — checks before every use",
+  "durationSeconds": 60,
+  "source": "ME03 Lifts and Hoists Policy and Procedure",
+  "scopeNote": "Pre-use safety checks and competency. The physical hoisting technique is a separate handling procedure and is not shown here.",
+  "lottieSuggestion": "hoist, lifting equipment, checklist",
+  "steps": [
+    {
+      "label": "Only use if trained",
+      "caption": "Only staff trained and assessed as competent should use a hoist."
+    },
+    {
+      "label": "Check the inspection date",
+      "caption": "The hoist must be examined every 6 months — do not use it if it is overdue."
+    },
+    {
+      "label": "Check brakes, straps, and sling",
+      "caption": "Look over the brakes, straps, hooks, and sling before every use."
+    },
+    {
+      "label": "Damaged? Take it out of use",
+      "caption": "Stop, label it 'do not use', and report it to your manager."
+    },
+    {
+      "label": "Stay with the person",
+      "caption": "A staff member stays with the person the whole time."
+    }
+  ],
+  "endFrame": "If anything looks wrong, stop and report it — never take a risk."
+}
